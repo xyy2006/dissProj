@@ -1,0 +1,719 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF8
+
+
+@Article{Aulchenko2009,
+  Title                    = {Loci influencing lipid levels and coronary heart disease risk in 16 European population cohorts.},
+  Author                   = {Aulchenko, Yurii S. and Ripatti, Samuli and Lindqvist, Ida and Boomsma, Dorret and Heid, Iris M. and Pramstaller, Peter P. and Penninx, Brenda W J H. and Janssens, A Cecile J W. and Wilson, James F. and Spector, Tim and Martin, Nicholas G. and Pedersen, Nancy L. and Kyvik, Kirsten Ohm and Kaprio, Jaakko and Hofman, Albert and Freimer, Nelson B. and Jarvelin, Marjo-Riitta and Gyllensten, Ulf and Campbell, Harry and Rudan, Igor and Johansson, Asa and Marroni, Fabio and Hayward, Caroline and Vitart, Veronique and Jonasson, Inger and Pattaro, Cristian and Wright, Alan and Hastie, Nick and Pichler, Irene and Hicks, Andrew A. and Falchi, Mario and Willemsen, Gonneke and Hottenga, Jouke-Jan and {de Geus}, Eco J C. and Montgomery, Grant W. and Whitfield, John and Magnusson, Patrik and Saharinen, Juha and Perola, Markus and Silander, Kaisa and Isaacs, Aaron and Sijbrands, Eric J G. and Uitterlinden, Andre G. and Witteman, Jacqueline C M. and Oostra, Ben A. and Elliott, Paul and Ruokonen, Aimo and Sabatti, Chiara and Gieger, Christian and Meitinger, Thomas and Kronenberg, Florian and D{\"{o}}ring, Angela and Wichmann, H-Erich and Smit, Johannes H. and McCarthy, Mark I. and {van Duijn}, Cornelia M. and Peltonen, Leena and , E. N. G. A. G. E Consortium},
+  Journal                  = {Nat Genet},
+  Year                     = {2009},
+
+  Month                    = {Jan},
+  Number                   = {1},
+  Pages                    = {47--55},
+  Volume                   = {41},
+
+  Abstract                 = {Recent genome-wide association (GWA) studies of lipids have been conducted in samples ascertained for other phenotypes, particularly diabetes. Here we report the first GWA analysis of loci affecting total cholesterol (TC), low-density lipoprotein (LDL) cholesterol, high-density lipoprotein (HDL) cholesterol and triglycerides sampled randomly from 16 population-based cohorts and genotyped using mainly the Illumina HumanHap300-Duo platform. Our study included a total of 17,797-22,562 persons, aged 18-104 years and from geographic regions spanning from the Nordic countries to Southern Europe. We established 22 loci associated with serum lipid levels at a genome-wide significance level (P < 5 x 10(-8)), including 16 loci that were identified by previous GWA studies. The six newly identified loci in our cohort samples are ABCG5 (TC, P = 1.5 x 10(-11); LDL, P = 2.6 x 10(-10)), TMEM57 (TC, P = 5.4 x 10(-10)), CTCF-PRMT8 region (HDL, P = 8.3 x 10(-16)), DNAH11 (LDL, P = 6.1 x 10(-9)), FADS3-FADS2 (TC, P = 1.5 x 10(-10); LDL, P = 4.4 x 10(-13)) and MADD-FOLH1 region (HDL, P = 6 x 10(-11)). For three loci, effect sizes differed significantly by sex. Genetic risk scores based on lipid loci explain up to 4.8\% of variation in lipids and were also associated with increased intima media thickness (P = 0.001) and coronary heart disease incidence (P = 0.04). The genetic risk score improves the screening of high-risk groups of dyslipidemia over classical risk factors.},
+  Doi                      = {10.1038/ng.269},
+  Institution              = { These authors contributed equally to this work.},
+  Keywords                 = {Adolescent; Adult; Aged; Aged, 80 and over; Body Mass Index; Cholesterol, HDL, blood; Cohort Studies; Coronary Disease, blood/genetics; European Continental Ancestry Group, genetics; Female; Genetic Predisposition to Disease; Genetic Testing; Genome, Human, genetics; Humans; Lipids, blood; Male; Metabolic Networks and Pathways, genetics; Middle Aged; Phenotype; Polymorphism, Single Nucleotide, genetics; Quantitative Trait Loci, genetics; Sex Characteristics},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {ng.269},
+  Pmid                     = {19060911},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1038/ng.269}
+}
+
+@Article{Bansal2010,
+  Title                    = {Statistical analysis strategies for association studies involving rare variants.},
+  Author                   = {Bansal, Vikas and Libiger, Ondrej and Torkamani, Ali and Schork, Nicholas J.},
+  Journal                  = {Nat Rev Genet},
+  Year                     = {2010},
+
+  Month                    = {Nov},
+  Number                   = {11},
+  Pages                    = {773--785},
+  Volume                   = {11},
+
+  Abstract                 = {The limitations of genome-wide association (GWA) studies that focus on the phenotypic influence of common genetic variants have motivated human geneticists to consider the contribution of rare variants to phenotypic expression. The increasing availability of high-throughput sequencing technologies has enabled studies of rare variants but these methods will not be sufficient for their success as appropriate analytical methods are also needed. We consider data analysis approaches to testing associations between a phenotype and collections of rare variants in a defined genomic region or set of regions. Ultimately, although a wide variety of analytical approaches exist, more work is needed to refine them and determine their properties and power in different contexts.},
+  Doi                      = {10.1038/nrg2867},
+  Institution              = {The Scripps Translational Science Institute, 3344 North Torrey Pines Court, Suite 300, La Jolla, California 92037, USA.},
+  Keywords                 = {Case-Control Studies; DNA Copy Number Variations; Data Interpretation, Statistical; Gene Frequency; Genome-Wide Association Study, statistics /&/ numerical data; Humans; Phenotype; Polymorphism, Single Nucleotide},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {ThomasYY},
+  Pii                      = {nrg2867},
+  Pmid                     = {20940738},
+  Timestamp                = {2014.10.16},
+  Url                      = {http://dx.doi.org/10.1038/nrg2867}
+}
+
+@Article{Basu2011,
+  Title                    = {Comparison of statistical tests for disease association with rare variants.},
+  Author                   = {Basu, Saonli and Pan, Wei},
+  Journal                  = {Genet Epidemiol},
+  Year                     = {2011},
+
+  Month                    = {Nov},
+  Number                   = {7},
+  Pages                    = {606--619},
+  Volume                   = {35},
+
+  Abstract                 = {In anticipation of the availability of next-generation sequencing data, there is increasing interest in investigating association between complex traits and rare variants (RVs). In contrast to association studies for common variants (CVs), due to the low frequencies of RVs, common wisdom suggests that existing statistical tests for CVs might not work, motivating the recent development of several new tests for analyzing RVs, most of which are based on the idea of pooling/collapsing RVs. However, there is a lack of evaluations of, and thus guidance on the use of, existing tests. Here we provide a comprehensive comparison of various statistical tests using simulated data. We consider both independent and correlated rare mutations, and representative tests for both CVs and RVs. As expected, if there are no or few non-causal (i.e. neutral or non-associated) RVs in a locus of interest while the effects of causal RVs on the trait are all (or mostly) in the same direction (i.e. either protective or deleterious, but not both), then the simple pooled association tests (without selecting RVs and their association directions) and a new test called kernel-based adaptive clustering (KBAC) perform similarly and are most powerful; KBAC is more robust than simple pooled association tests in the presence of non-causal RVs; however, as the number of non-causal CVs increases and/or in the presence of opposite association directions, the winners are two methods originally proposed for CVs and a new test called C-alpha test proposed for RVs, each of which can be regarded as testing on a variance component in a random-effects model. Interestingly, several methods based on sequential model selection (i.e. selecting causal RVs and their association directions), including two new methods proposed here, perform robustly and often have statistical power between those of the above two classes.},
+  Doi                      = {10.1002/gepi.20609},
+  Institution              = {Division of Biostatistics, School of Public Health, University of Minnesota, Minneapolis, Minnesota 55455-0392, USA.},
+  Keywords                 = {Data Interpretation, Statistical; Genetic Predisposition to Disease, genetics; Genetic Variation; Humans; Models, Genetic; Models, Statistical; Regression Analysis},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pmid                     = {21769936},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1002/gepi.20609}
+}
+
+@Article{Belsky2013,
+  Title                    = {Polygenic risk and the developmental progression to heavy, persistent smoking and nicotine dependence: evidence from a 4-decade longitudinal study},
+  Author                   = {Belsky, Daniel W and Moffitt, Terrie E and Baker, Timothy B and Biddle, Andrea K and Evans, James P and Harrington, HonaLee and Houts, Renate and Meier, Madeline and Sugden, Karen and Williams, Benjamin and others},
+  Journal                  = {JAMA psychiatry},
+  Year                     = {2013},
+  Number                   = {5},
+  Pages                    = {534--542},
+  Volume                   = {70},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Jama_stataWayToDealWithLongi_Polygenic Risk and the Developmental Progression to Heavy, Persistent Smoking and Nicotine Dependence.pdf:PDF},
+  Owner                    = {Nainan},
+  Publisher                = {American Medical Association},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://archpsyc.jamanetwork.com/article.aspx?articleid=1672838}
+}
+
+@Article{Capanu2011,
+  Title                    = {Assessment of rare BRCA1 and BRCA2 variants of unknown significance using hierarchical modeling.},
+  Author                   = {Capanu, Marinela and Concannon, Patrick and Haile, Robert W. and Bernstein, Leslie and Malone, Kathleen E. and Lynch, Charles F. and Liang, Xiaolin and Teraoka, Sharon N. and Diep, Anh T. and Thomas, Duncan C. and Bernstein, Jonine L. and , W. E. C. A. R. E Study Collaborative Group and Begg, Colin B.},
+  Journal                  = {Genet Epidemiol},
+  Year                     = {2011},
+
+  Month                    = {Jul},
+  Number                   = {5},
+  Pages                    = {389--397},
+  Volume                   = {35},
+
+  Abstract                 = {Current evidence suggests that the genetic risk of breast cancer may be caused primarily by rare variants. However, while classification of protein-truncating mutations as deleterious is relatively straightforward, distinguishing as deleterious or neutral the large number of rare missense variants is a difficult on-going task. In this article, we present one approach to this problem, hierarchical statistical modeling of data observed in a case-control study of contralateral breast cancer (CBC) in which all the participants were genotyped for variants in BRCA1 and BRCA2. Hierarchical modeling permits leverage of information from observed correlations of characteristics of groups of variants with case-control status to infer with greater precision the risks of individual rare variants. A total of 181 distinct rare missense variants were identified among the 705 cases with CBC and the 1,398 controls with unilateral breast cancer. The model identified three bioinformatic hierarchical covariates, align-GV, align-GD, and SIFT scores, each of which was modestly associated with risk. Collectively, the 11 variants that were classified as adverse on the basis of all the three bioinformatic predictors demonstrated a stronger risk signal. This group included five of six missense variants that were classified as deleterious at the outset by conventional criteria. The remaining six variants can be considered as plausibly deleterious, and deserving of further investigation (BRCA1 R866C; BRCA2 G1529R, D2665G, W2626C, E2663V, and R3052W). Hierarchical modeling is a strategy that has promise for interpreting the evidence from future association studies that involve sequencing of known or suspected cancer genes.},
+  Doi                      = {10.1002/gepi.20587},
+  Institution              = {Department of Epidemiology and Biostatistics, Memorial Sloan-Kettering Cancer Center, New York, NY 10065, USA.},
+  Keywords                 = {Bayes Theorem; Breast Neoplasms, genetics; Case-Control Studies; Female; Gene Frequency; Genes, BRCA1; Genes, BRCA2; Genetic Variation; Humans; Likelihood Functions; Models, Genetic; Models, Statistical; Mutation, Missense; Neoplasms, Second Primary, genetics; Polymorphism, Single Nucleotide; Risk Factors},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pmid                     = {21520273},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1002/gepi.20587}
+}
+
+@Article{DelaCruz2010,
+  Title                    = {Gene, region and pathway level analyses in whole-genome studies.},
+  Author                   = {{De la Cruz}, Omar and Wen, Xiaoquan and Ke, Baoguan and Song, Minsun and Nicolae, Dan L.},
+  Journal                  = {Genet Epidemiol},
+  Year                     = {2010},
+
+  Month                    = {Apr},
+  Number                   = {3},
+  Pages                    = {222--231},
+  Volume                   = {34},
+
+  Abstract                 = {In the setting of genome-wide association studies, we propose a method for assigning a measure of significance to pre-defined sets of markers in the genome. The sets can be genes, conserved regions, or groups of genes such as pathways. Using the proposed methods and algorithms, evidence for association between a particular functional unit and a disease status can be obtained not just by the presence of a strong signal from a SNP within it, but also by the combination of several simultaneous weaker signals that are not strongly correlated. This approach has several advantages. First, moderately strong signals from different SNPs are combined to obtain a much stronger signal for the set, therefore increasing power. Second, in combination with methods that provide information on untyped markers, it leads to results that can be readily combined across studies and platforms that might use different SNPs. Third, the results are easy to interpret, since they refer to functional sets of markers that are likely to behave as a unit in their phenotypic effect. Finally, the availability of gene-level P-values for association is the first step in developing methods that integrate information from pathways and networks with genome-wide association data, and these can lead to a better understanding of the complex traits genetic architecture. The power of the approach is investigated in simulated and real datasets. Novel Crohn's disease associations are found using the WTCCC data.},
+  Doi                      = {10.1002/gepi.20452},
+  Institution              = {Department of Statistics, The University of Chicago, Chicago, Illinois 60637, USA.},
+  Keywords                 = {Computer Simulation; Crohn Disease, genetics; Genome, Human; Genome-Wide Association Study, methods; Genotype; Humans; Models, Genetic; Models, Statistical; Molecular Epidemiology; Phenotype; Polymorphism, Single Nucleotide},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pmid                     = {20013942},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1002/gepi.20452}
+}
+
+@Article{Fridley2010,
+  Title                    = {Self-contained gene-set analysis of expression data: an evaluation of existing and novel methods.},
+  Author                   = {Fridley, Brooke L. and Jenkins, Gregory D. and Biernacka, Joanna M.},
+  Journal                  = {PLoS One},
+  Year                     = {2010},
+  Number                   = {9},
+  Volume                   = {5},
+
+  Abstract                 = {Gene set methods aim to assess the overall evidence of association of a set of genes with a phenotype, such as disease or a quantitative trait. Multiple approaches for gene set analysis of expression data have been proposed. They can be divided into two types: competitive and self-contained. Benefits of self-contained methods include that they can be used for genome-wide, candidate gene, or pathway studies, and have been reported to be more powerful than competitive methods. We therefore investigated ten self-contained methods that can be used for continuous, discrete and time-to-event phenotypes. To assess the power and type I error rate for the various previously proposed and novel approaches, an extensive simulation study was completed in which the scenarios varied according to: number of genes in a gene set, number of genes associated with the phenotype, effect sizes, correlation between expression of genes within a gene set, and the sample size. In addition to the simulated data, the various methods were applied to a pharmacogenomic study of the drug gemcitabine. Simulation results demonstrated that overall Fisher's method and the global model with random effects have the highest power for a wide range of scenarios, while the analysis based on the first principal component and Kolmogorov-Smirnov test tended to have lowest power. The methods investigated here are likely to play an important role in identifying pathways that contribute to complex traits.},
+  Doi                      = {10.1371/journal.pone.0012693},
+  Institution              = {Department of Health Sciences Research, Mayo Clinic, Rochester, Minnesota, USA. fridley.brooke@mayo.edu},
+  Keywords                 = {Animals; Computer Simulation; Databases, Genetic; Gene Expression; Gene Expression Profiling, methods/standards; Humans; Phenotype},
+  Language                 = {eng},
+  Medline-pst              = {epublish},
+  Owner                    = {Nainan},
+  Pmid                     = {20862301},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1371/journal.pone.0012693}
+}
+
+@Article{Fu2013,
+  Title                    = {Analysis of 6,515 exomes reveals the recent origin of most human protein-coding variants.},
+  Author                   = {Fu, Wenqing and O'Connor, Timothy D. and Jun, Goo and Kang, Hyun Min and Abecasis, Goncalo and Leal, Suzanne M. and Gabriel, Stacey and Rieder, Mark J. and Altshuler, David and Shendure, Jay and Nickerson, Deborah A. and Bamshad, Michael J. and , N. H. L. B. I Exome Sequencing Project and Akey, Joshua M.},
+  Journal                  = {Nature},
+  Year                     = {2013},
+
+  Month                    = {Jan},
+  Number                   = {7431},
+  Pages                    = {216--220},
+  Volume                   = {493},
+
+  Abstract                 = {Establishing the age of each mutation segregating in contemporary human populations is important to fully understand our evolutionary history and will help to facilitate the development of new approaches for disease-gene discovery. Large-scale surveys of human genetic variation have reported signatures of recent explosive population growth, notable for an excess of rare genetic variants, suggesting that many mutations arose recently. To more quantitatively assess the distribution of mutation ages, we resequenced 15,336 genes in 6,515 individuals of European American and African American ancestry and inferred the age of 1,146,401 autosomal single nucleotide variants (SNVs). We estimate that approximately 73\% of all protein-coding SNVs and approximately 86\% of SNVs predicted to be deleterious arose in the past 5,000-10,000 years. The average age of deleterious SNVs varied significantly across molecular pathways, and disease genes contained a significantly higher proportion of recently arisen deleterious SNVs than other genes. Furthermore, European Americans had an excess of deleterious variants in essential and Mendelian disease genes compared to African Americans, consistent with weaker purifying selection due to the Out-of-Africa dispersal. Our results better delimit the historical details of human protein-coding variation, show the profound effect of recent human history on the burden of deleterious SNVs segregating in contemporary populations, and provide important practical information that can be used to prioritize variants in disease-gene discovery.},
+  Doi                      = {10.1038/nature11690},
+  Institution              = {Department of Genome Sciences, University of Washington, Seattle, Washington 98195, USA. wqfu@u.washington.edu},
+  Keywords                 = {Africa, ethnology; African Continental Ancestry Group, genetics; Alleles; Europe, ethnology; European Continental Ancestry Group, genetics; Evolution, Molecular; Exome, genetics; Exons, genetics; Genetic Variation, genetics; Humans; Open Reading Frames, genetics; Polymorphism, Single Nucleotide, genetics; United States},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {nature11690},
+  Pmid                     = {23201682},
+  Timestamp                = {2014.10.17},
+  Url                      = {http://dx.doi.org/10.1038/nature11690}
+}
+
+@Article{Furlotte2012,
+  Title                    = {Genome-Wide Association Mapping With Longitudinal Data},
+  Author                   = {Furlotte, Nicholas A and Eskin, Eleazar and Eyheramendy, Susana},
+  Journal                  = {Genetic epidemiology},
+  Year                     = {2012},
+  Number                   = {5},
+  Pages                    = {463--471},
+  Volume                   = {36},
+
+  Owner                    = {Nainan},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/gepi.21640/full}
+}
+
+@Article{Goeman2007,
+  Title                    = {Analyzing gene expression data in terms of gene sets: methodological issues.},
+  Author                   = {Goeman, Jelle J. and B{\"{u}}hlmann, Peter},
+  Journal                  = {Bioinformatics},
+  Year                     = {2007},
+
+  Month                    = {Apr},
+  Number                   = {8},
+  Pages                    = {980--987},
+  Volume                   = {23},
+
+  Abstract                 = {Many statistical tests have been proposed in recent years for analyzing gene expression data in terms of gene sets, usually from Gene Ontology. These methods are based on widely different methodological assumptions. Some approaches test differential expression of each gene set against differential expression of the rest of the genes, whereas others test each gene set on its own. Also, some methods are based on a model in which the genes are the sampling units, whereas others treat the subjects as the sampling units. This article aims to clarify the assumptions behind different approaches and to indicate a preferential methodology of gene set testing.We identify some crucial assumptions which are needed by the majority of methods. P-values derived from methods that use a model which takes the genes as the sampling unit are easily misinterpreted, as they are based on a statistical model that does not resemble the biological experiment actually performed. Furthermore, because these models are based on a crucial and unrealistic independence assumption between genes, the P-values derived from such methods can be wildly anti-conservative, as a simulation experiment shows. We also argue that methods that competitively test each gene set against the rest of the genes create an unnecessary rift between single gene testing and gene set testing.},
+  Doi                      = {10.1093/bioinformatics/btm051},
+  Institution              = {Department of Medical Statistics and Bioinformatics, Leiden University Medical Center, Leiden, The Netherlands. j.j.goeman@lumc.nl},
+  Keywords                 = {Algorithms; Artifacts; Data Interpretation, Statistical; Databases, Genetic; Gene Expression Profiling, methods; Information Storage and Retrieval, methods; Reproducibility of Results; Sensitivity and Specificity},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {btm051},
+  Pmid                     = {17303618},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1093/bioinformatics/btm051}
+}
+
+@Article{Ionita-Laza2007,
+  Title                    = {Genomewide weighted hypothesis testing in family-based association studies, with an application to a 100K scan},
+  Author                   = {Ionita-Laza, Iuliana and McQueen, Matthew B and Laird, Nan M and Lange, Christoph},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2007},
+  Number                   = {3},
+  Pages                    = {607--614},
+  Volume                   = {81},
+
+  Owner                    = {Nainan},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.10.18}
+}
+
+@Article{Kamatani2010,
+  Title                    = {Genome-wide association study of hematological and biochemical traits in a Japanese population.},
+  Author                   = {Kamatani, Yoichiro and Matsuda, Koichi and Okada, Yukinori and Kubo, Michiaki and Hosono, Naoya and Daigo, Yataro and Nakamura, Yusuke and Kamatani, Naoyuki},
+  Journal                  = {Nat Genet},
+  Year                     = {2010},
+
+  Month                    = {Mar},
+  Number                   = {3},
+  Pages                    = {210--215},
+  Volume                   = {42},
+
+  Abstract                 = {We report genome-wide association studies for hematological and biochemical traits from approximately 14,700 Japanese individuals. We identified 60 associations for 8 hematological traits and 29 associations for 12 biochemical traits at genome-wide significance levels (P < 5 x 10(-8)). Of these, 46 associations were new to this study and 43 replicated previous reports. We compared these associated loci with those reported in similar GWAS in European populations. When the minor allele frequency was >10\% in the Japanese population, 32 (94.1\%) and 31 (91.2\%) of the 34 hematological loci previously reported to be associated in a European population were replicated with P-values less than 0.05 and 0.01, respectively, and 31 (73.8\%) and 27 (64.3\%) of the 42 European biochemical loci were replicated.},
+  Doi                      = {10.1038/ng.531},
+  Institution              = {Laboratory of Molecular Medicine, Human Genome Center, Institute of Medical Science, the University of Tokyo, Tokyo, Japan.},
+  Keywords                 = {Asian Continental Ancestry Group, genetics; Biological Markers, analysis/blood; Blood Cell Count; Blood Chemical Analysis; Cohort Studies; Erythrocytes, cytology/pathology; Gene Frequency; Genetics, Population; Genome-Wide Association Study; Hematologic Diseases, blood/genetics/pathology; Hematologic Tests; Humans; Polymorphism, Single Nucleotide; Quantitative Trait Loci; Uric Acid, blood},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {ng.531},
+  Pmid                     = {20139978},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1038/ng.531}
+}
+
+@Article{Kathiresan2007,
+  Title                    = {A genome-wide association study for blood lipid phenotypes in the Framingham Heart Study.},
+  Author                   = {Kathiresan, Sekar and Manning, Alisa K. and Demissie, Serkalem and D'Agostino, Ralph B. and Surti, Aarti and Guiducci, Candace and Gianniny, Lauren and Burtt, N{\"{o}}el P. and Melander, Olle and Orho-Melander, Marju and Arnett, Donna K. and Peloso, Gina M. and Ordovas, Jose M. and Cupples, L Adrienne},
+  Journal                  = {BMC Med Genet},
+  Year                     = {2007},
+  Pages                    = {S17},
+  Volume                   = {8 Suppl 1},
+
+  Abstract                 = {Blood lipid levels including low-density lipoprotein cholesterol (LDL-C), high-density lipoprotein cholesterol (HDL-C), and triglycerides (TG) are highly heritable. Genome-wide association is a promising approach to map genetic loci related to these heritable phenotypes.In 1087 Framingham Heart Study Offspring cohort participants (mean age 47 years, 52\% women), we conducted genome-wide analyses (Affymetrix 100K GeneChip) for fasting blood lipid traits. Total cholesterol, HDL-C, and TG were measured by standard enzymatic methods and LDL-C was calculated using the Friedewald formula. The long-term averages of up to seven measurements of LDL-C, HDL-C, and TG over a approximately 30 year span were the primary phenotypes. We used generalized estimating equations (GEE), family-based association tests (FBAT) and variance components linkage to investigate the relationships between SNPs (on autosomes, with minor allele frequency > or =10\%, genotypic call rate > or =80\%, and Hardy-Weinberg equilibrium p > or = 0.001) and multivariable-adjusted residuals. We pursued a three-stage replication strategy of the GEE association results with 287 SNPs (P < 0.001 in Stage I) tested in Stage II (n approximately 1450 individuals) and 40 SNPs (P < 0.001 in joint analysis of Stages I and II) tested in Stage III (n approximately 6650 individuals).Long-term averages of LDL-C, HDL-C, and TG were highly heritable (h2 = 0.66, 0.69, 0.58, respectively; each P < 0.0001). Of 70,987 tests for each of the phenotypes, two SNPs had p < 10(-5) in GEE results for LDL-C, four for HDL-C, and one for TG. For each multivariable-adjusted phenotype, the number of SNPs with association p < 10(-4) ranged from 13 to 18 and with p < 10(-3), from 94 to 149. Some results confirmed previously reported associations with candidate genes including variation in the lipoprotein lipase gene (LPL) and HDL-C and TG (rs7007797; P = 0.0005 for HDL-C and 0.002 for TG). The full set of GEE, FBAT and linkage results are posted at the database of Genotype and Phenotype (dbGaP). After three stages of replication, there was no convincing statistical evidence for association (i.e., combined P < 10(-5) across all three stages) between any of the tested SNPs and lipid phenotypes.Using a 100K genome-wide scan, we have generated a set of putative associations for common sequence variants and lipid phenotypes. Validation of selected hypotheses in additional samples did not identify any new loci underlying variability in blood lipids. Lack of replication may be due to inadequate statistical power to detect modest quantitative trait locus effects (i.e., <1\% of trait variance explained) or reduced genomic coverage of the 100K array. GWAS in FHS using a denser genome-wide genotyping platform and a better-powered replication strategy may identify novel loci underlying blood lipids.},
+  Doi                      = {10.1186/1471-2350-8-S1-S17},
+  Institution              = {National Heart Lung and Blood Institute's Framingham Heart Study, Framingham, MA, USA. skathiresan@partners.org},
+  Keywords                 = {Adult; Cardiovascular Diseases, blood/genetics; Cohort Studies; Female; Genetic Markers; Genome, Human; Genotype; Humans; Lipids, blood; Male; Middle Aged; Phenotype; Polymorphism, Single Nucleotide},
+  Language                 = {eng},
+  Medline-pst              = {epublish},
+  Owner                    = {Nainan},
+  Pii                      = {1471-2350-8-S1-S17},
+  Pmid                     = {17903299},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1186/1471-2350-8-S1-S17}
+}
+
+@Article{Kryukov2007,
+  Title                    = {Most rare missense alleles are deleterious in humans: implications for complex disease and association studies.},
+  Author                   = {Kryukov, Gregory V. and Pennacchio, Len A. and Sunyaev, Shamil R.},
+  Journal                  = {Am J Hum Genet},
+  Year                     = {2007},
+
+  Month                    = {Apr},
+  Number                   = {4},
+  Pages                    = {727--739},
+  Volume                   = {80},
+
+  Abstract                 = {The accumulation of mildly deleterious missense mutations in individual human genomes has been proposed to be a genetic basis for complex diseases. The plausibility of this hypothesis depends on quantitative estimates of the prevalence of mildly deleterious de novo mutations and polymorphic variants in humans and on the intensity of selective pressure against them. We combined analysis of mutations causing human Mendelian diseases, of human-chimpanzee divergence, and of systematic data on human genetic variation and found that ~20\% of new missense mutations in humans result in a loss of function, whereas ~27\% are effectively neutral. Thus, the remaining 53\% of new missense mutations have mildly deleterious effects. These mutations give rise to many low-frequency deleterious allelic variants in the human population, as is evident from a new data set of 37 genes sequenced in >1,500 individual human chromosomes. Surprisingly, up to 70\% of low-frequency missense alleles are mildly deleterious and are associated with a heterozygous fitness loss in the range 0.001-0.003. Thus, the low allele frequency of an amino acid variant can, by itself, serve as a predictor of its functional significance. Several recent studies have reported a significant excess of rare missense variants in candidate genes or pathways in individuals with extreme values of quantitative phenotypes. These studies would be unlikely to yield results if most rare variants were neutral or if rare variants were not a significant contributor to the genetic component of phenotypic inheritance. Our results provide a justification for these types of candidate-gene (pathway) association studies and imply that mutation-selection balance may be a feasible evolutionary mechanism underlying some common diseases.},
+  Doi                      = {10.1086/513473},
+  Institution              = {Division of Genetics, Department of Medicine, Brigham and Women's Hospital, Boston, MA 02125, USA.},
+  Keywords                 = {Evolution, Molecular; Gene Frequency; Genetic Diseases, Inborn, genetics; Genetic Predisposition to Disease; Genetic Variation; Genetics, Population; Humans; Models, Genetic; Mutation, Missense, genetics},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {S0002-9297(07)61104-5},
+  Pmid                     = {17357078},
+  Timestamp                = {2014.10.17},
+  Url                      = {http://dx.doi.org/10.1086/513473}
+}
+
+@Article{laird1982random,
+  Title                    = {Random-effects models for longitudinal data},
+  Author                   = {Laird, Nan M and Ware, James H},
+  Journal                  = {Biometrics},
+  Year                     = {1982},
+  Pages                    = {963--974},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Random-effects models for longitudinal data.pdf:PDF},
+  Publisher                = {JSTOR}
+}
+
+@Article{liang1986longitudinal,
+  Title                    = {Longitudinal data analysis using generalized linear models},
+  Author                   = {Liang, Kung-Yee and Zeger, Scott L},
+  Journal                  = {Biometrika},
+  Year                     = {1986},
+  Number                   = {1},
+  Pages                    = {13--22},
+  Volume                   = {73},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Biometrika-1986-LIANG-13-22.pdf:PDF},
+  Publisher                = {Biometrika Trust}
+}
+
+@Article{Liu2007,
+  Title                    = {Comparative evaluation of gene-set analysis methods.},
+  Author                   = {Liu, Qi and Dinu, Irina and Adewale, Adeniyi J. and Potter, John D. and Yasui, Yutaka},
+  Journal                  = {BMC Bioinformatics},
+  Year                     = {2007},
+  Pages                    = {431},
+  Volume                   = {8},
+
+  Abstract                 = {Multiple data-analytic methods have been proposed for evaluating gene-expression levels in specific biological pathways, assessing differential expression associated with a binary phenotype. Following Goeman and Bühlmann's recent review, we compared statistical performance of three methods, namely Global Test, ANCOVA Global Test, and SAM-GS, that test "self-contained null hypotheses" Via. subject sampling. The three methods were compared based on a simulation experiment and analyses of three real-world microarray datasets.In the simulation experiment, we found that the use of the asymptotic distribution in the two Global Tests leads to a statistical test with an incorrect size. Specifically, p-values calculated by the scaled chi2 distribution of Global Test and the asymptotic distribution of ANCOVA Global Test are too liberal, while the asymptotic distribution with a quadratic form of the Global Test results in p-values that are too conservative. The two Global Tests with permutation-based inference, however, gave a correct size. While the three methods showed similar power using permutation inference after a proper standardization of gene expression data, SAM-GS showed slightly higher power than the Global Tests. In the analysis of a real-world microarray dataset, the two Global Tests gave markedly different results, compared to SAM-GS, in identifying pathways whose gene expressions are associated with p53 mutation in cancer cell lines. A proper standardization of gene expression variances is necessary for the two Global Tests in order to produce biologically sensible results. After the standardization, the three methods gave very similar biologically-sensible results, with slightly higher statistical significance given by SAM-GS. The three methods gave similar patterns of results in the analysis of the other two microarray datasets.An appropriate standardization makes the performance of all three methods similar, given the use of permutation-based inference. SAM-GS tends to have slightly higher power in the lower alpha-level region (i.e. gene sets that are of the greatest interest). Global Test and ANCOVA Global Test have the important advantage of being able to analyze continuous and survival phenotypes and to adjust for covariates. A free Microsoft Excel Add-In to perform SAM-GS is available from http://www.ualberta.ca/~yyasui/homepage.html.},
+  Doi                      = {10.1186/1471-2105-8-431},
+  Institution              = {School of Public Health, University of Alberta, Edmonton, Alberta, T6G2G3, Canada. qliu@phs.med.ualberta.ca},
+  Keywords                 = {Analysis of Variance; Cell Line, Tumor; Cluster Analysis; Computer Simulation; Data Interpretation, Statistical; Female; Gene Expression; Gene Expression Profiling, methods; Genes, p53; Humans; Leukemia, Myeloid, Acute, genetics; Lymphoma, genetics; Male; Oligonucleotide Array Sequence Analysis, statistics /&/ numerical data; Precursor Cell Lymphoblastic Leukemia-Lymphoma, genetics; Predictive Value of Tests; Reference Standards; Sample Size; Statistical Distributions},
+  Language                 = {eng},
+  Medline-pst              = {epublish},
+  Owner                    = {Nainan},
+  Pii                      = {1471-2105-8-431},
+  Pmid                     = {17988400},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1186/1471-2105-8-431}
+}
+
+@Article{mancl2001covariance,
+  Title                    = {A covariance estimator for GEE with improved small-sample properties},
+  Author                   = {Mancl, Lloyd A and DeRouen, Timothy A},
+  Journal                  = {Biometrics},
+  Year                     = {2001},
+  Number                   = {1},
+  Pages                    = {126--134},
+  Volume                   = {57},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\A Covariance Estimator for GEE with.pdf:PDF},
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{McCarthy2008,
+  Title                    = {Genome-wide association studies for complex traits: consensus, uncertainty and challenges.},
+  Author                   = {McCarthy, Mark I. and Abecasis, Gon{\c{c}}alo R. and Cardon, Lon R. and Goldstein, David B. and Little, Julian and Ioannidis, John P A. and Hirschhorn, Joel N.},
+  Journal                  = {Nat Rev Genet},
+  Year                     = {2008},
+
+  Month                    = {May},
+  Number                   = {5},
+  Pages                    = {356--369},
+  Volume                   = {9},
+
+  Abstract                 = {The past year has witnessed substantial advances in understanding the genetic basis of many common phenotypes of biomedical importance. These advances have been the result of systematic, well-powered, genome-wide surveys exploring the relationships between common sequence variation and disease predisposition. This approach has revealed over 50 disease-susceptibility loci and has provided insights into the allelic architecture of multifactorial traits. At the same time, much has been learned about the successful prosecution of association studies on such a scale. This Review highlights the knowledge gained, defines areas of emerging consensus, and describes the challenges that remain as researchers seek to obtain more complete descriptions of the susceptibility architecture of biomedical traits of interest and to translate the information gathered into improvements in clinical management.},
+  Doi                      = {10.1038/nrg2344},
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Genome-wide association studies for complex traits_ consensus, uncertainty and challenges.pdf:PDF},
+  Institution              = {Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, UK. mark.mccarthy@drl.ox.ac.uk},
+  Keywords                 = {Alleles; Animals; Genetic Diseases, Inborn, genetics; Genetic Predisposition to Disease; Genetic Variation; Genome, Human; Humans; Quantitative Trait Loci; Quantitative Trait, Heritable},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {nrg2344},
+  Pmid                     = {18398418},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1038/nrg2344}
+}
+
+@Article{Melville2012,
+  Title                    = {Multiple loci influencing hippocampal degeneration identified by genome scan},
+  Author                   = {Melville, Scott A and Buros, Jacqueline and Parrado, Antonio R and Vardarajan, Badri and Logue, Mark W and Shen, Li and Risacher, Shannon L and Kim, Sungeun and Jun, Gyungah and DeCarli, Charles and others},
+  Journal                  = {Annals of neurology},
+  Year                     = {2012},
+  Number                   = {1},
+  Pages                    = {65--75},
+  Volume                   = {72},
+
+  Owner                    = {Nainan},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2014.10.19},
+  Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/ana.23644/full}
+}
+
+@Article{Nam2008,
+  Title                    = {Gene-set approach for expression pattern analysis.},
+  Author                   = {Nam, Dougu and Kim, Seon-Young},
+  Journal                  = {Brief Bioinform},
+  Year                     = {2008},
+
+  Month                    = {May},
+  Number                   = {3},
+  Pages                    = {189--197},
+  Volume                   = {9},
+
+  Abstract                 = {Recently developed gene set analysis methods evaluate differential expression patterns of gene groups instead of those of individual genes. This approach especially targets gene groups whose constituents show subtle but coordinated expression changes, which might not be detected by the usual individual gene analysis. The approach has been quite successful in deriving new information from expression data, and a number of methods and tools have been developed intensively in recent years. We review those methods and currently available tools, classify them according to the statistical methods employed, and discuss their pros and cons. We also discuss several interesting extensions to the methods.},
+  Doi                      = {10.1093/bib/bbn001},
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Gene-set approach for expression_Brief Bioinform-2008-Nam-189-97.pdf:PDF},
+  Institution              = {Functional Genomics Research Center, KRIBB, 111 Gwahangno, Yuseong-gu, Daejeon 305-806, Korea.},
+  Keywords                 = {Algorithms; Data Interpretation, Statistical; Gene Expression Profiling, methods; Oligonucleotide Array Sequence Analysis, methods; Software},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {bbn001},
+  Pmid                     = {18202032},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1093/bib/bbn001}
+}
+
+@Article{Nelson2012,
+  Title                    = {An abundance of rare functional variants in 202 drug target genes sequenced in 14,002 people.},
+  Author                   = {Nelson, Matthew R. and Wegmann, Daniel and Ehm, Margaret G. and Kessner, Darren and {St Jean}, Pamela and Verzilli, Claudio and Shen, Judong and Tang, Zhengzheng and Bacanu, Silviu-Alin and Fraser, Dana and Warren, Liling and Aponte, Jennifer and Zawistowski, Matthew and Liu, Xiao and Zhang, Hao and Zhang, Yong and Li, Jun and Li, Yun and Li, Li and Woollard, Peter and Topp, Simon and Hall, Matthew D. and Nangle, Keith and Wang, Jun and Abecasis, Gon{\c{c}}alo and Cardon, Lon R. and Z{\"{o}}llner, Sebastian and Whittaker, John C. and Chissoe, Stephanie L. and Novembre, John and Mooser, Vincent},
+  Journal                  = {Science},
+  Year                     = {2012},
+
+  Month                    = {Jul},
+  Number                   = {6090},
+  Pages                    = {100--104},
+  Volume                   = {337},
+
+  Abstract                 = {Rare genetic variants contribute to complex disease risk; however, the abundance of rare variants in human populations remains unknown. We explored this spectrum of variation by sequencing 202 genes encoding drug targets in 14,002 individuals. We find rare variants are abundant (1 every 17 bases) and geographically localized, so that even with large sample sizes, rare variant catalogs will be largely incomplete. We used the observed patterns of variation to estimate population growth parameters, the proportion of variants in a given frequency class that are putatively deleterious, and mutation rates for each gene. We conclude that because of rapid population growth and weak purifying selection, human populations harbor an abundance of rare variants, many of which are deleterious and have relevance to understanding disease risk.},
+  Doi                      = {10.1126/science.1217876},
+  Institution              = {Department of Quantitative Sciences, GlaxoSmithKline (GSK), Research Triangle Park, NC 27709, USA. matthew.r.nelson@gsk.com},
+  Keywords                 = {African Americans, genetics; Asian Continental Ancestry Group; Disease, genetics; European Continental Ancestry Group, genetics; Gene Frequency; Genetic Association Studies; Genetic Predisposition to Disease; Genetic Variation; Genome, Human; Geography; High-Throughput Nucleotide Sequencing; Humans; Molecular Targeted Therapy; Multifactorial Inheritance; Mutation Rate; Pharmacogenetics; Phenotype; Polymorphism, Single Nucleotide; Population Growth; Sample Size; Selection, Genetic},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {science.1217876},
+  Pmid                     = {22604722},
+  Timestamp                = {2014.10.17},
+  Url                      = {http://dx.doi.org/10.1126/science.1217876}
+}
+
+@Article{Nicolae2010,
+  Title                    = {Trait-associated SNPs are more likely to be eQTLs: annotation to enhance discovery from GWAS.},
+  Author                   = {Nicolae, Dan L. and Gamazon, Eric and Zhang, Wei and Duan, Shiwei and Dolan, M Eileen and Cox, Nancy J.},
+  Journal                  = {PLoS Genet},
+  Year                     = {2010},
+
+  Month                    = {Apr},
+  Number                   = {4},
+  Pages                    = {e1000888},
+  Volume                   = {6},
+
+  Abstract                 = {Although genome-wide association studies (GWAS) of complex traits have yielded more reproducible associations than had been discovered using any other approach, the loci characterized to date do not account for much of the heritability to such traits and, in general, have not led to improved understanding of the biology underlying complex phenotypes. Using a web site we developed to serve results of expression quantitative trait locus (eQTL) studies in lymphoblastoid cell lines from HapMap samples (http://www.scandb.org), we show that single nucleotide polymorphisms (SNPs) associated with complex traits (from http://www.genome.gov/gwastudies/) are significantly more likely to be eQTLs than minor-allele-frequency-matched SNPs chosen from high-throughput GWAS platforms. These findings are robust across a range of thresholds for establishing eQTLs (p-values from 10(-4)-10(-8)), and a broad spectrum of human complex traits. Analyses of GWAS data from the Wellcome Trust studies confirm that annotating SNPs with a score reflecting the strength of the evidence that the SNP is an eQTL can improve the ability to discover true associations and clarify the nature of the mechanism driving the associations. Our results showing that trait-associated SNPs are more likely to be eQTLs and that application of this information can enhance discovery of trait-associated SNPs for complex phenotypes raise the possibility that we can utilize this information both to increase the heritability explained by identifiable genetic factors and to gain a better understanding of the biology underlying complex traits.},
+  Doi                      = {10.1371/journal.pgen.1000888},
+  Institution              = {Department of Medicine, University of Chicago, Chicago, Illinois, United States of America.},
+  Keywords                 = {Genome, Human; Genome-Wide Association Study, methods; Humans; Phenotype; Polymorphism, Single Nucleotide; Quantitative Trait Loci},
+  Language                 = {eng},
+  Medline-pst              = {epublish},
+  Owner                    = {Nainan},
+  Pmid                     = {20369019},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1371/journal.pgen.1000888}
+}
+
+@Article{Pinto2010,
+  Title                    = {Functional impact of global rare copy number variation in autism spectrum disorders.},
+  Author                   = {Pinto, Dalila and Pagnamenta, Alistair T. and Klei, Lambertus and Anney, Richard and Merico, Daniele and Regan, Regina and Conroy, Judith and Magalhaes, Tiago R. and Correia, Catarina and Abrahams, Brett S. and Almeida, Joana and Bacchelli, Elena and Bader, Gary D. and Bailey, Anthony J. and Baird, Gillian and Battaglia, Agatino and Berney, Tom and Bolshakova, Nadia and B{\"{o}}lte, Sven and Bolton, Patrick F. and Bourgeron, Thomas and Brennan, Sean and Brian, Jessica and Bryson, Susan E. and Carson, Andrew R. and Casallo, Guillermo and Casey, Jillian and Chung, Brian H Y. and Cochrane, Lynne and Corsello, Christina and Crawford, Emily L. and Crossett, Andrew and Cytrynbaum, Cheryl and Dawson, Geraldine and {de Jonge}, Maretha and Delorme, Richard and Drmic, Irene and Duketis, Eftichia and Duque, Frederico and Estes, Annette and Farrar, Penny and Fernandez, Bridget A. and Folstein, Susan E. and Fombonne, Eric and Freitag, Christine M. and Gilbert, John and Gillberg, Christopher and Glessner, Joseph T. and Goldberg, Jeremy and Green, Andrew and Green, Jonathan and Guter, Stephen J. and Hakonarson, Hakon and Heron, Elizabeth A. and Hill, Matthew and Holt, Richard and Howe, Jennifer L. and Hughes, Gillian and Hus, Vanessa and Igliozzi, Roberta and Kim, Cecilia and Klauck, Sabine M. and Kolevzon, Alexander and Korvatska, Olena and Kustanovich, Vlad and Lajonchere, Clara M. and Lamb, Janine A. and Laskawiec, Magdalena and Leboyer, Marion and {Le Couteur}, Ann and Leventhal, Bennett L. and Lionel, Anath C. and Liu, Xiao-Qing and Lord, Catherine and Lotspeich, Linda and Lund, Sabata C. and Maestrini, Elena and Mahoney, William and Mantoulan, Carine and Marshall, Christian R. and McConachie, Helen and McDougle, Christopher J. and McGrath, Jane and McMahon, William M. and Merikangas, Alison and Migita, Ohsuke and Minshew, Nancy J. and Mirza, Ghazala K. and Munson, Jeff and Nelson, Stanley F. and Noakes, Carolyn and Noor, Abdul and Nygren, Gudrun and Oliveira, Guiomar and Papanikolaou, Katerina and Parr, Jeremy R. and Parrini, Barbara and Paton, Tara and Pickles, Andrew and Pilorge, Marion and Piven, Joseph and Ponting, Chris P. and Posey, David J. and Poustka, Annemarie and Poustka, Fritz and Prasad, Aparna and Ragoussis, Jiannis and Renshaw, Katy and Rickaby, Jessica and Roberts, Wendy and Roeder, Kathryn and Roge, Bernadette and Rutter, Michael L. and Bierut, Laura J. and Rice, John P. and Salt, Jeff and Sansom, Katherine and Sato, Daisuke and Segurado, Ricardo and Sequeira, Ana F. and Senman, Lili and Shah, Naisha and Sheffield, Val C. and Soorya, Latha and Sousa, In{\^{e}}s and Stein, Olaf and Sykes, Nuala and Stoppioni, Vera and Strawbridge, Christina and Tancredi, Raffaella and Tansey, Katherine and Thiruvahindrapduram, Bhooma and Thompson, Ann P. and Thomson, Susanne and Tryfon, Ana and Tsiantis, John and {Van Engeland}, Herman and Vincent, John B. and Volkmar, Fred and Wallace, Simon and Wang, Kai and Wang, Zhouzhi and Wassink, Thomas H. and Webber, Caleb and Weksberg, Rosanna and Wing, Kirsty and Wittemeyer, Kerstin and Wood, Shawn and Wu, Jing and Yaspan, Brian L. and Zurawiecki, Danielle and Zwaigenbaum, Lonnie and Buxbaum, Joseph D. and Cantor, Rita M. and Cook, Edwin H. and Coon, Hilary and Cuccaro, Michael L. and Devlin, Bernie and Ennis, Sean and Gallagher, Louise and Geschwind, Daniel H. and Gill, Michael and Haines, Jonathan L. and Hallmayer, Joachim and Miller, Judith and Monaco, Anthony P. and Nurnberger, Jr, John I and Paterson, Andrew D. and Pericak-Vance, Margaret A. and Schellenberg, Gerard D. and Szatmari, Peter and Vicente, Astrid M. and Vieland, Veronica J. and Wijsman, Ellen M. and Scherer, Stephen W. and Sutcliffe, James S. and Betancur, Catalina},
+  Journal                  = {Nature},
+  Year                     = {2010},
+
+  Month                    = {Jul},
+  Number                   = {7304},
+  Pages                    = {368--372},
+  Volume                   = {466},
+
+  Abstract                 = {The autism spectrum disorders (ASDs) are a group of conditions characterized by impairments in reciprocal social interaction and communication, and the presence of restricted and repetitive behaviours. Individuals with an ASD vary greatly in cognitive development, which can range from above average to intellectual disability. Although ASDs are known to be highly heritable ( approximately 90\%), the underlying genetic determinants are still largely unknown. Here we analysed the genome-wide characteristics of rare (<1\% frequency) copy number variation in ASD using dense genotyping arrays. When comparing 996 ASD individuals of European ancestry to 1,287 matched controls, cases were found to carry a higher global burden of rare, genic copy number variants (CNVs) (1.19 fold, P = 0.012), especially so for loci previously implicated in either ASD and/or intellectual disability (1.69 fold, P = 3.4 x 10(-4)). Among the CNVs there were numerous de novo and inherited events, sometimes in combination in a given family, implicating many novel ASD genes such as SHANK2, SYNGAP1, DLGAP2 and the X-linked DDX53-PTCHD1 locus. We also discovered an enrichment of CNVs disrupting functional gene sets involved in cellular proliferation, projection and motility, and GTPase/Ras signalling. Our results reveal many new genetic and functional targets in ASD that may lead to final connected pathways.},
+  Doi                      = {10.1038/nature09146},
+  Institution              = {The Centre for Applied Genomics and Program in Genetics and Genomic Biology, The Hospital for Sick Children, Toronto, Ontario M5G 1L7, Canada.},
+  Keywords                 = {Case-Control Studies; Cell Movement; Child; Child Development Disorders, Pervasive, genetics/pathology/physiopathology; Cytoprotection; DNA Copy Number Variations, genetics; Europe, ethnology; Gene Dosage, genetics; Genetic Predisposition to Disease, genetics; Genome-Wide Association Study; Humans; Signal Transduction; Social Behavior},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {nature09146},
+  Pmid                     = {20531469},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1038/nature09146}
+}
+
+@Article{rubin1976inference,
+  Title                    = {Inference and missing data},
+  Author                   = {Rubin, Donald B},
+  Journal                  = {Biometrika},
+  Year                     = {1976},
+  Number                   = {3},
+  Pages                    = {581--592},
+  Volume                   = {63},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Biometrika-1976-RUBIN-581-92.pdf:PDF},
+  Publisher                = {Biometrika Trust}
+}
+
+@Article{Sabatti2008,
+  Title                    = {Genome-wide association analysis of metabolic traits in a birth cohort from a founder population},
+  Author                   = {Sabatti, Chiara and Service, Susan K and Hartikainen, Anna-Liisa and Pouta, Anneli and Ripatti, Samuli and Brodsky, Jae and Jones, Chris G and Zaitlen, Noah A and Varilo, Teppo and Kaakinen, Marika and others},
+  Journal                  = {Nature genetics},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {35--46},
+  Volume                   = {41},
+
+  Owner                    = {Nainan},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://www.nature.com/ng/journal/v41/n1/abs/ng.271.html}
+}
+
+@Article{Sham2014,
+  Title                    = {Statistical power and significance testing in large-scale genetic studies.},
+  Author                   = {Sham, Pak C. and Purcell, Shaun M.},
+  Journal                  = {Nat Rev Genet},
+  Year                     = {2014},
+
+  Month                    = {May},
+  Number                   = {5},
+  Pages                    = {335--346},
+  Volume                   = {15},
+
+  Abstract                 = {Significance testing was developed as an objective method for summarizing statistical evidence for a hypothesis. It has been widely adopted in genetic studies, including genome-wide association studies and, more recently, exome sequencing studies. However, significance testing in both genome-wide and exome-wide studies must adopt stringent significance thresholds to allow multiple testing, and it is useful only when studies have adequate statistical power, which depends on the characteristics of the phenotype and the putative genetic variant, as well as the study design. Here, we review the principles and applications of significance testing and power calculation, including recently proposed gene-based tests for rare variants.},
+  Doi                      = {10.1038/nrg3706},
+  Institution              = { Center for Human Genetic Research, Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts 02114, USA.},
+  Keywords                 = {Case-Control Studies; Data Interpretation, Statistical; Gene Frequency; Genetic Predisposition to Disease, genetics; Genetic Testing, statistics /&/ numerical data; Genome-Wide Association Study, standards/statistics /&/ numerical data; Genotype; Humans; Polymorphism, Single Nucleotide; Sequence Analysis, DNA, methods/statistics /&/ numerical data},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {ThomasYY},
+  Pii                      = {nrg3706},
+  Pmid                     = {24739678},
+  Timestamp                = {2014.10.16},
+  Url                      = {http://dx.doi.org/10.1038/nrg3706}
+}
+
+@Article{Silver2012,
+  Title                    = {Identification of gene pathways implicated in Alzheimer's disease using longitudinal imaging phenotypes with sparse regression},
+  Author                   = {Silver, Matt and Janousova, Eva and Hua, Xue and Thompson, Paul M and Montana, Giovanni},
+  Journal                  = {NeuroImage},
+  Year                     = {2012},
+  Number                   = {3},
+  Pages                    = {1681--1694},
+  Volume                   = {63},
+
+  __markedentry            = {[Nainan:]},
+  Owner                    = {Nainan},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.10.19},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S1053811912007951}
+}
+
+@Article{Song2013,
+  Title                    = {Simulation of longitudinal exposure data with variance-covariance structures based on mixed models.},
+  Author                   = {Song, Peng and Xue, Jianping and Li, Zhilin},
+  Journal                  = {Risk Anal},
+  Year                     = {2013},
+
+  Month                    = {Mar},
+  Number                   = {3},
+  Pages                    = {469--479},
+  Volume                   = {33},
+
+  Abstract                 = {Longitudinal data are important in exposure and risk assessments, especially for pollutants with long half-lives in the human body and where chronic exposures to current levels in the environment raise concerns for human health effects. It is usually difficult and expensive to obtain large longitudinal data sets for human exposure studies. This article reports a new simulation method to generate longitudinal data with flexible numbers of subjects and days. Mixed models are used to describe the variance-covariance structures of input longitudinal data. Based on estimated model parameters, simulation data are generated with similar statistical characteristics compared to the input data. Three criteria are used to determine similarity: the overall mean and standard deviation, the variance components percentages, and the average autocorrelation coefficients. Upon the discussion of mixed models, a simulation procedure is produced and numerical results are shown through one human exposure study. Simulations of three sets of exposure data successfully meet above criteria. In particular, simulations can always retain correct weights of inter- and intrasubject variances as in the input data. Autocorrelations are also well followed. Compared with other simulation algorithms, this new method stores more information about the input overall distribution so as to satisfy the above multiple criteria for statistical targets. In addition, it generates values from numerous data sources and simulates continuous observed variables better than current data methods. This new method also provides flexible options in both modeling and simulation procedures according to various user requirements.},
+  Doi                      = {10.1111/j.1539-6924.2012.01869.x},
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\XUE - HEASD 22-051 - SIMULATION OF LONG....PDF:PDF},
+  Institution              = {Operations Research Program, North Carolina State University, Raleigh, NC, USA.},
+  Keywords                 = {Analysis of Variance; Longitudinal Studies; Models, Theoretical},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pmid                     = {22817762},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1111/j.1539-6924.2012.01869.x}
+}
+
+@Article{Wang2012,
+  Title                    = {From phenotype to genotype: an association study of longitudinal phenotypic markers to Alzheimer's disease relevant SNPs},
+  Author                   = {Wang, Hua and Nie, Feiping and Huang, Heng and Yan, Jingwen and Kim, Sungeun and Nho, Kwangsik and Risacher, Shannon L and Saykin, Andrew J and Shen, Li and others},
+  Journal                  = {Bioinformatics},
+  Year                     = {2012},
+  Number                   = {18},
+  Pages                    = {i619--i625},
+  Volume                   = {28},
+
+  __markedentry            = {[Nainan:6]},
+  Owner                    = {Nainan},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.10.19},
+  Url                      = {http://bioinformatics.oxfordjournals.org/content/28/18/i619.short}
+}
+
+@Article{Wang2010,
+  Title                    = {Analysing biological pathways in genome-wide association studies.},
+  Author                   = {Wang, Kai and Li, Mingyao and Hakonarson, Hakon},
+  Journal                  = {Nat Rev Genet},
+  Year                     = {2010},
+
+  Month                    = {Dec},
+  Number                   = {12},
+  Pages                    = {843--854},
+  Volume                   = {11},
+
+  Abstract                 = {Genome-wide association (GWA) studies have typically focused on the analysis of single markers, which often lacks the power to uncover the relatively small effect sizes conferred by most genetic variants. Recently, pathway-based approaches have been developed, which use prior biological knowledge on gene function to facilitate more powerful analysis of GWA study data sets. These approaches typically examine whether a group of related genes in the same functional pathway are jointly associated with a trait of interest. Here we review the development of pathway-based approaches for GWA studies, discuss their practical use and caveats, and suggest that pathway-based approaches may also be useful for future GWA studies with sequencing data.},
+  Doi                      = {10.1038/nrg2884},
+  Institution              = {Center for Applied Genomics, The Childrens Hospital of Philadelphia, Pennsylvania 19104, USA.},
+  Keywords                 = {Animals; Crohn Disease, genetics/metabolism; Genetic Predisposition to Disease; Genome-Wide Association Study; Humans; Interleukin-12, genetics/immunology; Interleukin-23, genetics/immunology; Polymorphism, Single Nucleotide; Signal Transduction},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pii                      = {nrg2884},
+  Pmid                     = {21085203},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1038/nrg2884}
+}
+
+@Article{wedderburn1974quasi,
+  Title                    = {Quasi-likelihood functions, generalized linear models, and the Gauss—Newton method},
+  Author                   = {Wedderburn, Robert WM},
+  Journal                  = {Biometrika},
+  Year                     = {1974},
+  Number                   = {3},
+  Pages                    = {439--447},
+  Volume                   = {61},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\quasi_wedderburn.pdf:PDF},
+  Publisher                = {Biometrika Trust}
+}
+
+@Article{Weng2011,
+  Title                    = {SNP-based pathway enrichment analysis for genome-wide association studies.},
+  Author                   = {Weng, Lingjie and Macciardi, Fabio and Subramanian, Aravind and Guffanti, Guia and Potkin, Steven G. and Yu, Zhaoxia and Xie, Xiaohui},
+  Journal                  = {BMC Bioinformatics},
+  Year                     = {2011},
+  Pages                    = {99},
+  Volume                   = {12},
+
+  Abstract                 = {Recently we have witnessed a surge of interest in using genome-wide association studies (GWAS) to discover the genetic basis of complex diseases. Many genetic variations, mostly in the form of single nucleotide polymorphisms (SNPs), have been identified in a wide spectrum of diseases, including diabetes, cancer, and psychiatric diseases. A common theme arising from these studies is that the genetic variations discovered by GWAS can only explain a small fraction of the genetic risks associated with the complex diseases. New strategies and statistical approaches are needed to address this lack of explanation. One such approach is the pathway analysis, which considers the genetic variations underlying a biological pathway, rather than separately as in the traditional GWAS studies. A critical challenge in the pathway analysis is how to combine evidences of association over multiple SNPs within a gene and multiple genes within a pathway. Most current methods choose the most significant SNP from each gene as a representative, ignoring the joint action of multiple SNPs within a gene. This approach leads to preferential identification of genes with a greater number of SNPs.We describe a SNP-based pathway enrichment method for GWAS studies. The method consists of the following two main steps: 1) for a given pathway, using an adaptive truncated product statistic to identify all representative (potentially more than one) SNPs of each gene, calculating the average number of representative SNPs for the genes, then re-selecting the representative SNPs of genes in the pathway based on this number; and 2) ranking all selected SNPs by the significance of their statistical association with a trait of interest, and testing if the set of SNPs from a particular pathway is significantly enriched with high ranks using a weighted Kolmogorov-Smirnov test. We applied our method to two large genetically distinct GWAS data sets of schizophrenia, one from European-American (EA) and the other from African-American (AA). In the EA data set, we found 22 pathways with nominal P-value less than or equal to 0.001 and corresponding false discovery rate (FDR) less than 5\%. In the AA data set, we found 11 pathways by controlling the same nominal P-value and FDR threshold. Interestingly, 8 of these pathways overlap with those found in the EA sample. We have implemented our method in a JAVA software package, called SNP Set Enrichment Analysis (SSEA), which contains a user-friendly interface and is freely available at http://cbcl.ics.uci.edu/SSEA.The SNP-based pathway enrichment method described here offers a new alternative approach for analysing GWAS data. By applying it to schizophrenia GWAS studies, we show that our method is able to identify statistically significant pathways, and importantly, pathways that can be replicated in large genetically distinct samples.},
+  Doi                      = {10.1186/1471-2105-12-99},
+  Institution              = {Department of Computer Science, University of California, Irvine, USA.},
+  Keywords                 = {Genetic Variation; Genome-Wide Association Study; Humans; Linkage Disequilibrium; Polymorphism, Single Nucleotide; Research Design; Schizophrenia, ethnology/genetics/physiopathology; Software},
+  Language                 = {eng},
+  Medline-pst              = {epublish},
+  Owner                    = {Nainan},
+  Pii                      = {1471-2105-12-99},
+  Pmid                     = {21496265},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1186/1471-2105-12-99}
+}
+
+@Article{Xu2014,
+  Title                    = {Longitudinal Analysis Is More Powerful than Cross-Sectional Analysis in Detecting Genetic Association with Neuroimaging Phenotypes},
+  Author                   = {Xu, Zhiyuan and Shen, Xiaotong and Pan, Wei and Alzheimer's Disease Neuroimaging Initiative and others},
+  Journal                  = {PloS one},
+  Year                     = {2014},
+  Number                   = {8},
+  Pages                    = {e102312},
+  Volume                   = {9},
+
+  Owner                    = {Nainan},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2014.10.18}
+}
+
+@Article{Ye2011,
+  Title                    = {Detecting multiple causal rare variants in exome sequence data.},
+  Author                   = {Ye, Kenny Q. and Engelman, Corinne D.},
+  Journal                  = {Genet Epidemiol},
+  Year                     = {2011},
+  Pages                    = {S18--S21},
+  Volume                   = {35 Suppl 1},
+
+  Abstract                 = {Recent advances in sequencing technology have presented both opportunities and challenges, with limited statistical power to detect a single causal rare variant with practical sample sizes. To overcome this, the contributors to Group 1 of Genetic Analysis Workshop 17 sought to develop methods to detect the combined signal of multiple causal rare variants in a biologically meaningful way. The contributors used genes, genome location proximity, or genetic pathways as the basic unit in combining the information from multiple variants. Weaknesses of the exome sequence data and the relative strengths and weaknesses of the five approaches are discussed.},
+  Doi                      = {10.1002/gepi.20644},
+  Institution              = {Department of Epidemiology and Population Health, Albert Einstein College of Medicine, Bronx, NY, USA.},
+  Keywords                 = {Causality; Exome, genetics; Genetic Predisposition to Disease; Human Genome Project; Humans; Models, Genetic; Molecular Epidemiology, methods; Polymorphism, Single Nucleotide; Sequence Analysis},
+  Language                 = {eng},
+  Medline-pst              = {ppublish},
+  Owner                    = {Nainan},
+  Pmid                     = {22128053},
+  Timestamp                = {2014.10.18},
+  Url                      = {http://dx.doi.org/10.1002/gepi.20644}
+}
+
+@Article{zeger1986longitudinal,
+  Title                    = {Longitudinal data analysis for discrete and continuous outcomes},
+  Author                   = {Zeger, Scott L and Liang, Kung-Yee},
+  Journal                  = {Biometrics},
+  Year                     = {1986},
+  Pages                    = {121--130},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Longitudinal Data Analysis for Discrete and Continuous Outcomes.pdf:PDF},
+  Publisher                = {JSTOR}
+}
+
+@Article{zeger1988models,
+  Title                    = {Models for longitudinal data: a generalized estimating equation approach},
+  Author                   = {Zeger, Scott L and Liang, Kung-Yee and Albert, Paul S},
+  Journal                  = {Biometrics},
+  Year                     = {1988},
+  Pages                    = {1049--1060},
+
+  File                     = {:C\:\\Users\\ThomasYY\\Google Drive\\Dissertation_proj\\Models for Longitudinal Data A Generalized Estimating Equation Approach1.pdf:PDF},
+  Publisher                = {JSTOR}
+}
+

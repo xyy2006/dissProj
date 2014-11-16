@@ -1,0 +1,275 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage {setspace} %% for line space
+\usepackage[hang,flushmargin]{footmisc} %control footnote indent
+\usepackage{url} % for website links
+\usepackage{amssymb,amsmath}%for matrix
+\usepackage{graphicx}%for figure
+\usepackage{appendix}%for appendix
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{morefloats}%in case there are too many float tables and figures
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\captionsetup[subtable]{font=normal}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
+\setlength{\parindent}{0em}% paragraph indention
+\setlength{\parskip}{0.5em}
+
+\graphicspath{{figure/}}
+
+
+\begin{document}
+%\input{Proposal_draft-concordance}
+%cover page
+\begin{titlepage}
+\title{\normalsize THIS IS YOUR THESIS TITLE}
+\date{}
+\maketitle
+
+{\normalsize
+\begin{center}
+by\\[5mm]
+Your Name, degree\\[10mm]
+APPROVED:\\[10mm]
+\end{center}}
+
+\begin{table}[h]
+\begin{flushright}
+\begin{tabular}{ p{8cm}}
+
+\hline
+Thesis chair, PHD\ \\[0.8cm]
+\hline
+Prof 2, PHD\\[0.8cm]
+\hline
+Minor Prof, PHD\\[0.8cm]
+\hline
+Breadth Prof, PHD\\[0.8cm]
+
+
+\end{tabular}
+\end{flushright}
+\label{default}
+\end{table}
+
+\thispagestyle{empty}
+\pagestyle{empty}
+\end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+Coptyright\\
+by\\
+Your name, degree\\
+YEAR
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{center}
+DEDICATION\\
+xxx\\
+xxx
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{center}
+{\normalsize THESIS TITLE}\\[3.2cm]
+
+by\\[0.5cm]
+
+Your Name, degree\\[3.2cm]
+
+Presented to the Faculty of The University of Texas\\
+School of Public Health\\
+in Partial Fulfillment\\
+of the Requirements\\
+for the Degree of\\[1.5cm]
+DOCTOR OF PHILOSOPHY\\[1.5cm]
+\singlespacing
+THE UNIVERSITY OF TEXAS\\
+SCHOOL OF PULIC HEALTH\\
+Houston, Texas\\
+month, Year
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{center}
+ACKNOWLEDGEMENTS
+\end{center}
+text text text
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{center}
+{\normalsize THESIS TITLE}\\[2.3cm]
+\singlespacing
+Your name, degree\\
+The University of Texas\\
+School of Public Health, YEAR
+\end{center}
+
+\doublespacing
+\noindent
+Thesis Chair, prof's name, PhD\\
+\indent
+text text text
+
+
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoftables
+
+\newpage
+\listoffigures
+ 
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background}\label{sec:background}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\doublespacing
+This is a template for UT SPH Phd proposal based on \LaTeX \cite{lamport1986document}.
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Specific Aims and Hypotheses}\label{sec:aims}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}
+\item One
+
+\item Two
+
+\item ...
+\end{enumerate}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data}\label{sec:data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Methods}\label{sec:method}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Subsection one}\label{sec:subsec1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Subsubsection one}\label{sec:subsub1-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Subsubsection two}\label{sec:subsub1-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Subsection two}\label{sec:subsec2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Subsubsection one}\label{sec:subsub2-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Subsubsection two}\label{sec:subsub2-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Plan for Simulation Studies}\label{sec:simulation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Subsection one}\label{sec:subsimulation1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Subsection two}\label{sec:subsimulation2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[H]
+\begin{center}
+\caption{Example table}
+\begin{tabular}{cccccccccc}
+\hline
+&  & \multicolumn{2}{c}{\emph{A}} && \multicolumn{2}{c}{\emph{B}} & &\multicolumn{2}{c}{\emph{C}} \\
+\cline{3-4}\cline{6-7}\cline{9-10}
+\emph{par}& \emph{truth}& \emph{est}    & \emph{95\% CI} & & \emph{est.}    & \emph{95\% CI}  && \emph{est.} & \emph{95\% CI}\\
+\hline
+$\beta_1$ & 10 &   &( , )& &  & ( , )& &  &( , )\\
+$\beta_2$ & 1 & &( ,  ) & &  & ( , )& &  &( , )\\
+$\beta_3$ & -1 &  &( ,  ) & &  & ( , )& & &( , )\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Subsubsection one}\label{sec:subsimulation2-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{SPH_2c_vert+below_lrg}
+\label{fig: sample}
+\caption{Sample figure.}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\addcontentsline{toc}{section}{References}
+\bibliography{proposal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
