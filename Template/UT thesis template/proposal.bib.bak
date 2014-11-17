@@ -18,7 +18,7 @@
 
   Abstract                 = {Multiple sclerosis (MS) is an inflammatory CNS disease with a substantial genetic component, originally mapped to only the human leukocyte antigen (HLA) region. In the last 5 years, a total of seven genome-wide association studies and one meta-analysis successfully identified 57 non-HLA susceptibility loci. Here, we merged nominal statistical evidence of association and physical evidence of interaction to conduct a protein-interaction-network-based pathway analysis (PINBPA) on two large genetic MS studies comprising a total of 15,317 cases and 29,529 controls. The distribution of nominally significant loci at the gene level matched the patterns of extended linkage disequilibrium in regions of interest. We found that products of genome-wide significantly associated genes are more likely to interact physically and belong to the same or related pathways. We next searched for subnetworks (modules) of genes (and their encoded proteins) enriched with nominally associated loci within each study and identified those modules in common between the two studies. We demonstrate that these modules are more likely to contain genes with bona fide susceptibility variants and, in addition, identify several high-confidence candidates (including BCL10, CD48, REL, TRAF3, and TEC). PINBPA is a powerful approach to gaining further insights into the biology of associated genes and to prioritizing candidates for subsequent genetic studies of complex traits.},
   Doi                      = {10.1016/j.ajhg.2013.04.019},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Network-Based Multiple Sclerosis Pathway Analysis.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Network-Based Multiple Sclerosis Pathway Analysis.pdf:PDF},
   Keywords                 = {Case-Control Studies; Epistasis, Genetic; Genetic Loci; Genetic Predisposition to Disease; Genome-Wide Association Study; Humans; Linkage Disequilibrium; Models, Genetic; Multiple Sclerosis, genetics; Polymorphism, Single Nucleotide; Protein Interaction Maps, genetics; Risk},
   Language                 = {eng},
   Medline-pst              = {ppublish},
@@ -27,6 +27,22 @@
   Pmid                     = {23731539},
   Timestamp                = {2014.11.11},
   Url                      = {http://dx.doi.org/10.1016/j.ajhg.2013.04.019}
+}
+
+@Article{Ashburner2000,
+  Title                    = {Gene Ontology: tool for the unification of biology},
+  Author                   = {Ashburner, Michael and Ball, Catherine A and Blake, Judith A and Botstein, David and Butler, Heather and Cherry, J Michael and Davis, Allan P and Dolinski, Kara and Dwight, Selina S and Eppig, Janan T and others},
+  Journal                  = {Nature genetics},
+  Year                     = {2000},
+  Number                   = {1},
+  Pages                    = {25--29},
+  Volume                   = {25},
+
+  __markedentry            = {[ThomasYY:6]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.16},
+  Url                      = {http://www.nature.com/ng/journal/v25/n1/abs/ng0500_25.html}
 }
 
 @Article{Aulchenko2009,
@@ -90,7 +106,7 @@
 
   Abstract                 = {Genome-wide association studies (GWAS) testing several hundred thousand SNPs have been performed in multiple sclerosis (MS) and other complex diseases. Typically, the number of markers in which the evidence for association exceeds the genome-wide significance threshold is very small, and markers that do not exceed this threshold are generally neglected. Classical statistical analysis of these datasets in MS revealed genes with known immunological functions. However, many of the markers showing modest association may represent false negatives. We hypothesize that certain combinations of genes flagged by these markers can be identified if they belong to a common biological pathway. Here we conduct a pathway-oriented analysis of two GWAS in MS that takes into account all SNPs with nominal evidence of association (P < 0.05). Gene-wise P-values were superimposed on a human protein interaction network and searches were conducted to identify sub-networks containing a higher proportion of genes associated with MS than expected by chance. These sub-networks, and others generated at random as a control, were categorized for membership of biological pathways. GWAS from eight other diseases were analyzed to assess the specificity of the pathways identified. In the MS datasets, we identified sub-networks of genes from several immunological pathways including cell adhesion, communication and signaling. Remarkably, neural pathways, namely axon-guidance and synaptic potentiation, were also over-represented in MS. In addition to the immunological pathways previously identified, we report here for the first time the potential involvement of neural pathways in MS susceptibility.},
   Doi                      = {10.1093/hmg/ddp120},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Hum. Mol. Genet.-2009-Baranzini-2078-90_Pathway and network-based analysis.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Hum. Mol. Genet.-2009-Baranzini-2078-90_Pathway and network-based analysis.pdf:PDF},
   Institution              = {Department of Neurology, School of Medicine, University of California San Francisco, 513 Parnassus Ave. Room S-256, San Francisco, CA 94143-0435, USA. sebaran@cgl.ucsf.edu},
   Keywords                 = {Female; Gene Regulatory Networks; Genetic Predisposition to Disease; Genome-Wide Association Study; Genotype; Humans; Male; Multiple Sclerosis, genetics/immunology/metabolism; Polymorphism, Single Nucleotide; Signal Transduction},
   Language                 = {eng},
@@ -115,7 +131,7 @@
 
   Abstract                 = {In anticipation of the availability of next-generation sequencing data, there is increasing interest in investigating association between complex traits and rare variants (RVs). In contrast to association studies for common variants (CVs), due to the low frequencies of RVs, common wisdom suggests that existing statistical tests for CVs might not work, motivating the recent development of several new tests for analyzing RVs, most of which are based on the idea of pooling/collapsing RVs. However, there is a lack of evaluations of, and thus guidance on the use of, existing tests. Here we provide a comprehensive comparison of various statistical tests using simulated data. We consider both independent and correlated rare mutations, and representative tests for both CVs and RVs. As expected, if there are no or few non-causal (i.e. neutral or non-associated) RVs in a locus of interest while the effects of causal RVs on the trait are all (or mostly) in the same direction (i.e. either protective or deleterious, but not both), then the simple pooled association tests (without selecting RVs and their association directions) and a new test called kernel-based adaptive clustering (KBAC) perform similarly and are most powerful; KBAC is more robust than simple pooled association tests in the presence of non-causal RVs; however, as the number of non-causal CVs increases and/or in the presence of opposite association directions, the winners are two methods originally proposed for CVs and a new test called C-alpha test proposed for RVs, each of which can be regarded as testing on a variance component in a random-effects model. Interestingly, several methods based on sequential model selection (i.e. selecting causal RVs and their association directions), including two new methods proposed here, perform robustly and often have statistical power between those of the above two classes.},
   Doi                      = {10.1002/gepi.20609},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Comparison of Statistical Tests for Disease Association with.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Comparison of Statistical Tests for Disease Association with.pdf:PDF},
   Institution              = {Division of Biostatistics, School of Public Health, University of Minnesota, Minneapolis, Minnesota 55455-0392, USA.},
   Keywords                 = {Data Interpretation, Statistical; Genetic Predisposition to Disease, genetics; Genetic Variation; Humans; Models, Genetic; Models, Statistical; Regression Analysis},
   Language                 = {eng},
@@ -135,7 +151,7 @@
   Pages                    = {534--542},
   Volume                   = {70},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Jama_stataWayToDealWithLongi_Polygenic Risk and the Developmental Progression to Heavy, Persistent Smoking and Nicotine Dependence.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Jama_stataWayToDealWithLongi_Polygenic Risk and the Developmental Progression to Heavy, Persistent Smoking and Nicotine Dependence.pdf:PDF},
   Owner                    = {Nainan},
   Publisher                = {American Medical Association},
   Timestamp                = {2014.10.18},
@@ -151,7 +167,7 @@
   Pages                    = {e1000954},
   Volume                   = {6},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\A Covering Method for Detecting Genetic Associations between Rare Variants and Common Phenotypes.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\A Covering Method for Detecting Genetic Associations between Rare Variants and Common Phenotypes.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
   Timestamp                = {2014.11.12}
@@ -180,8 +196,6 @@
   Number                   = {7367},
   Pages                    = {103--109},
   Volume                   = {478},
-
-  __markedentry            = {[ThomasYY:6]},
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.15},
@@ -201,7 +215,7 @@
 
   Abstract                 = {In recent years, genome-wide association studies (GWAS) and gene-expression profiling have generated a large number of valuable datasets for assessing how genetic variations are related to disease outcomes. With such datasets, it is often of interest to assess the overall effect of a set of genetic markers, assembled based on biological knowledge. Genetic marker-set analyses have been advocated as more reliable and powerful approaches compared with the traditional marginal approaches (Curtis and others, 2005. Pathways to the analysis of microarray data. TRENDS in Biotechnology 23, 429-435; Efroni and others, 2007. Identification of key processes underlying cancer phenotypes using biologic pathway analysis. PLoS One 2, 425). Procedures for testing the overall effect of a marker-set have been actively studied in recent years. For example, score tests derived under an Empirical Bayes (EB) framework (Liu and others, 2007. Semiparametric regression of multidimensional genetic pathway data: least-squares kernel machines and linear mixed models. Biometrics 63, 1079-1088; Liu and others, 2008. Estimation and testing for the effect of a genetic pathway on a disease outcome using logistic kernel machine regression via logistic mixed models. BMC bioinformatics 9, 292-2; Wu and others, 2010. Powerful SNP-set analysis for case-control genome-wide association studies. American Journal of Human Genetics 86, 929) have been proposed as powerful alternatives to the standard Rao score test (Rao, 1948. Large sample tests of statistical hypotheses concerning several parameters with applications to problems of estimation. Mathematical Proceedings of the Cambridge Philosophical Society, 44, 50-57). The advantages of these EB-based tests are most apparent when the markers are correlated, due to the reduction in the degrees of freedom. In this paper, we propose an adaptive score test which up- or down-weights the contributions from each member of the marker-set based on the Z-scores of their effects. Such an adaptive procedure gains power over the existing procedures when the signal is sparse and the correlation among the markers is weak. By combining evidence from both the EB-based score test and the adaptive test, we further construct an omnibus test that attains good power in most settings. The null distributions of the proposed test statistics can be approximated well either via simple perturbation procedures or via distributional approximations. Through extensive simulation studies, we demonstrate that the proposed procedures perform well in finite samples. We apply the tests to a breast cancer genetic study to assess the overall effect of the FGFR2 gene on breast cancer risk.},
   Doi                      = {10.1093/biostatistics/kxs015},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Identifying genetic marker sets associated with phenotypes via an efficient adaptive score test.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Identifying genetic marker sets associated with phenotypes via an efficient adaptive score test.pdf:PDF},
   Institution              = {Department of Biostatistics, Harvard School of Public Health, Boston, MA 02115, USA. tcai@hsph.harvard.edu},
   Keywords                 = {Breast Neoplasms, genetics; Computer Simulation; Data Interpretation, Statistical; Female; Genetic Markers, genetics; Humans; Phenotype; Polymorphism, Single Nucleotide; Receptor, Fibroblast Growth Factor, Type 2, genetics},
   Language                 = {eng},
@@ -267,7 +281,7 @@
   Pages                    = {977--986},
   Volume                   = {91},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\An Exponential Combination Procedure for set-Based association tests in sequencing studies.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\An Exponential Combination Procedure for set-Based association tests in sequencing studies.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Timestamp                = {2014.11.14}
@@ -308,7 +322,7 @@
 
   Abstract                 = {In the setting of genome-wide association studies, we propose a method for assigning a measure of significance to pre-defined sets of markers in the genome. The sets can be genes, conserved regions, or groups of genes such as pathways. Using the proposed methods and algorithms, evidence for association between a particular functional unit and a disease status can be obtained not just by the presence of a strong signal from a SNP within it, but also by the combination of several simultaneous weaker signals that are not strongly correlated. This approach has several advantages. First, moderately strong signals from different SNPs are combined to obtain a much stronger signal for the set, therefore increasing power. Second, in combination with methods that provide information on untyped markers, it leads to results that can be readily combined across studies and platforms that might use different SNPs. Third, the results are easy to interpret, since they refer to functional sets of markers that are likely to behave as a unit in their phenotypic effect. Finally, the availability of gene-level P-values for association is the first step in developing methods that integrate information from pathways and networks with genome-wide association data, and these can lead to a better understanding of the complex traits genetic architecture. The power of the approach is investigated in simulated and real datasets. Novel Crohn's disease associations are found using the WTCCC data.},
   Doi                      = {10.1002/gepi.20452},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Gene, region and pathway level analyses in whole-genome studies.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Gene, region and pathway level analyses in whole-genome studies.pdf:PDF},
   Institution              = {Department of Statistics, The University of Chicago, Chicago, Illinois 60637, USA.},
   Keywords                 = {Computer Simulation; Crohn Disease, genetics; Genome, Human; Genome-Wide Association Study, methods; Genotype; Humans; Models, Genetic; Models, Statistical; Molecular Epidemiology; Phenotype; Polymorphism, Single Nucleotide},
   Language                 = {eng},
@@ -359,7 +373,7 @@
   Pages                    = {398--409},
   Volume                   = {35},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Detecting rare and common variants for complex traits_sibpair and odds ratio weighted sum statistics (SPWSS, ORWSS).pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Detecting rare and common variants for complex traits_sibpair and odds ratio weighted sum statistics (SPWSS, ORWSS).pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.13},
@@ -488,7 +502,7 @@
   Pages                    = {3479--3495},
   Volume                   = {24},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Small-sample performance of the robust score test and its.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Small-sample performance of the robust score test and its.pdf:PDF},
   Publisher                = {Wiley Online Library}
 }
 
@@ -501,7 +515,7 @@
   Pages                    = {42--54},
   Volume                   = {70},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\ssu_Pan.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\ssu_Pan.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Karger Publishers},
   Timestamp                = {2014.11.12}
@@ -515,8 +529,6 @@
   Number                   = {17},
   Pages                    = {1699},
   Volume                   = {360},
-
-  __markedentry            = {[ThomasYY:6]},
   Owner                    = {ThomasYY},
   Timestamp                = {2014.11.15}
 }
@@ -529,8 +541,6 @@
   Number                   = {2},
   Pages                    = {95--108},
   Volume                   = {6},
-
-  __markedentry            = {[ThomasYY:]},
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.15},
@@ -546,7 +556,7 @@
   Pages                    = {e13584},
   Volume                   = {5},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Comprehensive approach to analyzing rare genetic variants.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Comprehensive approach to analyzing rare genetic variants.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
   Timestamp                = {2014.11.12}
@@ -575,7 +585,7 @@
   Pages                    = {622--634},
   Volume                   = {37},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\VAAST 2.0_ Improved Variant Classification and Disease-Gene Identification Using a Conservation-Controlled Amino Acid Substitution Matrix.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\VAAST 2.0_ Improved Variant Classification and Disease-Gene Identification Using a Conservation-Controlled Amino Acid Substitution Matrix.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.13},
@@ -588,7 +598,7 @@
   Journal                  = {Nature biotechnology},
   Year                     = {2014},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Unified-test-of-linkage-analysis-and-rare-variant-association-for-analysis-of-pedigree-sequence-data.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Unified-test-of-linkage-analysis-and-rare-variant-association-for-analysis-of-pedigree-sequence-data.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.13},
@@ -604,7 +614,7 @@
   Pages                    = {e1001289},
   Volume                   = {7},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\A new testing strategy to identify rare variants with either risk or protective effect on disease.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\A new testing strategy to identify rare variants with either risk or protective effect on disease.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
   Review                   = {Replication-based test—Ionita-Laza et al (2011) proposed a new test called replicationbased
@@ -746,7 +756,7 @@ and a real sequence dataset on Type-1 diabetes.},
   Year                     = {1982},
   Pages                    = {963--974},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Random-effects models for longitudinal data.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Random-effects models for longitudinal data.pdf:PDF},
   Publisher                = {JSTOR}
 }
 
@@ -763,6 +773,7 @@ and a real sequence dataset on Type-1 diabetes.},
 
   Abstract                 = {We propose in this paper a unified approach for testing the association between rare variants and phenotypes in sequencing association studies. This approach maximizes power by adaptively using the data to optimally combine the burden test and the nonburden sequence kernel association test (SKAT). Burden tests are more powerful when most variants in a region are causal and the effects are in the same direction, whereas SKAT is more powerful when a large fraction of the variants in a region are noncausal or the effects of causal variants are in different directions. The proposed unified test maintains the power in both scenarios. We show that the unified test corresponds to the optimal test in an extended family of SKAT tests, which we refer to as SKAT-O. The second goal of this paper is to develop a small-sample adjustment procedure for the proposed methods for the correction of conservative type I error rates of SKAT family tests when the trait of interest is dichotomous and the sample size is small. Both small-sample-adjusted SKAT and the optimal unified test (SKAT-O) are computationally efficient and can easily be applied to genome-wide sequencing association studies. We evaluate the finite sample performance of the proposed methods using extensive simulation studies and illustrate their application using the acute-lung-injury exome-sequencing data of the National Heart, Lung, and Blood Institute Exome Sequencing Project.},
   Doi                      = {10.1016/j.ajhg.2012.06.007},
+  File                     = {:D\:\\Dissertation_proj\\Optimal unified approach for rare-variant association testing with application to small-sample case-control whole-exome sequencing studies (SKAT-O)..pdf:PDF},
   Institution              = {Department of Biostatistics, Harvard School of Public Health, Boston, MA 02115, USA.},
   Keywords                 = {Case-Control Studies; Computer Simulation; Data Interpretation, Statistical; Exome, genetics; Genetic Association Studies, methods; Genetic Variation; Humans; Models, Genetic; Rare Diseases, genetics; Sequence Analysis, DNA, methods},
   Language                 = {eng},
@@ -787,6 +798,7 @@ and a real sequence dataset on Type-1 diabetes.},
 
   Abstract                 = {With development of massively parallel sequencing technologies, there is a substantial need for developing powerful rare variant association tests. Common approaches include burden and non-burden tests. Burden tests assume all rare variants in the target region have effects on the phenotype in the same direction and of similar magnitude. The recently proposed sequence kernel association test (SKAT) (Wu, M. C., and others, 2011. Rare-variant association testing for sequencing data with the SKAT. The American Journal of Human Genetics 89, 82-93], an extension of the C-alpha test (Neale, B. M., and others, 2011. Testing for an unusual distribution of rare variants. PLoS Genetics 7, 161-165], provides a robust test that is particularly powerful in the presence of protective and deleterious variants and null variants, but is less powerful than burden tests when a large number of variants in a region are causal and in the same direction. As the underlying biological mechanisms are unknown in practice and vary from one gene to another across the genome, it is of substantial practical interest to develop a test that is optimal for both scenarios. In this paper, we propose a class of tests that include burden tests and SKAT as special cases, and derive an optimal test within this class that maximizes power. We show that this optimal test outperforms burden tests and SKAT in a wide range of scenarios. The results are illustrated using simulation studies and triglyceride data from the Dallas Heart Study. In addition, we have derived sample size/power calculation formula for SKAT with a new family of kernels to facilitate designing new sequence association studies.},
   Doi                      = {10.1093/biostatistics/kxs014},
+  File                     = {:D\:\\Dissertation_proj\\Optimal tests for rare variant effects in sequencing association studies (SKAT-O).pdf:PDF},
   Institution              = {Department of Biostatistics, Harvard School of Public Health, Boston, MA 02115, USA.},
   Keywords                 = {Computer Simulation; Data Interpretation, Statistical; Genetic Association Studies, methods; Genetic Variation; Humans; Sample Size; Sequence Analysis, DNA, methods},
   Language                 = {eng},
@@ -811,7 +823,7 @@ and a real sequence dataset on Type-1 diabetes.},
 
   Abstract                 = {Although whole-genome association studies using tagSNPs are a powerful approach for detecting common variants, they are underpowered for detecting associations with rare variants. Recent studies have demonstrated that common diseases can be due to functional variants with a wide spectrum of allele frequencies, ranging from rare to common. An effective way to identify rare variants is through direct sequencing. The development of cost-effective sequencing technologies enables association studies to use sequence data from candidate genes and, in the future, from the entire genome. Although methods used for analysis of common variants are applicable to sequence data, their performance might not be optimal. In this study, it is shown that the collapsing method, which involves collapsing genotypes across variants and applying a univariate test, is powerful for analyzing rare variants, whereas multivariate analysis is robust against inclusion of noncausal variants. Both methods are superior to analyzing each variant individually with univariate tests. In order to unify the advantages of both collapsing and multiple-marker tests, we developed the Combined Multivariate and Collapsing (CMC) method and demonstrated that the CMC method is both powerful and robust. The CMC method can be applied to either candidate-gene or whole-genome sequence data.},
   Doi                      = {10.1016/j.ajhg.2008.06.024},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Methods for Detecting Associations with Rare Variants for Common Diseases_ Application to Analysis of Sequence Data.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Methods for Detecting Associations with Rare Variants for Common Diseases_ Application to Analysis of Sequence Data.pdf:PDF},
   Institution              = {Department of Molecular and Human Genetics, Baylor College of Medicine, Houston, TX 77030, USA.},
   Keywords                 = {Genetic Markers; Genetic Predisposition to Disease; Genetic Variation; Genome, Human; Haplotypes; Humans; Linkage Disequilibrium; Models, Genetic; Polymorphism, Single Nucleotide},
   Language                 = {eng},
@@ -832,7 +844,7 @@ and a real sequence dataset on Type-1 diabetes.},
   Pages                    = {13--22},
   Volume                   = {73},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Biometrika-1986-LIANG-13-22.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Biometrika-1986-LIANG-13-22.pdf:PDF},
   Publisher                = {Biometrika Trust}
 }
 
@@ -845,7 +857,7 @@ and a real sequence dataset on Type-1 diabetes.},
   Pages                    = {354--367},
   Volume                   = {89},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\A General Framework for Detecting Disease Associations with Rare Variants in Sequencing Studies.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\A General Framework for Detecting Disease Associations with Rare Variants in Sequencing Studies.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Review                   = {a general framework for association testing which combined strength from MB test and VT test to form the most powerful test while setting the weight function $\epsilon$ proportional to the set of regression coefficients $\beta$ in the limit
@@ -879,7 +891,7 @@ known as EREC method},
 
   Abstract                 = {There is solid evidence that rare variants contribute to complex disease etiology. Next-generation sequencing technologies make it possible to uncover rare variants within candidate genes, exomes, and genomes. Working in a novel framework, the kernel-based adaptive cluster (KBAC) was developed to perform powerful gene/locus based rare variant association testing. The KBAC combines variant classification and association testing in a coherent framework. Covariates can also be incorporated in the analysis to control for potential confounders including age, sex, and population substructure. To evaluate the power of KBAC: 1) variant data was simulated using rigorous population genetic models for both Europeans and Africans, with parameters estimated from sequence data, and 2) phenotypes were generated using models motivated by complex diseases including breast cancer and Hirschsprung's disease. It is demonstrated that the KBAC has superior power compared to other rare variant analysis methods, such as the combined multivariate and collapsing and weight sum statistic. In the presence of variant misclassification and gene interaction, association testing using KBAC is particularly advantageous. The KBAC method was also applied to test for associations, using sequence data from the Dallas Heart Study, between energy metabolism traits and rare variants in ANGPTL 3,4,5 and 6 genes. A number of novel associations were identified, including the associations of high density lipoprotein and very low density lipoprotein with ANGPTL4. The KBAC method is implemented in a user-friendly R package.},
   Doi                      = {10.1371/journal.pgen.1001156},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\journal.pgen.1001156_A Novel Adaptive Method for the Analysis of Next-Generation Sequencing Data to Detect Complex Trait Associations with Rare Variants Due to Gene Main Effects and Interactions.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\journal.pgen.1001156_A Novel Adaptive Method for the Analysis of Next-Generation Sequencing Data to Detect Complex Trait Associations with Rare Variants Due to Gene Main Effects and Interactions.pdf:PDF},
   Institution              = {Department of Molecular and Human Genetics, Baylor College of Medicine, Houston, Texas, USA.},
   Keywords                 = {African Americans, genetics; Algorithms; Angiopoietins, genetics; Computational Biology, methods; Computer Simulation; Energy Metabolism, genetics; European Continental Ancestry Group, genetics; Genetic Predisposition to Disease, genetics; Genetic Variation; Humans; Monte Carlo Method; Reproducibility of Results; Sequence Analysis, DNA, methods/statistics /&/ numerical data},
   Language                 = {eng},
@@ -920,7 +932,7 @@ known as EREC method},
   Pages                    = {1099--1108},
   Volume                   = {21},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Genome Res.-2011-Luo-1099-108_Association studies for next-generation sequencing.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Genome Res.-2011-Luo-1099-108_Association studies for next-generation sequencing.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Cold Spring Harbor Lab},
   Timestamp                = {2014.11.13},
@@ -936,7 +948,7 @@ known as EREC method},
   Pages                    = {217--224},
   Volume                   = {21},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\ejhg2012141a.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\ejhg2012141a.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.13},
@@ -952,7 +964,7 @@ known as EREC method},
   Pages                    = {513--524},
   Volume                   = {49},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\J Med Genet-2012-Luo-513-24.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\J Med Genet-2012-Luo-513-24.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {BMJ Publishing Group Ltd},
   Timestamp                = {2014.11.13},
@@ -972,7 +984,7 @@ known as EREC method},
 
   Abstract                 = {Resequencing is an emerging tool for identification of rare disease-associated mutations. Rare mutations are difficult to tag with SNP genotyping, as genotyping studies are designed to detect common variants. However, studies have shown that genetic heterogeneity is a probable scenario for common diseases, in which multiple rare mutations together explain a large proportion of the genetic basis for the disease. Thus, we propose a weighted-sum method to jointly analyse a group of mutations in order to test for groupwise association with disease status. For example, such a group of mutations may result from resequencing a gene. We compare the proposed weighted-sum method to alternative methods and show that it is powerful for identifying disease-associated genes, both on simulated and Encode data. Using the weighted-sum method, a resequencing study can identify a disease-associated gene with an overall population attributable risk (PAR) of 2\%, even when each individual mutation has much lower PAR, using 1,000 to 7,000 affected and unaffected individuals, depending on the underlying genetic model. This study thus demonstrates that resequencing studies can identify important genetic associations, provided that specialised analysis methods, such as the weighted-sum method, are used.},
   Doi                      = {10.1371/journal.pgen.1000384},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\journal.pgen.1000384_A Groupwise Association Test for Rare Mutations Using a.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\journal.pgen.1000384_A Groupwise Association Test for Rare Mutations Using a.pdf:PDF},
   Institution              = {Bioinformatics Research Center, University of Aarhus, Aarhus C, Denmark.},
   Keywords                 = {DNA Mutational Analysis; Genetic Predisposition to Disease; Genetic Testing, methods; Genetic Variation; Genetics, Population, methods; Humans; Models, Statistical; Mutation},
   Language                 = {eng},
@@ -992,7 +1004,7 @@ known as EREC method},
   Pages                    = {126--134},
   Volume                   = {57},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\A Covariance Estimator for GEE with.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\A Covariance Estimator for GEE with.pdf:PDF},
   Publisher                = {Wiley Online Library}
 }
 
@@ -1009,7 +1021,7 @@ known as EREC method},
 
   Abstract                 = {The past year has witnessed substantial advances in understanding the genetic basis of many common phenotypes of biomedical importance. These advances have been the result of systematic, well-powered, genome-wide surveys exploring the relationships between common sequence variation and disease predisposition. This approach has revealed over 50 disease-susceptibility loci and has provided insights into the allelic architecture of multifactorial traits. At the same time, much has been learned about the successful prosecution of association studies on such a scale. This Review highlights the knowledge gained, defines areas of emerging consensus, and describes the challenges that remain as researchers seek to obtain more complete descriptions of the susceptibility architecture of biomedical traits of interest and to translate the information gathered into improvements in clinical management.},
   Doi                      = {10.1038/nrg2344},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Genome-wide association studies for complex traits_ consensus, uncertainty and challenges.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Genome-wide association studies for complex traits_ consensus, uncertainty and challenges.pdf:PDF},
   Institution              = {Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, UK. mark.mccarthy@drl.ox.ac.uk},
   Keywords                 = {Alleles; Animals; Genetic Diseases, Inborn, genetics; Genetic Predisposition to Disease; Genetic Variation; Genome, Human; Humans; Quantitative Trait Loci; Quantitative Trait, Heritable},
   Language                 = {eng},
@@ -1034,6 +1046,21 @@ known as EREC method},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.10.19},
   Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/ana.23644/full}
+}
+
+@Article{Menashe2010,
+  Title                    = {Pathway analysis of breast cancer genome-wide association study highlights three pathways and one canonical signaling cascade},
+  Author                   = {Menashe, Idan and Maeder, Dennis and Garcia-Closas, Montserrat and Figueroa, Jonine D and Bhattacharjee, Samsiddhi and Rotunno, Melissa and Kraft, Peter and Hunter, David J and Chanock, Stephen J and Rosenberg, Philip S and others},
+  Journal                  = {Cancer research},
+  Year                     = {2010},
+  Number                   = {11},
+  Pages                    = {4453--4459},
+  Volume                   = {70},
+  File                     = {:D\:\\Dissertation_proj\\Pathway analysis of breast cancer genome-wide association study highlights three pathways and one canonical signaling cascade.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {AACR},
+  Timestamp                = {2014.11.15},
+  Url                      = {http://cancerres.aacrjournals.org/content/70/11/4453.short}
 }
 
 @Article{Morgenthaler2007,
@@ -1073,7 +1100,7 @@ known as EREC method},
 
   Abstract                 = {Recently developed gene set analysis methods evaluate differential expression patterns of gene groups instead of those of individual genes. This approach especially targets gene groups whose constituents show subtle but coordinated expression changes, which might not be detected by the usual individual gene analysis. The approach has been quite successful in deriving new information from expression data, and a number of methods and tools have been developed intensively in recent years. We review those methods and currently available tools, classify them according to the statistical methods employed, and discuss their pros and cons. We also discuss several interesting extensions to the methods.},
   Doi                      = {10.1093/bib/bbn001},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Gene-set approach for expression_Brief Bioinform-2008-Nam-189-97.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Gene-set approach for expression_Brief Bioinform-2008-Nam-189-97.pdf:PDF},
   Institution              = {Functional Genomics Research Center, KRIBB, 111 Gwahangno, Yuseong-gu, Daejeon 305-806, Korea.},
   Keywords                 = {Algorithms; Data Interpretation, Statistical; Gene Expression Profiling, methods; Oligonucleotide Array Sequence Analysis, methods; Software},
   Language                 = {eng},
@@ -1094,7 +1121,7 @@ known as EREC method},
   Pages                    = {e1001322},
   Volume                   = {7},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Testing for an Unusual Distribution of Rare Variants.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Testing for an Unusual Distribution of Rare Variants.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
   Review                   = {c-alpha test},
@@ -1148,6 +1175,22 @@ known as EREC method},
   Url                      = {http://dx.doi.org/10.1371/journal.pgen.1000888}
 }
 
+@Article{Nishimura2001,
+  Title                    = {BioCarta},
+  Author                   = {Nishimura, Darryl},
+  Journal                  = {Biotech Software \& Internet Report: The Computer Software Journal for Scient},
+  Year                     = {2001},
+  Number                   = {3},
+  Pages                    = {117--120},
+  Volume                   = {2},
+
+  __markedentry            = {[ThomasYY:]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Mary Ann Liebert, Inc.},
+  Timestamp                = {2014.11.15},
+  Url                      = {http://online.liebertpub.com/doi/pdf/10.1089/152791601750294344}
+}
+
 @Article{ODushlaine2009,
   Title                    = {The SNP ratio test: pathway analysis of genome-wide association datasets.},
   Author                   = {O'Dushlaine, Colm and Kenny, Elaine and Heron, Elizabeth A. and Segurado, Ricardo and Gill, Michael and Morris, Derek W. and Corvin, Aiden},
@@ -1161,7 +1204,7 @@ known as EREC method},
 
   Abstract                 = {We present a tool that assesses the enrichment of significant associations from genome-wide association studies (GWAS) in a pathway context. The SNP ratio test (SRT) compares the proportion of significant to all SNPs within genes that are part of a pathway and computes an empirical P-value based on comparisons to ratios in datasets where the assignment of case/control status has been randomized. We applied the SRT to a Parkinson's disease GWAS dataset, using the KEGG database, revealing significance for Parkinson's disease and related pathways.https://sourceforge.net/projects/snpratiotest/},
   Doi                      = {10.1093/bioinformatics/btp448},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Bioinformatics-2009-O'Dushlaine-2762-3_The SNP ratio test_ pathway analysis of genome-wide.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Bioinformatics-2009-O'Dushlaine-2762-3_The SNP ratio test_ pathway analysis of genome-wide.pdf:PDF},
   Institution              = {Neuropsychiatric Genetics Research Group, Department of Psychiatry, Trinity College Dublin, Ireland. codushlaine@gmail.com},
   Keywords                 = {Computational Biology, methods; Databases, Genetic; Genome; Genome-Wide Association Study, methods; Humans; Parkinson Disease, genetics; Polymorphism, Single Nucleotide},
   Language                 = {eng},
@@ -1171,6 +1214,20 @@ known as EREC method},
   Pmid                     = {19620097},
   Timestamp                = {2014.11.11},
   Url                      = {http://dx.doi.org/10.1093/bioinformatics/btp448}
+}
+
+@Article{Ogata1999,
+  Title                    = {KEGG: Kyoto encyclopedia of genes and genomes},
+  Author                   = {Ogata, Hiroyuki and Goto, Susumu and Sato, Kazushige and Fujibuchi, Wataru and Bono, Hidemasa and Kanehisa, Minoru},
+  Journal                  = {Nucleic acids research},
+  Year                     = {1999},
+  Number                   = {1},
+  Pages                    = {29--34},
+  Volume                   = {27},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.15},
+  Url                      = {http://nar.oxfordjournals.org/content/27/1/29.short}
 }
 
 @Article{Oualkacha2013,
@@ -1205,7 +1262,7 @@ known as EREC method},
   Pages                    = {497--507},
   Volume                   = {33},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Asymptotic tests of association with multiple SNPs in linkage disequilibrium.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Asymptotic tests of association with multiple SNPs in linkage disequilibrium.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Review                   = {The SSU test original},
@@ -1222,7 +1279,7 @@ known as EREC method},
   Pages                    = {901--906},
   Volume                   = {88},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\WeiPan_GeePooledVariance_biometrika.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\WeiPan_GeePooledVariance_biometrika.pdf:PDF},
   Publisher                = {Biometrika Trust}
 }
 
@@ -1233,7 +1290,7 @@ known as EREC method},
   Year                     = {2014},
   Pages                    = {genetics--114},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\aspu_project\\Pan2014_aSPU_publishedOn_Genetics.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Pan2014_aSPU_publishedOn_Genetics.pdf:PDF},
   Publisher                = {Genetics Soc America}
 }
 
@@ -1250,7 +1307,7 @@ known as EREC method},
 
   Abstract                 = {In anticipation of the availability of next-generation sequencing data, there has been increasing interest in association analysis of rare variants (RVs). Owing to the extremely low frequency of a RV, single variant-based analysis and many existing tests developed for common variants may not be suitable. Hence, it is of interest to develop powerful statistical tests to assess association between complex traits and RVs with sequence data. Recently, a pooled association test based on variable thresholds (VT) was proposed and shown to be more powerful than some existing tests (Price et al. [2010] Am J Hum Genet 86:832-838). In this study, we generalize the VT test of Price et al. in several aspects. We propose a general class of adaptive tests that covers the VT test of Price et al. as a special case. In particular, we show that some of our proposed adaptive tests may substantially improve the power over the pooled association tests, including the VT test of Price et al., especially so in the presence of many neutral RVs and/or of causal RVs with opposite association directions, in which cases most of the existing pooled association tests suffer from significant loss of power. Our proposed tests are also general and flexible with the ability to incorporate weights on RVs and to adjust for covariates.},
   Doi                      = {10.1002/gepi.20586},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Adaptive Tests for Association Analysis of Rare Variants.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Adaptive Tests for Association Analysis of Rare Variants.pdf:PDF},
   Institution              = {Division of Biostatistics, School of Public Health, University of Minnesota, Minneapolis, MN 55455–0392, USA. weip@biostat.umn.edu},
   Keywords                 = {Gene Frequency; Genetic Variation; Genome-Wide Association Study, statistics /&/ numerical data; Humans; Linkage Disequilibrium; Logistic Models; Models, Genetic; Models, Statistical; Odds Ratio},
   Language                 = {eng},
@@ -1273,7 +1330,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pages                    = {111--117},
   Volume                   = {18},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\ejhg2009115a_geneNpathway_GPeng.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\ejhg2009115a_geneNpathway_GPeng.pdf:PDF},
   Publisher                = {Nature Publishing Group}
 }
 
@@ -1334,7 +1391,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
 
   Abstract                 = {Deep sequencing will soon generate comprehensive sequence information in large disease samples. Although the power to detect association with an individual rare variant is limited, pooling variants by gene or pathway into a composite test provides an alternative strategy for identifying susceptibility genes. We describe a statistical method for detecting association of multiple rare variants in protein-coding genes with a quantitative or dichotomous trait. The approach is based on the regression of phenotypic values on individuals' genotype scores subject to a variable allele-frequency threshold, incorporating computational predictions of the functional effects of missense variants. Statistical significance is assessed by permutation testing with variable thresholds. We used a rigorous population-genetics simulation framework to evaluate the power of the method, and we applied the method to empirical sequencing data from three disease studies.},
   Doi                      = {10.1016/j.ajhg.2010.04.005},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Pooled association tests for rare variants.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Pooled association tests for rare variants.pdf:PDF},
   Institution              = {Department of Epidemiology, Harvard School of Public Health, Boston, MA 02115, USA.},
   Keywords                 = {Exons; Gene Frequency; Genetic Variation; Genetics, Population, methods; Genome-Wide Association Study, methods; Humans; Models, Genetic; Models, Statistical},
   Language                 = {eng},
@@ -1390,7 +1447,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pages                    = {581--592},
   Volume                   = {63},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Biometrika-1976-RUBIN-581-92.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Biometrika-1976-RUBIN-581-92.pdf:PDF},
   Publisher                = {Biometrika Trust}
 }
 
@@ -1473,7 +1530,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
 
   Abstract                 = {Longitudinal data are important in exposure and risk assessments, especially for pollutants with long half-lives in the human body and where chronic exposures to current levels in the environment raise concerns for human health effects. It is usually difficult and expensive to obtain large longitudinal data sets for human exposure studies. This article reports a new simulation method to generate longitudinal data with flexible numbers of subjects and days. Mixed models are used to describe the variance-covariance structures of input longitudinal data. Based on estimated model parameters, simulation data are generated with similar statistical characteristics compared to the input data. Three criteria are used to determine similarity: the overall mean and standard deviation, the variance components percentages, and the average autocorrelation coefficients. Upon the discussion of mixed models, a simulation procedure is produced and numerical results are shown through one human exposure study. Simulations of three sets of exposure data successfully meet above criteria. In particular, simulations can always retain correct weights of inter- and intrasubject variances as in the input data. Autocorrelations are also well followed. Compared with other simulation algorithms, this new method stores more information about the input overall distribution so as to satisfy the above multiple criteria for statistical targets. In addition, it generates values from numerous data sources and simulates continuous observed variables better than current data methods. This new method also provides flexible options in both modeling and simulation procedures according to various user requirements.},
   Doi                      = {10.1111/j.1539-6924.2012.01869.x},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\XUE - HEASD 22-051 - SIMULATION OF LONG....PDF:PDF},
+  File                     = {:D\:\\Dissertation_proj\\XUE - HEASD 22-051 - SIMULATION OF LONG....PDF:PDF},
   Institution              = {Operations Research Program, North Carolina State University, Raleigh, NC, USA.},
   Keywords                 = {Analysis of Variance; Longitudinal Studies; Models, Theoretical},
   Language                 = {eng},
@@ -1497,7 +1554,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
 
   Abstract                 = {The advent of next generation sequencing technologies allows one to discover nearly all rare variants in a genomic region of interest. This technological development increases the need for an effective statistical method for testing the aggregated effect of rare variants in a gene on disease susceptibility. The idea behind this approach is that if a certain gene is involved in a disease, many rare variants within the gene will disrupt the function of the gene and are associated with the disease. In this article, we present the rare variant weighted aggregate statistic (RWAS), a method that groups rare variants and computes a weighted sum of differences between case and control mutation counts. We show that our method outperforms the groupwise association test of Madsen and Browning in the disease-risk model that assumes that each variant makes an equally small contribution to disease risk. In addition, we can incorporate prior information into our method of which variants are likely causal. By using simulated data and real mutation screening data of the susceptibility gene for ataxia telangiectasia, we demonstrate that prior information has a substantial influence on the statistical power of association studies. Our method is publicly available at http://genetics.cs.ucla.edu/rarevariants.},
   Doi                      = {10.1534/genetics.110.125070},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\An Optimal Weighted Aggregated Association Test for Identiﬁcation.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\An Optimal Weighted Aggregated Association Test for Identiﬁcation.pdf:PDF},
   Institution              = {Computer Science Department, University of California, Los Angeles, CA 90095, USA.},
   Keywords                 = {Disease, genetics; Genes; Genetic Variation; Genome-Wide Association Study, methods; Humans; Models, Genetic; Mutation, genetics; Risk Factors},
   Language                 = {eng},
@@ -1518,7 +1575,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pages                    = {334--344},
   Volume                   = {37},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\A Uniﬁed Mixed-Effects Model for Rare-Variant Association in Sequencing Studies.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\A Uniﬁed Mixed-Effects Model for Rare-Variant Association in Sequencing Studies.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.14},
@@ -1556,7 +1613,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pages                    = {S56--S60},
   Volume                   = {35},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\genePathway_associationTest.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\genePathway_associationTest.pdf:PDF},
   Publisher                = {Wiley Online Library}
 }
 
@@ -1596,7 +1653,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pages                    = {1278--1283},
   Volume                   = {81},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Pathway-Based Approaches for Analysis of Genomewide.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Pathway-Based Approaches for Analysis of Genomewide.pdf:PDF},
   Publisher                = {Elsevier}
 }
 
@@ -1613,7 +1670,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
 
   Abstract                 = {Genome-wide association (GWA) studies have typically focused on the analysis of single markers, which often lacks the power to uncover the relatively small effect sizes conferred by most genetic variants. Recently, pathway-based approaches have been developed, which use prior biological knowledge on gene function to facilitate more powerful analysis of GWA study data sets. These approaches typically examine whether a group of related genes in the same functional pathway are jointly associated with a trait of interest. Here we review the development of pathway-based approaches for GWA studies, discuss their practical use and caveats, and suggest that pathway-based approaches may also be useful for future GWA studies with sequencing data.},
   Doi                      = {10.1038/nrg2884},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Analysing biological pathways in GWAS.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Analysing biological pathways in GWAS.pdf:PDF},
   Institution              = {Center for Applied Genomics, The Childrens Hospital of Philadelphia, Pennsylvania 19104, USA.},
   Keywords                 = {Animals; Crohn Disease, genetics/metabolism; Genetic Predisposition to Disease; Genome-Wide Association Study; Humans; Interleukin-12, genetics/immunology; Interleukin-23, genetics/immunology; Polymorphism, Single Nucleotide; Signal Transduction},
   Language                 = {eng},
@@ -1648,7 +1705,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pages                    = {353--360},
   Volume                   = {80},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Improved Power by Use of a Weighted Score Test for Linkage Disequilibrium Mapping.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Improved Power by Use of a Weighted Score Test for Linkage Disequilibrium Mapping.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Review                   = {called weighted score test
@@ -1666,7 +1723,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {778--786},
   Volume                   = {37},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\GEE_KLM_GeneticEpi2013.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\GEE_KLM_GeneticEpi2013.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.13},
@@ -1682,7 +1739,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {439--447},
   Volume                   = {61},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\quasi_wedderburn.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\quasi_wedderburn.pdf:PDF},
   Publisher                = {Biometrika Trust}
 }
 
@@ -1734,7 +1791,7 @@ genotypes and minimizes the DF at one},
 
   Abstract                 = {GWAS have emerged as popular tools for identifying genetic variants that are associated with disease risk. Standard analysis of a case-control GWAS involves assessing the association between each individual genotyped SNP and disease risk. However, this approach suffers from limited reproducibility and difficulties in detecting multi-SNP and epistatic effects. As an alternative analytical strategy, we propose grouping SNPs together into SNP sets on the basis of proximity to genomic features such as genes or haplotype blocks, then testing the joint effect of each SNP set. Testing of each SNP set proceeds via the logistic kernel-machine-based test, which is based on a statistical framework that allows for flexible modeling of epistatic and nonlinear SNP effects. This flexibility and the ability to naturally adjust for covariate effects are important features of our test that make it appealing in comparison to individual SNP tests and existing multimarker tests. Using simulated data based on the International HapMap Project, we show that SNP-set testing can have improved power over standard individual-SNP analysis under a wide range of settings. In particular, we find that our approach has higher power than individual-SNP analysis when the median correlation between the disease-susceptibility variant and the genotyped SNPs is moderate to high. When the correlation is low, both individual-SNP analysis and the SNP-set analysis tend to have low power. We apply SNP-set analysis to analyze the Cancer Genetic Markers of Susceptibility (CGEMS) breast cancer GWAS discovery-phase data.},
   Doi                      = {10.1016/j.ajhg.2010.05.002},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Powerful SNP-Set Analysis for Case-Control_wu2010.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Powerful SNP-Set Analysis for Case-Control_wu2010.pdf:PDF},
   Institution              = {Department of Biostatistics, The University of North Carolina at Chapel Hill, Chapel Hill, NC 27599, USA.},
   Keywords                 = {Breast Neoplasms, genetics; Genetic Markers; Genetic Predisposition to Disease; Genome-Wide Association Study, methods; Humans; Polymorphism, Single Nucleotide; Statistics as Topic},
   Language                 = {eng},
@@ -1759,7 +1816,7 @@ genotypes and minimizes the DF at one},
 
   Abstract                 = {Sequencing studies are increasingly being conducted to identify rare variants associated with complex traits. The limited power of classical single-marker association analysis for rare variants poses a central challenge in such studies. We propose the sequence kernel association test (SKAT), a supervised, flexible, computationally efficient regression method to test for association between genetic variants (common and rare) in a region and a continuous or dichotomous trait while easily adjusting for covariates. As a score-based variance-component test, SKAT can quickly calculate p values analytically by fitting the null model containing only the covariates, and so can easily be applied to genome-wide data. Using SKAT to analyze a genome-wide sequencing study of 1000 individuals, by segmenting the whole genome into 30 kb regions, requires only 7 hr on a laptop. Through analysis of simulated data across a wide range of practical scenarios and triglyceride data from the Dallas Heart Study, we show that SKAT can substantially outperform several alternative rare-variant association tests. We also provide analytic power and sample-size calculations to help design candidate-gene, whole-exome, and whole-genome sequence association studies.},
   Doi                      = {10.1016/j.ajhg.2011.05.029},
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Rare-variant association testing for sequencing data with the sequence kernel association test.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Rare-variant association testing for sequencing data with the sequence kernel association test.pdf:PDF},
   Institution              = {Department of Biostatistics, The University of North Carolina at Chapel Hill, 27599, USA.},
   Keywords                 = {Computer Simulation; Databases, Genetic; Gene Frequency; Genetic Association Studies, methods; Genetic Loci; Genetic Variation; Humans; Models, Genetic; Sequence Analysis, methods; Software},
   Language                 = {eng},
@@ -1780,7 +1837,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {e102312},
   Volume                   = {9},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Xu2014_longi.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Xu2014_longi.pdf:PDF},
   Owner                    = {Nainan},
   Publisher                = {Public Library of Science},
   Timestamp                = {2014.10.18}
@@ -1795,7 +1852,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {1529--1542},
   Volume                   = {21},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\VAAST.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\VAAST.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Cold Spring Harbor Lab},
   Timestamp                = {2014.11.13},
@@ -1844,7 +1901,7 @@ genotypes and minimizes the DF at one},
   Year                     = {1986},
   Pages                    = {121--130},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Longitudinal Data Analysis for Discrete and Continuous Outcomes.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Longitudinal Data Analysis for Discrete and Continuous Outcomes.pdf:PDF},
   Publisher                = {JSTOR}
 }
 
@@ -1855,7 +1912,7 @@ genotypes and minimizes the DF at one},
   Year                     = {1988},
   Pages                    = {1049--1060},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Models for Longitudinal Data A Generalized Estimating Equation Approach1.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Models for Longitudinal Data A Generalized Estimating Equation Approach1.pdf:PDF},
   Publisher                = {JSTOR}
 }
 
@@ -1890,7 +1947,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {e14288},
   Volume                   = {5},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Efficient utilization of rare variants for detection of Disease-related genomic regions.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Efficient utilization of rare variants for detection of Disease-related genomic regions.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
   Timestamp                = {2014.11.12}
@@ -1905,7 +1962,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {679--685},
   Volume                   = {35},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\A data-driven method for identifying rare variants with heterogeneous trait effects.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\A data-driven method for identifying rare variants with heterogeneous trait effects.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.14},
@@ -1920,7 +1977,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {309--325},
   Volume                   = {96},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\aspu_project\\neuroimage_YIwei_multi_single.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\neuroimage_YIwei_multi_single.pdf:PDF},
   Publisher                = {Elsevier}
 }
 
@@ -1944,8 +2001,6 @@ genotypes and minimizes the DF at one},
   Number                   = {4},
   Pages                    = {581--591},
   Volume                   = {86},
-
-  __markedentry            = {[ThomasYY:6]},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Timestamp                = {2014.11.15}
@@ -1960,7 +2015,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {2375},
   Volume                   = {26},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Association screening of common and rare genetic variants by penalized regression.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Association screening of common and rare genetic variants by penalized regression.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Oxford University Press},
   Timestamp                = {2014.11.12}
@@ -1975,7 +2030,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {171--187},
   Volume                   = {34},
 
-  File                     = {:C\:\\Users\\xyy20_000\\Google Drive\\Dissertation_proj\\Detecting rare variants for complex traits using family and unrelated data.pdf:PDF},
+  File                     = {:D\:\\Dissertation_proj\\Detecting rare variants for complex traits using family and unrelated data.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.12},
@@ -1989,12 +2044,15 @@ genotypes and minimizes the DF at one},
 1 ExplicitGroup:RV association test methods\;0\;Basu2011\;Chen2012\;De
 rkach2013\;Fan2013\;Han2010\;Lee2012\;Li2008\;Lin2011\;Pan2009\;Pan201
 1\;Sun2013\;Zhang2011\;pan2014powerful\;zhang2014testing\;;
-1 ExplicitGroup:pathway_geneSet\;0\;2013\;Baranzini2009\;Biernacka2011
-\;BloodPressureGenome-WideAssociationStudies2011\;Chen2010\;DelaCruz20
-10\;Fridley2010\;Fridley2011\;Goeman2007\;Hirschhorn2009\;Holmans2009\
-;Liu2007\;Nam2008\;ODushlaine2009\;Purcell2007\;Ritchie2009\;Silver201
-2\;Wang2010\;Wang2011\;Wei2012\;Weng2011\;Yu2009\;Zhong2010\;peng2009g
-ene\;wang2007pathway\;;
+1 ExplicitGroup:pathway_geneSet\;0\;2013\;Ashburner2000\;Baranzini2009
+\;Biernacka2011\;BloodPressureGenome-WideAssociationStudies2011\;Chen2
+010\;DelaCruz2010\;Fridley2010\;Fridley2011\;Goeman2007\;Hirschhorn200
+9\;Holmans2009\;Kanehisa2000\;Liu2007\;Menashe2010\;Nam2008\;Nishimura
+2001\;ODushlaine2009\;Ogata1999\;Purcell2007\;Ritchie2009\;Silver2012\
+;Wang2010\;Wang2011\;Wei2012\;Wei2012a\;Weng2011\;Yu2009\;Zhong2010\;p
+eng2009gene\;wang2007pathway\;;
+1 ExplicitGroup:pathway_annotation_resource\;0\;Ashburner2000\;Nishimu
+ra2001\;Ogata1999\;;
 1 ExplicitGroup:review_of_GWAS\;0\;Hirschhorn2005\;McCarthy2008\;;
 }
 

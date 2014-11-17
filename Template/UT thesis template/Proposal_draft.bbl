@@ -93,6 +93,13 @@ Feng, T., Elston, R.~C., and Zhu, X. (2011).
   odds ratio weighted sum statistics (spwss, orwss).
 \newblock {\em Genetic epidemiology}, 35(5):398--409.
 
+\bibitem[for Blood Pressure Genome-Wide Association~Studies et~al.,
+  2011]{BloodPressureGenome-WideAssociationStudies2011}
+for Blood Pressure Genome-Wide Association~Studies, I.~C. et~al. (2011).
+\newblock Genetic variants in novel pathways influence blood pressure and
+  cardiovascular disease risk.
+\newblock {\em Nature}, 478(7367):103--109.
+
 \bibitem[Fu et~al., 2013]{Fu2013}
 Fu, W., O'Connor, T.~D., Jun, G., Kang, H.~M., Abecasis, G., Leal, S.~M.,
   Gabriel, S., Rieder, M.~J., Altshuler, D., Shendure, J., Nickerson, D.~A.,
@@ -123,6 +130,17 @@ Han, F. and Pan, W. (2010).
 \newblock A data-adaptive sum test for disease association with multiple common
   or rare variants.
 \newblock {\em Human heredity}, 70(1):42--54.
+
+\bibitem[Hirschhorn, 2009]{Hirschhorn2009}
+Hirschhorn, J.~N. (2009).
+\newblock Genomewide association studies--illuminating biologic pathways.
+\newblock {\em New England Journal of Medicine}, 360(17):1699.
+
+\bibitem[Hirschhorn and Daly, 2005]{Hirschhorn2005}
+Hirschhorn, J.~N. and Daly, M.~J. (2005).
+\newblock Genome-wide association studies for common diseases and complex
+  traits.
+\newblock {\em Nature Reviews Genetics}, 6(2):95--108.
 
 \bibitem[Hoffmann et~al., 2010]{Hoffmann2010}
 Hoffmann, T.~J., Marini, N.~J., and Witte, J.~S. (2010).
@@ -279,6 +297,18 @@ Neale, B.~M., Rivas, M.~A., Voight, B.~F., Altshuler, D., Devlin, B.,
   M.~J. (2011).
 \newblock Testing for an unusual distribution of rare variants.
 \newblock {\em PLoS genetics}, 7(3):e1001322.
+
+\bibitem[Nishimura, 2001]{Nishimura2001}
+Nishimura, D. (2001).
+\newblock Biocarta.
+\newblock {\em Biotech Software \& Internet Report: The Computer Software
+  Journal for Scient}, 2(3):117--120.
+
+\bibitem[Ogata et~al., 1999]{Ogata1999}
+Ogata, H., Goto, S., Sato, K., Fujibuchi, W., Bono, H., and Kanehisa, M.
+  (1999).
+\newblock Kegg: Kyoto encyclopedia of genes and genomes.
+\newblock {\em Nucleic acids research}, 27(1):29--34.
 
 \bibitem[Oualkacha et~al., 2013]{Oualkacha2013}
 Oualkacha, K., Dastani, Z., Li, R., Cingolani, P.~E., Spector, T.~D., Hammond,
@@ -494,6 +524,12 @@ Zhang, Y., Xu, Z., Shen, X., and Pan, W. (2014).
 \newblock Testing for association with multiple traits in generalized
   estimation equations, with application to neuroimaging data.
 \newblock {\em NeuroImage}, 96:309--325.
+
+\bibitem[Zhong et~al., 2010]{Zhong2010}
+Zhong, H., Yang, X., Kaplan, L.~M., Molony, C., and Schadt, E.~E. (2010).
+\newblock Integrating pathway analysis and genetics of gene expression for
+  genome-wide association studies.
+\newblock {\em The American Journal of Human Genetics}, 86(4):581--591.
 
 \bibitem[Zhou et~al., 2010]{Zhou2010}
 Zhou, H., Sehl, M.~E., Sinsheimer, J.~S., and Lange, K. (2010).
