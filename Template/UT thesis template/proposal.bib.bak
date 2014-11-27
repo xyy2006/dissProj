@@ -29,6 +29,21 @@
   Url                      = {http://dx.doi.org/10.1016/j.ajhg.2013.04.019}
 }
 
+@Article{Ansorge2009,
+  Title                    = {Next-generation DNA sequencing techniques},
+  Author                   = {Ansorge, Wilhelm J},
+  Journal                  = {New biotechnology},
+  Year                     = {2009},
+  Number                   = {4},
+  Pages                    = {195--203},
+  Volume                   = {25},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S1871678409000089}
+}
+
 @Article{Ashburner2000,
   Title                    = {Gene Ontology: tool for the unification of biology},
   Author                   = {Ashburner, Michael and Ball, Catherine A and Blake, Judith A and Botstein, David and Butler, Heather and Cherry, J Michael and Davis, Allan P and Dolinski, Kara and Dwight, Selina S and Eppig, Janan T and others},
@@ -38,7 +53,6 @@
   Pages                    = {25--29},
   Volume                   = {25},
 
-  __markedentry            = {[ThomasYY:6]},
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.16},
@@ -196,6 +210,7 @@
   Number                   = {7367},
   Pages                    = {103--109},
   Volume                   = {478},
+
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.15},
@@ -227,6 +242,21 @@
   Url                      = {http://dx.doi.org/10.1093/biostatistics/kxs015}
 }
 
+@Article{Cantor2010,
+  Title                    = {Prioritizing GWAS results: a review of statistical methods and recommendations for their application},
+  Author                   = {Cantor, Rita M and Lange, Kenneth and Sinsheimer, Janet S},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2010},
+  Number                   = {1},
+  Pages                    = {6--22},
+  Volume                   = {86},
+
+  File                     = {:D\:\\Dissertation_proj\\Prioritizing GWAS Results_ A Review of Statistical Methods and recommendations for their application.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.11.19}
+}
+
 @Article{Capanu2011,
   Title                    = {Assessment of rare BRCA1 and BRCA2 variants of unknown significance using hierarchical modeling.},
   Author                   = {Capanu, Marinela and Concannon, Patrick and Haile, Robert W. and Bernstein, Leslie and Malone, Kathleen E. and Lynch, Charles F. and Liang, Xiaolin and Teraoka, Sharon N. and Diep, Anh T. and Thomas, Duncan C. and Bernstein, Jonine L. and , W. E. C. A. R. E Study Collaborative Group and Begg, Colin B.},
@@ -250,6 +280,51 @@
   Url                      = {http://dx.doi.org/10.1002/gepi.20587}
 }
 
+@Article{Cardon2001,
+  Title                    = {Association study designs for complex diseases},
+  Author                   = {Cardon, Lon R and Bell, John I},
+  Journal                  = {Nature Reviews Genetics},
+  Year                     = {2001},
+  Number                   = {2},
+  Pages                    = {91--99},
+  Volume                   = {2},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.nature.com/nrg/journal/v2/n2/abs/nrg0201_091a.html}
+}
+
+@Article{Chai2009,
+  Title                    = {GLOSSI: a method to assess the association of genetic loci-sets with complex diseases},
+  Author                   = {Chai, High-Seng and Sicotte, Hugues and Bailey, Kent R and Turner, Stephen T and Asmann, Yan W and Kocher, Jean-Pierre A},
+  Journal                  = {BMC bioinformatics},
+  Year                     = {2009},
+  Number                   = {1},
+  Pages                    = {102},
+  Volume                   = {10},
+
+  File                     = {:D\:\\Dissertation_proj\\GLOSSI_ a method to assess the association of.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {BioMed Central Ltd},
+  Timestamp                = {2014.11.18}
+}
+
+@Article{Chambless1997,
+  Title                    = {Association of coronary heart disease incidence with carotid arterial wall thickness and major risk factors: the Atherosclerosis Risk in Communities (ARIC) Study, 1987--1993},
+  Author                   = {Chambless, Lloyd E and Heiss, Gerardo and Folsom, Aaron R and Rosamond, Wayne and Szklo, Moyses and Sharrett, A Richey and Clegg, Limin X},
+  Journal                  = {American journal of epidemiology},
+  Year                     = {1997},
+  Number                   = {6},
+  Pages                    = {483--494},
+  Volume                   = {146},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.20},
+  Url                      = {http://aje.oxfordjournals.org/content/146/6/483.short}
+}
+
 @Article{Chen2014,
   Title                    = {Testing genetic association with rare and common variants in family data.},
   Author                   = {Chen, Han and Malzahn, D{\"{o}}rthe and Balliu, Brunilda and Li, Cong and Bailey, Julia N.},
@@ -270,6 +345,22 @@
   Pmid                     = {25112186},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1002/gepi.21823}
+}
+
+@Article{Chen2009,
+  Title                    = {Prioritizing risk pathways: a novel association approach to searching for disease pathways fusing SNPs and pathways},
+  Author                   = {Chen, Lina and Zhang, Liangcai and Zhao, Yan and Xu, Liangde and Shang, Yukui and Wang, Qian and Li, Wan and Wang, Hong and Li, Xia},
+  Journal                  = {Bioinformatics},
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {237--242},
+  Volume                   = {25},
+
+  File                     = {:D\:\\Dissertation_proj\\Prioritizing risk pathways_ a novel association approach to searching for disease pathways fusing SNPs and pathways.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://bioinformatics.oxfordjournals.org/content/25/2/237.short}
 }
 
 @Article{Chen2012,
@@ -296,9 +387,66 @@
   Pages                    = {860--871},
   Volume                   = {86},
 
+  File                     = {:D\:\\Dissertation_proj\\Insights into colon cancer etiology via a regularized approach to gene set analysis of GWAS data.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Timestamp                = {2014.11.14}
+}
+
+@Article{Chen2010a,
+  Title                    = {Pathway-based analysis for genome-wide association studies using supervised principal components},
+  Author                   = {Chen, Xi and Wang, Lily and Hu, Bo and Guo, Mingsheng and Barnard, John and Zhu, Xiaofeng},
+  Journal                  = {Genetic epidemiology},
+  Year                     = {2010},
+  Number                   = {7},
+  Pages                    = {716--724},
+  Volume                   = {34},
+
+  File                     = {:D\:\\Dissertation_proj\\Pathway-based analysis for genome-wide association studies using supervised principal components.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/gepi.20532/full}
+}
+
+@Article{Cheng1999,
+  Title                    = {A multilocus genotyping assay for candidate markers of cardiovascular disease risk},
+  Author                   = {Cheng, Suzanne and Grow, Michael A and Pallaud, C{\'e}line and Klitz, William and Erlich, Henry A and Visvikis, Sophia and Chen, John J and Pullinger, Clive R and Malloy, Mary J and Siest, G{\'e}rard and others},
+  Journal                  = {Genome research},
+  Year                     = {1999},
+  Number                   = {10},
+  Pages                    = {936--949},
+  Volume                   = {9},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Cold Spring Harbor Lab},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://genome.cshlp.org/content/9/10/936.short}
+}
+
+@Article{Consortium2013,
+  Title                    = {Discovery and refinement of loci associated with lipid levels},
+  Author                   = {Global Lipids Genetics Consortium and others},
+  Journal                  = {Nature genetics},
+  Year                     = {2013},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.24},
+  Url                      = {http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.2797.html}
+}
+
+@Article{Cortes2011,
+  Title                    = {Promise and pitfalls of the Immunochip},
+  Author                   = {Cortes, Adrian and Brown, Matthew A},
+  Journal                  = {Arthritis Res Ther},
+  Year                     = {2011},
+  Number                   = {1},
+  Pages                    = {101},
+  Volume                   = {13},
+
+  Owner                    = {ThomasYY},
+  Timestamp                = {2014.11.18}
 }
 
 @Book{cox1989analysis,
@@ -307,6 +455,19 @@
   Publisher                = {CRC Press},
   Year                     = {1989},
   Volume                   = {32}
+}
+
+@Article{Craig2008,
+  Title                    = {Complex diseases: Research and applications},
+  Author                   = {Craig, J and others},
+  Journal                  = {Nature Education},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {184},
+  Volume                   = {1},
+
+  Owner                    = {ThomasYY},
+  Timestamp                = {2014.11.19}
 }
 
 @Article{DelaCruz2010,
@@ -333,6 +494,19 @@
   Url                      = {http://dx.doi.org/10.1002/gepi.20452}
 }
 
+@Article{DennisJr2003,
+  Title                    = {DAVID: database for annotation, visualization, and integrated discovery},
+  Author                   = {Dennis Jr, Glynn and Sherman, Brad T and Hosack, Douglas A and Yang, Jun and Gao, Wei and Lane, H Clifford and Lempicki, Richard A and others},
+  Journal                  = {Genome biol},
+  Year                     = {2003},
+  Number                   = {5},
+  Pages                    = {P3},
+  Volume                   = {4},
+
+  Owner                    = {ThomasYY},
+  Timestamp                = {2014.11.18}
+}
+
 @Article{Derkach2013,
   Title                    = {Robust and powerful tests for rare variants using Fisher's method to combine evidence of association from two or more complementary tests},
   Author                   = {Derkach, Andriy and Lawless, Jerry F and Sun, Lei},
@@ -347,6 +521,21 @@
   Review                   = {a robust and powerful test using Fisher's method to combine linear and quadratic statistics},
   Timestamp                = {2014.11.14},
   Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/gepi.21689/full}
+}
+
+@Article{Eichler2010,
+  Title                    = {Missing heritability and strategies for finding the underlying causes of complex disease},
+  Author                   = {Eichler, Evan E and Flint, Jonathan and Gibson, Greg and Kong, Augustine and Leal, Suzanne M and Moore, Jason H and Nadeau, Joseph H},
+  Journal                  = {Nature Reviews Genetics},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {446--450},
+  Volume                   = {11},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.nature.com/nrg/journal/v11/n6/abs/nrg2809.html}
 }
 
 @Article{Fan2013,
@@ -389,6 +578,7 @@
   Pages                    = {837--843},
   Volume                   = {19},
 
+  File                     = {:D\:\\Dissertation_proj\\Gene set analysis of SNP data_ beneﬁts, challenges, and future directions.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.14},
@@ -405,6 +595,7 @@
 
   Abstract                 = {Gene set methods aim to assess the overall evidence of association of a set of genes with a phenotype, such as disease or a quantitative trait. Multiple approaches for gene set analysis of expression data have been proposed. They can be divided into two types: competitive and self-contained. Benefits of self-contained methods include that they can be used for genome-wide, candidate gene, or pathway studies, and have been reported to be more powerful than competitive methods. We therefore investigated ten self-contained methods that can be used for continuous, discrete and time-to-event phenotypes. To assess the power and type I error rate for the various previously proposed and novel approaches, an extensive simulation study was completed in which the scenarios varied according to: number of genes in a gene set, number of genes associated with the phenotype, effect sizes, correlation between expression of genes within a gene set, and the sample size. In addition to the simulated data, the various methods were applied to a pharmacogenomic study of the drug gemcitabine. Simulation results demonstrated that overall Fisher's method and the global model with random effects have the highest power for a wide range of scenarios, while the analysis based on the first principal component and Kolmogorov-Smirnov test tended to have lowest power. The methods investigated here are likely to play an important role in identifying pathways that contribute to complex traits.},
   Doi                      = {10.1371/journal.pone.0012693},
+  File                     = {:D\:\\Dissertation_proj\\Self-Contained Gene-Set Analysis of Expression Data_ An Evaluation of Existing and Novel Methods.pdf:PDF},
   Institution              = {Department of Health Sciences Research, Mayo Clinic, Rochester, Minnesota, USA. fridley.brooke@mayo.edu},
   Keywords                 = {Animals; Computer Simulation; Databases, Genetic; Gene Expression; Gene Expression Profiling, methods/standards; Humans; Phenotype},
   Language                 = {eng},
@@ -467,6 +658,7 @@
 
   Abstract                 = {Many statistical tests have been proposed in recent years for analyzing gene expression data in terms of gene sets, usually from Gene Ontology. These methods are based on widely different methodological assumptions. Some approaches test differential expression of each gene set against differential expression of the rest of the genes, whereas others test each gene set on its own. Also, some methods are based on a model in which the genes are the sampling units, whereas others treat the subjects as the sampling units. This article aims to clarify the assumptions behind different approaches and to indicate a preferential methodology of gene set testing.We identify some crucial assumptions which are needed by the majority of methods. P-values derived from methods that use a model which takes the genes as the sampling unit are easily misinterpreted, as they are based on a statistical model that does not resemble the biological experiment actually performed. Furthermore, because these models are based on a crucial and unrealistic independence assumption between genes, the P-values derived from such methods can be wildly anti-conservative, as a simulation experiment shows. We also argue that methods that competitively test each gene set against the rest of the genes create an unnecessary rift between single gene testing and gene set testing.},
   Doi                      = {10.1093/bioinformatics/btm051},
+  File                     = {:D\:\\Dissertation_proj\\Analyzing gene expression data in terms of gene sets_ methodological issues.pdf:PDF},
   Institution              = {Department of Medical Statistics and Bioinformatics, Leiden University Medical Center, Leiden, The Netherlands. j.j.goeman@lumc.nl},
   Keywords                 = {Algorithms; Artifacts; Data Interpretation, Statistical; Databases, Genetic; Gene Expression Profiling, methods; Information Storage and Retrieval, methods; Reproducibility of Results; Sensitivity and Specificity},
   Language                 = {eng},
@@ -521,6 +713,21 @@
   Timestamp                = {2014.11.12}
 }
 
+@Article{Hindorff2009,
+  Title                    = {Potential etiologic and functional implications of genome-wide association loci for human diseases and traits},
+  Author                   = {Hindorff, Lucia A and Sethupathy, Praveen and Junkins, Heather A and Ramos, Erin M and Mehta, Jayashri P and Collins, Francis S and Manolio, Teri A},
+  Journal                  = {Proceedings of the National Academy of Sciences},
+  Year                     = {2009},
+  Number                   = {23},
+  Pages                    = {9362--9367},
+  Volume                   = {106},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {National Acad Sciences},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.pnas.org/content/106/23/9362.short}
+}
+
 @Article{Hirschhorn2009,
   Title                    = {Genomewide association studies--illuminating biologic pathways},
   Author                   = {Hirschhorn, Joel N},
@@ -529,6 +736,7 @@
   Number                   = {17},
   Pages                    = {1699},
   Volume                   = {360},
+
   Owner                    = {ThomasYY},
   Timestamp                = {2014.11.15}
 }
@@ -541,6 +749,7 @@
   Number                   = {2},
   Pages                    = {95--108},
   Volume                   = {6},
+
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.15},
@@ -562,6 +771,22 @@
   Timestamp                = {2014.11.12}
 }
 
+@Article{Holden2008,
+  Title                    = {GSEA-SNP: applying gene set enrichment analysis to SNP data from genome-wide association studies},
+  Author                   = {Holden, Marit and Deng, Shiwei and Wojnowski, Leszek and Kulle, Bettina},
+  Journal                  = {Bioinformatics},
+  Year                     = {2008},
+  Number                   = {23},
+  Pages                    = {2784--2785},
+  Volume                   = {24},
+
+  File                     = {:D\:\\Dissertation_proj\\GSEA–SNP_ applying gene set enrichment analysis to SNP data from genome-wide association studies.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://bioinformatics.oxfordjournals.org/content/24/23/2784.short}
+}
+
 @Article{Holmans2009,
   Title                    = {Gene ontology analysis of GWA study data sets provides insights into the biology of bipolar disorder},
   Author                   = {Holmans, Peter and Green, Elaine K and Pahwa, Jaspreet Singh and Ferreira, Manuel AR and Purcell, Shaun M and Sklar, Pamela and Owen, Michael J and O'Donovan, Michael C and Craddock, Nick},
@@ -571,6 +796,7 @@
   Pages                    = {13--24},
   Volume                   = {85},
 
+  File                     = {:D\:\\Dissertation_proj\\Gene Ontology Analysis of GWA Study Data Sets provides insights into the biology of bipolar disorder.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Timestamp                = {2014.11.14}
@@ -715,6 +941,20 @@ and a real sequence dataset on Type-1 diabetes.},
   Url                      = {http://dx.doi.org/10.1186/1471-2350-8-S1-S17}
 }
 
+@Article{Keating2008,
+  Title                    = {Concept, design and implementation of a cardiovascular gene-centric 50 k SNP array for large-scale genomic association studies},
+  Author                   = {Keating, Brendan J and Tischfield, Sam and Murray, Sarah S and Bhangale, Tushar and Price, Thomas S and Glessner, Joseph T and Galver, Luana and Barrett, Jeffrey C and Grant, Struan FA and Farlow, Deborah N and others},
+  Journal                  = {PloS one},
+  Year                     = {2008},
+  Number                   = {10},
+  Pages                    = {e3583},
+  Volume                   = {3},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2014.11.18}
+}
+
 @Article{korn1979methods,
   Title                    = {Methods for analyzing panel studies of acute health effects of air pollution},
   Author                   = {Korn, Edward L and Whittemore, Alice S},
@@ -758,6 +998,21 @@ and a real sequence dataset on Type-1 diabetes.},
 
   File                     = {:D\:\\Dissertation_proj\\Random-effects models for longitudinal data.pdf:PDF},
   Publisher                = {JSTOR}
+}
+
+@Article{Lange2014,
+  Title                    = {Whole-exome sequencing identifies rare and low-frequency coding variants associated with LDL cholesterol},
+  Author                   = {Lange, Leslie A and Hu, Youna and Zhang, He and Xue, Chenyi and Schmidt, Ellen M and Tang, Zheng-Zheng and Bizon, Chris and Lange, Ethan M and Smith, Joshua D and Turner, Emily H and others},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2014},
+  Number                   = {2},
+  Pages                    = {233--245},
+  Volume                   = {94},
+
+  File                     = {:D\:\\Dissertation_proj\\Whole-Exome Sequencing Identiﬁes Rare and Low-Frequency Coding Variants Associated with LDL Cholesterol.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.11.20}
 }
 
 @Article{Lee2012,
@@ -848,6 +1103,21 @@ and a real sequence dataset on Type-1 diabetes.},
   Publisher                = {Biometrika Trust}
 }
 
+@Article{Lin2005,
+  Title                    = {An efficient Monte Carlo approach to assessing statistical significance in genomic studies},
+  Author                   = {Lin, DY},
+  Journal                  = {Bioinformatics},
+  Year                     = {2005},
+  Number                   = {6},
+  Pages                    = {781--787},
+  Volume                   = {21},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.23},
+  Url                      = {http://bioinformatics.oxfordjournals.org/content/21/6/781.short}
+}
+
 @Article{Lin2011,
   Title                    = {A general framework for detecting disease associations with rare variants in sequencing studies},
   Author                   = {Lin, Dan-Yu and Tang, Zheng-Zheng},
@@ -919,6 +1189,7 @@ known as EREC method},
   Owner                    = {Nainan},
   Pii                      = {1471-2105-8-431},
   Pmid                     = {17988400},
+  Review                   = {for only gene expression.},
   Timestamp                = {2014.10.18},
   Url                      = {http://dx.doi.org/10.1186/1471-2105-8-431}
 }
@@ -937,6 +1208,22 @@ known as EREC method},
   Publisher                = {Cold Spring Harbor Lab},
   Timestamp                = {2014.11.13},
   Url                      = {http://genome.cshlp.org/content/21/7/1099.short}
+}
+
+@Article{Luo2010,
+  Title                    = {Genome-wide gene and pathway analysis},
+  Author                   = {Luo, Li and Peng, Gang and Zhu, Yun and Dong, Hua and Amos, Christopher I and Xiong, Momiao},
+  Journal                  = {European Journal of Human Genetics},
+  Year                     = {2010},
+  Number                   = {9},
+  Pages                    = {1045--1053},
+  Volume                   = {18},
+
+  File                     = {:D\:\\Dissertation_proj\\Genome-wide gene and pathway analysis.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://www.nature.com/ejhg/journal/v18/n9/abs/ejhg201062a.html}
 }
 
 @Article{Luo2012,
@@ -969,6 +1256,16 @@ known as EREC method},
   Publisher                = {BMJ Publishing Group Ltd},
   Timestamp                = {2014.11.13},
   Url                      = {http://jmg.bmj.com/content/49/8/513.short}
+}
+
+@Article{Lynch1998,
+  Title                    = {Genetics and analysis of quantitative traits},
+  Author                   = {Lynch, Michael and Walsh, Bruce and others},
+  Year                     = {1998},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Sinauer Sunderland, MA},
+  Timestamp                = {2014.11.24}
 }
 
 @Article{Madsen2009,
@@ -1008,6 +1305,35 @@ known as EREC method},
   Publisher                = {Wiley Online Library}
 }
 
+@Article{Mardis2008,
+  Title                    = {Next-generation DNA sequencing methods},
+  Author                   = {Mardis, Elaine R},
+  Journal                  = {Annu. Rev. Genomics Hum. Genet.},
+  Year                     = {2008},
+  Pages                    = {387--402},
+  Volume                   = {9},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Annual Reviews},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.annualreviews.org/doi/abs/10.1146/annurev.genom.9.081307.164359}
+}
+
+@Article{Maxwell2013,
+  Title                    = {APOE Modulates the Correlation Between Triglycerides, Cholesterol, and CHD Through Pleiotropy, and Gene-by-Gene Interactions},
+  Author                   = {Maxwell, Taylor J and Ballantyne, Christie M and Cheverud, James M and Guild, Cameron S and Ndumele, Chiadi E and Boerwinkle, Eric},
+  Journal                  = {Genetics},
+  Year                     = {2013},
+  Number                   = {4},
+  Pages                    = {1397--1405},
+  Volume                   = {195},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Genetics Soc America},
+  Timestamp                = {2014.11.24},
+  Url                      = {http://www.genetics.org/content/195/4/1397.short}
+}
+
 @Article{McCarthy2008,
   Title                    = {Genome-wide association studies for complex traits: consensus, uncertainty and challenges.},
   Author                   = {McCarthy, Mark I. and Abecasis, Gon{\c{c}}alo R. and Cardon, Lon R. and Goldstein, David B. and Little, Julian and Ioannidis, John P A. and Hirschhorn, Joel N.},
@@ -1033,6 +1359,22 @@ known as EREC method},
   Url                      = {http://dx.doi.org/10.1038/nrg2344}
 }
 
+@Article{Medina2009,
+  Title                    = {Gene set-based analysis of polymorphisms: finding pathways or biological processes associated to traits in genome-wide association studies},
+  Author                   = {Medina, Ignacio and Montaner, David and Bonifaci, Nuria and Pujana, Miguel Angel and Carbonell, Jos{\'e} and Tarraga, Joaquin and Al-Shahrour, Fatima and Dopazo, Joaquin},
+  Journal                  = {Nucleic acids research},
+  Year                     = {2009},
+  Number                   = {suppl 2},
+  Pages                    = {W340--W344},
+  Volume                   = {37},
+
+  File                     = {:D\:\\Dissertation_proj\\Gene set-based analysis of polymorphisms_ finding pathways or biological processes associated to traits in genome-wide association studies.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://nar.oxfordjournals.org/content/37/suppl_2/W340.short}
+}
+
 @Article{Melville2012,
   Title                    = {Multiple loci influencing hippocampal degeneration identified by genome scan},
   Author                   = {Melville, Scott A and Buros, Jacqueline and Parrado, Antonio R and Vardarajan, Badri and Logue, Mark W and Shen, Li and Risacher, Shannon L and Kim, Sungeun and Jun, Gyungah and DeCarli, Charles and others},
@@ -1056,11 +1398,27 @@ known as EREC method},
   Number                   = {11},
   Pages                    = {4453--4459},
   Volume                   = {70},
+
   File                     = {:D\:\\Dissertation_proj\\Pathway analysis of breast cancer genome-wide association study highlights three pathways and one canonical signaling cascade.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {AACR},
   Timestamp                = {2014.11.15},
   Url                      = {http://cancerres.aacrjournals.org/content/70/11/4453.short}
+}
+
+@Article{Metzker2009,
+  Title                    = {Sequencing technologies the next generation},
+  Author                   = {Metzker, Michael L},
+  Journal                  = {Nature Reviews Genetics},
+  Year                     = {2009},
+  Number                   = {1},
+  Pages                    = {31--46},
+  Volume                   = {11},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.nature.com/nrg/journal/v11/n1/abs/nrg2626.html}
 }
 
 @Article{Morgenthaler2007,
@@ -1085,6 +1443,20 @@ known as EREC method},
   Pmid                     = {17101154},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1016/j.mrfmmm.2006.09.003}
+}
+
+@Article{Nam2010,
+  Title                    = {GSA-SNP: a general approach for gene set analysis of polymorphisms},
+  Author                   = {Nam, Dougu and Kim, Jin and Kim, Seon-Young and Kim, Sangsoo},
+  Journal                  = {Nucleic acids research},
+  Year                     = {2010},
+  Pages                    = {gkq428},
+
+  File                     = {:D\:\\Dissertation_proj\\GSA-SNP_ a general approach for gene set analysis of polymorphisms.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://nar.oxfordjournals.org/content/early/2010/05/31/nar.gkq428.short}
 }
 
 @Article{Nam2008,
@@ -1152,6 +1524,21 @@ known as EREC method},
   Url                      = {http://dx.doi.org/10.1126/science.1217876}
 }
 
+@Article{Neyman1937,
+  Title                    = {{\guillemotright} Smooth test{\guillemotright} for goodness of fit},
+  Author                   = {Neyman, Jerzy},
+  Journal                  = {Scandinavian Actuarial Journal},
+  Year                     = {1937},
+  Number                   = {3-4},
+  Pages                    = {149--199},
+  Volume                   = {1937},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Taylor \& Francis},
+  Timestamp                = {2014.11.22},
+  Url                      = {http://www.tandfonline.com/doi/abs/10.1080/03461238.1937.10404821}
+}
+
 @Article{Nicolae2010,
   Title                    = {Trait-associated SNPs are more likely to be eQTLs: annotation to enhance discovery from GWAS.},
   Author                   = {Nicolae, Dan L. and Gamazon, Eric and Zhang, Wei and Duan, Shiwei and Dolan, M Eileen and Cox, Nancy J.},
@@ -1184,7 +1571,6 @@ known as EREC method},
   Pages                    = {117--120},
   Volume                   = {2},
 
-  __markedentry            = {[ThomasYY:]},
   Owner                    = {ThomasYY},
   Publisher                = {Mary Ann Liebert, Inc.},
   Timestamp                = {2014.11.15},
@@ -1224,6 +1610,7 @@ known as EREC method},
   Number                   = {1},
   Pages                    = {29--34},
   Volume                   = {27},
+
   Owner                    = {ThomasYY},
   Publisher                = {Oxford Univ Press},
   Timestamp                = {2014.11.15},
@@ -1319,6 +1706,21 @@ have the corresponding adaptive tests called the aScore, aSSU, aSSUw and aSum te
 In the logistic regression model, each component of U, say Uj, corresponds to a RV j. In the},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1002/gepi.20586}
+}
+
+@Article{Peloso2014,
+  Title                    = {Association of low-frequency and rare coding-sequence variants with blood lipids and coronary heart disease in 56,000 whites and blacks},
+  Author                   = {Peloso, Gina M and Auer, Paul L and Bis, Joshua C and Voorman, Arend and Morrison, Alanna C and Stitziel, Nathan O and Brody, Jennifer A and Khetarpal, Sumeet A and Crosby, Jacy R and Fornage, Myriam and others},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2014},
+  Number                   = {2},
+  Pages                    = {223--232},
+  Volume                   = {94},
+
+  File                     = {:D\:\\Dissertation_proj\\ExomeChip_AJHG2013_read.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.11.20}
 }
 
 @Article{peng2009gene,
@@ -1466,6 +1868,35 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Url                      = {http://www.nature.com/ng/journal/v41/n1/abs/ng.271.html}
 }
 
+@Article{Schork2009,
+  Title                    = {Common vs. rare allele hypotheses for complex diseases},
+  Author                   = {Schork, Nicholas J and Murray, Sarah S and Frazer, Kelly A and Topol, Eric J},
+  Journal                  = {Current opinion in genetics \& development},
+  Year                     = {2009},
+  Number                   = {3},
+  Pages                    = {212--219},
+  Volume                   = {19},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0959437X09000884}
+}
+
+@Article{Seaman2005,
+  Title                    = {Rapid Simulation of P Values for Product Methods and Multiple-Testing Adjustment in Association Studies},
+  Author                   = {Seaman, SR and M{\"u}ller-Myhsok, B},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2005},
+  Number                   = {3},
+  Pages                    = {399--408},
+  Volume                   = {76},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.11.23}
+}
+
 @Article{Sham2014,
   Title                    = {Statistical power and significance testing in large-scale genetic studies.},
   Author                   = {Sham, Pak C. and Purcell, Shaun M.},
@@ -1488,6 +1919,21 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pmid                     = {24739678},
   Timestamp                = {2014.10.16},
   Url                      = {http://dx.doi.org/10.1038/nrg3706}
+}
+
+@Article{Shendure2008,
+  Title                    = {Next-generation DNA sequencing},
+  Author                   = {Shendure, Jay and Ji, Hanlee},
+  Journal                  = {Nature biotechnology},
+  Year                     = {2008},
+  Number                   = {10},
+  Pages                    = {1135--1145},
+  Volume                   = {26},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.nature.com/nbt/journal/v26/n10/abs/nbt1486.html}
 }
 
 @Article{shete2004effect,
@@ -1530,7 +1976,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
 
   Abstract                 = {Longitudinal data are important in exposure and risk assessments, especially for pollutants with long half-lives in the human body and where chronic exposures to current levels in the environment raise concerns for human health effects. It is usually difficult and expensive to obtain large longitudinal data sets for human exposure studies. This article reports a new simulation method to generate longitudinal data with flexible numbers of subjects and days. Mixed models are used to describe the variance-covariance structures of input longitudinal data. Based on estimated model parameters, simulation data are generated with similar statistical characteristics compared to the input data. Three criteria are used to determine similarity: the overall mean and standard deviation, the variance components percentages, and the average autocorrelation coefficients. Upon the discussion of mixed models, a simulation procedure is produced and numerical results are shown through one human exposure study. Simulations of three sets of exposure data successfully meet above criteria. In particular, simulations can always retain correct weights of inter- and intrasubject variances as in the input data. Autocorrelations are also well followed. Compared with other simulation algorithms, this new method stores more information about the input overall distribution so as to satisfy the above multiple criteria for statistical targets. In addition, it generates values from numerous data sources and simulates continuous observed variables better than current data methods. This new method also provides flexible options in both modeling and simulation procedures according to various user requirements.},
   Doi                      = {10.1111/j.1539-6924.2012.01869.x},
-  File                     = {:D\:\\Dissertation_proj\\XUE - HEASD 22-051 - SIMULATION OF LONG....PDF:PDF},
+  File                     = {:D\:\\Dissertation_proj\\XUE - HEASD 22-051 - SIMULATION OF LONG....PDF:PDF;:D\:\\Dissertation_proj\\Simulation of longitudinal exposure data with variance-covariance structures based on mixed models..pdf:PDF},
   Institution              = {Operations Research Program, North Carolina State University, Raleigh, NC, USA.},
   Keywords                 = {Analysis of Variance; Longitudinal Studies; Models, Theoretical},
   Language                 = {eng},
@@ -1539,6 +1985,21 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pmid                     = {22817762},
   Timestamp                = {2014.10.18},
   Url                      = {http://dx.doi.org/10.1111/j.1539-6924.2012.01869.x}
+}
+
+@Article{Subramanian2005,
+  Title                    = {Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles},
+  Author                   = {Subramanian, Aravind and Tamayo, Pablo and Mootha, Vamsi K and Mukherjee, Sayan and Ebert, Benjamin L and Gillette, Michael A and Paulovich, Amanda and Pomeroy, Scott L and Golub, Todd R and Lander, Eric S and others},
+  Journal                  = {Proceedings of the National Academy of Sciences of the United States of America},
+  Year                     = {2005},
+  Number                   = {43},
+  Pages                    = {15545--15550},
+  Volume                   = {102},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {National Acad Sciences},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://www.pnas.org/content/102/43/15545.short}
 }
 
 @Article{Sul2011,
@@ -1604,6 +2065,21 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Url                      = {http://dx.doi.org/10.1159/000346022}
 }
 
+@Article{Teslovich2010,
+  Title                    = {Biological, clinical and population relevance of 95 loci for blood lipids},
+  Author                   = {Teslovich, Tanya M and Musunuru, Kiran and Smith, Albert V and Edmondson, Andrew C and Stylianou, Ioannis M and Koseki, Masahiro and Pirruccello, James P and Ripatti, Samuli and Chasman, Daniel I and Willer, Cristen J and others},
+  Journal                  = {Nature},
+  Year                     = {2010},
+  Number                   = {7307},
+  Pages                    = {707--713},
+  Volume                   = {466},
+
+  __markedentry            = {[ThomasYY:]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.24}
+}
+
 @Article{tintle2011inflated,
   Title                    = {Inflated type I error rates when using aggregation methods to analyze rare variants in the 1000 Genomes Project exon sequencing data in unrelated individuals: summary results from Group 7 at Genetic Analysis Workshop 17},
   Author                   = {Tintle, Nathan and Aschard, Hugues and Hu, Inchi and Nock, Nora and Wang, Haitian and Pugh, Elizabeth},
@@ -1614,7 +2090,8 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Volume                   = {35},
 
   File                     = {:D\:\\Dissertation_proj\\genePathway_associationTest.pdf:PDF},
-  Publisher                = {Wiley Online Library}
+  Publisher                = {Wiley Online Library},
+  Review                   = {review of pathway analysis.}
 }
 
 @Article{tsay1984regression,
@@ -1627,6 +2104,20 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Volume                   = {79},
 
   Publisher                = {Taylor \& Francis Group}
+}
+
+@Article{Voight2012,
+  Title                    = {The metabochip, a custom genotyping array for genetic studies of metabolic, cardiovascular, and anthropometric traits},
+  Author                   = {Voight, Benjamin F and Kang, Hyun Min and Ding, Jun and Palmer, Cameron D and Sidore, Carlo and Chines, Peter S and Burtt, No{\"e}l P and Fuchsberger, Christian and Li, Yanming and Erdmann, Jeanette and others},
+  Journal                  = {PLoS genetics},
+  Year                     = {2012},
+  Number                   = {8},
+  Pages                    = {e1002793},
+  Volume                   = {8},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2014.11.18}
 }
 
 @Article{Wang2012,
@@ -1682,6 +2173,22 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Url                      = {http://dx.doi.org/10.1038/nrg2884}
 }
 
+@Article{Wang2010a,
+  Title                    = {ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data},
+  Author                   = {Wang, Kai and Li, Mingyao and Hakonarson, Hakon},
+  Journal                  = {Nucleic acids research},
+  Year                     = {2010},
+  Number                   = {16},
+  Pages                    = {e164--e164},
+  Volume                   = {38},
+
+  __markedentry            = {[ThomasYY:6]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.25},
+  Url                      = {http://nar.oxfordjournals.org/content/38/16/e164.short}
+}
+
 @Article{Wang2011,
   Title                    = {Gene set analysis of genome-wide association studies: methodological issues and perspectives},
   Author                   = {Wang, Lily and Jia, Peilin and Wolfinger, Russell D and Chen, Xi and Zhao, Zhongming},
@@ -1714,6 +2221,21 @@ genotypes and minimizes the DF at one},
   Timestamp                = {2014.11.12}
 }
 
+@Article{Wang2005,
+  Title                    = {Genome-wide association studies: theoretical and practical concerns},
+  Author                   = {Wang, William YS and Barratt, Bryan J and Clayton, David G and Todd, John A},
+  Journal                  = {Nature Reviews Genetics},
+  Year                     = {2005},
+  Number                   = {2},
+  Pages                    = {109--118},
+  Volume                   = {6},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.11.19},
+  Url                      = {http://www.nature.com/nrg/journal/v6/n2/abs/nrg1522.html}
+}
+
 @Article{Wang2013,
   Title                    = {GEE-Based SNP Set Association Test for Continuous and Discrete Traits in Family-Based Association Studies},
   Author                   = {Wang, Xuefeng and Lee, Seunggeun and Zhu, Xiaofeng and Redline, Susan and Lin, Xihong},
@@ -1743,7 +2265,7 @@ genotypes and minimizes the DF at one},
   Publisher                = {Biometrika Trust}
 }
 
-@Article{Wei2012,
+@Article{Wei2012a,
   Title                    = {Insights into pancreatic cancer etiology from pathway analysis of genome-wide association study data},
   Author                   = {Wei, Peng and Tang, Hongwei and Li, Donghui},
   Journal                  = {PloS one},
@@ -1752,9 +2274,10 @@ genotypes and minimizes the DF at one},
   Pages                    = {e46887},
   Volume                   = {7},
 
+  File                     = {:D\:\\Dissertation_proj\\Insights into Pancreatic Cancer Etiology from Pathway Analysis of Genome-Wide Association Study Data.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
-  Timestamp                = {2014.11.14}
+  Timestamp                = {2014.11.17}
 }
 
 @Article{Weng2011,
@@ -1888,6 +2411,7 @@ genotypes and minimizes the DF at one},
   Pages                    = {700--709},
   Volume                   = {33},
 
+  File                     = {:D\:\\Dissertation_proj\\Pathway analysis by adaptive combination of P-values.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.14},
@@ -1936,6 +2460,22 @@ genotypes and minimizes the DF at one},
   Pages                    = {1019--1031},
 
   Publisher                = {JSTOR}
+}
+
+@Article{Zhang2010a,
+  Title                    = {i-GSEA4GWAS: a web server for identification of pathways/gene sets associated with traits by applying an improved gene set enrichment analysis to genome-wide association study},
+  Author                   = {Zhang, Kunlin and Cui, Sijia and Chang, Suhua and Zhang, Liuyan and Wang, Jing},
+  Journal                  = {Nucleic acids research},
+  Year                     = {2010},
+  Number                   = {suppl 2},
+  Pages                    = {W90--W95},
+  Volume                   = {38},
+
+  File                     = {:D\:\\Dissertation_proj\\i-GSEA4GWAS_ a web server for identification of pathways_gene sets associated with traits by applying an improved gene set enrichment analysis to genome-wide association study.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.11.18},
+  Url                      = {http://nar.oxfordjournals.org/content/38/suppl_2/W90.short}
 }
 
 @Article{Zhang2010,
@@ -2001,6 +2541,7 @@ genotypes and minimizes the DF at one},
   Number                   = {4},
   Pages                    = {581--591},
   Volume                   = {86},
+
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Timestamp                = {2014.11.15}
@@ -2042,17 +2583,30 @@ genotypes and minimizes the DF at one},
 @comment{jabref-meta: groupstree:
 0 AllEntriesGroup:;
 1 ExplicitGroup:RV association test methods\;0\;Basu2011\;Chen2012\;De
-rkach2013\;Fan2013\;Han2010\;Lee2012\;Li2008\;Lin2011\;Pan2009\;Pan201
-1\;Sun2013\;Zhang2011\;pan2014powerful\;zhang2014testing\;;
+rkach2013\;Fan2013\;Han2010\;Lee2012\;Li2008\;Lin2005\;Lin2011\;Neyman
+1937\;Pan2009\;Pan2011\;Seaman2005\;Sun2013\;Zhang2011\;pan2014powerfu
+l\;zhang2014testing\;;
 1 ExplicitGroup:pathway_geneSet\;0\;2013\;Ashburner2000\;Baranzini2009
-\;Biernacka2011\;BloodPressureGenome-WideAssociationStudies2011\;Chen2
-010\;DelaCruz2010\;Fridley2010\;Fridley2011\;Goeman2007\;Hirschhorn200
-9\;Holmans2009\;Kanehisa2000\;Liu2007\;Menashe2010\;Nam2008\;Nishimura
-2001\;ODushlaine2009\;Ogata1999\;Purcell2007\;Ritchie2009\;Silver2012\
-;Wang2010\;Wang2011\;Wei2012\;Wei2012a\;Weng2011\;Yu2009\;Zhong2010\;p
-eng2009gene\;wang2007pathway\;;
+\;Biernacka2011\;BloodPressureGenome-WideAssociationStudies2011\;Chai2
+009\;Chen2009\;Chen2010\;Chen2010a\;DelaCruz2010\;Fridley2010\;Fridley
+2011\;Goeman2007\;Hirschhorn2009\;Holden2008\;Holmans2009\;Liu2007\;Lu
+o2010\;Medina2009\;Menashe2010\;Nam2008\;Nam2010\;Nishimura2001\;ODush
+laine2009\;Ogata1999\;Purcell2007\;Ritchie2009\;Silver2012\;Wang2010\;
+Wang2011\;Wei2012a\;Weng2011\;Yu2009\;Zhang2010a\;Zhong2010\;peng2009g
+ene\;tintle2011inflated\;wang2007pathway\;;
+1 ExplicitGroup:used_in_public_health_significance\;0\;Cardon2001\;Cra
+ig2008\;;
+1 ExplicitGroup:pathway_used_in_gene_expression_solely_without_genotyp
+es\;0\;DennisJr2003\;Subramanian2005\;;
+1 ExplicitGroup:genotyping platforms\;0\;Cheng1999\;Cortes2011\;Keatin
+g2008\;Voight2012\;;
 1 ExplicitGroup:pathway_annotation_resource\;0\;Ashburner2000\;Nishimu
 ra2001\;Ogata1999\;;
-1 ExplicitGroup:review_of_GWAS\;0\;Hirschhorn2005\;McCarthy2008\;;
+1 ExplicitGroup:review_of_GWAS\;0\;Ansorge2009\;Cantor2010\;Eichler201
+0\;Hirschhorn2005\;Mardis2008\;McCarthy2008\;Metzker2009\;Schork2009\;
+Shendure2008\;Wang2005\;;
+1 ExplicitGroup:exome_data_ref\;0\;Chambless1997\;Consortium2013\;Lang
+e2014\;Maxwell2013\;Peloso2014\;Teslovich2010\;;
+1 ExplicitGroup:human_genetics_classic\;0\;Lynch1998\;;
 }
 

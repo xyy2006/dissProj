@@ -1,0 +1,9 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Examples of competitive approach and self-contained approach based testings using Fisher's exact test as a demo} (A). Example of competitive approach; (b). Example of self-contained approach. Figure is adopted from Fridley et al 2010 \cite {Fridley2011}. \relax }}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Types of pathway association tests in GWAS.} (a). Categorization based on data input type; (b). Categorization based on hypothesis testing. Figure is adopted from Wang et al 2010 \cite {Wang2010}. \relax }}{22}{figure.caption.9}
+\contentsline {figure}{\numberline {3}{\ignorespaces ARIC Cohort and Community Surveillance Components. Figure adopted from the ARIC website\relax }}{29}{figure.caption.10}
+\contentsline {figure}{\numberline {4}{\ignorespaces ARIC Cohort Characteristics by Gender or Race. Table adopted from the ARIC website \relax }}{31}{figure.caption.11}
+\contentsline {figure}{\numberline {5}{\ignorespaces Empirical power benchmark under different $n$ using working independence $R_w$\relax }}{49}{figure.caption.13}
+\contentsline {figure}{\numberline {6}{\ignorespaces Empirical power benchmark under a mixed SNP effects\relax }}{50}{figure.caption.14}
+\contentsline {figure}{\numberline {7}{\ignorespaces Empirical power benchmark under an increasing number of Null SNPs\relax }}{52}{figure.caption.15}
+\contentsline {figure}{\numberline {8}{\ignorespaces Empirical power benchmark using simulation-based method in RV analysis\relax }}{57}{figure.caption.17}
+\contentsline {figure}{\numberline {9}{\ignorespaces Empirical power benchmark using permutation-based method in RV analysis \relax }}{61}{figure.caption.20}
