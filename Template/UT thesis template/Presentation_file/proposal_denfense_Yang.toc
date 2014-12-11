@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction to GWAS}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Gene-based association test}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Test of a single covariate}{14}{0}{1}
+\beamer@subsectionintoc {1}{4}{Test of a group of covariates}{17}{0}{1}
+\beamer@sectionintoc {2}{Test of the contrast}{21}{0}{2}
+\beamer@sectionintoc {3}{Regression Diagnostics}{22}{0}{3}
+\beamer@sectionintoc {4}{Appendix}{26}{0}{4}
+\beamer@subsectionintoc {4}{1}{Types of sums of squares}{26}{0}{4}
+\beamer@subsectionintoc {4}{2}{Eqvivalance of LRT and F-test}{27}{0}{4}
+\beamer@sectionintoc {5}{References}{28}{0}{5}

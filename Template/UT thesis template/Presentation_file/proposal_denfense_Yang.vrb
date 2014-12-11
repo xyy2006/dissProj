@@ -1,0 +1,16 @@
+\frametitle{Regression Diagnostics}
+\small\begin{verbatim}
+#Extract points that cause the greatest change in the estimates
+lm.inf.coef<-lm.influence(fit)$coefficients
+lm.inf.pts<-apply(lm.inf.coef[,2,drop=F],2,
++ FUN=function(x)which.max(abs(x)))
+
+lm.inf.coef[lm.inf.pts,]
+#this gives the same results with the diagnostic plots
+
+#Get the five points that cause the greatest
+#change in the estimates
+lm.inf.pts.top5<-apply(lm.inf.coef,2,
++ FUN=function(x)names(rev(sort(abs(x)))[1:5]))
+lm.inf.pts.top5
+\end{verbatim}
