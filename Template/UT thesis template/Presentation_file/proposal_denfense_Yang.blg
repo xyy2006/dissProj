@@ -1,5 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: proposal_denfense_Yang.aux
-I found no \citation commands---while reading file proposal_denfense_Yang.aux
-I found no \bibdata command---while reading file proposal_denfense_Yang.aux
-I found no \bibstyle command---while reading file proposal_denfense_Yang.aux
-(There were 3 error messages)
+The style file: amsalpha.bst
+Database file #1: ../proposal.bib
+Warning--string name "aaa" is undefined
+--line 4 of file ../proposal.bib
+Warning--missing pages in Kim2014
+(There were 2 warnings)

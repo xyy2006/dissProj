@@ -1,4 +1,10 @@
-\beamer@slide {default}{10}
-\beamer@slide {default}{21}
-\beamer@slide {default}{22}
-\beamer@slide {default}{23}
+\beamer@slide {eq:1}{29}
+\beamer@slide {eq:y_im_split}{40}
+\beamer@slide {eq:v-cov_split}{40}
+\beamer@slide {eq:variance_split_ge_oth}{40}
+\beamer@slide {eq:h_j_derive_to_var_y_im}{40}
+\beamer@slide {table:type_I_error_CV_varySampleSize}{46}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001}{46}
+\beamer@slide {table:Empirical type I error using simulation-based method in RV analysis}{54}
+\beamer@slide {table:Empirical type I error using permutation-based method in RV analysis}{54}
+\beamer@slide {sec:data}{64}

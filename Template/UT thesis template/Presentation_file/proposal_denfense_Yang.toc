@@ -1,13 +1,16 @@
 \beamer@endinputifotherversion {3.33pt}
 \select@language {english}
-\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@sectionintoc {1}{Background}{4}{0}{1}
 \beamer@subsectionintoc {1}{1}{Introduction to GWAS}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Gene-based association test}{9}{0}{1}
-\beamer@subsectionintoc {1}{3}{Test of a single covariate}{14}{0}{1}
-\beamer@subsectionintoc {1}{4}{Test of a group of covariates}{17}{0}{1}
-\beamer@sectionintoc {2}{Test of the contrast}{21}{0}{2}
-\beamer@sectionintoc {3}{Regression Diagnostics}{22}{0}{3}
-\beamer@sectionintoc {4}{Appendix}{26}{0}{4}
-\beamer@subsectionintoc {4}{1}{Types of sums of squares}{26}{0}{4}
-\beamer@subsectionintoc {4}{2}{Eqvivalance of LRT and F-test}{27}{0}{4}
-\beamer@sectionintoc {5}{References}{28}{0}{5}
+\beamer@subsectionintoc {1}{2}{SNP-set based association tests}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Longitudinal data analysis strategy in GWAS}{13}{0}{1}
+\beamer@subsectionintoc {1}{4}{Gene-Set/Pathway based association tests in GWAS}{18}{0}{1}
+\beamer@sectionintoc {2}{Dissertation Aims}{22}{0}{2}
+\beamer@sectionintoc {3}{Public Health Significance}{24}{0}{3}
+\beamer@sectionintoc {4}{Specific Aims and Methods}{27}{0}{4}
+\beamer@subsectionintoc {4}{1}{Aim 1(a): A data-adaptive association test for longitudinal data analysis within GEE framework}{27}{0}{4}
+\beamer@subsectionintoc {4}{2}{Aim 1(b): Longitudinal aSPU family tests on Rare Variants}{48}{0}{4}
+\beamer@subsectionintoc {4}{3}{Aim 2: Pathway-based longitudinal aSPU family tests: Path-aSPU}{56}{0}{4}
+\beamer@subsectionintoc {4}{4}{Aim 3: Package/software development}{61}{0}{4}
+\beamer@sectionintoc {5}{Real Data Introduction}{64}{0}{5}
+\beamer@sectionintoc {6}{References}{65}{0}{6}

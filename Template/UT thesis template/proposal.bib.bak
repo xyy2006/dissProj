@@ -217,6 +217,19 @@
   Url                      = {http://www.nature.com/nature/journal/vaop/ncurrent/full/nature10405.html?WT.mc_id=TWT_NatureGen}
 }
 
+@Article{Bush2012,
+  Title                    = {Genome-wide association studies},
+  Author                   = {Bush, William S and Moore, Jason H},
+  Journal                  = {PLoS computational biology},
+  Year                     = {2012},
+  Number                   = {12},
+  Pages                    = {e1002822},
+  Volume                   = {8},
+  Owner                    = {ThomasYY},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2014.12.14}
+}
+
 @Article{Cai2012,
   Title                    = {Identifying genetic marker sets associated with phenotypes via an efficient adaptive score test.},
   Author                   = {Cai, Tianxi and Lin, Xihong and Carroll, Raymond J.},
@@ -678,6 +691,8 @@
   Number                   = {5},
   Pages                    = {654--655},
   Volume                   = {23},
+
+  File                     = {:D\:\\Dissertation_proj\\SNPassoc_ an R package to perform whole genome association studies..pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Oxford Univ Press},
   Timestamp                = {2014.11.27},
@@ -720,8 +735,6 @@
   Number                   = {4},
   Pages                    = {e1000456},
   Volume                   = {5},
-
-  __markedentry            = {[ThomasYY:]},
   File                     = {:D\:\\Dissertation_proj\\Rapid and Accurate Multiple Testing Correction and power estimation for millions of correlated markers.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
@@ -901,6 +914,7 @@ and a real sequence dataset on Type-1 diabetes.},
 
   Abstract                 = {Recent developments in sequencing technologies have made it possible to uncover both rare and common genetic variants. Genome-wide association studies (GWASs) can test for the effect of common variants, whereas sequence-based association studies can evaluate the cumulative effect of both rare and common variants on disease risk. Many groupwise association tests, including burden tests and variance-component tests, have been proposed for this purpose. Although such tests do not exclude common variants from their evaluation, they focus mostly on testing the effect of rare variants by upweighting rare-variant effects and downweighting common-variant effects and can therefore lose substantial power when both rare and common genetic variants in a region influence trait susceptibility. There is increasing evidence that the allelic spectrum of risk variants at a given locus might include novel, rare, low-frequency, and common genetic variants. Here, we introduce several sequence kernel association tests to evaluate the cumulative effect of rare and common variants. The proposed tests are computationally efficient and are applicable to both binary and continuous traits. Furthermore, they can readily combine GWAS and whole-exome-sequencing data on the same individuals, when available, and are also applicable to deep-resequencing data of GWAS loci. We evaluate these tests on data simulated under comprehensive scenarios and show that compared with the most commonly used tests, including the burden and variance-component tests, they can achieve substantial increases in power. We next show applications to sequencing studies for Crohn disease and autism spectrum disorders. The proposed tests have been incorporated into the software package SKAT.},
   Doi                      = {10.1016/j.ajhg.2013.04.015},
+  File                     = {:D\:\\Dissertation_proj\\RC_skat_Sequence kernel association tests for the combined effect of rare and common variants.pdf:PDF},
   Institution              = {Department of Biostatistics, Columbia University, New York, NY 10032, USA. Electronic address: ii2135@columbia.edu.},
   Keywords                 = {Algorithms; Child Development Disorders, Pervasive, genetics; Computer Simulation; Crohn Disease, genetics; Data Interpretation, Statistical; Gene Frequency; Genetic Association Studies, methods; Genetic Predisposition to Disease; Genetic Testing; Humans; Logistic Models; Low Density Lipoprotein Receptor-Related Protein-2, genetics; Models, Genetic; Nod2 Signaling Adaptor Protein, genetics; Risk; Software},
   Language                 = {eng},
@@ -991,8 +1005,6 @@ and a real sequence dataset on Type-1 diabetes.},
   Journal                  = {Frontiers in genetics},
   Year                     = {2014},
   Volume                   = {5},
-
-  __markedentry            = {[ThomasYY:6]},
   File                     = {:D\:\\Dissertation_proj\\penalized regression approaches to testing for quantitative trait-rare variant association.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Frontiers Media SA},
@@ -1714,6 +1726,22 @@ known as EREC method},
   Publisher                = {Biometrika Trust}
 }
 
+@Article{Pan2009a,
+  Title                    = {Test selection with application to detecting disease association with multiple SNPs},
+  Author                   = {Pan, Wei and Han, Fang and Shen, Xiaotong},
+  Journal                  = {Human heredity},
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {120--130},
+  Volume                   = {69},
+
+  __markedentry            = {[ThomasYY:]},
+  File                     = {:D\:\\Dissertation_proj\\Test Selection with Application to Detecting Disease Association with Multiple SNPs.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Karger Publishers},
+  Timestamp                = {2014.12.14}
+}
+
 @Article{pan2014powerful,
   Title                    = {A powerful and adaptive association test for rare variants},
   Author                   = {Pan, Wei and Kim, Junghi and Zhang, Yiwei and Shen, Xiaotong and Wei, Peng},
@@ -2171,6 +2199,7 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Number                   = {5},
   Pages                    = {770--783},
   Volume                   = {94},
+
   File                     = {:D\:\\Dissertation_proj\\VAT_Variant Association Tools for Quality Control and Analysis of large-Scale seq and genotyping array data.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
@@ -2243,6 +2272,21 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Publisher                = {Oxford Univ Press},
   Timestamp                = {2014.11.25},
   Url                      = {http://nar.oxfordjournals.org/content/38/16/e164.short}
+}
+
+@Article{Wang2009,
+  Title                    = {Common genetic variants on 5p14. 1 associate with autism spectrum disorders},
+  Author                   = {Wang, Kai and Zhang, Haitao and Ma, Deqiong and Bucan, Maja and Glessner, Joseph T and Abrahams, Brett S and Salyakina, Daria and Imielinski, Marcin and Bradfield, Jonathan P and Sleiman, Patrick MA and others},
+  Journal                  = {Nature},
+  Year                     = {2009},
+  Number                   = {7246},
+  Pages                    = {528--533},
+  Volume                   = {459},
+
+  __markedentry            = {[ThomasYY:6]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2014.12.15}
 }
 
 @Article{Wang2011,
@@ -2640,8 +2684,8 @@ genotypes and minimizes the DF at one},
 0 AllEntriesGroup:;
 1 ExplicitGroup:RV association test methods\;0\;Basu2011\;Chen2012\;De
 rkach2013\;Fan2013\;Han2010\;Lee2012\;Li2008\;Lin2005\;Lin2011\;Neyman
-1937\;Pan2009\;Pan2011\;Seaman2005\;Sun2013\;Zhang2011\;pan2014powerfu
-l\;zhang2014testing\;;
+1937\;Pan2009\;Pan2009a\;Pan2011\;Seaman2005\;Sun2013\;Zhang2011\;pan2
+014powerful\;zhang2014testing\;;
 1 ExplicitGroup:pathway_geneSet\;0\;2013\;Ashburner2000\;Baranzini2009
 \;Biernacka2011\;BloodPressureGenome-WideAssociationStudies2011\;Chai2
 009\;Chen2009\;Chen2010\;Chen2010a\;DelaCruz2010\;Fridley2010\;Fridley
@@ -2658,9 +2702,9 @@ es\;0\;DennisJr2003\;Subramanian2005\;;
 g2008\;Voight2012\;;
 1 ExplicitGroup:pathway_annotation_resource\;0\;Ashburner2000\;Nishimu
 ra2001\;Ogata1999\;;
-1 ExplicitGroup:review_of_GWAS\;0\;Ansorge2009\;Cantor2010\;Eichler201
-0\;Hirschhorn2005\;Mardis2008\;McCarthy2008\;Metzker2009\;Schork2009\;
-Shendure2008\;Wang2005\;;
+1 ExplicitGroup:review_of_GWAS\;0\;Ansorge2009\;Bush2012\;Cantor2010\;
+Eichler2010\;Hirschhorn2005\;Mardis2008\;McCarthy2008\;Metzker2009\;Sc
+hork2009\;Shendure2008\;Wang2005\;;
 1 ExplicitGroup:exome_data_ref\;0\;Chambless1997\;Consortium2013\;Lang
 e2014\;Maxwell2013\;Peloso2014\;Teslovich2010\;;
 1 ExplicitGroup:human_genetics_classic\;0\;Lynch1998\;;

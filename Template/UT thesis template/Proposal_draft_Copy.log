@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  4 DEC 2014 19:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  12 DEC 2014 22:18
 entering extended mode
 **Proposal_draft_Copy.tex
 ("D:\Dissertation_proj\Template\UT thesis template\Proposal_draft_Copy.tex"
@@ -783,9 +783,12 @@ ned ap-proach based
 )
 \tf@lof=\write6
  [9] [10]
-Overfull \hbox (9.81918pt too wide) in paragraph at lines 161--162
-\OT1/cmr/m/n/12 PCs)[[]], the rare vari-ant weighted ag-gre-gate statis-tic (RW
-AS)[[]],
+
+LaTeX Warning: Citation `Kim2014' on page 11 undefined on input line 161.
+
+
+Overfull \hbox (3.63036pt too wide) in paragraph at lines 161--162
+[]\OT1/cmr/m/n/12 , [], []], a prob-a-bilis-tic disease-gene finder
  []
 
 [11] [12]
@@ -1100,18 +1103,21 @@ Package rerunfilecheck Info: File `Proposal_draft_Copy.out' has not changed.
 (rerunfilecheck)             Checksum: 4090227770CF2201828FE764723EABCD;1689.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1044.
  ) 
 Here is how much of TeX's memory you used:
- 9923 strings out of 493921
- 149014 string characters out of 3144864
+ 9924 strings out of 493921
+ 149023 string characters out of 3144864
  246465 words of memory out of 3000000
- 12769 multiletter control sequences out of 15000+200000
+ 12770 multiletter control sequences out of 15000+200000
  14316 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,16n,42p,4701b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,16n,42p,4709b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><d
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/
@@ -1125,7 +1131,7 @@ iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Program Files
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><d:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Proposal_draft_Copy.pdf (85 pages, 2862064 bytes).
+Output written on Proposal_draft_Copy.pdf (85 pages, 2862430 bytes).
 PDF statistics:
  1290 PDF objects out of 1440 (max. 8388607)
  284 named destinations out of 1000 (max. 500000)
