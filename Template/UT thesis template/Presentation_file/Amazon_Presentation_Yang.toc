@@ -1,0 +1,19 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction to GWAS}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{SNP-set based association tests}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Longitudinal data analysis strategy in GWAS}{13}{0}{1}
+\beamer@sectionintoc {2}{Research Aims}{20}{0}{2}
+\beamer@sectionintoc {3}{Public Health Significance}{22}{0}{3}
+\beamer@sectionintoc {4}{Specific Aims, Methods and Results}{25}{0}{4}
+\beamer@subsectionintoc {4}{1}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{25}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{1}{Methods}{27}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{2}{Methods in data simulation}{43}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{3}{Simulation results}{50}{0}{4}
+\beamer@subsectionintoc {4}{2}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{56}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{1}{Methods}{58}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Methods in data simulation}{62}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{3}{Simulation results}{64}{0}{4}
+\beamer@sectionintoc {5}{Real Data Application}{71}{0}{5}
+\beamer@sectionintoc {6}{References}{75}{0}{6}

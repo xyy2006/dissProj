@@ -1,0 +1,17 @@
+\beamer@slide {eq:1}{28}
+\beamer@slide {eq:2}{28}
+\beamer@slide {eq:y_im_split}{44}
+\beamer@slide {eq:v-cov_split}{44}
+\beamer@slide {eq:variance_split_ge_oth}{44}
+\beamer@slide {eq:h_j_derive_to_var_y_im}{44}
+\beamer@slide {table:type_I_error_CV_varySampleSize}{51}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001}{51}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects}{51}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull}{51}
+\beamer@slide {table:Empirical type I error using simulation-based method in RV analysis}{65}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}{65}
+\beamer@slide {table:Empirical type I error using permutation-based method in RV analysis}{65}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}{65}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTests}{65}
+\beamer@slide {sec:data}{71}
+\beamer@slide {fig: Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-genome}{73}

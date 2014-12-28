@@ -1,0 +1,1427 @@
+\documentclass[compress]{beamer}
+\usepackage{graphicx}
+\usepackage{caption}
+%\usepackage{subcaption}
+\usetheme{Boadilla}
+\usefonttheme[stillsansseriftext]{structurebold}
+\usecolortheme{dolphin}
+\useoutertheme[subsection=false]{miniframes}
+\usepackage{etoolbox}
+\usepackage{wrapfig}
+\usepackage[english]{babel}
+\usepackage{caption}
+\captionsetup{font=scriptsize,labelfont=scriptsize}
+\setbeamerfont{caption}{size=\scriptsize}
+\usepackage[textfont={scriptsize}]{caption}
+\makeatletter
+\patchcmd{\slideentry}{\advance\beamer@xpos by1\relax}{}{}{}
+\def\beamer@subsectionentry#1#2#3#4#5{\advance\beamer@xpos by1\relax}%
+\makeatother
+
+\begin{document}
+\title[Amazon] % (optional, only for long titles)
+{Data-adaptive SNP-set-based Association Tests of Longitudinal Traits}
+%\subtitle{PH 1915, Fall 2013}
+\author[ Yang Yang] % (optional, for multiple authors)
+{
+Yang Yang\\
+M.S, Informatics\\
+Ph.D Candidate, Biostatistics
+}
+\institute[UTSPH] % (optional)
+{
+  \inst{}%
+  \begin{normalsize}
+  Division of Biostatistics, School of Public Health, The University of Texas
+  \end{normalsize}
+ 
+}
+\date[Jan.5 2015] % (optional)
+{Jan.05 2015}
+%\subject{Informatik}
+
+
+\frame{\titlepage}
+
+%\frame{
+%%\doublespacing
+%\textbf{Dissertation Committee:}\\\
+%\small
+%\centering
+%\noindent
+%Dissertation Chair, Peng Wei, PhD\\
+%\indent
+%External advisor, Han Liang, PhD\\\
+%Minor advisor, Alanna C. Morrison, PhD\\\
+%Breadth advisor, Yun-Xin Fu, PhD\\\
+%External reviewer, Xiaoming Liu, PhD
+%}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\small
+\tableofcontents
+\end{frame}
+
+
+\section{Background}
+\subsection{Introduction to GWAS}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{Table of Contents}
+%\begin{itemize}
+%\item Introduction to GWAS
+%\item Gene-based association test
+%\item Longitudinal data analysis strategy
+%\item Gene-set/Pathway based association test
+%\end{itemize}
+\small
+\tableofcontents[currentsection,currentsubsection]
+
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%1
+  \frame{\frametitle{Introduction to GWAS}
+  \framesubtitle{What is SNP?}
+\begin{wrapfigure}{l}{0.5\textwidth}
+\centering
+%\includegraphics[width=0.8\textwidth]{{{figure/2000px-Dna-SNP.svg}}}
+\vspace{-20pt}
+\includegraphics[height=0.6\textheight]{{{figure/2000px-Dna-SNP.svg}}}
+%\caption{ single nucleotide polymorphism \label{fig: 2000px-Dna-SNP.svg}}
+\end{wrapfigure}
+A Single Nucleotide Polymorphism (SNP) is a DNA sequence variation occurring commonly within a population (e.g. 1\%) in which a single nucleotide — A, T, C or G — in the genome (or other shared sequence) differs between members of a biological species or paired chromosomes.
+% For example, two sequenced DNA fragments from different individuals, AAGCCTA to AAGCTTA, contain a difference in a single nucleotide. In this case we say that there are two alleles. Almost all common SNPs have only two alleles. The genomic distribution of SNPs is not homogenous; SNPs occur in non-coding regions more frequently than in coding regions or, in general, where natural selection is acting and 'fixing' the allele (eliminating other variants) of the SNP that constitutes the most favorable genetic adaptation.[1] Other factors, like genetic recombination and mutation rate, can also determine SNP density.[2]
+
+}
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%2
+%\frame{\frametitle{Introduction to GWAS}
+%\framesubtitle{A simple flowchart}
+%\begin{figure}
+%\vspace{-10pt}
+%\includegraphics[height=0.6\textheight]{{{figure/gwas_SNPs_casecontrol}}}
+%%\caption{ single nucleotide polymorphism \label{fig: 2000px-Dna-SNP.svg}}
+%\end{figure}
+%
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%3
+\frame{\frametitle{Introduction to GWAS}
+\framesubtitle{A flowchart of GWAS}
+\begin{figure}
+\vspace{-10pt}
+\includegraphics[height=0.8\textheight]{{{figure/gwas_flowchart}}}
+%\caption{ single nucleotide polymorphism \label{fig: 2000px-Dna-SNP.svg}}
+\end{figure}
+
+}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%4
+\frame{\frametitle{Introduction to GWAS}
+\framesubtitle{How does GWAS result look like?}
+\begin{figure}
+\vspace{-5pt}
+\includegraphics[height=0.7\textheight]{{{figure/GWAS_top10}}}
+\caption{ Common genetic variants on 5p14.1 associate with autism spectrum disorders \cite{Wang2009}}
+\end{figure}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%4.5
+\frame{\frametitle{Introduction to GWAS}
+\framesubtitle{GWAS Catalog}
+\begin{figure}
+\vspace{-5pt}
+\includegraphics[height=0.7\textheight]{{{figure/2012_GWAS_catalog}}}
+\caption{ Published GWAS results for 18 trait categories}
+\end{figure}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%5
+\frame{\frametitle{Introduction to GWAS}
+\framesubtitle{Common variants and rare variants}
+\scriptsize
+\begin{figure}
+\vspace{-5pt}
+\includegraphics[height=0.7\textheight]{{{figure/GWAS_Disease_allele_effects}}}
+\caption{ effect size of Single Nucleotide Variant \cite{Bush2012} }
+\end{figure}
+
+}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SNP-set based association tests}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{Table of Contents}
+%\begin{itemize}
+%\item Introduction to GWAS
+%\item Gene-based association test
+%\item Longitudinal data analysis strategy
+%\item Gene-set/Pathway based association test
+%\end{itemize}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%1
+\frame{\frametitle{single-SNP based association tests}
+\framesubtitle{the classical method}
+\footnotesize
+For individual $i$ with SNP $j$ coded as $x_{ij}$ ($x_{ij} = 0, 1, 2$ representing copies of minor alleles) and a vector of covariates $\varphi_i$, 
+\[g(\mu_i)=\beta_0 + x_{ij}\beta_j + z_i \varphi_i, \]
+% where $g(\mu_i)$ is a link function in Genaralized Linear Model (GLM) to link types of outcome to the linear combination of predictors.\\\
+
+However, this method suffers from at least two disadvantages: \\
+1), it will generate millions of tests thus increase the multiple test error correction burden; \\
+2), the coefficient estimate of SNP $j$ will become unstable or even the estimation algorithm cannot converge when SNP minor allele frequency (MAF) becomes smaller, e.g. MAF $ < 0.01$. 
+
+
+%\begin{itemize}
+%\item Question to answer: does this particular SNP $j$ significantly affect the prediction of $g(\mu_i)$ when the other covariates presented in the model?
+%\item $H_0: \beta_j=0$,
+%$H_1: \beta_j\ne0$
+%\item $TS=\frac{\hat{\beta}_j}{\hat{se}(\hat{\beta}_j)}\sim t_{n-3}$, reject $H_0$ if $|TS|>t_{n-3,1-\alpha/2}$
+%\item This is a {\bf partial test} because $\hat{\beta}_j$ depends on all of the other predictors $x_i$, for $i\ne j$, that are in the model. Thus, this is a test of the contribution of $x_j$ given other predictors in the model.
+%\end{itemize}
+
+}  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2
+\frame[allowframebreaks]{
+\frametitle{SNP-set based association tests}
+%\framesubtitle{the improved strategy against low MAF SNVs}
+\framesubtitle{A brief review}
+\footnotesize
+By pooling multiple low MAF SNVs together, the SNP-set based association test can detect the signal(s) from a region (such as a gene) instead of from a single SNV.\\
+\begin{figure}
+\vspace{-5pt}
+\includegraphics[height=0.7\textheight]{{{figure/SNP-set_assoc_test_demo}}}
+%\caption{ effect size of Single Nucleotide Variant \cite{Bush2012} }
+\end{figure}
+%%%
+Major categories of SNP-set based association tests:
+\begin{small}
+
+\begin{itemize}
+\item the so-called "burden test", which used MAF based weighting scheme to combine the sum statistics from multiple SNVs in a region \cite{Li2008,Madsen2009};
+%%%%%%%%%%%%%%
+\item the variance-component test, which includes SKAT, C-alpha, SSU, etc \cite{Pan2009,Neale2011,Wu2011}. 
+
+\item the Lasso and group-penalized regression based methods \cite{Zhou2010,Kim2014}.
+
+
+\item the functional linear model and functional principal component analysis based methods \cite{Luo2012,Luo2012a,Luo2011,Fan2013}.
+
+\item the adaptive test combines statistics of burden test and variance-component test, such as SKAT-O, aSum, aSSU, aScore, an exponential combination (EC) framework for set-based association tests, a robust and powerful
+test using Fisher's method to combine linear and quadratic statistics, a unified mixed-effect model, etc \cite{Han2010,Pan2011,Lee2012,Lee2012a,Chen2012,Derkach2013,Sun2013}.
+\end{itemize}
+
+\end{small}
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Longitudinal data analysis strategy in GWAS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%1
+\frame{
+\frametitle{How do longitudinal data look like?}
+%\framesubtitle{the vantage method}
+ \begin{tiny}
+\begin{figure}
+\centering
+\vspace{-5pt}
+\includegraphics[height=0.6\textheight]{{{figure/longi_look}}}
+\vspace{-10pt}
+
+{ \caption{  Trajectories of phenotype left hippocampus volume over time (in months) in three allele groups of SNP rs2075650 \cite{Xu2014} } }
+
+\end{figure}
+\end{tiny}
+}
+
+%2
+\frame[allowframebreaks]{
+\frametitle{Why longitudinal?}
+%\framesubtitle{the vantage method}
+\footnotesize
+In a cross-sectional study ($n_i = 1$) we are restricted to the model
+$$Y_{i1} = \beta_C x_{i1} + \epsilon_{i1}, \quad i = 1,\ldots,m, $$
+where $\beta_C$ represents the difference in average $Y$ across two sub-populations (samples) which differ by one unit in $x$. With repeated measurements, the above linear model can be extended to
+$$ Y_{ij} = \beta_C x_{i1} + \beta_L ( x_{ij} - x_{i1} ) + \epsilon_{ij}, \quad i = 1, \ldots, m; \ j = 1, \ldots, n_i $$
+\cite{WARE1990}. 
+%Now $\beta_C$ still represents the cross-sectional difference while $\beta_L$ is interpreted as the expected change in $Y$ over time per unit change in $x$ for a given subject. The basic of inference about $\beta_C$ is a comparison of individuals with a particular value of $x$ to other individuals with a different value of $x$. In contrast, the parameter estimation of $\beta_L$ is by comparing a person's responses at two times, assuming $x$ changes with time.
+
+Based on above formula, we can more obviously explain the merits of longitudinal studies over cross-sectional studies. 
+\begin{enumerate}
+\item Longitudinal studies allow us to estimate both the cross-sectional difference ($\beta_C$) and the rate change over time ($\beta_L$).
+\item Even when $\beta_C = \beta_L$, longitudinal studies tend to be more powerful than cross-sectional studies. This is due to the fact that in longitudinal studies, each person can be thought of serving as his/her own control. 
+%For most outcomes $Y$, there is considerable variability across individuals due to the influence of unmeasured characteristics such as genetic make-up, environmental exposures, personal behaviors/habits, and so forth. While these things tend to persist over time for the same individual, their influences are canceled in the estimation of the $\beta_L$ or equivalently here the $\beta_C$, and thus lead to more accurate estimate (smaller variance).
+%%%%%%%
+\item Another merit of the longitudinal study is its ability to distinguish the degree of variation in $Y$ across time for one subject from the variation in $Y$ across subjects. 
+%With repeated measurements, we can borrow strength across time for the same person of interest as well as across people. If there is little variation across subjects, one subject's estimate can rely on data from others as in the cross-sectional case. However, if the variation across people is large, we might prefer to use more data for the same individual across time.
+\item With longitudinal studies, we can estimate a person's current and future outcome (behavior trend). 
+\end{enumerate}
+
+
+\framebreak
+\textbf{Longitudinal study in GWAS}\\
+A recent study by Xu et al \cite{Xu2014} demonstrates the power gain from longitudinal data analysis over traditional cross-sectional data analysis used in GWAS.
+\begin{figure}
+\centering
+\vspace{-5pt}
+\includegraphics[width=0.8\textwidth]{{{figure/longi_advantage1}}}
+\vspace{-10pt}
+
+ \caption{  Comparison of the Manhattan plots for genome-wide p-values for phenotype left hippocampus volume from longitudinal analysis (left) and from cross-sectional analysis (right) \cite{Xu2014} } 
+
+\end{figure}
+
+\begin{figure}
+\centering
+\vspace{-5pt}
+\includegraphics[width=1\textwidth]{{{figure/longi_advantage5}}}
+\vspace{-10pt}
+
+ \caption{  Simulation results at significance level P with different methods \cite{Xu2014} } 
+
+\end{figure}
+
+}
+
+%3
+\frame[allowframebreaks]{
+\frametitle{A brief review of major longitudinal data analysis methods}
+%\framesubtitle{the vantage method}
+Major categories of longitudinal data analysis methods:
+\begin{scriptsize}
+
+\begin{itemize}
+\item random effect models\\
+Random effect model is a two-stage models, which treat probability distributions for the response vectors of different individuals as a single family and the random-effects parameters which hold the same for the same individual as another distribution \cite{laird1982random}.
+%%%%%%%%%%%%%%
+%\framebreak
+\item marginal effect models\\
+Marginal effect model is an extension to
+quasi-likelihood method. Rather than giving subject-specific(SS) estimates as in random effect models, marginal effect models by Generalized Estimating Equation (GEE) give population-averaged (PA) estimates.
+ 
+%\framebreak
+\item transitional (Markov) models \\
+The transitional (Markov) model, describes the conditional distribution of each response $y_{ij}$ as an explicit function of first $q$ prior observations $y_{ij-1},\dots,y_{ij-q}$ from history response vector: $H_{ij} = \{ y_{ik}, k = 1,\dots,j - 1\}$ and covariates $x_{ij}$. The integer $q$ is referred as the order of the Markov models.
+
+
+\end{itemize}
+\end{scriptsize}
+
+}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Gene-Set/Pathway based association tests in GWAS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\frame{
+%\frametitle{Table of Contents}
+%\tableofcontents[currentsection,currentsubsection]
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%1
+%\frame{
+%\scriptsize
+%\frametitle{A big picture}
+%%\framesubtitle{the vantage method}
+%\begin{figure}
+%\vspace{-5pt}
+%\includegraphics[height=0.5\textheight]{{{figure/gene_network1}}}
+%%\caption{ single nucleotide polymorphism \label{fig: 2000px-Dna-SNP.svg}}
+%\end{figure}
+%\textbf{The advantage of using Gene-Set/Pathway based association test in GWAS:}
+%\begin{itemize}
+%\item it utilizes the information of biological pathway to help localize the association signal(s) from close related genes
+%\item it further aggregates multiple Genes/RVs against testing each Gene/RV separately, which will boost the statistical power
+%\end{itemize}
+%
+%
+%%Extending the gene-based association test to sets of multiple related genes could return more biological meaningful inference, as in vivo, there are usually multiple genes working together to fulfill a biological function, analyzing "co-workers" genes together with phenotype tends to identify those signals hidden from or attenuated in single-gene based tests \cite{BloodPressureGenome-WideAssociationStudies2011,Hirschhorn2009,Zhong2010,Wang2010}. Complex disease are known to have a combination of genetic factors in addition to environmental, lifestyle factors, and their interactions \cite{Hirschhorn2005,McCarthy2008}. Thus by investigating into the sets of genes, more evidence could be extracted as risk altering factors contributing to a specific disease. The other reason for considering pathway-based association test is similar to the consideration for gene-based association test: aggregating multiple Genes/RVs against testing each Gene/RV separately will boost the statistical power. One convincing evidence is from The Cancer Genome Atlas (TCGA: http://cancergenome.nih.gov/) for doing tumor sequencing studies. While only few oncogenes (e.g. TP53, EGFR) harbor many mutations, most others harbor few mutations in a tumor-dependent manner. Single gene-based association test thus still suffer from low aggregated mutation frequency, whereas collectively, they have a much higher aggregated mutation frequency in a gene-set/pathway. Therefore, for some disease such as cancer to investigate its association with somatic mutations, a gene-set/pathway analysis by aggregating information across genes will boost the statistical power, and is thus preferred.
+%}
+%
+%
+%%%2
+%%\frame{
+%%\frametitle{the advantage of using Gene-Set/Pathway based association test in GWAS}
+%%%\framesubtitle{the vantage method}
+%%\begin{itemize}
+%%\item it utilizes the information of biological pathway to help localize the association signal from close related genes
+%%\item it aggregates multiple Genes/RVs against testing each Gene/RV separately, which will boost the statistical power
+%%\end{itemize}
+%%
+%%}
+%
+%%3
+%\frame{
+%\scriptsize
+%\frametitle{Types of Gene-Set/Pathway based association test in GWAS}
+%%\framesubtitle{the vantage method}
+%\scriptsize
+%\begin{figure}
+%\vspace{-5pt}
+%\includegraphics[height=0.7\textheight]{{{figure/pathwayTests_definition}}}
+%\caption{ Types of pathway association method \cite{Wang2010} }
+%\end{figure}
+%
+%
+%
+%
+%}
+%
+%%4
+%\frame[allowframebreaks]{
+%\frametitle{A brief review of current Gene-Set/Pathway based association tests in GWAS}
+%%\framesubtitle{the vantage method}
+%\footnotesize
+%\begin{itemize}
+%\item GSEA modification in GWAS; GSEA-SNP;i-GSEA4GWAS
+%\item modification of Fishers method for combing SNP P-values for gene-level or gene-set-level association
+%\item gene set ridge regression in association studies (GRASS)
+%\item association list go annotator (ALIGATOR), which is a 'p-value enrichment approach' requiring only pre-computed SNP p-values, uses Fisher's exact test on SNP with minimum p-value for the gene-level association
+%\item the SNP ratio test (SRT),tests the ratio of significant SNPs in a pathway and compute the empirical p-value based on permutation
+%\item supervised principal component analysis with a
+%Gumbel extreme value mixture distribution as test statistic distribution and simulation-based
+%standardization procedure for pathway size
+%%\item the Gene-loci Set Analysis (GLOSSI), at first uses the Cochran-Armitage trend test at
+%single-marker level assuming an additive SNP effect, then uses Fisher's combination test to
+%combine individual p-values of markers and corrected by Brown's approximation to better
+%control type I error
+%%\item an adaptive rank truncated product (ARTP) statistic and permutation-based p-value adjustment to combine marker-level p-values to derive gene-level significance level and/or combine gene-level p-values to derive pathway-level significance level
+%\end{itemize}
+%
+%}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Aims}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%1
+\frame{
+\frametitle{Research Aims}
+%\framesubtitle{the vantage method}
+\begin{small}
+\begin{itemize}
+\item Aim 1: Data-adaptive SNP-set-based association tests (aSPU) for longitudinal data analysis within GEE framework;\\
+%	\begin{itemize}
+%	\item (a), for CVs;
+%	\item (b), for RVs.
+%	\end{itemize}
+%\item Aim 1(b): Longitudinal aSPU family tests on Rare Variants
+%\item Aim 2: Pathway-based longitudinal aSPU family tests: Path-aSPU
+\item Aim 2: Longitudinal aSPU family tests on Rare Variants
+%\item Aim 3: Package/software development
+\end{itemize}
+\end{small}
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Public Health Significance}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%1
+\frame[allowframebreaks]{
+\frametitle{Public Health Significance}
+%\framesubtitle{the vantage method}
+\begin{scriptsize}
+
+\begin{enumerate}
+\item Due to the \textbf{complexity} in genetics association with phenotype, e.g. specific association effect directions and sizes, a given test favoring one scenario may or may not perform well in other scenarios \cite{Pan2009,Derkach2013,pan2014powerful,Sun2013}. In other words, there is \textbf{no single test} the most powerful among all testing scenarios.\\\
+
+Therefore, a few data-adaptive tests were developed as an ad hoc strategy, e.g. some tests tried to combine the advantage of burden test and variance-component test; some other tests tried to use a set of pre-determined weights for individual RVs. \\\
+
+Compared to the previous limited sense data-adaptive tests, our proposed method will be more extensive and generalized in \textbf{data adaptability}. The new tests will provide a relative high power in almost all data scenarios;
+
+\framebreak 
+
+\item There is not yet a \textbf{SNP-set} based \textbf{data-adaptive} association test method for \textbf{longitudinal} data analysis in GWAS: we will propose such a new method to fill in this gap;
+
+\item CVs and RVs are \textbf{both} important in finding the missing heritability of human complex disease. Our proposed new method will have the ability to handle both of them (either CVs or RVs);
+%\item Currently, there are \textbf{no} statistical methods designed for pathway-based association test in \textbf{longitudinal data settings}, not to mention the \textbf{data-adaptive} property. We will extend the SNP-set based method to \textbf{Gene-set/Pathway based method} to fill in the gap;
+%%We will extend the SNP-set based method to \textbf{Gene-set/Pathway based method} to allow incorporating the biological pathway information and further avoid too few minor allele counts scenario in the association test;
+%\item We will produce an R package or independent Linux command-line based software implementing proposed methods to facilitate the community usage. 
+\end{enumerate}
+In conclusion, this research work will provide useful methods/tools for identifying the underlying genetic
+factors explaining the heritability of human complex disease, and in the long run this will
+contribute to the prevention, diagnosis and cure of complex diseases.
+
+\end{scriptsize}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Specific Aims, Methods, and Preliminary Simulation Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\frame{
+%\frametitle{Table of Contents}
+%\tableofcontents[currentsection,currentsubsection]
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%1
+%%\frame{
+%%\frametitle{Aim 1}
+%%
+%%\small
+%%Develop the robust data-adaptive association test for longitudinal data
+%%analysis within the Generalized Estimating Equation framework, which has relatively
+%%high power in most data scenarios and avoid drastic power loss in any single data
+%%scenario, as compared to current available methods. This is the first data-adaptive
+%%association test method for longitudinal data as to my knowledge.
+%%}
+
+\section{Specific Aims, Methods and Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%1
+\frame{
+\frametitle{Aim 1}
+%\framesubtitle{Aim 1a}
+
+\small
+To develop a data-adaptive longitudinal association test within GEE framework for \textbf{common variants}, which will be done in either sliding-window based or gene-based manner for real GWAS data. 
+
+%Since CVs are usually coming from traditional SNP geno
+%typing platform (e.g. selection of tagging SNPs), the SNPs are almost evenly
+%distributed on the whole chromosome. To include, say a constant number of 40
+%SNPs, the regions covering the 40 SNPs on a chromosome are by large of the same
+%physical length (e.g. 1kb), which makes the slide-window based manner reason
+%able to detect signals from a specific chromosome region. Gene-based manner has
+%been extensively discussed before. Since missing
+%data scenario is a usual case in longitudinal data analysis, e.g. an individual has
+%three out of four total measurements, the developed algorithm is expected to utilize the partial information fully instead of deleting the whole subject, and still
+%provides consistent coefficients estimates as long as the data missing follows the
+%Missing At Complete Random (MACR).
+
+}
+\subsubsection{Methods}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%2
+\frame[allowframebreaks]{
+\frametitle{Aim 1}
+\framesubtitle{Methods: introduction to notation and formula}
+\scriptsize
+Suppose for each subject $i = 1,\ldots,n$, we have $k$ total longitudinal measurements 
+$$y_i = (y_{i1}, y_{i2}, \ldots, y_{ik})'$$
+with $y_{im}$ as a element, $p$ SNPs of interest as a row vector 
+$$x_i = (x_{i1}, x_{i2}, \ldots, x_{ip})$$
+with $x_{ij}$ coded as 0,1 or 2 for the count of the minor allele, and
+$$z_i = (z_{i1}, z_{i2}, \ldots, z_{iq})$$
+as a row vector for $q$ variates.\\\
+Thus, we have:
+$$
+  X_i = \begin{pmatrix}
+          x_{i}\\
+          x_{i}\\
+          \vdots\\
+          x_{i}
+          \end{pmatrix} 
+  , 
+  Z_{i}=\begin{pmatrix}1 & z_{i}\\
+          1 & z_{i}\\
+          \vdots & \vdots\\
+          1 & z_{i}
+          \end{pmatrix}
+$$
+%where $x_i$ and $z_i$ are row vectors of length p and q respectively. 
+$X_i$ is a $k \times p$ matrix, and $Z_{i}$ is a $k \times (q+1)$ matrix. 
+
+%Denote the regression coefficient $\beta = (\beta_1, \beta_2, \ldots, \beta_p)'$ and $\varphi = (\varphi_1, \varphi_2, \ldots, \varphi_{q+1})'$ for $X_i$ and $Z_i$ respectively. The marginal mean of each measurement, $E(y_{im}|x_i,z_i) = \mu_{im}$ where $m = 1,2, \ldots, k$ for $k$ total measurements, or the vectorized format of all measurements, $E(y_{i}|x_i,z_i) = \mu_{i}$, relates to the SNPs and covariates through a generalized linear model (GLM):
+We then have the GLM equation as,
+$$
+g(\mu_i) = \eta_i = Z_i \varphi + X_i \beta = H_i \theta
+$$
+%\noindent with $H_i = (Z_i, X_i), \theta = (\varphi', \beta')'$ and $g(.)$ as a suitable link function. For continuous outcome, an identity link is usually used.\\\
+
+The consistent and asymptotically normal estimates of $\beta$ and $\varphi$ can be obtained by solving the GEE \cite{liang1986longitudinal}: 
+\begin{align*}
+U(\varphi,\beta) & =\sum_{i=}^{n}U_{i}(\varphi,\beta)=\sum_{i=1}^{n}(\frac{\partial\mu_{i}}{\partial\theta'})'V_i^{-1}(Y_{i}-\mu_{i})=0,\\
+\textrm{with}\\
+\frac{\partial\mu_{i}}{\partial\theta'} & =\frac{\partial g^{-1}(H_{i}\theta)}{\partial\theta'}, V_i = \phi A_{i}^{\frac{1}{2}}R_{w}A_{i}^{\frac{1}{2}},\\
+\textrm{and}\\
+A_{i} &= 
+\begin{bmatrix}
+ v(\mu_{i1}) & 0 & \cdots & 0\\
+ 0 & v(\mu_{i2}) & 0 & 0\\
+ \vdots & 0 & \ddots & \vdots\\
+ 0 & 0 & \cdots & v(\mu_{ik})
+\end{bmatrix}
+\end{align*}
+
+%$\phi$ in $V_i$ is the dispersion parameter in GEE and is usually treated as nuisance parameter. $v(\mu_{im}) = \phi \textrm{Var}(y_{im} | x_i, z_i) $. $R_w(\alpha)$ is a working correlation matrix depending on some unknown parameter $\alpha$.\\\
+\framebreak
+With a canonical link function and a working independence model, we have a closed form of the U vector with \textbf{two parts} corresponding to SNPs and covariates, and its covariance estimator:
+\\
+\begin{tiny}
+\begin{align}
+U & =\left(U_{.1}',U_{.2}'\right)'=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\mu_{i})\nonumber \\
+% \vspace{-2em}
+\widetilde{\Sigma} & = \widehat{\textrm{Cov} }(U) = \sum_{i}\left(Z_{i},X_{i}\right)'\widehat{\textrm{var}(Y_{i})}\left(Z_{i},X_{i}\right)=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})'\left(Z_{i},X_{i}\right)=\begin{pmatrix}V_{11} & V_{12} \\
+V_{21} & V_{22}
+\end{pmatrix}
+\label{eq:1}
+% \end{alignat}
+\end{align}
+\end{tiny}
+
+\newpage
+\textit{Quantitative traits}\\
+\indent We use the identity link, i.e. $g(\mu_{im}) = \mu_{im}$ and $v(\mu_{im}) = \phi \times 1 = \phi$. Then we have:
+\begin{align}
+U & = \sum_{i}\left(Z_{i},X_{i}\right)' R_w^{-1} (Y_{i}-\mu_{i}) \nonumber\\
+\widetilde{\Sigma} & = \sum_{i}\left(Z_{i},X_{i}\right)' R_w^{-1} (Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})' R_w^{-1} \left(Z_{i},X_{i}\right)
+\label{eq:2}
+\end{align}
+
+if the assumption of a common covariance matrices across $Y_i$ for $i$ is valid, e.g. for quantitative continuous traits study \cite{pan2001robust}, we can adopt a more efficient covariance estimator:
+\begin{tiny}
+\begin{align*}
+\widetilde{\Sigma} & = \sum_{i=1}^n \left(Z_{i},X_{i}\right)'\widehat{\textrm{var}(Y_{i})}\left(Z_{i},X_{i}\right)
+ = \sum_{i=1}^n \left(Z_{i},X_{i}\right)'\left(\sum_{i=1}^n \frac{(Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})'}{n}\right)\left(Z_{i},X_{i}\right) = 
+\begin{pmatrix}
+V_{11} & V_{12}\\
+ V_{21} & V_{22}
+\end{pmatrix}
+\end{align*}
+\end{tiny}
+which is used by default for its better finite-sample performance \cite{pan2001robust}.\\
+
+\framebreak
+\textit{Binary traits}\\
+\indent For binary traits (trait value coded as 0 and 1), we use the logit link function so that $g(\mu_{im}) = log \frac{\mu_{im}}{1 - \mu_{im}}$ and $v(\mu_{im}) = \mu_{im} (1 - \mu_{im})$. Additionally the $(m, l)$th element of $\frac{\partial\mu_{i}}{\partial\theta'}$ is
+$
+H_{i,ml} \mu_{im} (1- \mu_{im})
+$
+with $H_{i,ml}$ as the $(m, l)$th element of $H_i$, which is the short notation for $(Z_{i},X_{i})$.\\
+Then we have:
+\begin{align*}
+U & = \sum_{i=1} (\frac{\partial\mu_{i}}{\partial\theta'})' V_i^{-1} (Y_{i}-\mu_{i})\\
+& = \sum_{i=1} (\frac{\partial\mu_{i}}{\partial\theta'})' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} (Y_{i}-\mu_{i})\\
+\end{align*}
+and
+\begin{align*}
+\widetilde{\Sigma} & = \sum_{i}\left(\frac{\partial\mu_{i}}{\partial\theta'}\right)' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} (Y_{i}-\hat{\mu_{i}}) (Y_{i}-\hat{\mu_{i}})' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} \left( \frac{\partial\mu_{i}}{\partial\theta'} \right)\\
+& = 
+\begin{pmatrix}
+V_{11} & V_{12}\\
+ V_{21} & V_{22}
+\end{pmatrix}
+\end{align*}
+
+\framebreak
+In this research, I will \textbf{focus on} the case with quantitative traits, since they are most typical traits used as the response variable in longitudinal data analysis. In general, the only difference lies in which canonical link we will use, with all other equations/formulas remaining the same.
+
+
+\framebreak
+\scriptsize
+Our goal is to detect whether there is any association between the longitudinal trait and the SNPs via testing on hypothesis 
+$$H_{o}:\beta=(\beta_{1},\beta_{2},\ldots,\beta_{p})'=0$$ 
+We have under the null hypothesis with $g(Y_i)=Z_i\varphi$ to obtain $\varphi$ and predict $\hat{\mu}=g^{-1}(Z\hat{\varphi})$. We hereby have score vector under the null hypothesis, with a working independence model, is:
+$$U(\hat{\varphi},0)=(U_{.1}^{'}, U_{.2}^{'})'=\sum_{i=1}^{n}(U_{i1}^{'},U_{i2}^{'})'$$
+where
+$$U_{.1}=\sum_{i}Z_{i}'(Y_{i}-\hat{\mu_{i}}), U_{.2}=\sum_{i}X_{i}'(Y_{i}-\hat{\mu_{i}})$$ 
+As $U$ asymptotically follows a multivariate normal distribution under $H_{0}$, then the score vector for $\beta$ also has an asymptotic normal distribution:\\
+$$
+U_{.2}\sim N(0,\Sigma_{.2}),\,\Sigma_{.2}= \widehat{Cov} (U_{.2}) = V_{22} - V_{21} V_{11}^{-1} V_{12}
+$$, where $V_{xx}$ are defined in Equation \ref{eq:1}.
+
+\framebreak
+\scriptsize
+Several classical tests:
+\begin{itemize}
+\item \textbf{The Wald Test:} The Wald Test known as $T=\hat{\beta'}\text{cov (\ensuremath{\hat{\beta}}) }\hat{\beta}$ is most commonly used, where $\hat{\beta}$ is the estimate of $\beta$ after fitting the full GEE model with $g(\mu_i) = Z_i\varphi + X_i \beta$. Under $H_0$, we have $T \sim \chi_{p}^2$. The Wald test is more time consuming by fitting full model, may fail to converge with many SNPs put on RHS of the regression-like equation to test, and more importantly, the type I error tends to inflate in such case \cite{pan2014powerful,zhang2014testing}.
+\item \textbf{The Score Test:} $T=U_{.2}^{'}\Sigma_{.2}^{-1}U_{.2}^{-1}$, where $U_{.2}$ and $\Sigma_{.2}$ are discussed above; the statistic is asymptotically equivalent to the Wald test with the same null distribution $T \sim \chi_{p}^2$. Since we only need to fit the null model with covariates, it is computationally easier and less likely to have numerical convergence
+problems. More importantly, the score test controls the type I error well \cite{pan2014powerful,zhang2014testing}.
+\item \textbf{The UminP Test: }$T=\underset{j}{max}\frac{U_{.2,j}^{2}}{\Sigma_{.2,jj}}$
+for $j\in 1,2,\dots,p$, of $j$th SNP effect. The $\Sigma_{.2,jj}$ is the $j$th entry on the diagonal of $\Sigma_{.2}$. With max $T$, we can get minimal p-value accordingly.
+A simulation method based on the asymptotic normal distribution of
+the score vector can be used to calculate its p-value \cite{pan2014powerful,zhang2014testing}. An asymptotic multivariate normal distribution numerical integration based method provided an alternative to calculate its p-value \cite{Pan2009a,Pan2009}. %Specifically, we first simulate the score vector $U_{(b)} = ( U_{(b).1}, U_{(b).2},\ldots, U_{(b).p} )'$ from its null distribution  $U_{(b)} \sim N(0, \Sigma_{.2} )$ for $b = 1, 2, \ldots, B$, then calculate a total number of B null statistics: $T^{(b)} = \textrm{max}_{j = 1,\ldots,p} { U^2_{(b).j} \over  \Sigma_{.2,jj} }$, and the p-value is calculated as $\sum_{b=1}^B { I(T^{(b)} \geq T ) + 1  \over B + 1 } $.
+
+%With a working independence correlation matrix $R_w = I$, every element $\frac{U_{.2,j}^{2}}{\Sigma_{.2,jj}}$ is equivalent to running the model on each single SNP (e.g. $j$th) one by one and get the Score test statistics. Hence, in this condition, the GEE-UminP test is equivalent to the usual UminP test that combines multiple single-SNP based longitudinal association test statistics.
+\end{itemize}
+}
+
+
+%3
+\begin{frame}[allowframebreaks]
+\frametitle{Aim 1}
+\framesubtitle{Methods: A new class of tests and a data-adaptive test in longitudinal data settings}
+\scriptsize
+A general form of score-vector-based statistic can be generalized as:
+$$
+T_w = W' U = \sum_{j=1}^p W_j U_j
+$$
+where $W = (W_1, \ldots, W_p)'$ is a vector of weights for the $p$ SNVs \cite{Lin2011}. 
+
+with special cases:
+$$
+T_{Sum} = 1' U = \sum_{j=1}^p U_j, \qquad T_{SSU} = U'U = \sum_{j=1}^p U_j^2,
+$$
+These two tests are called Sum test and SSU test \cite{Pan2009}. \\
+
+
+\framebreak
+If we choose weight to be
+$$W_j = U_{.2, j} ^ { \gamma - 1} $$
+for a series of integer value $\gamma = 1,2,\ldots,\infty$, leading to the sum of powered score ($U$) tests called \textbf{SPU} tests:
+$$
+T_{ SPU ( \gamma ) } = \sum_{j=1}^p U_{.2, j} ^ { \gamma - 1} U_{.2, j}
+$$
+
+%\pagebreak
+When $\gamma \rightarrow \infty$ as an extreme situation, where $\infty$ is assumed to be an even number, we have
+$$
+T_{ SPU(\gamma) } \propto ||U||_{\gamma} = \left( \sum_{j=1}^p |U_{.2, j}| ^ { \gamma } \right) ^ { 1 \over \gamma } \ \rightarrow \ ||U||_{\infty} = \textrm{max}_{j=1} ^ p |U_{.2, j}| \equiv T_{ SPU(\infty) }.
+$$ 
+%which takes only the largest element (in absolute value) of score vector. Apparently, SPU($\infty$) is equivalent to UminP test except the variance of each score component is replaced by 1 as in the denominator part.\\\
+
+In our experience, SPU($\gamma$) test with a large $\gamma > 8$ usually gave similar results as that of SPU($\infty$) test \cite{pan2014powerful}, thus we will only use $\gamma \in \Gamma = \{1,2,\ldots,8,\infty \} $ for the whole dissertation work. \\\
+
+\framebreak
+\textbf{Simulation-based P-value estimation of $T_{ SPU(\gamma) }$ }\\
+%Suppose the sample size is large enough or MAF of SNV is large enough for the asymptotic normal distribution of score vector to hold under null hypothesis, we will use a simulation method to calculate the p-value from each $T_{ SPU(\gamma) }$ \cite{Lin2005,Seaman2005}. \\\
+
+%Specifically, 
+Suppose $T$ is short notation of $T_{ SPU(\gamma) }$ for a specific $\gamma$ and $\hat{\Sigma}_{.2}$ is the covariance matrix of the score vector $U_{.2}$ based on original data (see Equation \ref{eq:1}). We draw B samples of the score vector from its null distribution: 
+$$U_{.2}^{ (b) } \sim MVN \left( 0, \hat{\Sigma}_{.2} \right),$$ 
+with $b = 1,2,\ldots,B$, and thus obtain a statistics under null hypothesis: $T ^ {(b)} = \sum_{j=1}^p U^{ (b)\gamma }_{.2, j} $. We then can calculate the p-value of $T_{ SPU(\gamma) }$ as 
+$$P_{ SPU(\gamma) } = \sum_{b=1}^B { I(T^{(b)} \geq T ^ {obs} ) + 1  \over B + 1 }. $$
+
+
+\framebreak
+\textbf{The aSPU test}\\
+Although we have a list of SPU($\gamma$) statistics and p-values, we are not sure which one is \textbf{the most powerful} in a specific data situation. Thus, it will be convenient to have a test which data-adaptively and automatically \textbf{select/combine the best} SPU($\gamma$) test(s).\\\
+
+We hereby propose an adaptive SPU (aSPU) test to achieve such purpose. Accordingly, we will have the aSPU test statistic:
+$$
+T_{aSPU} = \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) },
+$$
+%where $P_{ SPU(\gamma) }$ is the p-value of a specific SPU($\gamma$) test.
+
+\framebreak
+\textbf{Simulation-based P-value estimation of $T_{aSPU}$ }\\
+%Similarly as the above simulation method to get p-value of $T_{ SPU(\gamma) }$, the \textit{same strategy} can be applied to get the p-value of $T_{aSPU}$ and actually it fully utilizes the previous simulated intermediate result, hereby saves another \textit{unnecessary} simulation work. Specifically, at the SPU test stage we already have the $U_{.2}^{ (b) }$ for $b = 1,2,\ldots,B$. We then calculate the corresponding SPU test statistics $T^{ (b) }_{ SPU(\gamma) }$ and p-value 
+Similarly,
+$$
+P^{ (b) }_{ SPU(\gamma) } =  \sum_{b_1 \neq b}^B { I(T^{ (b_1) }_{ SPU(\gamma) } \geq T^{ (b) }_{ SPU(\gamma) } ) + 1  \over (B-1) + 1 } 
+$$
+for every $\gamma$ and every $b$. Then, we will have $ 
+T ^ {(b)} _{aSPU} = \underset{\gamma\in\Gamma}{ \textrm{min} } P^{ (b) }_{ SPU(\gamma) }
+$, and the final p-value of aSPU test is:
+$$
+P_{aSPU} = \sum_{b=1}^B { I(T ^ {(b)} _{aSPU} \leq T ^ {obs} _{aSPU} ) + 1  \over B + 1 }.
+$$
+It is worth noting again that the same $B$ simulated score (U) vectors have been used in calculating the $P_{aSPU}$. 
+
+\framebreak
+\textbf{The "data-adaptive" genome wide scan strategy}\\
+In practice for genome wide scan purpose, we can use a "data-adaptive" aSPU test strategy that is: 
+\begin{enumerate}
+\item we first start with a smaller $B$, say $B = 1000$
+\item we increase $B$ to say $10^6$ for just a few groups of SNVs, which passed an pre-determined significance cutoff (e.g. p-value $ \leq 5/B$) in 1
+\item repeat 2 until a pre-determined $B$ number reached 
+\end{enumerate}
+In this "data-adaptive" way of implementing the simulation based p-value calculating method for aSPU test, we will be able to apply the aSPU test to GWA data. 
+
+\framebreak
+\textbf{Other versions of aSPU test}
+\begin{itemize}
+\item \textbf{aSPUw test}\\
+The SPUw test is a \textit{diagonal-variance-weighted} version of the SPU test, defined as:
+\begin{eqnarray*}
+T_{SPUw(\gamma)} & = & \sum_{j=1}^{p}\left(\frac{U_{.2,j}}{\sqrt{\hat{\Sigma}_{.2,jj}}}\right)^{\gamma}
+\end{eqnarray*}
+
+\item \textbf{aSPU(w).Score test }\\
+$$
+T_{aSPU.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) }, P_{Score} \Big\},
+$$ 
+\end{itemize}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Methods in data simulation}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%4
+\begin{frame}[allowframebreaks]
+\frametitle{Aim 1}
+\framesubtitle{Methods in data simulation}
+\scriptsize
+\textbf{Simulation of genotype data}
+\begin{enumerate}
+\item a latent vector $G_i = (G_{i1}, \ldots, G_{ip})'$ was first drawn from  a \textbf{multivariate Normal distribution} $N(0,R)$, where $R$ had a AR(1) correlation structure with its $(i,j)$th element in terms of purely correlation $r_{ij} =\textrm{Corr} (G_{if}, G_{ig}) = \rho ^ { |f - g| }$ between any two latent components, $G_{if}$ and $G_{ig}$ for $f \neq g$. In our simulations we set $\rho = 0.8$.;
+\item the latent vector $G_i$ was dichotomized to yield a haplotype with each latent element $G_{ij}$ dichotomized to 0 or 1 with probability $\textrm{Prob} (G_{ij} = 1) = $ MAF of $j$th SNP; the MAFs were randomly drawn from a uniform distribution: for causal SNPs the MAFs were set between 0.3 and 0.4; for null SNPs the MAFs were set between 0.1 and 0.5;
+\item we combined two independent haplotypes to form the genotype $X_i = (X_{i1}, \ldots, X_{ip})' $ for subject $i$. The haplotypes for different subject were generated independently.
+\end{enumerate}
+
+
+
+\framebreak
+\begin{figure}
+\centering
+%\includegraphics[width=0.8\textwidth]{{{figure/2000px-Dna-SNP.svg}}}
+\vspace{-20pt}
+\includegraphics[height=0.7\textheight]{{{figure/genotype_simulation_demo}}}
+\caption{ Demo graph of genotype simulation}
+\end{figure}
+%\scriptsize
+%By this strategy we placed 35 SNPs in first block with AR(1) correlation structure to imitate the real LD structure among these SNPs; out of 35 SNPs we randomly set 5 SNPs to be causal (i.e. has a non-zero coefficient in later introduced regression model); to mimic the real data situation in SNP genotyping platforms, e.g. tag SNPs are usually in LD with casual SNPs but not the casual SNPs themselves, we excluded the 5 casual SNPs in the test (thus in first block, only null SNPs in LD with these 5 casual SNPs will enter the test). We further placed 15 null SNPs in the second block with AR(1) correlation structure as the same as we did in the first block. Note the first block and second block are independent though. All the SNPs from second block will participate in the test.
+
+\framebreak
+\textbf{Simulation of phenotype data}\\
+We setup the mixed effect model to achieve the AR(1) correlation structure as:\\
+\begin{equation}
+y_{im} = \mu_{i} + b_i + \underbrace{ \rho e_{i,m-1} + s_{i,m} }_{ e_{i,m} }  ,
+\label{eq:y_im_split}
+\end{equation}
+with $m = 1,\ldots,k$ indexes the longitudinal measurements within subject $i$; $$\mu_{i} = Z_i \varphi + X_i \beta = H_i \theta$$ as in quantitative trait case; $b_i$ is the random intercept representing the subject-level random effect, and
+$$
+\rho e_{i,m-1} + s_{i,m} = e_{i,m},
+$$ 
+where $\rho$ is lag-one autocorrelation coefficient, so we can plugin our estimate from real data here by setting up $\rho = 0.7$. We assume the following distribution:\\
+\begin{align*}
+b_i & \sim N(0,\sigma_b^2)\\
+e_{i,m} & \sim  N(0, \sigma_e^2)\\
+s_{i,m} & \sim  N(0, (1 - \rho^2) \sigma_e^2 )
+\end{align*}
+Under this assumption, the variance-covariance matrix across longitudinal measurements becomes (assuming $k = 4$ for the number of longitudinal measurements ):
+\begin{eqnarray}
+\Sigma_{4\times 4} = Var 
+\begin{pmatrix}
+b_i + e_{i1}\\
+b_i + \rho e_{i1} + s_{i2}\\
+b_i + \rho e_{i2} + s_{i3}\\
+b_i + \rho e_{i3} + s_{i4}
+\end{pmatrix}
+= \sigma_b^2
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1
+\end{pmatrix}
++ \sigma_e^2 
+\begin{pmatrix}
+1 & \rho & \rho^2 & \rho^3 \\
+\rho & 1 & \rho & \rho^2 \\
+\rho^2 & \rho & 1 & \rho \\
+\rho^3 & \rho^2 & \rho & 1
+\end{pmatrix}
+\label{eq:v-cov_split}
+\end{eqnarray}
+
+\framebreak
+\textbf{Connect phenotype data with genotype data}\\
+Let we first introduce the below splitting of the phenotype variance:
+\begin{align}
+Var(y_{im} ) & = Var(X_{ij}) \beta_j^2 + \sigma_{oth} ^ 2  = 2f(1-f) \beta_j^2 + \sigma_{oth}^2
+\label{eq:variance_split_ge_oth}
+\end{align}
+%where the Hard-Weinberg equilibrium is assumed to hold. $f$ is the MAF of the SNP; $\sigma_{oth}^2$ is the residual variance after removing the effect of $j$th SNP. Obviously we can see $\sigma_b^2$ and $\sigma_e^2$ are contained in $\sigma_{oth}^2$ (see equation \eqref{eq:y_im_split}), and if other SNPs' effect are negligible, we expect $\sigma_b^2 + \sigma_e^2 \approx \sigma_{oth}^2$. 
+Now let we look at the relationship between genetic heritability (narrow-sense heritability) and equation \eqref{eq:variance_split_ge_oth}:
+\begin{align}
+h^2 = \frac{Var(A)}{Var(P)}
+\end{align}
+%this is the classical formula of narrow-sense heritability, with $Var(A)$ represents the variance due to the additive effects of the alleles, and $Var(P)$ represents the total variance in the phenotype. 
+In our situation for $j$th SNP, this can be extended to:
+\begin{align}
+h_j^2 = \frac{Var_j(A)}{Var(P)} = \frac{Var(X_{ij}) \beta_j^2 } {Var(y_{im} )} = \frac{Var(y_{im} ) - \sigma^2_{oth} } {Var(y_{im} )} \approx \frac{Var(y_{im} ) - \sigma_b^2 - \sigma_e^2 } {Var(y_{im} )}
+\label{eq:h_j_derive_to_var_y_im}
+\end{align}
+
+\framebreak
+\textbf{Summary of parameter setup in simulation studies}\\
+After this point, by systematically solving the equations \eqref{eq:variance_split_ge_oth} and \eqref{eq:h_j_derive_to_var_y_im}, we can easily calculate the $\beta_j$ for $j$th SNP once we have determined the value of $h_j^2$, $\sigma_b^2$, $\sigma_e^2$ and $f$. Usually a $h_j^2$ for a single SNP $j$ will not be high for complex disease and we used $h_j^2 = 0.001$ in our simulation study to control $\beta_j$.
+We summarize the parameters used in simulation studies here:
+\begin{itemize}
+\item $h_j^2 = 0.001$
+\item $\sigma_b^2 = 1$
+\item $\sigma_e^2 = 1$
+\item $n$ varies between $500$ and $3000$ 
+\item $k = 4$
+\item 1000 replicates of simulated dataset
+\item $\alpha = 0.05$
+\item $\rho_y = 0.7$
+\item $\rho_x = 0.8$
+\item $R = AR(1)$
+\item $Rw = I$
+\end{itemize}
+
+% with other parameters set as: $\sigma_b^2 = 1$, $\sigma_e^2 = 1$ and $k = 4$ representing the number of longitudinal measurements for a single subject. Without special indication, we will use the simulated data set with 1000 replicates; significance level is set at 0.05. \\ 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Simulation results}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%5
+\begin{frame}[allowframebreaks]
+\frametitle{Aim 1}
+\framesubtitle{Simulation results}
+\scriptsize
+\begin{itemize}
+\item \textbf{Tests under default simulation settings with varying sample size}\\
+%%%%%%
+\begin{center}
+\tiny
+\begin{table}[H]
+\begin{tabular}{lcccccccccccc}
+\hline 
+n & Score & UminP & SumP & SumP.w & SSU & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\ 
+\hline 
+500 & 0.038 & 0.056 & 0.058 & 0.053 & 0.044 & 0.052 & 0.051 & 0.050 & 0.048 \\ 
+1000 & 0.047 & 0.054 & 0.048 & 0.049 & 0.065 & 0.065 & 0.064 & 0.059 & 0.057 \\ 
+2000 & 0.055 & 0.041 & 0.053 & 0.053 & 0.059 & 0.052 & 0.055 & 0.058 & 0.058 \\ 
+3000 & 0.055 & 0.054 & 0.057 & 0.060 & 0.065 & 0.063 & 0.054 & 0.056 & 0.059 \\ 
+\hline 
+\end{tabular}
+% \vspace{-1em}%%%%%%%%% reduce the space between table and text
+% \captionof{table}{Type I error using working independence Rw}
+\tiny \caption{\tiny Type I error under using working independence $R_w$}
+\label{table:type_I_error_CV_varySampleSize}
+\end{table}
+\end{center}
+%%%%%%%%%%%%%%%%%%%
+
+\framebreak
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.7\textheight]{{{figure/PowerCurve_independenceWkCor_on_AR1data_h0.001}}}
+\vspace{-15pt}
+\tiny \caption{\tiny Empirical power benchmark under different $n$ using working independence $R_w$}
+\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001}
+\end{figure}
+
+\newpage
+\item \textbf{Tests with half number of SNPs in opposite effect direction}\\
+In 5 causal SNPs, we set 2 of them to have opposite effect direction to the left 3 SNPs. The other settings kept the same as the above. We have the empirical power benchmark result as below:
+%%%%%%%%%%%%%%%%%%% 
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.7\textheight]{{{figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects}}}
+\caption{\tiny Empirical power benchmark under a mixed SNP effects}
+\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects}
+\end{figure}
+
+%\framebreak
+\item \textbf{Tests with growing number of Null SNPs}\\
+%In previous two tests scenarios, we confirmed the ability of aSPU family members and concluded the SPU(2) is most powerful and contribute to the good performance of aSPU family. Now we are curious how higher $\gamma$ will bring aSPU family to the edge. We gradually increased the number of null SNPs number from 50 to 75, 100, 200, then finally a seemingly extreme number 400. We used $n = 3000$ as the sample size. We kept all other settings the same with previous scenarios. The empirical power benchmark result is shown below:
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\centering
+\vspace{-10pt}
+\includegraphics[height=0.7\textheight]{{{figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull}}}
+\vspace{-15pt}
+\caption{\tiny Empirical power benchmark under an increasing number of Null SNPs}
+\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Aim 2: Longitudinal aSPU family tests on Rare Variants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%1
+\frame{
+\frametitle{Aim 2}
+%\framesubtitle{Aim 1a}
+
+\small
+Extend the data-adaptive longitudinal association test within GEE framework to work for \textbf{rare variants} in a gene-based manner. 
+%Since RVs has much lower MAF than CVs, some assumptions like coefficient estimator follows an \textbf{asymptotic normal distribution} may hold or not. Special procedure like \textbf{permutation} or parametric bootstrap specially designed for the \textbf{longitudinal} data settings should be adopted to provide an accurate association significance level.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Methods}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%2
+\frame[allowframebreaks]{
+\frametitle{Aim 2}
+\framesubtitle{Methods}
+\scriptsize
+For CVs we have:
+$$
+U_{.2}^{ (b) } \sim MVN \left( 0, \hat{\Sigma}_{.2} \right)
+$$
+with $b = 1,2,\ldots,B$, and thus obtain a statistics under null hypothesis: $T ^ {(b)} = \sum_{j=1}^p U^{ (b)\gamma }_{.2, j} $. We then calculate the p-value of $T_{ SPU(\gamma) }$ as $P_{ SPU(\gamma) } = \sum_{b=1}^B { I(T^{(b)} \geq T ^ {obs} ) + 1  \over B + 1 } $. \\\
+
+%While MAF of RVs are usually low, e.g. between 0.001 to 0.01, the asymptotically Normal distribution of either $beta$ coefficient or score vector may or may not hold. 
+The above algorithms will hold in RV case by large, except that the $U_{.2}^{ (b) }$ may \textbf{not} follow the multivariate Normal distribution any longer. As a remedy, we propose a permutation algorithm that generates the empirical null distribution of $U_{.2}^{ (b) }$ and in the same time \textbf{maintain the relationship} between longitudinal traits and possible covariates such as age, gender, etc, for subject $i$. The algorithm will also be robust to \textbf{missing data} as this is a usual case in longitudinal data settings.
+
+\framebreak
+The permutation algorithm can be implemented as follows:
+\begin{enumerate}
+\item identify the max $k$ across all $n$ subjects, which is the number of longitudinal measurements, e.g. $k = 4$.
+%%%
+\item detect if the data has missing values, if yes, fill the missing value with NA to complement the data dimension (for example, subject $i$ with $Y_{i} = ( y_{i,1},,,y_{i,4} )'$ has two missing measurements at time 2 and time 3. After missing value complementing, it becomes $Y_{i} = ( y_{i,1},\textrm{NA},\textrm{NA},y_{i,4} )'$). Now we should have all the subjects with each $Y_{i}$ of dimension equal to $k \times 1$.  
+%%%
+\item complement $H_i$ to be of full dimension, i.e. $k \times (p + q + 1)$, for covariates and SNVs. Now we should have
+$\begin{pmatrix}
+Y_i & H_i
+\end{pmatrix}$
+as an augmented matrix of dimension $k \times (p + q + 2)$ for each subject $i$, where $H_i = (Z_i,X_i)$. For total $n$ subjects, we have row-wise binded matrix
+$$
+M = 
+\begin{pmatrix}
+Y_1 & H_1\\
+Y_2 & H_2\\
+\vdots & \vdots\\
+Y_n & H_n
+\end{pmatrix}
+$$ 
+of dimension $nk \times (p + q + 2)$.
+%%%
+\item permute the SNV chunk among different individuals, i.e. the $X_i$ in
+$\begin{pmatrix}
+Y_i & Z_i,X_i
+\end{pmatrix}$ 
+with the $X_j$ in 
+$\begin{pmatrix}
+Y_j & Z_j,X_j
+\end{pmatrix}$
+, where $i \neq j$. 
+%%%
+\item with permuted 
+$$
+M^{*(b)} = 
+\begin{pmatrix}
+Y_1 & Z_1, X_1^{*(b)}\\
+Y_2 & Z_1, X_2^{*(b)}\\
+\vdots & \vdots\\
+Y_n & Z_1, X_n^{*(b)}
+\end{pmatrix}
+$$
+we refit the GEE model and get the $ U_{.2}^{ *(b) } $
+%%%
+\item repeat step 4 - 5 B times to produce $U_{.2}^{ *(b) }$ with $b = 1,2,\ldots,B$.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%After we get enough $U_{.2}^{ *(b) }$ to form an empirical null distribution, the left work of aSPU test for RVs will be exactly the same as we did on CVs. The only difference is, previously we get simulation based null distribution of score vector under CVs situation, but now we rely on special permutation algorithm in the longitudinal data settings to generate the null distribution of score vector.
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Methods in data simulation}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%3
+\begin{frame}[allowframebreaks]
+\frametitle{Aim 2}
+\framesubtitle{Methods in data simulation}
+\scriptsize
+The simulation strategy of RV data is almost the same with previous strategy for generating CV data , except that:
+\begin{enumerate}
+\item the MAF of RVs, regardless of casual one or null one, are set between \textbf{0.001} and \textbf{0.01}.
+\item the casual RVs are \textbf{not} excluded from later test as we expect the whole-genome sequencing or exome sequencing/Chip platform will identify high density SNVs including the real casual ones.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%
+We will use the same simulated longitudinal phenotype data as for CVs.
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Simulation results}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+%4
+\begin{frame}[allowframebreaks]
+\frametitle{Aim 2}
+\framesubtitle{Simulation results}
+\scriptsize
+If we still use the CVs' strategy on RVs, we will have
+\begin{itemize}
+\item \textbf{Simulation-based Test under default settings with varying sample size}\\
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[H]
+\resizebox{0.9\textwidth}{!}{
+\begin{tabular}{rrrrrrrrrrrrrrrrrr}
+  \hline
+ n & pSSU & pSSUw & pScore & pSum & mvn.UminP  & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\
+  \hline
+500  & 0.053 & 0.054 & 0.052 & 0.049 & 0.047  & 0.022 & 0.052 & 0.026 & 0.063 & 0.025  & 0.056 & \textbf{0.021} & 0.059 & \textbf{0.035} \\
+1000 & 0.055 & 0.040 & 0.042 & 0.048 & 0.054  & 0.049 & 0.048 & 0.046 & 0.061 & 0.044  & 0.045 & 0.045 & 0.053 & 0.047 \\
+2000 & 0.054 & 0.050 & 0.048 & 0.049 & 0.046  & 0.045 & 0.053 & 0.044 & 0.063 & 0.061  & \textbf{0.066} & \textbf{0.062} & \textbf{0.062} & \textbf{0.062} \\
+3000 & 0.045 & 0.044 & 0.039 & 0.060 & 0.053  & 0.055 & 0.057 & 0.058 & 0.058 & 0.052  & 0.049 & 0.055 & 0.055 & 0.057 \\
+   \hline
+\end{tabular}
+}
+\tiny \caption{ Empirical type I error using simulation-based method in RV analysis. mvn.UminP: UminP method based MVN distribution; UminP: UminP method based on simulation.  \label{table:Empirical type I error using simulation-based method in RV analysis}}
+
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%
+
+\framebreak
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.7\textheight]{{{figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}}}
+\caption{Empirical power benchmark using simulation-based method in RV analysis}
+\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}
+\end{figure}
+
+\framebreak
+\item \textbf{Permutation-based Test under default settings with varying sample size}\\\
+
+As noted before, there are some minor issues in using simulated-based aSPU method to test RVs, we thus tested the aSPU performance based on permutation algorithm. The type I error is shown below.\\
+
+
+\begin{table}[ht]
+\resizebox{0.9\textwidth}{!}
+{
+\centering
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrr}
+ \hline
+n    & pSSU & pSSUw & pScore & pSum & mvn.UminP & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\
+ \hline
+500  & 0.053 & 0.054 & 0.052 & 0.049 & 0.047  & 0.046 & 0.050 & 0.049 & 0.056 & 0.061  & 0.054 & 0.053 & 0.060 & 0.056  \\
+1000 & 0.055 & 0.040 & 0.042 & 0.048 & 0.054  & 0.056 & 0.048 & 0.049 & 0.056 & 0.043  & 0.047 & 0.045 & 0.052 & 0.051  \\
+
+2000 & 0.054 & 0.050 & 0.048 & 0.049 & 0.046  & 0.046 & 0.049 & 0.043 & 0.053 & 0.052  & 0.063 & 0.057 & 0.058 & 0.056  \\
+
+3000 & 0.045 & 0.044 & 0.039 & 0.060 & 0.053  & 0.050 & 0.058 & 0.058 & 0.047 & 0.048  & 0.049 & 0.053 & 0.049 & 0.053  \\
+
+  \hline
+\end{tabular}
+}
+\caption{Empirical type I error using permutation-based method in RV analysis. mvn.UminP: UminP method based MVN distribution; UminP: UminP method based on permutation.  \label{table:Empirical type I error using permutation-based method in RV analysis}}
+
+\end{table}
+
+\newpage
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.7\textheight]{{{figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU}}}
+\vspace{-10pt}
+\caption{Empirical power benchmark using simulation-based method in RV analysis}
+\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}
+\end{figure}
+
+\newpage
+\item An effort to combine the advantages from aSPU, aSPUw and score test. The aSPU.aSPUw.Score test can save user's effort in deploying a best version of aSPU family test on a specific dataset with only a small amount of power loss in the process of compromising among different versions.
+$$
+T_{aSPU.aSPUw.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) },\underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPUw(\gamma) }, P_{Score} \Big\},
+$$ 
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.7\textheight]{{{figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTests}}}
+\vspace{-10pt}
+\caption{Empirical power benchmark with aSPU.aSPUw.Score test in RV analysis}
+\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTests}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Aim 2: Pathway-based longitudinal aSPU family tests: Path-aSPU}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\frame{
+%\frametitle{Table of Contents}
+%\tableofcontents[currentsection,currentsubsection]
+%}
+%%1
+%\frame{
+%\frametitle{Aim 2}
+%%\framesubtitle{Aim 1a}
+%
+%\small
+%To extend the data-adaptive longitudinal association test within the GEE framework to work for common variants or rare variants in a gene-set/pathway-based manner, i.e. \textbf{pathway-based association test}. \\\
+%}
+%
+%%2
+%\frame[allowframebreaks]{
+%\frametitle{Aim 2}
+%\framesubtitle{Method}
+%\scriptsize
+%A pathway analysis involves multiple genes (e.g. 20 as a typical number). As the genes within a pathway may contain different numbers of RVs, we need to modify the aSPU test to \textbf{adjust for various gene length} to avoid dominant influence from a large (or small) gene.\\\
+%
+%Suppose we let the short notation $U_{g.}$ to represent $U_{.2}$ for the RVs $X_i$'part in the whole score vector, and $U_{g.} = (U_{g,1},U_{g,1},\ldots, U_{g,p_g})'$ is the score vector for gene $g$ with $p_g$ RVs of itself. Given a pathway (or gene set) S, the gene-specific SPU statistic is as follows:
+%\begin{equation}
+%T_ { SPU(\gamma ; g) } \propto || Ug.||_{\gamma} =  \left( \frac{  \sum_{j=1} ^ {p_g} |U_{g, j}| ^ { \gamma }  }{p_g} \right) ^ { 1 \over \gamma }
+%\end{equation}  
+%Then accordingly, the pathway-based SPU statistic is
+%\begin{equation}
+%T _ { Path-SPU(\gamma, \gamma2 ; S) } = \sum_{g \in S} ( T_ { SPU(\gamma ; g) } ) ^ {\gamma2}
+%\end{equation}  
+%
+%%Note the $T_ { SPU(\gamma ; g) }$ is now standardized by gene-specific number of RVs, $p_g$; for a given gene $g$, $T_ { SPU(\gamma ; g) }$ is equivalent to previous notation $T_ { SPU(\gamma ) }$ by large.\\\
+%
+%\framebreak
+%%For any given $(\gamma, \gamma2)$, we recourse to same simulation or permutation strategy to calculate the p-value $P _ { Path-SPU(\gamma, \gamma2 ; S) }$ from $T _ { Path-SPU(\gamma, \gamma2 ; S) }$. Then we will have the \textbf{pathway-based aSPU} test statistic:
+%The pathway-based aSPU statistic is thus
+%\begin{equation}
+%T _ { Path-aSPU(S) } = min_{\gamma, \gamma2} P _ { Path-SPU(\gamma, \gamma2 ; S) }
+%\end{equation}
+%%we again adopt the same strategy as previous (which utilized the same simulated $U$ in last step for calculating $P _ { Path-SPU(\gamma, \gamma2 ; S) }$) to calculate the final \textbf{pathway-based aSPU} p-value $P _ { Path-aSPU(S) }$.\\\
+%
+%We propose to use $\gamma 2 \in \Gamma 2 = \{1,2,4,8\}$. The $1,2,4,8$ will cover Sum-like test, SSU-like test, and two more tests preferring the sparse-casual-gene situation (e.g. only 2 or 3 genes are associated with traits in a pathway, say with 20 genes). 
+%}
+%
+%%3
+%\begin{frame}[allowframebreaks]
+%\frametitle{Aim 2}
+%\framesubtitle{Methods in data simulation}
+%\scriptsize
+%\begin{itemize}
+%
+%
+%\item We will simulate a pathway with 20 genes; each gene $g$ will contain $p_g$ RVs with $p_g$ randomly draw from a uniform distribution $U(5,30)$; 10 of the 20 genes will be randomly selected to be causal, with each casual gene containing 1 causal RV. 
+%%The RVs within each gene will be simulated as before. The phenotype data in the simulation study will be the same as before.
+%
+%\item We will test Path-aSPU family on the simulated data to evaluate the type I error and power, with comparison to other existing tests like GRASS \cite{Chen2010},which executes lasso regression (L1-norm) of eigenSNPs within each gene to achieve variable selection, while performing ridge regression (L2-norm) of eigenSNPs at the gene-set-level to achieve gene effect estimates shrinkage simultaneously; ALIGATOR \cite{Holmans2009}, the association list go annotator, which is a 'p-value enrichment approach' requiring only pre-computed SNP p-values, uses Fisher's exact test on SNP with minimum p-value for the gene-level association; Plink \cite{Purcell2007}, which is a very popular GWAS analysis tool and plinkSet module within it implements the set-based associate test; the famous GSEA test in association study settings by \cite{wang2007pathway}.
+%
+%%\item We can further consider more extensive simulation tests, such as changing the casual RV number within a casual gene or changing the number of casual genes; use independent RVs within a gene instead of correlated RVs in AR(1); test Path-aSPU family with different working correlation matrix for modeling the longitudinal response. 
+%\end{itemize}
+%%%%%%%%%%%%%%%%%%%%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Aim 3: Package/software development}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\frame{
+%\frametitle{Table of Contents}
+%\tableofcontents[currentsection,currentsubsection]
+%}
+%%1
+%\frame{
+%\frametitle{Aim 3}
+%%\framesubtitle{Aim 1a}
+%
+%\small
+%To provide an R package or Linux command-line based software program to enable convenient implementation of above methods. The package/software will be released to public (e.g. CRAN) eventually.
+%}
+%
+%%2
+%\frame{
+%\frametitle{Aim 3}
+%\framesubtitle{Method}
+%\begin{enumerate}
+%\item the package/software will be straightforward to install and use for 1st-time user
+%\item the package/software will have the ability to run in a very flexible parallel computation framework, e.g. can use single node with multiple cores or use multiple nodes with multiple cores. The parallel protocol we will adopt is either SOCKET or MPI.
+%\item the package/software will have state-of-the-arts technique to enable efficient implementation of aSPU algorithms, such as hash table, radix sort, memory-efficient task send \& collect among nodes, some intensive loops consider calling C++ code, etc. 
+%\item the package/software will have a help document with demo examples
+%\end{enumerate}
+%}
+%
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Real Data Application}\label{sec:data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Real Data Introduction}\label{sec:data-intro}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+
+\frame{
+\scriptsize
+\frametitle{Real Data Introduction}
+The real data used in my dissertation will be obtained from
+the Atherosclerosis Risk in Communities (ARIC) Study (https://www2.cscc.unc.edu/aric/). 
+\\\ 
+
+The Cohort Component of the ARIC study began in 1987. A total of 15,792 participants received an extensive examination, including medical, social, and demographic data.  These participants were re-examined every three years with the first screen (baseline) occurring in 1987-89, the second in 1990-92, the third in 1993-95, and the fourth exam was in 1996-98. In 2009, the NHLBI funded a fifth exam, which is currently being conducted.\\\
+
+%\framebreak
+\begin{wrapfigure}{l}{0.5\textwidth}
+\centering
+\vspace{-20pt}
+\includegraphics[height=0.5\textheight]{{{figure/ARICcomponents_0}}}
+\vspace{-20pt}
+\caption{ \tiny ARIC Cohort and Community Surveillance Components. Figure adopted from the ARIC website}
+\end{wrapfigure}
+We applied our novel method on ARIC data. Specifically, we will use the four closely cardiovascular-disease-related traits measured in ARIC cohort data, which are \textbf{total cholesterol} (tch), \textbf{High-density lipoprotein} (HDL), \textbf{Low-density lipoprotein} (LDL) and \textbf{triglycerides} (trgs). We will exclusively use Caucasian samples ($n$ = 11478). For the covariates, we will include but not limited to subject's demographic information such as age, gender, BMI, etc. 
+
+
+%We hope to validate known genetic loci as reported in literatures \cite{Teslovich2010,Lange2014,Peloso2014,Consortium2013,Maxwell2013}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Real Data Result Demo}\label{sec:data-result}
+%\frame{
+%\frametitle{Table of Contents}
+%\tableofcontents[currentsection,currentsubsection]
+%}
+\frame{
+\scriptsize
+\frametitle{Real Data Result Demo}
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.7\textheight]{{{figure/ARIC_exome/Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-genome}}}
+\caption{Manhattan Plot of aSPUw.score test on ARIC data Total Cholesterol trait}
+\label{fig: Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-genome}
+\end{figure}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% acknowledgement frame  
+\frame{
+%\begin{figure}
+%        \centering
+%        \begin{subfigure}[b]{0.4\textwidth}
+%                \includegraphics[width=\textwidth]{figure/QA_amazon}
+%                %\caption{A gull}
+%                %\label{fig:gull}
+%        \end{subfigure}%
+%        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+%          %(or a blank line to force the subfigure onto a new line)
+%        \begin{subfigure}[b]{0.4\textwidth}
+%                \includegraphics[width=\textwidth]{figure/QA1}
+%                %\caption{A tiger}
+%                %\label{fig:tiger}
+%        \end{subfigure}
+%        %\caption{Pictures of animals}\label{fig:animals}
+%\end{figure}
+
+ \begin{figure}
+        \centering
+        \begin{minipage}{.5\textwidth}
+            \centering
+            \includegraphics[width=.6\linewidth]{figure/QA_amazon}
+            %\caption{A subfigure}
+        \end{minipage}%
+        \begin{minipage}{.5\textwidth}
+            \centering
+            \includegraphics[width=.6\linewidth]{figure/QA1}
+            %\caption{A subfigure}
+        \end{minipage}
+        %\caption{Thank you for your participation!}
+    \end{figure}
+    \centering
+    Thank you for your participation!
+
+}
+
+\section{References}
+%\frame{
+%\frametitle{References}
+%\begin{enumerate}
+%\item Elizabeth R. Brown, {\em Introduction to Regression Models}
+%\item Nicholas Christian, {\em Statistical Computing in R}
+%\item Langsrud, $\phi$. (2003), ANOVA for Unbalanced Data: Use Type II Instead of Type III Sums of Squares, {\em Statistics and Computing}, 13, 163-167.
+%\end{enumerate}
+ 
+\begin{frame}[allowframebreaks]
+\tiny
+        \frametitle{References}
+        \bibliographystyle{amsalpha}
+        \bibliography{../proposal}
+\end{frame}
+%}
+  
+\end{document}

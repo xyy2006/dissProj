@@ -172,6 +172,23 @@
   Url                      = {http://archpsyc.jamanetwork.com/article.aspx?articleid=1672838}
 }
 
+@Article{Beyene2014,
+  Title                    = {Longitudinal Data Analysis in Genome-Wide Association Studies},
+  Author                   = {Beyene, Joseph and Hamid, Jemila S},
+  Journal                  = {Genetic epidemiology},
+  Year                     = {2014},
+  Number                   = {S1},
+  Pages                    = {S68--S73},
+  Volume                   = {38},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Wiley Online Library},
+  Review                   = {accout for family relateness
+
+longitudinal},
+  Timestamp                = {2014.12.16}
+}
+
 @Article{Bhatia2010,
   Title                    = {A covering method for detecting genetic associations between rare variants and common phenotypes},
   Author                   = {Bhatia, Gaurav and Bansal, Vikas and Harismendy, Olivier and Schork, Nicholas J and Topol, Eric J and Frazer, Kelly and Bafna, Vineet},
@@ -225,6 +242,7 @@
   Number                   = {12},
   Pages                    = {e1002822},
   Volume                   = {8},
+
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
   Timestamp                = {2014.12.14}
@@ -536,6 +554,17 @@
   Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/gepi.21689/full}
 }
 
+@Book{Diggle2002,
+  Title                    = {Analysis of longitudinal data},
+  Author                   = {Diggle, Peter and Heagerty, Patrick and Liang, Kung-Yee and Zeger, Scott},
+  Publisher                = {Oxford University Press},
+  Year                     = {2002},
+
+  __markedentry            = {[ThomasYY:6]},
+  Owner                    = {ThomasYY},
+  Timestamp                = {2014.12.24}
+}
+
 @Article{Eichler2010,
   Title                    = {Missing heritability and strategies for finding the underlying causes of complex disease},
   Author                   = {Eichler, Evan E and Flint, Jonathan and Gibson, Greg and Kong, Augustine and Leal, Suzanne M and Moore, Jason H and Nadeau, Joseph H},
@@ -652,6 +681,7 @@
   Pages                    = {463--471},
   Volume                   = {36},
 
+  File                     = {:D\:\\Dissertation_proj\\Genome-Wide Association Mapping With Longitudinal Data.pdf:PDF},
   Owner                    = {Nainan},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.10.18},
@@ -735,6 +765,7 @@
   Number                   = {4},
   Pages                    = {e1000456},
   Volume                   = {5},
+
   File                     = {:D\:\\Dissertation_proj\\Rapid and Accurate Multiple Testing Correction and power estimation for millions of correlated markers.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
@@ -999,12 +1030,27 @@ and a real sequence dataset on Type-1 diabetes.},
   Timestamp                = {2014.11.18}
 }
 
+@Article{Kerner2009,
+  Title                    = {Use of longitudinal data in genetic studies in the genome-wide association studies era: summary of Group 14},
+  Author                   = {Kerner, Berit and North, Kari E and Fallin, M Daniele},
+  Journal                  = {Genetic epidemiology},
+  Year                     = {2009},
+  Number                   = {S1},
+  Pages                    = {S93--S98},
+  Volume                   = {33},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2014.12.16}
+}
+
 @Article{Kim2014,
   Title                    = {Penalized regression approaches to testing for quantitative trait-rare variant association},
   Author                   = {Kim, Sunkyung and Pan, Wei and Shen, Xiaotong},
   Journal                  = {Frontiers in genetics},
   Year                     = {2014},
   Volume                   = {5},
+
   File                     = {:D\:\\Dissertation_proj\\penalized regression approaches to testing for quantitative trait-rare variant association.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Frontiers Media SA},
@@ -1092,6 +1138,7 @@ and a real sequence dataset on Type-1 diabetes.},
   Owner                    = {ThomasYY},
   Pii                      = {S0002-9297(12)00316-3},
   Pmid                     = {22863193},
+  Review                   = {skat-o},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1016/j.ajhg.2012.06.007}
 }
@@ -1117,6 +1164,7 @@ and a real sequence dataset on Type-1 diabetes.},
   Owner                    = {ThomasYY},
   Pii                      = {kxs014},
   Pmid                     = {22699862},
+  Review                   = {also skat-o with extensive simulation studies and benchmarks.},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1093/biostatistics/kxs014}
 }
@@ -1142,6 +1190,8 @@ and a real sequence dataset on Type-1 diabetes.},
   Owner                    = {ThomasYY},
   Pii                      = {S0002-9297(08)00408-4},
   Pmid                     = {18691683},
+  Review                   = {developed the Combined Multivariate and Collapsing (CMC) method
+and demonstrated that the CMC method is both powerful and robust. The CMC method},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1016/j.ajhg.2008.06.024}
 }
@@ -1224,8 +1274,28 @@ known as EREC method},
   Medline-pst              = {epublish},
   Owner                    = {ThomasYY},
   Pmid                     = {20976247},
+  Review                   = {the kernel-based adaptive cluster (KBAC) \cite{Liu2010}, compares the difference of weighted multi-site genotype frequencies between cases and controls.},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1371/journal.pgen.1001156}
+}
+
+@InProceedings{Liu2014,
+  Title                    = {Penalized multivariate linear mixed model for longitudinal genome-wide association studies},
+  Author                   = {Liu, Jin and Huang, Jian and Ma, Shuangge},
+  Booktitle                = {BMC Proceedings},
+  Year                     = {2014},
+  Number                   = {Suppl 1},
+  Organization             = {BioMed Central Ltd},
+  Pages                    = {S73},
+  Volume                   = {8},
+
+  File                     = {:D\:\\Dissertation_proj\\Penalized multivariate linear mixed model for longitudinal genome-wide association studies.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Review                   = {multivariate
+longitudinal
+
+penalized multivariate linear mixed model},
+  Timestamp                = {2014.12.16}
 }
 
 @Article{Liu2007,
@@ -1248,6 +1318,20 @@ known as EREC method},
   Review                   = {for only gene expression.},
   Timestamp                = {2014.10.18},
   Url                      = {http://dx.doi.org/10.1186/1471-2105-8-431}
+}
+
+@Article{Londono2013,
+  Title                    = {A novel method for analyzing genetic association with longitudinal phenotypes},
+  Author                   = {Londono, Douglas and Chen, Kuo-mei and Musolf, Anthony and Wang, Ruixue and Shen, Tong and Brandon, January and Herring, John A and Wise, Carol A and Zou, Hong and Jin, Meilei and others},
+  Journal                  = {Statistical applications in genetics and molecular biology},
+  Year                     = {2013},
+  Number                   = {2},
+  Pages                    = {241--261},
+  Volume                   = {12},
+
+  Owner                    = {ThomasYY},
+  Review                   = {use bayesian posterior probability},
+  Timestamp                = {2014.12.16}
 }
 
 @Article{Luo2011,
@@ -1497,6 +1581,7 @@ known as EREC method},
   Owner                    = {ThomasYY},
   Pii                      = {S0027-5107(06)00274-0},
   Pmid                     = {17101154},
+  Review                   = {the sums of allelic mutation frequencies in case and control cohorts are determined and a statistical test is applied to discover if the difference in these sums is greater than would be expected by chance},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1016/j.mrfmmm.2006.09.003}
 }
@@ -1735,7 +1820,6 @@ known as EREC method},
   Pages                    = {120--130},
   Volume                   = {69},
 
-  __markedentry            = {[ThomasYY:]},
   File                     = {:D\:\\Dissertation_proj\\Test Selection with Application to Detecting Disease Association with Multiple SNPs.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Karger Publishers},
@@ -1873,8 +1957,29 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Owner                    = {ThomasYY},
   Pii                      = {S0002-9297(10)00207-7},
   Pmid                     = {20471002},
+  Review                   = {Variable-Threshold Approach:
+
+use z(T) to replace the count of alleles,
+
+it is not a burden test, it is based on counts x phenotype_value, get a score and use permutation to evaluate p-value.},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1016/j.ajhg.2010.04.005}
+}
+
+@Article{Price2010a,
+  Title                    = {New approaches to population stratification in genome-wide association studies},
+  Author                   = {Price, Alkes L and Zaitlen, Noah A and Reich, David and Patterson, Nick},
+  Journal                  = {Nature Reviews Genetics},
+  Year                     = {2010},
+  Number                   = {7},
+  Pages                    = {459--463},
+  Volume                   = {11},
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Review                   = {when to use PC
+when to use EMMAX
+the best way EMMAX + PC},
+  Timestamp                = {2014.12.16}
 }
 
 @Article{Purcell2007,
@@ -2035,6 +2140,24 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Url                      = {http://www.sciencedirect.com/science/article/pii/S1053811912007951}
 }
 
+@Article{Smith2010,
+  Title                    = {Longitudinal genome-wide association of cardiovascular disease risk factors in the Bogalusa heart study},
+  Author                   = {Smith, Erin N and Chen, Wei and K{\"a}h{\"o}nen, Mika and Kettunen, Johannes and Lehtim{\"a}ki, Terho and Peltonen, Leena and Raitakari, Olli T and Salem, Rany M and Schork, Nicholas J and Shaw, Marian and others},
+  Journal                  = {PLoS genetics},
+  Year                     = {2010},
+  Number                   = {9},
+  Pages                    = {e1001094},
+  Volume                   = {6},
+
+  File                     = {:D\:\\Dissertation_proj\\Longitudinal Genome-Wide Association of Cardiovascular Disease Risk Factors in the Bogalusa Heart Study.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Public Library of Science},
+  Review                   = {application,
+
+use nlme R package},
+  Timestamp                = {2014.12.16}
+}
+
 @Article{Song2013,
   Title                    = {Simulation of longitudinal exposure data with variance-covariance structures based on mixed models.},
   Author                   = {Song, Peng and Xue, Jianping and Li, Zhilin},
@@ -2135,6 +2258,37 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pmid                     = {23594494},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1159/000346022}
+}
+
+@InProceedings{Tan2014,
+  Title                    = {Hierarchical linear modeling of longitudinal pedigree data for genetic association analysis},
+  Author                   = {Tan, Qihua and von Bornemann Hjelmborg, Jacob and Thomassen, Mads and Jensen, Andreas Kryger and Christiansen, Lene and Christensen, Kaare and Zhao, Jing Hua and Kruse, Torben A},
+  Booktitle                = {BMC Proceedings},
+  Year                     = {2014},
+  Number                   = {S82},
+  Volume                   = {8},
+
+  File                     = {:D\:\\Dissertation_proj\\Hierarchical linear modeling of longitudinal pedigree data for genetic association analysis.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Timestamp                = {2014.12.16}
+}
+
+@Article{Tang2014,
+  Title                    = {Large-Scale Genome-Wide Association Studies and Meta-Analyses of Longitudinal Change in Adult Lung Function},
+  Author                   = {Tang, Wenbo and Kowgier, Matthew and Loth, Daan W and Artigas, Mar{\'\i}a Soler and Joubert, Bonnie R and Hodge, Emily and Gharib, Sina A and Smith, Albert V and Ruczinski, Ingo and Gudnason, Vilmundur and others},
+  Journal                  = {PloS one},
+  Year                     = {2014},
+  Number                   = {7},
+  Pages                    = {e100776},
+  Volume                   = {9},
+
+  File                     = {:D\:\\Dissertation_proj\\Large-Scale Genome-Wide Association Studies and Meta-Analyses of Longitudinal Change in Adult Lung Function.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Public Library of Science},
+  Review                   = {application
+longituidinal using lme
+fixed effect meta analysis},
+  Timestamp                = {2014.12.16}
 }
 
 @Article{Teslovich2010,
@@ -2283,7 +2437,6 @@ In the logistic regression model, each component of U, say Uj, corresponds to a 
   Pages                    = {528--533},
   Volume                   = {459},
 
-  __markedentry            = {[ThomasYY:6]},
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.12.15}
@@ -2350,6 +2503,21 @@ genotypes and minimizes the DF at one},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.13},
   Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/gepi.21763/full}
+}
+
+@Article{WARE1990,
+  Title                    = {Longitudinal and cross-sectional estimates of pulmonary function decline in never-smoking adults},
+  Author                   = {WARE, JAMES H and DOCKERY, DOUGLAS W and LOUIS, THOMAS A and XU, XIPING and FERRIS, BENJAMIN G and SPEIZER, FRANK E},
+  Journal                  = {American journal of epidemiology},
+  Year                     = {1990},
+  Number                   = {4},
+  Pages                    = {685--700},
+  Volume                   = {132},
+
+  __markedentry            = {[ThomasYY:]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.12.24}
 }
 
 @Article{wedderburn1974quasi,
@@ -2621,6 +2789,22 @@ genotypes and minimizes the DF at one},
   Publisher                = {Elsevier}
 }
 
+@Article{Zhang2010b,
+  Title                    = {Mixed linear model approach adapted for genome-wide association studies},
+  Author                   = {Zhang, Zhiwu and Ersoz, Elhan and Lai, Chao-Qiang and Todhunter, Rory J and Tiwari, Hemant K and Gore, Michael A and Bradbury, Peter J and Yu, Jianming and Arnett, Donna K and Ordovas, Jose M and others},
+  Journal                  = {Nature genetics},
+  Year                     = {2010},
+  Number                   = {4},
+  Pages                    = {355--360},
+  Volume                   = {42},
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Review                   = {TASSEL software
+
+We used simulations to demonstrate the usefulness in controlling for substructure in genetic association datasets for a range of species and genetic architectures},
+  Timestamp                = {2014.12.16}
+}
+
 @Article{zhao1990correlated,
   Title                    = {Correlated binary regression using a quadratic exponential model},
   Author                   = {Zhao, Lue Ping and Prentice, Ross L},
@@ -2709,5 +2893,8 @@ hork2009\;Shendure2008\;Wang2005\;;
 e2014\;Maxwell2013\;Peloso2014\;Teslovich2010\;;
 1 ExplicitGroup:human_genetics_classic\;0\;Lynch1998\;;
 1 ExplicitGroup:current_software_tools\;0\;Gonzalez2007\;Wang2014\;;
+1 ExplicitGroup:longitudinal_GWAS\;0\;Beyene2014\;Diggle2002\;Furlotte
+2012\;Kerner2009\;Liu2014\;Londono2013\;Price2010a\;Smith2010\;Tan2014
+\;Tang2014\;WARE1990\;Zhang2010b\;;
 }
 
