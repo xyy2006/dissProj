@@ -234,6 +234,21 @@ longitudinal},
   Url                      = {http://www.nature.com/nature/journal/vaop/ncurrent/full/nature10405.html?WT.mc_id=TWT_NatureGen}
 }
 
+@Article{Boyko2008,
+  Title                    = {Assessing the evolutionary impact of amino acid mutations in the human genome},
+  Author                   = {Boyko, Adam R and Williamson, Scott H and Indap, Amit R and Degenhardt, Jeremiah D and Hernandez, Ryan D and Lohmueller, Kirk E and Adams, Mark D and Schmidt, Steffen and Sninsky, John J and Sunyaev, Shamil R and others},
+  Journal                  = {PLoS genetics},
+  Year                     = {2008},
+  Number                   = {5},
+  Pages                    = {e1000083},
+  Volume                   = {4},
+
+  __markedentry            = {[ThomasYY:6]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2014.12.29}
+}
+
 @Article{Bush2012,
   Title                    = {Genome-wide association studies},
   Author                   = {Bush, William S and Moore, Jason H},
@@ -455,6 +470,19 @@ longitudinal},
   Url                      = {http://genome.cshlp.org/content/9/10/936.short}
 }
 
+@Article{Conneely2007,
+  Title                    = {So Many Correlated Tests, So Little Time! Rapid Adjustment of P Values for Multiple Correlated Tests},
+  Author                   = {Conneely, Karen N and Boehnke, Michael},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2007},
+  Number                   = {6},
+  Pages                    = {1158--1168},
+  Volume                   = {81},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.12.28}
+}
+
 @Article{Consortium2013,
   Title                    = {Discovery and refinement of loci associated with lipid levels},
   Author                   = {Global Lipids Genetics Consortium and others},
@@ -559,8 +587,6 @@ longitudinal},
   Author                   = {Diggle, Peter and Heagerty, Patrick and Liang, Kung-Yee and Zeger, Scott},
   Publisher                = {Oxford University Press},
   Year                     = {2002},
-
-  __markedentry            = {[ThomasYY:6]},
   Owner                    = {ThomasYY},
   Timestamp                = {2014.12.24}
 }
@@ -787,6 +813,21 @@ longitudinal},
   Timestamp                = {2014.11.12}
 }
 
+@Article{Hernandez2008,
+  Title                    = {A flexible forward simulator for populations subject to selection and demography},
+  Author                   = {Hernandez, Ryan D},
+  Journal                  = {Bioinformatics},
+  Year                     = {2008},
+  Number                   = {23},
+  Pages                    = {2786--2787},
+  Volume                   = {24},
+
+  __markedentry            = {[ThomasYY:]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2014.12.29}
+}
+
 @Article{Hindorff2009,
   Title                    = {Potential etiologic and functional implications of genome-wide association loci for human diseases and traits},
   Author                   = {Hindorff, Lucia A and Sethupathy, Praveen and Junkins, Heather A and Ramos, Erin M and Mehta, Jayashri P and Collins, Francis S and Manolio, Teri A},
@@ -873,6 +914,7 @@ longitudinal},
   File                     = {:D\:\\Dissertation_proj\\Gene Ontology Analysis of GWA Study Data Sets provides insights into the biology of bipolar disorder.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
+  Review                   = {aligator},
   Timestamp                = {2014.11.14}
 }
 
@@ -1089,6 +1131,19 @@ and a real sequence dataset on Type-1 diabetes.},
   Pmid                     = {17357078},
   Timestamp                = {2014.10.17},
   Url                      = {http://dx.doi.org/10.1086/513473}
+}
+
+@Article{Kwee2008,
+  Title                    = {A powerful and flexible multilocus association test for quantitative traits},
+  Author                   = {Kwee, Lydia Coulter and Liu, Dawei and Lin, Xihong and Ghosh, Debashis and Epstein, Michael P},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {386--397},
+  Volume                   = {82},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.12.29}
 }
 
 @Article{laird1982random,
@@ -1974,6 +2029,7 @@ it is not a burden test, it is based on counts x phenotype_value, get a score an
   Number                   = {7},
   Pages                    = {459--463},
   Volume                   = {11},
+
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Review                   = {when to use PC
@@ -2514,7 +2570,6 @@ genotypes and minimizes the DF at one},
   Pages                    = {685--700},
   Volume                   = {132},
 
-  __markedentry            = {[ThomasYY:]},
   Owner                    = {ThomasYY},
   Publisher                = {Oxford Univ Press},
   Timestamp                = {2014.12.24}
@@ -2797,6 +2852,7 @@ genotypes and minimizes the DF at one},
   Number                   = {4},
   Pages                    = {355--360},
   Volume                   = {42},
+
   Owner                    = {ThomasYY},
   Publisher                = {Nature Publishing Group},
   Review                   = {TASSEL software
@@ -2866,10 +2922,10 @@ We used simulations to demonstrate the usefulness in controlling for substructur
 
 @comment{jabref-meta: groupstree:
 0 AllEntriesGroup:;
-1 ExplicitGroup:RV association test methods\;0\;Basu2011\;Chen2012\;De
-rkach2013\;Fan2013\;Han2010\;Lee2012\;Li2008\;Lin2005\;Lin2011\;Neyman
-1937\;Pan2009\;Pan2009a\;Pan2011\;Seaman2005\;Sun2013\;Zhang2011\;pan2
-014powerful\;zhang2014testing\;;
+1 ExplicitGroup:RV association test methods\;0\;Basu2011\;Chen2012\;Co
+nneely2007\;Derkach2013\;Fan2013\;Han2010\;Kwee2008\;Lee2012\;Li2008\;
+Lin2005\;Lin2011\;Neyman1937\;Pan2009\;Pan2009a\;Pan2011\;Seaman2005\;
+Sun2013\;Zhang2011\;pan2014powerful\;zhang2014testing\;;
 1 ExplicitGroup:pathway_geneSet\;0\;2013\;Ashburner2000\;Baranzini2009
 \;Biernacka2011\;BloodPressureGenome-WideAssociationStudies2011\;Chai2
 009\;Chen2009\;Chen2010\;Chen2010a\;DelaCruz2010\;Fridley2010\;Fridley
@@ -2896,5 +2952,7 @@ e2014\;Maxwell2013\;Peloso2014\;Teslovich2010\;;
 1 ExplicitGroup:longitudinal_GWAS\;0\;Beyene2014\;Diggle2002\;Furlotte
 2012\;Kerner2009\;Liu2014\;Londono2013\;Price2010a\;Smith2010\;Tan2014
 \;Tang2014\;WARE1990\;Zhang2010b\;;
+1 ExplicitGroup:populational genetics data simulation methods\;0\;Boyk
+o2008\;Hernandez2008\;;
 }
 

@@ -1,21 +1,30 @@
 \BOOKMARK [1][-]{section.1}{Background}{}% 1
-\BOOKMARK [1][-]{section.2}{Public Health Significance}{}% 2
-\BOOKMARK [1][-]{section.3}{Specific Aims and Hypotheses}{}% 3
-\BOOKMARK [1][-]{section.4}{Real Data Introduction}{}% 4
-\BOOKMARK [1][-]{section.5}{Methods}{}% 5
-\BOOKMARK [2][-]{subsection.5.1}{Aim One \(1a\): A data-adaptive association test for longitudinal data analysis within GEE framework}{section.5}% 6
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Statistical Modeling}{subsection.5.1}% 7
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Plan for Simulation Studies and Preliminary Simulation Results}{subsection.5.1}% 8
-\BOOKMARK [3][-]{subsubsection.5.1.3}{More Simulation Studies}{subsection.5.1}% 9
-\BOOKMARK [2][-]{subsection.5.2}{Aim One \(1b\): Longitudinal aSPU family tests on Rare Variants}{section.5}% 10
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Statistical Modeling}{subsection.5.2}% 11
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Plan for Simulation Studies and Preliminary Simulation Results}{subsection.5.2}% 12
-\BOOKMARK [3][-]{subsubsection.5.2.3}{More Simulation Studies}{subsection.5.2}% 13
-\BOOKMARK [2][-]{subsection.5.3}{Aim Two: Longitudinal aSPU family tests in a pathway-based manner: Path-aSPU}{section.5}% 14
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Statistical Modeling}{subsection.5.3}% 15
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Plan for Simulation Studies}{subsection.5.3}% 16
-\BOOKMARK [2][-]{subsection.5.4}{Aim Three: Package/software development}{section.5}% 17
-\BOOKMARK [1][-]{section.6}{Real Data Application of the methods}{}% 18
-\BOOKMARK [2][-]{subsection.6.1}{Data application for Aim One}{section.6}% 19
-\BOOKMARK [2][-]{subsection.6.2}{Data application for Aim Two}{section.6}% 20
-\BOOKMARK [1][-]{subsection.6.2}{References}{}% 21
+\BOOKMARK [2][-]{subsection.1.1}{Gene-based association tests}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Longitudinal study design in GWAS and the strategy}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Gene-Set/Pathway based association test}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Public Health Significance}{}% 5
+\BOOKMARK [1][-]{section.3}{Specific Aims and Hypotheses}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Aim One: Data-adaptive association tests for longitudinal data analysis within GEE framework}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.1}{1\(a\): A data-adaptive association test for longitudinal data analysis within GEE framework}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.2}{1\(b\): Longitudinal aSPU family tests on Rare Variants}{subsection.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Aim Two: Pathway-based longitudinal aSPU family tests: Path-aSPU}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Aim Three: Package/software development}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Real Data Introduction}{}% 12
+\BOOKMARK [1][-]{section.5}{Methods}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Aim One \(1a\): A data-adaptive association test for longitudinal data analysis within GEE framework}{section.5}% 14
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Statistical Modeling}{subsection.5.1}% 15
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Methods for Simulation Studies}{subsection.5.1}% 16
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Plans for Simulation Studies}{subsection.5.1}% 17
+\BOOKMARK [2][-]{subsection.5.2}{Aim One \(1b\): Longitudinal aSPU family tests on Rare Variants}{section.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Statistical Modeling}{subsection.5.2}% 19
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Methods for Simulation Studies}{subsection.5.2}% 20
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Plans for Simulation Studies}{subsection.5.2}% 21
+\BOOKMARK [2][-]{subsection.5.3}{Aim Two: Longitudinal aSPU family tests in a pathway-based manner: Path-aSPU}{section.5}% 22
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Statistical Modeling}{subsection.5.3}% 23
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Methods for Simulation Studies}{subsection.5.3}% 24
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Plan for Simulation Studies}{subsection.5.3}% 25
+\BOOKMARK [2][-]{subsection.5.4}{Aim Three: Package/software development}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{Real Data Application of the methods}{}% 27
+\BOOKMARK [2][-]{subsection.6.1}{Data application for Aim One}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.2}{Data application for Aim Two}{section.6}% 29
+\BOOKMARK [1][-]{subsection.6.2}{References}{}% 30

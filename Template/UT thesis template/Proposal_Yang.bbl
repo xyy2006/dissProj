@@ -56,6 +56,14 @@ Bhatia, G., Bansal, V., Harismendy, O., Schork, N.~J., Topol, E.~J., Frazer,
   variants and common phenotypes.
 \newblock {\em PLoS computational biology}, 6(10):e1000954.
 
+\bibitem[Boyko et~al., 2008]{Boyko2008}
+Boyko, A.~R., Williamson, S.~H., Indap, A.~R., Degenhardt, J.~D., Hernandez,
+  R.~D., Lohmueller, K.~E., Adams, M.~D., Schmidt, S., Sninsky, J.~J., Sunyaev,
+  S.~R., et~al. (2008).
+\newblock Assessing the evolutionary impact of amino acid mutations in the
+  human genome.
+\newblock {\em PLoS genetics}, 4(5):e1000083.
+
 \bibitem[Cai et~al., 2012]{Cai2012}
 Cai, T., Lin, X., and Carroll, R.~J. (2012).
 \newblock Identifying genetic marker sets associated with phenotypes via an
@@ -242,6 +250,12 @@ Han, F. and Pan, W. (2010).
   or rare variants.
 \newblock {\em Human heredity}, 70(1):42--54.
 
+\bibitem[Hernandez, 2008]{Hernandez2008}
+Hernandez, R.~D. (2008).
+\newblock A flexible forward simulator for populations subject to selection and
+  demography.
+\newblock {\em Bioinformatics}, 24(23):2786--2787.
+
 \bibitem[Hindorff et~al., 2009]{Hindorff2009}
 Hindorff, L.~A., Sethupathy, P., Junkins, H.~A., Ramos, E.~M., Mehta, J.~P.,
   Collins, F.~S., and Manolio, T.~A. (2009).
@@ -286,6 +300,12 @@ Hu, H., Huff, C.~D., Moore, B., Flygare, S., Reese, M.~G., and Yandell, M.
   identification using a conservation-controlled amino acid substitution
   matrix.
 \newblock {\em Genetic epidemiology}, 37(6):622--634.
+
+\bibitem[Investigators et~al., 1989]{Investigators1989}
+Investigators, A. et~al. (1989).
+\newblock The atherosclerosis risk in communit (aric) stui) y: Design and
+  objectwes.
+\newblock {\em American journal of epidemiology}, 129(4):687--702.
 
 \bibitem[Ionita-Laza et~al., 2011]{Ionita-Laza2011}
 Ionita-Laza, I., Buxbaum, J.~D., Laird, N.~M., and Lange, C. (2011).
@@ -339,6 +359,12 @@ Korn, E.~L. and Whittemore, A.~S. (1979).
 \newblock Methods for analyzing panel studies of acute health effects of air
   pollution.
 \newblock {\em Biometrics}, pages 795--802.
+
+\bibitem[Kwee et~al., 2008]{Kwee2008}
+Kwee, L.~C., Liu, D., Lin, X., Ghosh, D., and Epstein, M.~P. (2008).
+\newblock A powerful and flexible multilocus association test for quantitative
+  traits.
+\newblock {\em The American Journal of Human Genetics}, 82(2):386--397.
 
 \bibitem[Laird and Ware, 1982]{laird1982random}
 Laird, N.~M. and Ware, J.~H. (1982).
@@ -748,6 +774,12 @@ Wang, K., Li, M., and Hakonarson, H. (2010b).
   high-throughput sequencing data.
 \newblock {\em Nucleic acids research}, 38(16):e164--e164.
 
+\bibitem[Wang and Elston, 2007]{Wang2007}
+Wang, T. and Elston, R.~C. (2007).
+\newblock Improved power by use of a weighted score test for linkage
+  disequilibrium mapping.
+\newblock {\em The american journal of human genetics}, 80(2):353--360.
+
 \bibitem[Wang et~al., 2005]{Wang2005}
 Wang, W.~Y., Barratt, B.~J., Clayton, D.~G., and Todd, J.~A. (2005).
 \newblock Genome-wide association studies: theoretical and practical concerns.
@@ -784,6 +816,13 @@ Weng, L., Macciardi, F., Subramanian, A., Guffanti, G., Potkin, S.~G., Yu, Z.,
 \newblock Snp-based pathway enrichment analysis for genome-wide association
   studies.
 \newblock {\em BMC Bioinformatics}, 12:99.
+
+\bibitem[Wu et~al., 2010]{Wu2010}
+Wu, M.~C., Kraft, P., Epstein, M.~P., Taylor, D.~M., Chanock, S.~J., Hunter,
+  D.~J., and Lin, X. (2010).
+\newblock Powerful snp-set analysis for case-control genome-wide association
+  studies.
+\newblock {\em Am J Hum Genet}, 86(6):929--942.
 
 \bibitem[Wu et~al., 2011]{Wu2011}
 Wu, M.~C., Lee, S., Cai, T., Li, Y., Boehnke, M., and Lin, X. (2011).
