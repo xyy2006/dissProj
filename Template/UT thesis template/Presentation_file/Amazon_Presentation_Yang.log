@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  28 DEC 2014 16:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  3 JAN 2015 21:19
 entering extended mode
 **Amazon_Presentation_Yang.tex
 
@@ -998,11 +998,6 @@ Package caption Info: End \AtBeginDocument code.
 
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
 sentation_Yang.nav")
-Overfull \hbox (13.01083pt too wide) detected at line 21
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 30.
@@ -1032,35 +1027,18 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <4> not available
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 44.
 
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[2
+sentation_Yang.toc") [2
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [3
 
-[3
-
-] <figure/2000px-Dna-SNP.svg.png, id=493, 2007.5pt x 2514.39375pt>
+]
+<figure/2000px-Dna-SNP.svg.png, id=490, 2007.5pt x 2514.39375pt>
 File: figure/2000px-Dna-SNP.svg.png Graphic file (type png)
 
 <use figure/2000px-Dna-SNP.svg.png>
@@ -1072,32 +1050,21 @@ Missing character: There is no ” in font cmss10!
 Missing character: There is no â in font cmss10!
 Missing character: There is no € in font cmss10!
 Missing character: There is no ” in font cmss10!
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[4
+ [4
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/200
 0px-Dna-SNP.svg.png>]
-<figure/gwas_flowchart.jpg, id=590, 508.14844pt x 466.74374pt>
+<figure/gwas_flowchart.jpg, id=586, 508.14844pt x 466.74374pt>
 File: figure/gwas_flowchart.jpg Graphic file (type jpg)
 
 <use figure/gwas_flowchart.jpg>
 Package pdftex.def Info: figure/gwas_flowchart.jpg used on input line 121.
 (pdftex.def)             Requested size: 213.21153pt x 195.8354pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[5
+ [5
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/gwa
-s_flowchart.jpg>] <figure/GWAS_top10.jpg, id=685, 271.0125pt x 212.29312pt>
+s_flowchart.jpg>]
+<figure/GWAS_top10.jpg, id=680, 271.0125pt x 212.29312pt>
 File: figure/GWAS_top10.jpg Graphic file (type jpg)
 
 <use figure/GWAS_top10.jpg>
@@ -1107,467 +1074,189 @@ Package pdftex.def Info: figure/GWAS_top10.jpg used on input line 133.
 Overfull \vbox (4.03473pt too high) detected at line 133
  []
 
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
 [6
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/GWA
 S_top10.jpg>]
-<figure/2012_GWAS_catalog.jpg, id=784, 1505.625pt x 1129.21875pt>
+<figure/2012_GWAS_catalog.jpg, id=778, 1505.625pt x 1129.21875pt>
 File: figure/2012_GWAS_catalog.jpg Graphic file (type jpg)
 
 <use figure/2012_GWAS_catalog.jpg>
 Package pdftex.def Info: figure/2012_GWAS_catalog.jpg used on input line 145.
 (pdftex.def)             Requested size: 228.45303pt x 171.35458pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[7
+ [7
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/201
 2_GWAS_catalog.jpg>]
-<figure/GWAS_Disease_allele_effects.png, id=880, 463.0098pt x 341.3553pt>
+<figure/Translational_medicine.png, id=873, 591.1686pt x 375.3222pt>
+File: figure/Translational_medicine.png Graphic file (type png)
+
+<use figure/Translational_medicine.png>
+Package pdftex.def Info: figure/Translational_medicine.png used on input line 1
+55.
+(pdftex.def)             Requested size: 269.90222pt x 171.35458pt.
+ [8
+
+ <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/Tra
+nslational_medicine.png>]
+<figure/GWAS_Disease_allele_effects.png, id=968, 463.0098pt x 341.3553pt>
 File: figure/GWAS_Disease_allele_effects.png Graphic file (type png)
 
 <use figure/GWAS_Disease_allele_effects.png>
 Package pdftex.def Info: figure/GWAS_Disease_allele_effects.png used on input l
-ine 158.
+ine 168.
 (pdftex.def)             Requested size: 232.42982pt x 171.35458pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[8
+ [9
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/GWA
 S_Disease_allele_effects.png>]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [10
 
-[9
+] [11
 
 ]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[10
-
-] <figure/SNP-set_assoc_test_demo.jpg, id=1187, 722.7pt x 542.025pt>
+<figure/SNP-set_assoc_test_demo.jpg, id=1272, 722.7pt x 542.025pt>
 File: figure/SNP-set_assoc_test_demo.jpg Graphic file (type jpg)
 
 <use figure/SNP-set_assoc_test_demo.jpg>
 Package pdftex.def Info: figure/SNP-set_assoc_test_demo.jpg used on input line 
-212.
+222.
 (pdftex.def)             Requested size: 228.46773pt x 171.35458pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[11
+ [12
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/SNP
--set_assoc_test_demo.jpg>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[12
+-set_assoc_test_demo.jpg>] [13
 
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [14
 
-[13
-
-] <figure/longi_look.jpg, id=1525, 592.46344pt x 318.43968pt>
+]
+<figure/longi_look.jpg, id=1607, 592.46344pt x 318.43968pt>
 File: figure/longi_look.jpg Graphic file (type jpg)
 
 <use figure/longi_look.jpg>
-Package pdftex.def Info: figure/longi_look.jpg used on input line 265.
+Package pdftex.def Info: figure/longi_look.jpg used on input line 275.
 (pdftex.def)             Requested size: 273.26875pt x 146.87749pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[14
+ [15
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/lon
 gi_look.jpg>]
-<figure/longi_advantage1.jpg, id=1625, 579.66562pt x 207.77625pt>
+<figure/longi_advantage1.jpg, id=1706, 579.66562pt x 207.77625pt>
 File: figure/longi_advantage1.jpg Graphic file (type jpg)
 
 <use figure/longi_advantage1.jpg>
-Package pdftex.def Info: figure/longi_advantage1.jpg used on input line 297.
+Package pdftex.def Info: figure/longi_advantage1.jpg used on input line 312.
 (pdftex.def)             Requested size: 273.83728pt x 98.15576pt.
+ [16
 
-<figure/longi_advantage5.jpg, id=1628, 1121.69063pt x 280.79906pt>
-File: figure/longi_advantage5.jpg Graphic file (type jpg)
-
-<use figure/longi_advantage5.jpg>
-Package pdftex.def Info: figure/longi_advantage5.jpg used on input line 307.
-(pdftex.def)             Requested size: 342.2953pt x 85.68857pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[15
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[16
+] [17
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[17
+] [18
 
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/lon
-gi_advantage1.jpg>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[18
-
-
- <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/lon
-gi_advantage5.jpg>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[19
+gi_advantage1.jpg>] [19
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [20
 
-[20
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[21
+] [21
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [22
 
-[22
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[23
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[24
-
+] [23
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [24
 
-[25
+] [25
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[26
-
-]
-("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[27
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[28
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[29
+] [26
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[30
+] [27
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[31
+] [28
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[32
+] [29
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[33
+] [30
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[34
-
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[35
+] [31
 
 
 ]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 805.
+(amsmath)                 on input line 820.
+
+[32
+
+] [33
 
 
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[36
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[37
+] [34
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[38
+] [35
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[39
+] [36
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[40
+] [37
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[41
-
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[42
+] [38
 
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [39
 
-[43
-
-] <figure/genotype_simulation_demo.jpg, id=4518, 722.7pt x 542.025pt>
+]
+<figure/genotype_simulation_demo.jpg, id=4076, 722.7pt x 542.025pt>
 File: figure/genotype_simulation_demo.jpg Graphic file (type jpg)
 
 <use figure/genotype_simulation_demo.jpg>
 Package pdftex.def Info: figure/genotype_simulation_demo.jpg used on input line
- 923.
+ 938.
 (pdftex.def)             Requested size: 228.46773pt x 171.35458pt.
+ [40
 
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[44
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[45
+] [41
 
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/gen
 otype_simulation_demo.jpg>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[46
+[42
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[47
+] [43
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[48
+] [44
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[49
+] [45
 
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[50
+sentation_Yang.toc") [46
 
 ]
 
@@ -1575,13 +1264,13 @@ pdfTeX warning: pdflatex (file D:/Dissertation_proj/Template/UT thesis template
 /Presentation_file/figure/PowerCurve_independenceWkCor_on_AR1data_h0.001.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001.pdf, id=5209, 505.89pt x
+<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001.pdf, id=4760, 505.89pt x
  505.89pt>
 File: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001.pdf Graphic file (t
 ype pdf)
  <use figure/PowerCurve_independenceWkCor_on_AR1data_h0.001.pdf>
 Package pdftex.def Info: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001.
-pdf used on input line 995.
+pdf used on input line 1010.
 (pdftex.def)             Requested size: 171.3519pt x 171.35458pt.
 
 
@@ -1591,14 +1280,14 @@ geneousSNPeffects.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
 sion <1.5> allowed
 
 <figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects.
-pdf, id=5210, 505.89pt x 505.89pt>
+pdf, id=4761, 505.89pt x 505.89pt>
 File: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeff
 ects.pdf Graphic file (type pdf)
 
 <use figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffe
 cts.pdf>
 Package pdftex.def Info: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_
-heterogeneousSNPeffects.pdf used on input line 995.
+heterogeneousSNPeffects.pdf used on input line 1010.
 (pdftex.def)             Requested size: 171.3519pt x 171.35458pt.
 
 
@@ -1607,143 +1296,60 @@ pdfTeX warning: pdflatex (file D:/Dissertation_proj/Template/UT thesis template
 NPnull.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
 
-<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull.pdf, id=521
-1, 505.89pt x 505.89pt>
+<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull.pdf, id=476
+2, 505.89pt x 505.89pt>
 File: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull.pdf Gr
 aphic file (type pdf)
 
 <use figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull.pdf>
 Package pdftex.def Info: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_
-withNSNPnull.pdf used on input line 995.
+withNSNPnull.pdf used on input line 1010.
 (pdftex.def)             Requested size: 171.3519pt x 171.35458pt.
 
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+[47
 
-[51
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[52
+] [48
 
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/Pow
-erCurve_independenceWkCor_on_AR1data_h0.001.pdf>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[53
+erCurve_independenceWkCor_on_AR1data_h0.001.pdf>] [49
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[54
+] [50
 
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/Pow
-erCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects.pdf>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[55
+erCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects.pdf>] [51
 
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/Pow
 erCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull.pdf>]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [52
 
-[56
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[57
+] [53
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [54
 
-[58
+] [55
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[59
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[60
+] [56
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[61
+] [57
 
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [58
 
-[62
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[63
+] [59
 
 ]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[64
+sentation_Yang.toc") [60
 
 ]
 
@@ -1752,14 +1358,14 @@ pdfTeX warning: pdflatex (file D:/Dissertation_proj/Template/UT thesis template
 latedU.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
 
-<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU.pdf, id=669
-4, 505.89pt x 505.89pt>
+<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU.pdf, id=623
+1, 505.89pt x 505.89pt>
 File: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU.pdf Gr
 aphic file (type pdf)
 
 <use figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU.pdf>
 Package pdftex.def Info: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_
-RVsimulatedU.pdf used on input line 1209.
+RVsimulatedU.pdf used on input line 1224.
 (pdftex.def)             Requested size: 171.3519pt x 171.35458pt.
 
 
@@ -1768,14 +1374,14 @@ pdfTeX warning: pdflatex (file D:/Dissertation_proj/Template/UT thesis template
 utedU.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
 
-<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU.pdf, id=6695
+<figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU.pdf, id=6232
 , 505.89pt x 505.89pt>
 File: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU.pdf Gra
 phic file (type pdf)
 
 <use figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU.pdf>
 Package pdftex.def Info: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_
-RVpermutedU.pdf used on input line 1209.
+RVpermutedU.pdf used on input line 1224.
 (pdftex.def)             Requested size: 171.3519pt x 171.35458pt.
 
 
@@ -1785,49 +1391,26 @@ utedU_moreTests.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
 
 <figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTests.pd
-f, id=6696, 505.89pt x 505.89pt>
+f, id=6233, 505.89pt x 505.89pt>
 File: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTes
 ts.pdf Graphic file (type pdf)
 
 <use figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTest
 s.pdf>
 Package pdftex.def Info: figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_
-RVpermutedU_moreTests.pdf used on input line 1209.
+RVpermutedU_moreTests.pdf used on input line 1224.
 (pdftex.def)             Requested size: 171.3519pt x 171.35458pt.
+ [61
 
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[65
-
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[66
+] [62
 
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/Pow
 erCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU.pdf>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[67
+[63
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[68
+] [64
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:\040Power
@@ -1836,149 +1419,96 @@ Curve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}) has been already used,
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1209 \end{frame}
+l.1224 \end{frame}
                    <D:/Dissertation_proj/Template/UT thesis template/Presentati
 on_file/figure/PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU.pdf>]
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[69
+[65
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[70
+] [66
 
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/Pow
 erCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTests.pdf>]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.toc")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
+sentation_Yang.toc") [67
 
-[71
-
-] <figure/ARICcomponents_0.pdf, id=7442, 794.97pt x 614.295pt>
+]
+<figure/ARICcomponents_0.pdf, id=6973, 794.97pt x 614.295pt>
 File: figure/ARICcomponents_0.pdf Graphic file (type pdf)
 
 <use figure/ARICcomponents_0.pdf>
-Package pdftex.def Info: figure/ARICcomponents_0.pdf used on input line 1350.
+Package pdftex.def Info: figure/ARICcomponents_0.pdf used on input line 1365.
 (pdftex.def)             Requested size: 158.39679pt x 122.39667pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[72
+ [68
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/ARI
 Ccomponents_0.pdf, page is rotated 90 degrees>]
 <figure/ARIC_exome/Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-genome.jp
-g, id=7560, 1445.4pt x 813.0375pt>
+g, id=7089, 1445.4pt x 813.0375pt>
 File: figure/ARIC_exome/Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-geno
 me.jpg Graphic file (type jpg)
 
 <use figure/ARIC_exome/Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-genom
 e.jpg>
 Package pdftex.def Info: figure/ARIC_exome/Manhattan_plot_aspu_weighted_sco_P_g
-eneBased_whole-genome.jpg used on input line 1367.
+eneBased_whole-genome.jpg used on input line 1382.
 (pdftex.def)             Requested size: 304.62366pt x 171.35458pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[73
+ [69
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/ARI
 C_exome/Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-genome.jpg>]
-<figure/QA_amazon.png, id=7657, 513.92pt x 513.92pt>
+("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
+sentation_Yang.toc") [70
+
+] [71
+
+]
+<figure/QA_amazon.png, id=7392, 513.92pt x 513.92pt>
 File: figure/QA_amazon.png Graphic file (type png)
 
 <use figure/QA_amazon.png>
-Package pdftex.def Info: figure/QA_amazon.png used on input line 1408.
+Package pdftex.def Info: figure/QA_amazon.png used on input line 1454.
 (pdftex.def)             Requested size: 102.68962pt x 102.68806pt.
- <figure/QA1.jpg, id=7658, 301.125pt x 301.125pt>
+ <figure/QA1.jpg, id=7393, 301.125pt x 301.125pt>
 File: figure/QA1.jpg Graphic file (type jpg)
 
 <use figure/QA1.jpg>
-Package pdftex.def Info: figure/QA1.jpg used on input line 1408.
+Package pdftex.def Info: figure/QA1.jpg used on input line 1454.
 (pdftex.def)             Requested size: 102.68962pt x 102.68898pt.
-
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[74
+ [72
 
  <D:/Dissertation_proj/Template/UT thesis template/Presentation_file/figure/QA_
 amazon.png (PNG copy)> <D:/Dissertation_proj/Template/UT thesis template/Presen
 tation_file/figure/QA1.jpg>]
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
-sentation_Yang.bbl")
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[75
+sentation_Yang.bbl") [73
 
  <d:/Program Files (x86)/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonarticle
-.pdf>]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[76
+.pdf>] [74
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[77
+] [75
 
 
-]
-Overfull \hbox (13.01083pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][][][][][][][][][] [] [] [][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] []  
- []
-
-[78
+] [76
 
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1427.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1427.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1473.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1473.
 
 ("D:\Dissertation_proj\Template\UT thesis template\Presentation_file\Amazon_Pre
 sentation_Yang.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1427.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1427.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1473.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1473.
 
 Package rerunfilecheck Info: File `Amazon_Presentation_Yang.out' has not change
 d.
-(rerunfilecheck)             Checksum: 3C9F5D21EF6A990A2F7AC18CB27E14F9;824.
+(rerunfilecheck)             Checksum: A2783B5758735251EC2EFD54BB30C57B;848.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1987,38 +1517,39 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1427.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1473.
  ) 
 Here is how much of TeX's memory you used:
- 18217 strings out of 493921
- 346773 string characters out of 3144864
- 501685 words of memory out of 3000000
- 20807 multiletter control sequences out of 15000+200000
+ 18211 strings out of 493921
+ 346753 string characters out of 3144864
+ 498908 words of memory out of 3000000
+ 20804 multiletter control sequences out of 15000+200000
  18890 words of font info for 68 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,19n,72p,1704b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.
 pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex
-8.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.p
-fb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
-<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><d:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><d:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi9.pfb><d:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><d:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Amazon_Presentation_Yang.pdf (78 pages, 5144950 bytes).
+8.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+><d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><d:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><d:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><d:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi9.pfb><d:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><d:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy9.pfb><d:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Amazon_Presentation_Yang.pdf (76 pages, 5678123 bytes).
 PDF statistics:
- 8250 PDF objects out of 8907 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
+ 7980 PDF objects out of 8907 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
  255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -65,7 +65,7 @@ Ph.D Candidate, Biostatistics
 
 
 \section{Background}
-\subsection{Introduction to GWAS}
+\subsection{Introduction to Genome-wide association study (GWAS)}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
 \frametitle{Table of Contents}
@@ -82,7 +82,7 @@ Ph.D Candidate, Biostatistics
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %1
-  \frame{\frametitle{Introduction to GWAS}
+  \frame{\frametitle{Introduction to Genome-wide association study (GWAS)}
   \framesubtitle{What is SNP?}
 \begin{wrapfigure}{l}{0.5\textwidth}
 \centering
@@ -140,6 +140,16 @@ A Single Nucleotide Polymorphism (SNP) is a DNA sequence variation occurring com
 \vspace{-5pt}
 \includegraphics[height=0.7\textheight]{{{figure/2012_GWAS_catalog}}}
 \caption{ Published GWAS results for 18 trait categories}
+\end{figure}
+
+}
+
+\frame{\frametitle{Introduction to GWAS}
+\framesubtitle{GWAS contribute to personalized medicine}
+\begin{figure}
+\vspace{-5pt}
+\includegraphics[height=0.7\textheight]{{{figure/Translational_medicine}}}
+\caption{ GWAS contribute to personalized medicine}
 \end{figure}
 
 }
@@ -263,6 +273,9 @@ test using Fisher's method to combine linear and quadratic statistics, a unified
 \end{figure}
 \end{tiny}
 }
+%%%
+% In Amazon, longitudinal data can be the a consumer's expenditure over years, a packaging unit's error rate over months, etc.
+%%%
 
 %2
 \frame[allowframebreaks]{
@@ -282,7 +295,9 @@ Based on above formula, we can more obviously explain the merits of longitudinal
 \item Even when $\beta_C = \beta_L$, longitudinal studies tend to be more powerful than cross-sectional studies. This is due to the fact that in longitudinal studies, each person can be thought of serving as his/her own control. 
 %For most outcomes $Y$, there is considerable variability across individuals due to the influence of unmeasured characteristics such as genetic make-up, environmental exposures, personal behaviors/habits, and so forth. While these things tend to persist over time for the same individual, their influences are canceled in the estimation of the $\beta_L$ or equivalently here the $\beta_C$, and thus lead to more accurate estimate (smaller variance).
 %%%%%%%
-\item Another merit of the longitudinal study is its ability to distinguish the degree of variation in $Y$ across time for one subject from the variation in $Y$ across subjects. 
+\item Another merit of the longitudinal study is its ability to distinguish the between-subject variation and within-subject variation.
+
+%the degree of variation in $Y$ across time for one subject from the variation in $Y$ across subjects. 
 %With repeated measurements, we can borrow strength across time for the same person of interest as well as across people. If there is little variation across subjects, one subject's estimate can rely on data from others as in the cross-sectional case. However, if the variation across people is large, we might prefer to use more data for the same individual across time.
 \item With longitudinal studies, we can estimate a person's current and future outcome (behavior trend). 
 \end{enumerate}
@@ -301,15 +316,15 @@ A recent study by Xu et al \cite{Xu2014} demonstrates the power gain from longit
 
 \end{figure}
 
-\begin{figure}
-\centering
-\vspace{-5pt}
-\includegraphics[width=1\textwidth]{{{figure/longi_advantage5}}}
-\vspace{-10pt}
-
- \caption{  Simulation results at significance level P with different methods \cite{Xu2014} } 
-
-\end{figure}
+%\begin{figure}
+%\centering
+%\vspace{-5pt}
+%\includegraphics[width=1\textwidth]{{{figure/longi_advantage5}}}
+%\vspace{-10pt}
+%
+% \caption{  Simulation results at significance level P with different methods \cite{Xu2014} } 
+%
+%\end{figure}
 
 }
 
@@ -442,14 +457,14 @@ The transitional (Markov) model, describes the conditional distribution of each 
 %\framesubtitle{the vantage method}
 \begin{small}
 \begin{itemize}
-\item Aim 1: Data-adaptive SNP-set-based association tests (aSPU) for longitudinal data analysis within GEE framework;\\
+\item Aim 1: Data-adaptive SNP-set-based association tests (aSPU) for longitudinal data analysis within GEE framework for \textbf{Common Variants};\\
 %	\begin{itemize}
 %	\item (a), for CVs;
 %	\item (b), for RVs.
 %	\end{itemize}
 %\item Aim 1(b): Longitudinal aSPU family tests on Rare Variants
 %\item Aim 2: Pathway-based longitudinal aSPU family tests: Path-aSPU
-\item Aim 2: Longitudinal aSPU family tests on Rare Variants
+\item Aim 2: Longitudinal aSPU family tests on \textbf{Rare Variants}
 %\item Aim 3: Package/software development
 \end{itemize}
 \end{small}
@@ -457,47 +472,47 @@ The transitional (Markov) model, describes the conditional distribution of each 
 
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Public Health Significance}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{
-\frametitle{Table of Contents}
-\small
-\tableofcontents[currentsection,currentsubsection]
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%1
-\frame[allowframebreaks]{
-\frametitle{Public Health Significance}
-%\framesubtitle{the vantage method}
-\begin{scriptsize}
-
-\begin{enumerate}
-\item Due to the \textbf{complexity} in genetics association with phenotype, e.g. specific association effect directions and sizes, a given test favoring one scenario may or may not perform well in other scenarios \cite{Pan2009,Derkach2013,pan2014powerful,Sun2013}. In other words, there is \textbf{no single test} the most powerful among all testing scenarios.\\\
-
-Therefore, a few data-adaptive tests were developed as an ad hoc strategy, e.g. some tests tried to combine the advantage of burden test and variance-component test; some other tests tried to use a set of pre-determined weights for individual RVs. \\\
-
-Compared to the previous limited sense data-adaptive tests, our proposed method will be more extensive and generalized in \textbf{data adaptability}. The new tests will provide a relative high power in almost all data scenarios;
-
-\framebreak 
-
-\item There is not yet a \textbf{SNP-set} based \textbf{data-adaptive} association test method for \textbf{longitudinal} data analysis in GWAS: we will propose such a new method to fill in this gap;
-
-\item CVs and RVs are \textbf{both} important in finding the missing heritability of human complex disease. Our proposed new method will have the ability to handle both of them (either CVs or RVs);
-%\item Currently, there are \textbf{no} statistical methods designed for pathway-based association test in \textbf{longitudinal data settings}, not to mention the \textbf{data-adaptive} property. We will extend the SNP-set based method to \textbf{Gene-set/Pathway based method} to fill in the gap;
-%%We will extend the SNP-set based method to \textbf{Gene-set/Pathway based method} to allow incorporating the biological pathway information and further avoid too few minor allele counts scenario in the association test;
-%\item We will produce an R package or independent Linux command-line based software implementing proposed methods to facilitate the community usage. 
-\end{enumerate}
-In conclusion, this research work will provide useful methods/tools for identifying the underlying genetic
-factors explaining the heritability of human complex disease, and in the long run this will
-contribute to the prevention, diagnosis and cure of complex diseases.
-
-\end{scriptsize}
-
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Public Health Significance}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\frame{
+%\frametitle{Table of Contents}
+%\small
+%\tableofcontents[currentsection,currentsubsection]
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%1
+%\frame[allowframebreaks]{
+%\frametitle{Public Health Significance}
+%%\framesubtitle{the vantage method}
+%\begin{scriptsize}
+%
+%\begin{enumerate}
+%\item Due to the \textbf{complexity} in genetics association with phenotype, e.g. specific association effect directions and sizes, a given test favoring one scenario may or may not perform well in other scenarios \cite{Pan2009,Derkach2013,pan2014powerful,Sun2013}. In other words, there is \textbf{no single test} the most powerful among all testing scenarios.\\\
+%
+%Therefore, a few data-adaptive tests were developed as an ad hoc strategy, e.g. some tests tried to combine the advantage of burden test and variance-component test; some other tests tried to use a set of pre-determined weights for individual RVs. \\\
+%
+%Compared to the previous limited sense data-adaptive tests, our proposed method will be more extensive and generalized in \textbf{data adaptability}. The new tests will provide a relative high power in almost all data scenarios;
+%
+%\framebreak 
+%
+%\item There is not yet a \textbf{SNP-set} based \textbf{data-adaptive} association test method for \textbf{longitudinal} data analysis in GWAS: we will propose such a new method to fill in this gap;
+%
+%\item CVs and RVs are \textbf{both} important in finding the missing heritability of human complex disease. Our proposed new method will have the ability to handle both of them (either CVs or RVs);
+%%\item Currently, there are \textbf{no} statistical methods designed for pathway-based association test in \textbf{longitudinal data settings}, not to mention the \textbf{data-adaptive} property. We will extend the SNP-set based method to \textbf{Gene-set/Pathway based method} to fill in the gap;
+%%%We will extend the SNP-set based method to \textbf{Gene-set/Pathway based method} to allow incorporating the biological pathway information and further avoid too few minor allele counts scenario in the association test;
+%%\item We will produce an R package or independent Linux command-line based software implementing proposed methods to facilitate the community usage. 
+%\end{enumerate}
+%In conclusion, this research work will provide useful methods/tools for identifying the underlying genetic
+%factors explaining the heritability of human complex disease, and in the long run this will
+%contribute to the prevention, diagnosis and cure of complex diseases.
+%
+%\end{scriptsize}
+%
+%}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -672,9 +687,9 @@ V_{11} & V_{12}\\
  V_{21} & V_{22}
 \end{pmatrix}
 \end{align*}
-
-\framebreak
-In this research, I will \textbf{focus on} the case with quantitative traits, since they are most typical traits used as the response variable in longitudinal data analysis. In general, the only difference lies in which canonical link we will use, with all other equations/formulas remaining the same.
+%
+%\framebreak
+%In this research, I will \textbf{focus on} the case with quantitative traits, since they are most typical traits used as the response variable in longitudinal data analysis. In general, the only difference lies in which canonical link we will use, with all other equations/formulas remaining the same.
 
 
 \framebreak
@@ -1368,9 +1383,40 @@ We applied our novel method on ARIC data. Specifically, we will use the four clo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Acknowledgement}\label{sec:acknow}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Real Data Introduction}\label{sec:data-intro}
+\frame{
+\frametitle{Table of Contents}
+\small
+\tableofcontents[currentsection,currentsubsection]
+}
+
+% acknowledgement frame  
+\frame{
+\frametitle{Acknowledgement}
+\textbf{Advisers:}\\
+\begin{itemize}
+\item Peng Wei, Ph.D, Associate Professor, Division of Biostatistics, School of Public Health, University of Texas
+\item Wei Pan, Ph.D, Professor, Division of Biostatistics, School of Public Health, University of Minnesota
+\end{itemize}
+
+\textbf{Supporting Grant:}\\
+Title: Association Analysis of Rare Variants with Sequencing Data\\ 
+Funding Source: NIH/NHLBI (1R01HL116720) \\
+Total cost: $\$1,043,901$ \\
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % acknowledgement frame  
 \frame{
+\frametitle{Thanks to Audience}
 %\begin{figure}
 %        \centering
 %        \begin{subfigure}[b]{0.4\textwidth}
