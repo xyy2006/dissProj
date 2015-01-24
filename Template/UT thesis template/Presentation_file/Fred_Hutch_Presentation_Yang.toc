@@ -1,0 +1,19 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction to Genome-wide association study (GWAS)}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{SNP-set based association tests}{10}{0}{1}
+\beamer@subsectionintoc {1}{3}{Longitudinal data analysis strategy in GWAS}{14}{0}{1}
+\beamer@sectionintoc {2}{Research Aims}{20}{0}{2}
+\beamer@sectionintoc {3}{Specific Aims, Methods and Results}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{22}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{1}{Methods}{24}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{2}{Methods in data simulation}{39}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{3}{Simulation results}{46}{0}{3}
+\beamer@subsectionintoc {3}{2}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{52}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{1}{Methods}{54}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{2}{Methods in data simulation}{58}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{3}{Simulation results}{60}{0}{3}
+\beamer@sectionintoc {4}{Real Data Application}{67}{0}{4}
+\beamer@sectionintoc {5}{Acknowledgement}{70}{0}{5}
+\beamer@sectionintoc {6}{References}{73}{0}{6}
