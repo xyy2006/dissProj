@@ -242,8 +242,6 @@ longitudinal},
   Number                   = {5},
   Pages                    = {e1000083},
   Volume                   = {4},
-
-  __markedentry            = {[ThomasYY:6]},
   Owner                    = {ThomasYY},
   Publisher                = {Public Library of Science},
   Timestamp                = {2014.12.29}
@@ -478,6 +476,7 @@ longitudinal},
   Number                   = {6},
   Pages                    = {1158--1168},
   Volume                   = {81},
+
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Timestamp                = {2014.12.28}
@@ -587,6 +586,7 @@ longitudinal},
   Author                   = {Diggle, Peter and Heagerty, Patrick and Liang, Kung-Yee and Zeger, Scott},
   Publisher                = {Oxford University Press},
   Year                     = {2002},
+
   Owner                    = {ThomasYY},
   Timestamp                = {2014.12.24}
 }
@@ -822,7 +822,6 @@ longitudinal},
   Pages                    = {2786--2787},
   Volume                   = {24},
 
-  __markedentry            = {[ThomasYY:]},
   Owner                    = {ThomasYY},
   Publisher                = {Oxford Univ Press},
   Timestamp                = {2014.12.29}
@@ -945,6 +944,22 @@ longitudinal},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.13},
   Url                      = {http://www.nature.com/nbt/journal/vaop/ncurrent/full/nbt.2895.html?WT.mc_id=TWT_NatureBiotech}
+}
+
+@Article{Investigators1989,
+  Title                    = {THE ATHEROSCLEROSIS RISK IN COMMUNIT (ARIC) STUI) Y: DESIGN AND OBJECTWES},
+  Author                   = {Aric Investigators and others},
+  Journal                  = {American journal of epidemiology},
+  Year                     = {1989},
+  Number                   = {4},
+  Pages                    = {687--702},
+  Volume                   = {129},
+
+  __markedentry            = {[ThomasYY:]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Review                   = {ARIC overview review.},
+  Timestamp                = {2015.01.03}
 }
 
 @Article{Ionita-Laza2011,
@@ -1141,6 +1156,7 @@ and a real sequence dataset on Type-1 diabetes.},
   Number                   = {2},
   Pages                    = {386--397},
   Volume                   = {82},
+
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
   Timestamp                = {2014.12.29}
@@ -1864,6 +1880,21 @@ penalized multivariate linear mixed model},
 
   File                     = {:D\:\\Dissertation_proj\\WeiPan_GeePooledVariance_biometrika.pdf:PDF},
   Publisher                = {Biometrika Trust}
+}
+
+@Article{Pan2011a,
+  Title                    = {Adaptive tests for detecting gene-gene and gene-environment interactions},
+  Author                   = {Pan, Wei and Basu, Saonli and Shen, Xiaotong},
+  Journal                  = {Human heredity},
+  Year                     = {2011},
+  Number                   = {2},
+  Pages                    = {98},
+  Volume                   = {72},
+
+  __markedentry            = {[ThomasYY:6]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Karger Publishers},
+  Timestamp                = {2015.02.24}
 }
 
 @Article{Pan2009a,
@@ -2924,8 +2955,8 @@ We used simulations to demonstrate the usefulness in controlling for substructur
 0 AllEntriesGroup:;
 1 ExplicitGroup:RV association test methods\;0\;Basu2011\;Chen2012\;Co
 nneely2007\;Derkach2013\;Fan2013\;Han2010\;Kwee2008\;Lee2012\;Li2008\;
-Lin2005\;Lin2011\;Neyman1937\;Pan2009\;Pan2009a\;Pan2011\;Seaman2005\;
-Sun2013\;Zhang2011\;pan2014powerful\;zhang2014testing\;;
+Lin2005\;Lin2011\;Neyman1937\;Pan2009\;Pan2009a\;Pan2011\;Pan2011a\;Se
+aman2005\;Sun2013\;Zhang2011\;pan2014powerful\;zhang2014testing\;;
 1 ExplicitGroup:pathway_geneSet\;0\;2013\;Ashburner2000\;Baranzini2009
 \;Biernacka2011\;BloodPressureGenome-WideAssociationStudies2011\;Chai2
 009\;Chen2009\;Chen2010\;Chen2010a\;DelaCruz2010\;Fridley2010\;Fridley
@@ -2945,8 +2976,8 @@ ra2001\;Ogata1999\;;
 1 ExplicitGroup:review_of_GWAS\;0\;Ansorge2009\;Bush2012\;Cantor2010\;
 Eichler2010\;Hirschhorn2005\;Mardis2008\;McCarthy2008\;Metzker2009\;Sc
 hork2009\;Shendure2008\;Wang2005\;;
-1 ExplicitGroup:exome_data_ref\;0\;Chambless1997\;Consortium2013\;Lang
-e2014\;Maxwell2013\;Peloso2014\;Teslovich2010\;;
+1 ExplicitGroup:exome_data_ref\;0\;Chambless1997\;Consortium2013\;Inve
+stigators1989\;Lange2014\;Maxwell2013\;Peloso2014\;Teslovich2010\;;
 1 ExplicitGroup:human_genetics_classic\;0\;Lynch1998\;;
 1 ExplicitGroup:current_software_tools\;0\;Gonzalez2007\;Wang2014\;;
 1 ExplicitGroup:longitudinal_GWAS\;0\;Beyene2014\;Diggle2002\;Furlotte
