@@ -1,0 +1,25 @@
+\begin{thebibliography}{}
+
+\bibitem[Liang and Zeger, 1986]{liang1986longitudinal}
+Liang, K.-Y. and Zeger, S.~L. (1986).
+\newblock Longitudinal data analysis using generalized linear models.
+\newblock {\em Biometrika}, 73(1):13--22.
+
+\bibitem[Lin, 2005]{Lin2005}
+Lin, D. (2005).
+\newblock An efficient monte carlo approach to assessing statistical
+  significance in genomic studies.
+\newblock {\em Bioinformatics}, 21(6):781--787.
+
+\bibitem[Pan et~al., 2014]{pan2014powerful}
+Pan, W., Kim, J., Zhang, Y., Shen, X., and Wei, P. (2014).
+\newblock A powerful and adaptive association test for rare variants.
+\newblock {\em Genetics}, pages genetics--114.
+
+\bibitem[Seaman and M{\"u}ller-Myhsok, 2005]{Seaman2005}
+Seaman, S. and M{\"u}ller-Myhsok, B. (2005).
+\newblock Rapid simulation of p values for product methods and multiple-testing
+  adjustment in association studies.
+\newblock {\em The American Journal of Human Genetics}, 76(3):399--408.
+
+\end{thebibliography}

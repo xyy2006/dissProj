@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage {setspace} %% for line space
+\usepackage[hang,flushmargin]{footmisc} %control footnote indent
+\usepackage{url} % for website links
+\usepackage{amssymb,amsmath}%for matrix
+\usepackage{graphicx}%for figure
+\usepackage{appendix}%for appendix
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{morefloats}%in case there are too many float tables and figures
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\captionsetup[subtable]{font=normal}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{pdflscape}
+
+\setlength{\parindent}{0em}% paragraph indention
+\setlength{\parskip}{0.5em}
+
+\graphicspath{{figure/}}
+
+
+\begin{document}
+%\doublespacing
+\section{Methods}
+Suppose for each subject $i = 1,\ldots,n$, we have $k$ longitudinal measurements $y_i = (y_{i1}, y_{i2}, \ldots, y_{ik})'$, $p$ SNPs of interest as a row vector $x_i = (x_{i1}, x_{i2}, \ldots, x_{ip})$ with $x_{id}$ coded as 0,1 or 2 for the count of the minor allel for SNP $j = 1, \ldots, p$, and $z_i = (z_{i1}, z_{i2}, \ldots, z_{iq})$ is a row vector for $q$ variates. We assume common effect sizes of the SNPs and covariates on the longitudinal phenotype/trait measurements. Thus, we construct the design matrix for the SNPs and covariates as:\\
+$$
+  X_i = \begin{pmatrix}
+          x_{i}\\
+          x_{i}\\
+          \vdots\\
+          x_{i}
+          \end{pmatrix} 
+  , 
+  Z_{i}=\begin{pmatrix}1 & z_{i}\\
+          1 & z_{i}\\
+          \vdots & \vdots\\
+          1 & z_{i}
+          \end{pmatrix}
+$$
+where $x_i$ and $z_i$ are row vectors of length p and q respectively. $X_i$ is a $k \times p$ matrix, and $Z_{i}$ is a $k \times (q+1)$ matrix. Denote the regression coefficient $\beta = (\beta_1, \beta_2, \ldots, \beta_p)'$ and $\varphi = (\varphi_1, \varphi_2, \ldots, \varphi_{q+1})'$ for $X_i$ and $Z_i$ respectively. The marginal mean of each measurement, $E(y_{im}|x_i,z_i) = \mu_{im}$, relates to the SNPs and covariates through a generalized linear model (GLM):
+$$
+g(\mu_i) = \eta_i = Z_i \varphi + X_i \beta = H_i \theta
+$$
+\noindent with $H_i = (Z_i, X_i), \theta = (\varphi', \beta')'$ and $g(.)$ as a suitable link function.
+
+The estimates of $\beta$ and $\varphi$ can be obtained by solving the GEE \cite{liang1986longitudinal}: 
+% \begin{align*}
+$$
+U(\beta) =\sum_{i=}^{n}U_{i}(\beta)=\sum_{i=1}^{n}(\frac{\partial\mu_{i}}{\partial\theta'})A_{i}^{-\frac{1}{2}}R_{w}(\alpha)^{-1}A_{i}^{-\frac{1}{2}}(Y_{i}-\mu_{i})=0,
+$$
+with
+$$
+\frac{\partial\mu_{i}}{\partial\theta'} =\frac{\partial g^{-1}(H_{i}\theta)}{\partial\theta'}, \quad
+A_{i}=\textrm{diag} \left( v(\mu_{i1}),v(\mu_{i2}),\ldots,v(\mu_{ik}) \right).
+$$
+% \end{align*}
+$R_w(\alpha)$ is a working correlation matrix depending on some unknown
+parameter $\alpha$. For convenience, a working independence model
+with $R_w = I$ is often used. With a canonical link function and a working independence model, we have a closed form of the U vector with two parts corresponding to SNPs and covariates, and its covariance estimator:
+% \begin{alignat}{4}
+\begin{align}
+U & =\left(U_{.1},U_{.2}\right)'=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\mu_{i})\nonumber \\
+% \vspace{-2em}
+\hat{\Sigma} & =\sum_{i}\left(Z_{i},X_{i}\right)'\hat{\textrm{var}(Y_{i})}\left(Z_{i},X_{i}\right)=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})'\left(Z_{i},X_{i}\right)=\begin{pmatrix}V_{11} & V_{12}\\
+V_{21} & V_{22}
+\end{pmatrix}\label{eq:1}
+% \end{alignat}
+\end{align}
+%%%%%%%%%%%%%%
+\textbf{The SPU test }is defined as
+$$
+T_{ SPU ( \gamma ) } = \sum_{j=1}^p U_{.2, j} ^ { \gamma - 1} U_{.2, j}
+$$
+with weight 
+$$W_j = U_{.2, j} ^ { \gamma - 1} $$
+for a series of integer value $\gamma = 1,2,\ldots,\infty$, leading to the sum of powered score ($U$) tests abbreviated as SPU tests. %$T_{SPU(\gamma)}=\sum_{j=1}^{p}U_{.2,j}^{\gamma}$, 
+We often use $\gamma\in\Gamma=\{1,2,\dots,8,\infty\}$, as a $\gamma$
+greater than 8 was demonstrated to perform similarly to $\gamma = \infty$ \cite{pan2014powerful}.
+In particular, when $\gamma\rightarrow\infty$ we have: $T_{SPU(\gamma)}\propto\underset{j}{max}|U_{.2,j}|$,
+which behaves similarly to the \textbf{UminP} test.
+
+We will use a simulation method to calculate the p-value from each $T_{ SPU(\gamma) }$ \cite{Lin2005,Seaman2005}. Specifically, suppose $T$ is short notation of $T_{ SPU(\gamma) }$ for a specific $\gamma$ and $\hat{\Sigma}_{.2}$ is the covariance matrix of the score vector $U_{.2}$ based on original data (see Equation \ref{eq:1}). We draw B samples of the score vector from its null distribution: $U_{.2}^{ (b) } \sim MVN \left( 0, \hat{\Sigma}_{.2} \right)$, with $b = 1,2,\ldots,B$, and thus obtain a statistics under null hypothesis: $T ^ {(b)} = \sum_{j=1}^p U^{ (b)\gamma }_{.2, j} $. We then can calculate the p-value of $T_{ SPU(\gamma) }$ as $P_{ SPU(\gamma) } = \sum_{b=1}^B { I(T^{(b)} \geq T ^ {obs} ) + 1  \over B + 1 } $.
+%%%%%%%%%%
+\subsection*{aSPU family tests}
+\textbf{The aSPU test} is designed with the aim of data adaptively combining the results of
+multiple SPU tests. Specifically, it takes the minimum p-value from
+all SPU($\gamma$) tests: $T_{aSPU}=\underset{\gamma\in\Gamma}{min}P_{SPU(\gamma)}$.
+The p-value of aSPU test can be obtained through similar simulation based
+method, or permutation/bootstrap given the asymptotic normality of the
+score vector ($U$) may not hold \cite{pan2014powerful}.
+
+%%%%%%%%%%%%%%
+\textbf{The aSPUw test }is a diagonal-variance-weighted version of the SPU
+test, defined through: 
+\begin{eqnarray*}
+T_{SPUw(\gamma)} & = & \sum_{j=1}^{p}\left(\frac{U_{.2,j}}{\sqrt{\hat{\Sigma}_{.2,jj}}}\right)^{\gamma}\\
+T_{aSPUw} & = & \underset{\gamma\in\Gamma}{min}P_{SPUw(\gamma)}
+\end{eqnarray*}
+The aSPUw test is designed to complement the performance of aSPU test. As the standard deviations of SNVs in a region may vary a lot, there is possibility that a \textit{non-informative} SNV has \textit{larger} standard deviations than other associated SNVs, and the SPU test statistic will be dominated by the noise coming from the null but with larger standard deviation SNV, thus leads to concealing association signals and eventually reduce the test power. Another advantage \textbf{aSPUw} brings about is it makes jointly analyze the effect of RVs and CVs possible by giving them an inverse-standard-deviation weight closely related to MAF. 
+
+%%%%%%%%%%%%%%%%%
+\textbf{The aSPU(w).score test} adds the GEE score test statistics
+into the aSPU(w) test. 
+%, indexed by $\gamma = 0$. Therefore,$\gamma\in\Gamma=\{0,1,2,\dots,8,\infty\}$. 
+Specifically,
+$$
+T_{aSPU.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) }, P_{Score} \Big\},
+$$ 
+We expect to see this
+aSPU variant assimilates the power complemented by the GEE score test under some situations where the correlation among SNPs matters.
+
+%%%%%%%%%%%%%%%%
+\textbf{The aSPU.aSPUw.score test} is a more comprehensive test which is designed to combine the complementing powers coming from aSPU, aSPU weighted and the Score tests. In most scenarios, it achieves a quasi-best performance. Specifically, 
+$$
+T_{aSPU.aSPUw.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) },\underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPUw(\gamma) }, P_{Score} \Big\},
+$$ 
+%%%%%%%
+\subsection*{Permutation correction for aSPU family tests on rare variants}
+While MAF of RVs are usually low, e.g. between 0.001 to 0.01, the asymptotically Normal distribution of either $beta$ coefficient or score vector may or may not hold. The \textbf{simulation-based} p-value calculating method is thus not sufficient for RV case and need modification. As a remedy, we developed a permutation algorithm that generates the empirical null distribution of $U_{.2}^{ (b) }$ and in the same time maintains the relationship between longitudinal traits and possible covariates such as age, gender, etc, for subject $i$. The algorithm is also robust to missing data as this is a usual case in longitudinal data settings. The \textbf{permutation} algorithm can be implemented as follows:
+\begin{enumerate}
+\item identify the max $k$ across all $n$ subjects, which is the number of longitudinal measurements, e.g. $k = 4$.
+%%%
+\item detect if the data has missing values, if yes, fill the missing value with NA to complement the data dimension (for example, subject $i$ with $Y_{i} = ( y_{i,1},,,y_{i,4} )'$ has two missing measurements at time 2 and time 3. After missing value complementing, it becomes $Y_{i} = ( y_{i,1},\textrm{NA},\textrm{NA},y_{i,4} )'$). Now we should have all the subjects with each $Y_{i}$ of dimension equal to $k \times 1$.  
+%%%
+\item complement $H_i$ to be of full dimension, i.e. $k \times (p + q + 1)$, for covariates and SNVs. Now we should have
+$\begin{pmatrix}
+Y_i & H_i
+\end{pmatrix}$
+as an augmented matrix of dimension $k \times (p + q + 2)$ for each subject $i$, where $H_i = (Z_i,X_i)$. For total $n$ subjects, we have row-wise binded matrix
+$$
+M = 
+\begin{pmatrix}
+Y_1 & H_1\\
+Y_2 & H_2\\
+\vdots & \vdots\\
+Y_n & H_n
+\end{pmatrix}
+$$ 
+of dimension $nk \times (p + q + 2)$.
+%%%
+\item permute the SNV chunk among different individuals, i.e. the $X_i$ in
+$\begin{pmatrix}
+Y_i & Z_i,X_i
+\end{pmatrix}$ 
+with the $X_j$ in 
+$\begin{pmatrix}
+Y_j & Z_j,X_j
+\end{pmatrix}$
+, where $i \neq j$. 
+%%%
+\item with permuted 
+$$
+M^{*(b)} = 
+\begin{pmatrix}
+Y_1 & Z_1, X_1^{*(b)}\\
+Y_2 & Z_1, X_2^{*(b)}\\
+\vdots & \vdots\\
+Y_n & Z_1, X_n^{*(b)}
+\end{pmatrix}
+$$
+we refit the GEE model and get the $ U_{.2}^{ *(b) } $
+%%%
+\item repeat step 4 - 5 B times to produce $U_{.2}^{ *(b) }$ with $b = 1,2,\ldots,B$.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+After we get enough $U_{.2}^{ *(b) }$ to form an empirical null distribution, the left work of aSPU test for RVs will be exactly the same as for CVs.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{apalike}
+\addcontentsline{toc}{section}{References}
+\bibliography{proposal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

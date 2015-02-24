@@ -1,0 +1,304 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage {setspace} %% for line space
+\usepackage[hang,flushmargin]{footmisc} %control footnote indent
+\usepackage{url} % for website links
+\usepackage{amssymb,amsmath}%for matrix
+\usepackage{graphicx}%for figure
+\usepackage{appendix}%for appendix
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{morefloats}%in case there are too many float tables and figures
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\captionsetup[subtable]{font=normal}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{pdflscape}
+
+\setlength{\parindent}{0em}% paragraph indention
+\setlength{\parskip}{0.5em}
+
+\graphicspath{{figure/}}
+
+
+\begin{document}
+\doublespacing
+\subsection{Aim One (1a): A data-adaptive association test for longitudinal data analysis within GEE framework}\label{sec:subsec1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Statistical Modeling}\label{sec:subsub1-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Suppose for each subject $i = 1,\ldots,n$, we have $k$ total longitudinal measurements $y_i = (y_{i1}, y_{i2}, \ldots, y_{ik})'$ with $y_{im}$ as a element, $p$ SNPs of interest as a row vector $x_i = (x_{i1}, x_{i2}, \ldots, x_{ip})$ with $x_{ij}$ coded as 0,1 or 2 for the count of the minor allele for SNP $j = 1, \ldots, p$, and $z_i = (z_{i1}, z_{i2}, \ldots, z_{iq})$ is a row vector for $q$ variates. We assume common effect sizes of the SNPs and covariates on the longitudinal phenotype/trait measurements. Thus, we construct the design matrix for the SNPs and covariates as:
+$$
+  X_i = \begin{pmatrix}
+          x_{i}\\
+          x_{i}\\
+          \vdots\\
+          x_{i}
+          \end{pmatrix} 
+  , 
+  Z_{i}=\begin{pmatrix}1 & z_{i}\\
+          1 & z_{i}\\
+          \vdots & \vdots\\
+          1 & z_{i}
+          \end{pmatrix}
+$$
+where $x_i$ and $z_i$ are row vectors of length p and q respectively. $X_i$ is a $k \times p$ matrix, and $Z_{i}$ is a $k \times (q+1)$ matrix. Denote the regression coefficient $\beta = (\beta_1, \beta_2, \ldots, \beta_p)'$ and $\varphi = (\varphi_1, \varphi_2, \ldots, \varphi_{q+1})'$ for $X_i$ and $Z_i$ respectively. The marginal mean of each measurement, $E(y_{im}|x_i,z_i) = \mu_{im}$ where $m = 1,2, \ldots, k$ for $k$ total measurements, or the vectorized format of all measurements, $E(y_{i}|x_i,z_i) = \mu_{i}$, relates to the SNPs and covariates through a generalized linear model (GLM):
+$$
+g(\mu_i) = \eta_i = Z_i \varphi + X_i \beta = H_i \theta
+$$
+\noindent with $H_i = (Z_i, X_i), \theta = (\varphi', \beta')'$ and $g(.)$ as a suitable link function. For continuous outcome, an identity link is usually used.
+
+The consistent and asymptotically Normal estimates of $\beta$ and $\varphi$ can be obtained by solving the GEE \cite{liang1986longitudinal}: 
+
+\begin{align*}
+U(\varphi,\beta) & =\sum_{i=}^{n}U_{i}(\varphi,\beta)=\sum_{i=1}^{n}(\frac{\partial\mu_{i}}{\partial\theta'})'V_i^{-1}(Y_{i}-\mu_{i})=0,\\
+\textrm{with}\\
+\frac{\partial\mu_{i}}{\partial\theta'} & =\frac{\partial g^{-1}(H_{i}\theta)}{\partial\theta'}, V_i = \phi A_{i}^{\frac{1}{2}}R_{w}A_{i}^{\frac{1}{2}},\\
+\textrm{and}\\
+A_{i} &= 
+\begin{bmatrix}
+ v(\mu_{i1}) & 0 & \cdots & 0\\
+ 0 & v(\mu_{i2}) & 0 & 0\\
+ \vdots & 0 & \ddots & \vdots\\
+ 0 & 0 & \cdots & v(\mu_{ik})
+\end{bmatrix}
+\end{align*}
+
+$\phi$ in $V_i$ is the dispersion parameter in GEE and is usually treated as nuisance parameter. $v(\mu_{im}) = \phi \textrm{Var}(y_{im} | x_i, z_i) $. $R_w(\alpha)$ is a working correlation matrix depending on some unknown parameter $\alpha$. For convenience, a working independence model
+with $R_w = I$ is often used. With a canonical link function and a working independence model, we have a closed form of the U vector with two parts corresponding to SNPs and covariates, and its covariance estimator:
+\begin{align}
+U & =\left(U_{.1}',U_{.2}'\right)'=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\mu_{i})\nonumber \\
+% \vspace{-2em}
+\widetilde{\Sigma} & = \widehat{\textrm{Cov} }(U) = \sum_{i}\left(Z_{i},X_{i}\right)'\widehat{\textrm{var}(Y_{i})}\left(Z_{i},X_{i}\right)=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})'\left(Z_{i},X_{i}\right)=\begin{pmatrix}V_{11} & V_{12} \\
+V_{21} & V_{22}
+\end{pmatrix}
+\label{eq:1}
+% \end{alignat}
+\end{align}
+where $\hat \mu_i$ is an estimator of $\mu_i$, $\widetilde{\Sigma}$ is an estimate of the covariance of score (U) vector. $\widetilde{\Sigma}$ is partitioned with the dimensions according to the score vector component $U_{.1}$ and $U_{.2}$ for $\varphi$ and $\beta$ respectively.
+
+\textit{Quantitative traits}\\
+\indent We use the identity link, i.e. $g(\mu_{im}) = \mu_{im}$ and $v(\mu_{im}) = \phi \times 1 = \phi$. Then we have:
+\begin{align}
+U & = \sum_{i}\left(Z_{i},X_{i}\right)' R_w^{-1} (Y_{i}-\mu_{i}) \nonumber\\
+\widetilde{\Sigma} & = \sum_{i}\left(Z_{i},X_{i}\right)' R_w^{-1} (Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})' R_w^{-1} \left(Z_{i},X_{i}\right)
+\label{eq:2}
+\end{align}
+
+if the assumption of a common covariance matrices across $Y_i$ for $i$ is valid, e.g. for quantitative continuous traits study \cite{pan2001robust}, we can adopt a more efficient covariance estimator:
+\begin{align*}
+\widetilde{\Sigma} & = \sum_{i=1}^n \left(Z_{i},X_{i}\right)'\widehat{\textrm{var}(Y_{i})}\left(Z_{i},X_{i}\right)
+ = \sum_{i=1}^n \left(Z_{i},X_{i}\right)'\left(\sum_{i=1}^n \frac{(Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})'}{n}\right)\left(Z_{i},X_{i}\right) = 
+\begin{pmatrix}
+V_{11} & V_{12}\\
+ V_{21} & V_{22}
+\end{pmatrix}
+\end{align*}
+which is used by default for its better finite-sample performance \cite{pan2001robust}.
+
+In my dissertation, I will \textbf{focus on} the case with quantitative traits, since they are most typical traits used as response variable in longitudinal data analysis. Nevertheless, I introduce the binary traits strategy as below. In general, the only difference lies in which canonical link we will use, with all other equations/formulas keep the same.
+
+\textit{Binary traits}\\
+\indent For binary traits (trait value coded as 0 and 1), we use the logit link function so that $g(\mu_{im}) = log \frac{\mu_{im}}{1 - \mu_{im}}$ and $v(\mu_{im}) = \mu_{im} (1 - \mu_{im})$. Additionally the $(m, l)$th element of $\frac{\partial\mu_{i}}{\partial\theta'}$ is
+$
+H_{i,ml} \mu_{im} (1- \mu_{im})
+$
+with $H_{i,ml}$ as the $(m, l)$th element of $H_i$, which is the short notation for $(Z_{i},X_{i})$.\\
+Then we have:
+\begin{align*}
+U & = \sum_{i=1} (\frac{\partial\mu_{i}}{\partial\theta'})' V_i^{-1} (Y_{i}-\mu_{i})\\
+& = \sum_{i=1} (\frac{\partial\mu_{i}}{\partial\theta'})' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} (Y_{i}-\mu_{i})\\
+\end{align*}
+and
+\begin{align*}
+\widetilde{\Sigma} & = \sum_{i}\left(\frac{\partial\mu_{i}}{\partial\theta'}\right)' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} (Y_{i}-\hat{\mu_{i}}) (Y_{i}-\hat{\mu_{i}})' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} \left( \frac{\partial\mu_{i}}{\partial\theta'} \right)\\
+& = 
+\begin{pmatrix}
+V_{11} & V_{12}\\
+ V_{21} & V_{22}
+\end{pmatrix}
+\end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textit{Several Current Association Tests}\\
+Our goal is to detect whether there is any association between the longitudinal trait and the SNPs via testing on hypothesis $H_{o}:\beta=(\beta_{1},\beta_{2},\ldots,\beta_{p})'=0$. We have under the null hypothesis with $g(Y_i)=Z_i\varphi$ to obtain $\varphi$ and predict $\hat{\mu}=g^{-1}(Z\hat{\varphi})$. We hereby have score vector under the null hypothesis, with a working independence model, is:
+$$U(\hat{\varphi},0)=(U_{.1}^{'}, U_{.2}^{'})'=\sum_{i=1}^{n}(U_{i1}^{'},U_{i2}^{'})'$$
+where
+$$U_{.1}=\sum_{i}Z_{i}'(Y_{i}-\hat{\mu_{i}}), U_{.2}=\sum_{i}X_{i}'(Y_{i}-\hat{\mu_{i}})$$ 
+As $U$ asymptotically follows a multivariate normal distribution under $H_{0}$, then the score vector for $\beta$ also has an asymptotic normal distribution:\\
+$$
+U_{.2}\sim N(0,\Sigma_{.2}),\,\Sigma_{.2}= \widehat{Cov} (U_{.2}) = V_{22} - V_{21} V_{11}^{-1} V_{12}
+$$, where $V_{xx}$ are defined in Equation \ref{eq:1}.
+\begin{itemize}
+\item \textbf{The Wald Test:} The Wald Test known as $T=\hat{\beta'}\text{cov (\ensuremath{\hat{\beta}}) }\hat{\beta}$ is most commonly used, where $\hat{\beta}$ is the estimate of $\beta$ after fitting the full GEE model with $g(\mu_i) = Z_i\varphi + X_i \beta$. Under $H_0$, we have $T \sim \chi_{p}^2$. The Wald test is more time consuming by fitting full model, may fail to converge with many SNPs put on RHS of the regression-like equation to test, and more importantly, the type I error tends to inflate in such case \cite{pan2014powerful,zhang2014testing}.
+\item \textbf{The Score Test:} $T=U_{.2}^{'}\Sigma_{.2}^{-1}U_{.2}^{-1}$, where $U_{.2}$ and $\Sigma_{.2}$ are discussed above; the statistic is asymptotically equivalent to the Wald test with the same null distribution $T \sim \chi_{p}^2$. Since we only need to fit the null model with covariates, it is computationally easier and less likely to have numerical convergence
+problems. More importantly, the score test controls the type I error well \cite{pan2014powerful,zhang2014testing}.
+\item \textbf{The UminP Test: }$T=\underset{j}{max}\frac{U_{.2,j}^{2}}{\Sigma_{.2,jj}}$
+for $j\in 1,2,\dots,p$, of $j$th SNP effect. The $\Sigma_{.2,jj}$ is the $j$th entry on the diagonal of $\Sigma_{.2}$. With max $T$, we can get minimal p-value accordingly. An asymptotic multivariate normal distribution numerical integration based method provided a fast way to calculate its p-value \cite{Pan2009a,Pan2009}; alternatively, a simulation based method relying on the asymptotic normal distribution of the score vector can be used to calculate its p-value \cite{pan2014powerful,zhang2014testing}. Specifically, we first simulate the score vector $U_{(b)} = ( U_{(b).1}, U_{(b).2},\ldots, U_{(b).p} )'$ from its null distribution  $U_{(b)} \sim N(0, \Sigma_{.2} )$ for $b = 1, 2, \ldots, B$, then calculate a total number of B null statistics: $T^{(b)} = \textrm{max}_{j = 1,\ldots,p} { U^2_{(b).j} \over  \Sigma_{.2,jj} }$, and the p-value is calculated as $\sum_{b=1}^B { I(T^{(b)} \geq T ) + 1  \over B + 1 } $.
+
+With a working independence correlation matrix $R_w = I$, every element $\frac{U_{.2,j}^{2}}{\Sigma_{.2,jj}}$ is equivalent to running the model on each single SNP (e.g. $j$th) one by one and get the Score test statistics. Hence, in this condition, the GEE-UminP test is equivalent to the usual UminP test that combines multiple single-SNP based longitudinal association test statistics.
+\end{itemize}
+
+\textit{A new class of tests and a data-adaptive test in longitudinal data settings}\\
+Before I introduce the proposed new test method, let me explain the logic in current GEE and Score test based methods.
+$$
+T_{Sum} = 1' U = \sum_{j=1}^p U_j, \qquad T_{SSU} = U'U = \sum_{j=1}^p U_j^2,
+$$
+These two tests are called Sum test and SSU test \cite{Pan2009}. The former is closely related to other burden tests such like those in \cite{Morgenthaler2007,Li2008,Madsen2009} If there is a common association either in direction or strength for causal SNVs with no or few non-associated SNVs, then Sum test and the likes will be most powerful; otherwise, the SSU test and its closely relatives, such as kernel machine regression (KMR or SKAT) \cite{Lee2012,Ionita-Laza2013,Oualkacha2013,Lee2012a,Wu2011} and C-alpha test \cite{Neale2011}, will be most powerful. 
+
+Sum test and SSU test are all based on score vector. A more general form of score-based statistic can be generalized as:
+$$
+T_w = W' U = \sum_{j=1}^p W_j U_j
+$$
+where $W = (W_1, \ldots, W_p)'$ is a vector of weights for the $p$ SNVs \cite{Lin2011}. Different researchers proposed different weighting schemes to pool the information of all SNVs in a region of interest, such as those used in \cite{Madsen2009,Sul2011,Pan2011,Han2010,Li2008,Zhang2011,Lin2011,Basu2011}. However, all of these weighting schema used fixed weights, e.g. proportional to the MAF of SNV, proportional to standard deviation of SNV, proportional to regression coefficient, proportional to single SNV p-value, etc, and there is no uniformly best weighting scheme as shown in \cite{pan2014powerful,Basu2011,Pan2011}. 
+
+As a complement to SNVs weighted average, SNVs selection is preferred in the case that there are many non-associated SNVs among the group of SNVs to be tested. Such methods include aSum+ and aSSU which are based on Neyman-type tests \cite{Neyman1937}. However, variable selection will also omit those variables with mild to moderate information. In our context, due to extremely low MAF of RVs, even underlying fact is that the individual RV is strongly associated with trait, there is only limited information stored in this single RV. Dumping seemingly non-informative RVs may actually omit the signals within the group of SNVs. Therefore, we expect the model averaging based test will outperform the model selection based test in above settings.
+
+\textbf{The SPU test}\\
+Our goal is to specify a whole class of weights which can cover a wide range of association patterns: for any given data with unknown association pattern, we hope at least one member of the whole class of weights can render a powerful test. We reason that, since association information is largely maintained in the score vector itself as comparable to regression coefficient, score vector is not only the basis in GEE and Score test based methods aforementioned, but also may be an informative and simple weight! Specifically, we propose a class of weights 
+$$W_j = U_{.2, j} ^ { \gamma - 1} $$
+for a series of integer value $\gamma = 1,2,\ldots,\infty$, leading to the sum of powered score ($U$) tests called SPU tests:
+$$
+T_{ SPU ( \gamma ) } = \sum_{j=1}^p U_{.2, j} ^ { \gamma - 1} U_{.2, j}
+$$
+
+When $\gamma = 1$, the SPU(1) test uses $\textbf{1}$ as weight and sums up the information contained in all the SNVs in the region of interest, equivalent to Sum test or burden test; when $\gamma = 2$, the SPU(2) test uses $U$ as weight to itself and is equivalent to SSU test and other variance-component test such as SKAT; when $\gamma$ keeps increasing, the SPU($\gamma$) test puts higher weights on the $j$th SNV with larger $|U_{.2,j}|$, while gradually decreasing the weights of other SNVs with smaller $|U_{.2,j}|$. As the large value of $|U_{.2,j}|$ indicates strong association information stored in SNV $j$ and small value of $|U_{.2,j}|$ indicates weak or none association information stored in SNV $j$, a higher $\gamma$ tends to put more and more weights on those informative SNVs. When $\gamma \rightarrow \infty$ as an extreme situation, where $\infty$ is assumed to be an even number, we have
+$$
+T_{ SPU(\gamma) } \propto ||U||_{\gamma} = \left( \sum_{j=1}^p |U_{.2, j}| ^ { \gamma } \right) ^ { 1 \over \gamma } \ \rightarrow \ ||U||_{\infty} = \textrm{max}_{j=1} ^ p |U_{.2, j}| \equiv T_{ SPU(\infty) }.
+$$ 
+which takes only the largest element (in absolute value) of score vector. Apparently, SPU($\infty$) is equivalent to UminP test except the variance of each score component is replaced by 1 as in the denominator part.
+
+By above explanation, we can see SPU($\gamma$) test can connect to a few current test with a simplified framework though. Treating $U^{\gamma - 1}$ as the weight with $\gamma \geq 1$ have at least two advantages:\\ 
+First, score vector is as informative as a vector of the estimated regression coefficient while being computationally much simpler and more stable in the case of low frequency SNVs. Specifically, since $U_j$ contains association information about SNV $j$ and $U_j$ under null hypothesis follows $N(0, V)$, a larger component of $|U_j|$ corresponds to strong evidence of association between the $j$th SNV and the trait;\\
+%%%%%
+Second, it leads to a simple interpretation and a guidance: as the value of $\gamma$ increases, we up-weight more and more the larger components of the score vector while gradually ignoring the remaining components. Such process smoothly combines the variable weighting and variable selection schema. Besides, an even integer of $\gamma$ automatically eliminates the effect of opposite signs of $U_j$, thus avoid power loss due to opposite direction effects canceling out each other; an odd integer of $\gamma$ might be more appropriate, as in SPU(1), Sum test or other burden tests, when the SNV effects are all in the same direction.
+
+In our experience, SPU($\gamma$) test with a large $\gamma > 8$ usually gave similar results as that of SPU($\infty$) test \cite{pan2014powerful}, thus we will only use $\gamma \in \Gamma = \{1,2,\ldots,8,\infty \} $ for the whole dissertation work. Suppose the sample size is large enough or MAF of SNV is large enough for the asymptotic normal distribution of score vector to hold under null hypothesis, we will use a simulation method to calculate the p-value from each $T_{ SPU(\gamma) }$ \cite{Lin2005,Seaman2005}. Specifically, suppose $T$ is short notation of $T_{ SPU(\gamma) }$ for a specific $\gamma$ and $\hat{\Sigma}_{.2}$ is the covariance matrix of the score vector $U_{.2}$ based on original data (see Equation \ref{eq:1}). We draw B samples of the score vector from its null distribution: $U_{.2}^{ (b) } \sim MVN \left( 0, \hat{\Sigma}_{.2} \right)$, with $b = 1,2,\ldots,B$, and thus obtain a statistics under null hypothesis: $T ^ {(b)} = \sum_{j=1}^p U^{ (b)\gamma }_{.2, j} $. We then can calculate the p-value of $T_{ SPU(\gamma) }$ as $P_{ SPU(\gamma) } = \sum_{b=1}^B { I(T^{(b)} \geq T ^ {obs} ) + 1  \over B + 1 } $. 
+
+\textbf{The aSPU test}\\
+Although we have a list of SPU($\gamma$) statistics and p-values, we are not sure which one is the most powerful in a specific data situation. Thus, it will be convenient to have a test which data-adaptively and automatically select/combine the best SPU($\gamma$) test(s). We hereby propose an adaptive SPU (aSPU) test to achieve such purpose. There are a list of combining methods, such as exponential combine \cite{Chen2012}, linear combine, quadratic combine and fisher's combine methods \cite{Luo2010,peng2009gene,Derkach2013}, however in this dissertation work we will use minimum-p combining method exclusively with room left for trying other combining methods. As for different $\gamma$, it is difficult to characterize the power curve of an SPU test in real data situation, we will use the p-value of a SPU test to approximate its power; this idea has been prevalent in practice. Accordingly, we will have the aSPU test statistic:
+$$
+T_{aSPU} = \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) },
+$$
+where $P_{ SPU(\gamma) }$ is the p-value of a specific SPU($\gamma$) test.
+
+Similarly as the above simulation method to get p-value of $T_{ SPU(\gamma) }$, the \textit{same strategy} can be applied to get the p-value of $T_{aSPU}$ and actually it fully utilizes the previous simulated intermediate result, hereby saves another \textit{unnecessary} simulation work. Specifically, at the SPU test stage we already have the $U_{.2}^{ (b) }$ for $b = 1,2,\ldots,B$. We then calculate the corresponding SPU test statistics $T^{ (b) }_{ SPU(\gamma) }$ and p-value 
+$$
+P^{ (b) }_{ SPU(\gamma) } =  \sum_{b_1 \neq b}^B { I(T^{ (b_1) }_{ SPU(\gamma) } \geq T^{ (b) }_{ SPU(\gamma) } ) + 1  \over (B-1) + 1 } 
+$$
+for every $\gamma$ and every $b$. Then, we will have $ 
+T ^ {(b)} _{aSPU} = \underset{\gamma\in\Gamma}{ \textrm{min} } P^{ (b) }_{ SPU(\gamma) }
+$, and the final p-value of aSPU test is:
+$$
+P_{aSPU} = \sum_{b=1}^B { I(T ^ {(b)} _{aSPU} \leq T ^ {obs} _{aSPU} ) + 1  \over B + 1 }.
+$$
+It is worth noting again that the same $B$ simulated score vectors have been used in calculating the $P_{aSPU}$. 
+
+In practice for genome wide scan purpose, we can use a "data-adaptive" aSPU test strategy that is: we first start with a smaller $B$, say $B = 1000$, to scan the genomes, then gradually increase $B$ to say $10^6$ for a few groups of SNVs, e.g. specific genes or windows, which pass an pre-determined significance cutoff (e.g. p-value $ \leq 5/B$) in the previous step; repeat this process according to user's specific need until satisfying the significance level accuracy, e.g. a p-value of $\leq 10 ^ {-7}$ requires $B \geq 10^7$. In this "data-adaptive" way of implementing the simulation based p-value calculating method for aSPU test, we will be able to apply the aSPU test to GWA data. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Other versions of aSPU test}
+\begin{itemize}
+\item \textbf{aSPUw test}\\
+The SPUw test is a \textit{diagonal-variance-weighted} version of the SPU test, defined as:
+\begin{eqnarray*}
+T_{SPUw(\gamma)} & = & \sum_{j=1}^{p}\left(\frac{U_{.2,j}}{\sqrt{\hat{\Sigma}_{.2,jj}}}\right)^{\gamma}
+\end{eqnarray*}
+Accordingly, \textbf{the aSPUw test} statistic is defined as
+\begin{eqnarray*}
+T_{aSPUw} & = & \underset{\gamma\in\Gamma}{min}P_{SPUw(\gamma)}
+\end{eqnarray*}
+where $P_{SPUw(\gamma)}$ is the p-value from $T_{SPUw(\gamma)}$. The procedures of getting these values are exactly the same as in above \textbf{aSPU} test based on simulation. Finally, aSPUw p-value can be get by:
+$$
+P_{aSPUw} = \sum_{b=1}^B { I(T ^ {(b)} _{aSPUw} \leq T ^ {obs} _{aSPUw} ) + 1  \over B + 1 },
+$$
+again the same formula as \textbf{aSPU} test. It is worth noting that \textbf{aSPU} and \textbf{aSPUw} test can be implemented once using the same simulated score vector, which makes the computation more efficient.
+
+The \textbf{aSPUw} test is designed to complement the performance of aSPU test. As the standard deviations of SNVs in a region may vary a lot, there is possibility that a \textit{non-informative} SNV has \textit{larger} standard deviations than other associated SNVs, and the SPU test statistic will be dominated by the noise coming from the null but with larger standard deviation SNV, thus leads to concealing association signals and eventually reduce the test power. Another advantage \textbf{aSPUw} brings about is it makes jointly analyze the effect of RVs and CVs possible by giving them an inverse-standard-deviation weight closely related to MAF. 
+
+The \textbf{aSPUw} test also has disadvantages, otherwise, we will not keep mentioning \textbf{aSPU} test as our flagship test within the aSPU test family (including aSPU, aSPUw, and below aSPU.Score and aSPUw.Score tests). When \textbf{variance} of SNVs are quite \textbf{homogeneous}, put a variance-based weight (always positive) in the denominator will shrink the test statistics and thus lead to less power. In brief, there will be some scenarios, the aSPU test will dominate aSPUw test, and vice versa. Therefore, it is worth generating both test results for all real-data scenarios of which we don't know the underlying SNV variance situation (homogeneous or heterogeneous). We can compare the results afterwards. The best thing is already mentioned earlier: the two tests can be executed at the same time without extra computation burden.
+
+\item \textbf{aSPU(w).Score test }\\
+Although the \textbf{GEE Score test} will lose power in some scenario of gene-based GWA analysis as mentioned before, it still has the unique advantage in some scenarios when the correlation structure among SNVs really matters. GEE Score test in the form of $T=U_{.2}^{'}\Sigma_{.2}^{-1}U_{.2}^{-1}$ will keep the covariance matrix in the denominator, which preserves the information of possible linkage disequilibrium among SNVs. To combine the pros of GEE Score test and aSPU(w) test, we propose to adopt the minimum p-value combining strategy again, yielding the aSPU(w).Score test with test statistic:
+$$
+T_{aSPU.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) }, P_{Score} \Big\},
+$$ 
+where $P_{Score}$ is the p-value of the Score test. To calculate the p-value of the aSPU(w).Score test, it is just as simple as to include the Score test p-value along with the other SPU($\gamma$) p-values, select the minimum p-value among them to form the new statistic $T_{aSPU.Score}$, then use the same simulation algorithm as discussed earlier to get the the $P_{aSPU.Score}$.
+
+The advantage of \textbf{aSPU(w).Score} test is we only need to sacrifice a little bit test performance in all scenarios (based on our extensive simulation studies, which is though not shown here), to exchange for a huge improved stability in maintaining a high power in all scenarios (usually when aSPU family performs not so impressive, and Score test happen to be on the edge due to its retaining of the LD information among SNVs).
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Aim One (1b): Longitudinal aSPU family tests on Rare Variants}\label{sec:subsec2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Statistical Modeling}\label{sec:subsub2-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the previous section \ref{sec:subsub1-1} we discussed the methodology development of aSPU family tests on common variants with a longitudinal trait. In this section, we will discuss the extension of the new methods to rare variants.
+
+While MAF of RVs are usually low, e.g. between 0.001 to 0.01, the asymptotically Normal distribution of either $beta$ coefficient or score vector may or may not hold. The simulation-based p-value calculating method as proposed in CV scenario is not sufficient in RV case and need modification. Specifically, in last section, we have:
+$$
+U_{.2}^{ (b) } \sim MVN \left( 0, \hat{\Sigma}_{.2} \right)
+$$
+with $b = 1,2,\ldots,B$, and thus obtain a statistics under null hypothesis: $T ^ {(b)} = \sum_{j=1}^p U^{ (b)\gamma }_{.2, j} $. We then calculate the p-value of $T_{ SPU(\gamma) }$ as $P_{ SPU(\gamma) } = \sum_{b=1}^B { I(T^{(b)} \geq T ^ {obs} ) + 1  \over B + 1 } $. 
+
+The above algorithms will hold in RV case by large, except that the $U_{.2}^{ (b) }$ may not follow the multivariate Normal distribution any longer. As a remedy, we propose a permutation algorithm that generates the empirical null distribution of $U_{.2}^{ (b) }$ and in the same time maintain the relationship between longitudinal traits and possible covariates such as age, gender, etc, for subject $i$. The algorithm is required to be also robust to missing data as this is a usual case in longitudinal data settings. The permutation algorithm can be implemented as follows:
+\begin{enumerate}
+\item identify the max $k$ across all $n$ subjects, which is the number of longitudinal measurements, e.g. $k = 4$ as used in simulation study in section \ref{sec:subsub1-3}.
+%%%
+\item detect if the data has missing values, if yes, fill the missing value with NA to complement the data dimension (for example, subject $i$ with $Y_{i} = ( y_{i,1},,,y_{i,4} )'$ has two missing measurements at time 2 and time 3. After missing value complementing, it becomes $Y_{i} = ( y_{i,1},\textrm{NA},\textrm{NA},y_{i,4} )'$). Now we should have all the subjects with each $Y_{i}$ of dimension equal to $k \times 1$.  
+%%%
+\item complement $H_i$ to be of full dimension, i.e. $k \times (p + q + 1)$, for covariates and SNVs. Now we should have
+$\begin{pmatrix}
+Y_i & H_i
+\end{pmatrix}$
+as an augmented matrix of dimension $k \times (p + q + 2)$ for each subject $i$, where $H_i = (Z_i,X_i)$. For total $n$ subjects, we have row-wise binded matrix
+$$
+M = 
+\begin{pmatrix}
+Y_1 & H_1\\
+Y_2 & H_2\\
+\vdots & \vdots\\
+Y_n & H_n
+\end{pmatrix}
+$$ 
+of dimension $nk \times (p + q + 2)$.
+%%%
+\item permute the SNV chunk among different individuals, i.e. the $X_i$ in
+$\begin{pmatrix}
+Y_i & Z_i,X_i
+\end{pmatrix}$ 
+with the $X_j$ in 
+$\begin{pmatrix}
+Y_j & Z_j,X_j
+\end{pmatrix}$
+, where $i \neq j$. 
+%%%
+\item with permuted 
+$$
+M^{*(b)} = 
+\begin{pmatrix}
+Y_1 & Z_1, X_1^{*(b)}\\
+Y_2 & Z_1, X_2^{*(b)}\\
+\vdots & \vdots\\
+Y_n & Z_1, X_n^{*(b)}
+\end{pmatrix}
+$$
+we refit the GEE model and get the $ U_{.2}^{ *(b) } $
+%%%
+\item repeat step 4 - 5 B times to produce $U_{.2}^{ *(b) }$ with $b = 1,2,\ldots,B$.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+After we get enough $U_{.2}^{ *(b) }$ to form an empirical null distribution, the left work of aSPU test for RVs will be exactly the same as we did on CVs. The only difference is, previously we get simulation based null distribution of score vector under CVs situation, but now we rely on special permutation algorithm in the longitudinal data settings to generate the null distribution of score vector.
+
+\end{document}
