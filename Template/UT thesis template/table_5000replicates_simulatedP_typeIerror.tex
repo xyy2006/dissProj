@@ -1,0 +1,49 @@
+\documentclass[landscape, 12pt]{report}%\documentclass[12pt]{article}
+\usepackage[margin=0.3in]{geometry}
+\usepackage {setspace} %% for line space
+\usepackage[hang,flushmargin]{footmisc} %control footnote indent
+\usepackage{url} % for website links
+\usepackage{amssymb,amsmath}%for matrix
+\usepackage{graphicx}%for figure
+\usepackage{appendix}%for appendix
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{morefloats}%in case there are too many float tables and figures
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\captionsetup[subtable]{font=normal}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{pdflscape}
+
+\setlength{\parindent}{0em}% paragraph indention
+\setlength{\parskip}{0.5em}
+
+\graphicspath{{figure/}}
+
+
+\begin{document}
+%\begin{landscape}
+
+\begin{table}[ht]
+\centering
+\tiny
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & pSSU & pSSUw & pScore & pSum & pUminP & geescoreP & UminP & aveP & avePw & spu(2) & spuw(2) & spu(inf) & spuw(inf) & aspu & aspuw & aspu.sco & aspuw.sco & aspu\_aspuw.sco & aspu\_aspuw \\
+  \hline
+500 & 0.047 & 0.048 & 0.047 & 0.052 & 0.048 & 0.047 & 0.053 & 0.052 & 0.051 & 0.058 & 0.059 & 0.054 & 0.053 & 0.060 & 0.058 & 0.058 & 0.055 & 0.058 & 0.060 \\
+  1000 & 0.047 & 0.046 & 0.044 & 0.058 & 0.048 & 0.044 & 0.051 & 0.057 & 0.057 & 0.059 & 0.056 & 0.051 & 0.051 & 0.057 & 0.057 & 0.057 & 0.054 & 0.057 & 0.057 \\
+  2000 & 0.049 & 0.047 & 0.051 & 0.048 & 0.048 & 0.051 & 0.052 & 0.048 & 0.049 & 0.058 & 0.055 & 0.052 & 0.052 & 0.061 & 0.058 & 0.058 & 0.058 & 0.058 & 0.058 \\
+  3000 & 0.051 & 0.052 & 0.052 & 0.052 & 0.050 & 0.052 & 0.053 & 0.051 & 0.052 & 0.061 & 0.060 & 0.054 & 0.053 & 0.063 & 0.060 & 0.059 & 0.057 & 0.059 & 0.062 \\
+   \hline
+\end{tabular}
+\end{table}
+\end{document}
+
+
+
+\end{document}

@@ -1,0 +1,198 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}[ht] 
+\backslash
+centering 
+\backslash
+begin{tabular}{rrrrrrrrrrrrrrrrrrrr}   
+\backslash
+hline  & pSSU & pSSUw & pScore & pSum & pUminP & geescoreP & UminP & aveP
+ & aveP
+\backslash
+_weighted & KM
+\backslash
+_P & geescoreP
+\backslash
+_withDiagSigma & spu
+\backslash
+_Inf
+\backslash
+_P & spu
+\backslash
+_weighted
+\backslash
+_Inf
+\backslash
+_P & aspu
+\backslash
+_P & aspu
+\backslash
+_weighted
+\backslash
+_P & aspu
+\backslash
+_sco
+\backslash
+_P & aspu
+\backslash
+_weighted
+\backslash
+_sco
+\backslash
+_P & aspu
+\backslash
+_aspuw.sco
+\backslash
+_P & aspu
+\backslash
+_aspuw
+\backslash
+_P 
+\backslash
+
+\backslash
+   
+\backslash
+hline independenceOn
+\backslash
+_RVsimulatedU
+\backslash
+_scoUpdated
+\backslash
+_AR1
+\backslash
+_h0
+\backslash
+_500 & 0.047 & 0.048 & 0.047 & 0.052 & 0.048 & 0.047 & 0.053 & 0.052 & 0.051 & 0.058
+ & 0.059 & 0.054 & 0.053 & 0.060 & 0.058 & 0.058 & 0.055 & 0.058 & 0.060 
+\backslash
+
+\backslash
+   independenceOn
+\backslash
+_RVsimulatedU
+\backslash
+_scoUpdated
+\backslash
+_AR1
+\backslash
+_h0
+\backslash
+_1000 & 0.047 & 0.046 & 0.044 & 0.058 & 0.048 & 0.044 & 0.051 & 0.057 & 0.057 & 0.059
+ & 0.056 & 0.051 & 0.051 & 0.057 & 0.057 & 0.057 & 0.054 & 0.057 & 0.057 
+\backslash
+
+\backslash
+   independenceOn
+\backslash
+_RVsimulatedU
+\backslash
+_scoUpdated
+\backslash
+_AR1
+\backslash
+_h0
+\backslash
+_2000 & 0.049 & 0.047 & 0.051 & 0.048 & 0.048 & 0.051 & 0.052 & 0.048 & 0.049 & 0.058
+ & 0.055 & 0.052 & 0.052 & 0.061 & 0.058 & 0.058 & 0.058 & 0.058 & 0.058 
+\backslash
+
+\backslash
+   independenceOn
+\backslash
+_RVsimulatedU
+\backslash
+_scoUpdated
+\backslash
+_AR1
+\backslash
+_h0
+\backslash
+_3000 & 0.051 & 0.052 & 0.052 & 0.052 & 0.050 & 0.052 & 0.053 & 0.051 & 0.052 & 0.061
+ & 0.060 & 0.054 & 0.053 & 0.063 & 0.060 & 0.059 & 0.057 & 0.059 & 0.062 
+\backslash
+
+\backslash
+    
+\backslash
+hline 
+\backslash
+end{tabular} 
+\backslash
+end{table}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
