@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.28)  22 JUN 2015 16:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.28)  28 JUL 2015 15:04
 entering extended mode
 **Dissertation_Yang.tex
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.tex"
@@ -693,7 +693,14 @@ Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 31.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux")
+("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux"
+
+LaTeX Warning: Label `JA_1' multiply defined.
+
+
+LaTeX Warning: Label `JA_1' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
@@ -805,21 +812,21 @@ l.78 \newpage
 dentifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \end{titlepage}
+l.151 \end{titlepage}
                       [1]
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.toc"pdfTeX
  warning (ext4): destination with the same identifier (name{page.1}) has been a
 lready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 ...ulation Settings}{50}{subsubsection.5.3.2}
+l.20 ...mulation Studies}{51}{subsubsection.2.3.3}
                                                    [1])
 \tf@toc=\write4
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \newpage
+l.157 \newpage
                [2]
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.lot")
 \tf@lot=\write5
@@ -827,20 +834,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.157 \newpage
+l.160 \newpage
                [3]
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.lof"
-
-LaTeX Warning: Citation `Fridley2011' on page 4 undefined on input line 2.
-
-
 Overfull \hbox (4.304pt too wide) in paragraph at lines 2--2
  [][] [][]\OT1/cmr/bx/n/12 Examples of com-pet-i-tive ap-proach and self-contai
 ned ap-proach based 
  []
-
-
-LaTeX Warning: Citation `Wang2010' on page 4 undefined on input line 3.
 
 )
 \tf@lof=\write6
@@ -848,1086 +848,253 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.161 \newpage
-               [4]
-
-LaTeX Warning: Citation `McCarthy2008' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Hirschhorn2005' on page 5 undefined on input line 167.
-
-
-
-LaTeX Warning: Citation `Sham2014' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Sham2014' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Bansal2010' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Fu2013' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Bansal2010' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Sham2014' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `McCarthy2008' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Capanu2011' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Basu2011' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Bansal2010' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Sham2014' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Ye2011' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Pinto2010' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Sham2014' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Sham2014' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `DelaCruz2010' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Weng2011' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Wang2010' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Wei2012a' on page 5 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Morgenthaler2007' on page 5 undefined on input line 17
-0.
-
-
-LaTeX Warning: Citation `Li2008' on page 5 undefined on input line 170.
-
-[5]
-
-LaTeX Warning: Citation `Madsen2009' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Hoffmann2010' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Zhang2010' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Ionita-Laza2011' on page 6 undefined on input line 175
-.
-
-
-LaTeX Warning: Citation `Feng2011' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Zhu2010' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Feng2011' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Ionita-Laza2011' on page 6 undefined on input line 175
-.
-
-
-LaTeX Warning: Citation `Hoffmann2010' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Zhang2010' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Zhang2011' on page 6 undefined on input line 175.
-
-
-LaTeX Warning: Citation `Pan2009' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Neale2011' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Wu2010' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Kwee2008' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Pan2009' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Wu2011' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Lee2012a' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Lee2012' on page 6 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Oualkacha2013' on page 6 undefined on input line 180.
-
-
-LaTeX Warning: Citation `Wang2013' on page 6 undefined on input line 180.
+l.164 \newpage
+               [4] [5]
+Overfull \hbox (97.77751pt too wide) in paragraph at lines 174--177
+\OT1/cmr/m/n/12 in re-cent years. The ear-li-est meth-ods in-clude the co-hort 
+al-lelic sums test (CAST)[[]]
+ []
+
+
+Overfull \hbox (27.15105pt too wide) in paragraph at lines 179--182
+\OT1/cmr/m/n/12 pair and odds ra-tio weighted sum statis-tics (SP-WSS, OR-WSS) 
+[[], []];
+ []
 
 [6]
-
-LaTeX Warning: Citation `Bhatia2010' on page 7 undefined on input line 184.
-
-
-LaTeX Warning: Citation `Liu2010' on page 7 undefined on input line 184.
-
-
-LaTeX Warning: Citation `Sul2011' on page 7 undefined on input line 184.
-
-
-LaTeX Warning: Citation `Zhou2010' on page 7 undefined on input line 189.
-
-
-LaTeX Warning: Citation `Kim2014' on page 7 undefined on input line 189.
-
-
-LaTeX Warning: Citation `Luo2011' on page 7 undefined on input line 194.
-
-
-LaTeX Warning: Citation `Luo2012' on page 7 undefined on input line 194.
-
-
-LaTeX Warning: Citation `Luo2012a' on page 7 undefined on input line 194.
-
-
-LaTeX Warning: Citation `Fan2013' on page 7 undefined on input line 194.
-
-[7]
-
-LaTeX Warning: Citation `Lin2011' on page 8 undefined on input line 198.
-
-
-LaTeX Warning: Citation `Price2010' on page 8 undefined on input line 198.
-
-
-LaTeX Warning: Citation `Pan2011' on page 8 undefined on input line 198.
-
-
-LaTeX Warning: Citation `Chen2012' on page 8 undefined on input line 198.
-
-
-LaTeX Warning: Citation `Derkach2013' on page 8 undefined on input line 198.
-
-
-LaTeX Warning: Citation `Sun2013' on page 8 undefined on input line 198.
-
-
-LaTeX Warning: Citation `Price2010' on page 8 undefined on input line 202.
-
-
-LaTeX Warning: Citation `Han2010' on page 8 undefined on input line 202.
-
-
-LaTeX Warning: Citation `Yandell2011' on page 8 undefined on input line 202.
-
-
-LaTeX Warning: Citation `Hu2013' on page 8 undefined on input line 202.
-
-
-LaTeX Warning: Citation `Cai2012' on page 8 undefined on input line 202.
-
-[8]
-
-LaTeX Warning: Citation `Basu2011' on page 9 undefined on input line 205.
-
-
-LaTeX Warning: Citation `Bansal2010' on page 9 undefined on input line 205.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 9 undefined on input line 205
-.
-
-
-LaTeX Warning: Citation `Pan2009' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Derkach2013' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 9 undefined on input line 207
-.
-
-
-LaTeX Warning: Citation `Sun2013' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Derkach2013' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Chen2012' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Han2010' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Lee2012' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Lin2011' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Pan2011' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Sun2013' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Zhang2011' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 9 undefined on input line 207
-.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 9 undefined on input line 207
-.
-
-[9]
-
-LaTeX Warning: Citation `WARE1990' on page 10 undefined on input line 223.
-
-[10]
-
-LaTeX Warning: Citation `Diggle2002' on page 11 undefined on input line 235.
-
-[11] [12]
-
-LaTeX Warning: Citation `Aulchenko2009' on page 13 undefined on input line 259.
-
-
-
-LaTeX Warning: Citation `Ionita-Laza2007' on page 13 undefined on input line 25
-9.
-
-
-LaTeX Warning: Citation `Kamatani2010' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Kathiresan2007' on page 13 undefined on input line 259
-.
-
-
-LaTeX Warning: Citation `Sabatti2008' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Sabatti2008' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Ionita-Laza2007' on page 13 undefined on input line 25
-9.
-
-
-LaTeX Warning: Citation `Kamatani2010' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Kathiresan2007' on page 13 undefined on input line 259
-.
-
-
-LaTeX Warning: Citation `Belsky2013' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Wang2012' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Melville2012' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Silver2012' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Xu2014' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Furlotte2012' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Xu2014' on page 13 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Furlotte2012' on page 13 undefined on input line 259.
-
-[13]
-
-LaTeX Warning: Citation `laird1982random' on page 14 undefined on input line 26
-4.
-
-
-LaTeX Warning: Citation `laird1982random' on page 14 undefined on input line 26
-4.
-
-
-LaTeX Warning: Citation `zeger1986longitudinal' on page 14 undefined on input l
-ine 266.
-
-
-LaTeX Warning: Citation `liang1986longitudinal' on page 14 undefined on input l
-ine 266.
-
-
-LaTeX Warning: Citation `wedderburn1974quasi' on page 14 undefined on input lin
-e 266.
-
-[14]
-
-LaTeX Warning: Citation `tsay1984regression' on page 15 undefined on input line
- 268.
-
-
-LaTeX Warning: Citation `cox1989analysis' on page 15 undefined on input line 26
-8.
-
-
-LaTeX Warning: Citation `zeger1985analysis' on page 15 undefined on input line 
-268.
-
-
-LaTeX Warning: Citation `korn1979methods' on page 15 undefined on input line 26
-8.
-
-
-LaTeX Warning: Citation `zeger1988markov' on page 15 undefined on input line 26
-8.
-
-
-LaTeX Warning: Citation `tsay1984regression' on page 15 undefined on input line
- 268.
-
-
-LaTeX Warning: Citation `cox1989analysis' on page 15 undefined on input line 26
-8.
-
-
-LaTeX Warning: Citation `zeger1985analysis' on page 15 undefined on input line 
-268.
-
-
-LaTeX Warning: Citation `korn1979methods' on page 15 undefined on input line 26
-8.
-
-
-LaTeX Warning: Citation `zeger1988markov' on page 15 undefined on input line 26
-8.
-
-
-LaTeX Warning: Citation `zeger1988models' on page 15 undefined on input line 27
-1.
-
-
-LaTeX Warning: Citation `liang1986longitudinal' on page 15 undefined on input l
-ine 271.
-
-
-LaTeX Warning: Citation `laird1982random' on page 15 undefined on input line 27
-1.
-
-
-LaTeX Warning: Citation `guo2005small' on page 15 undefined on input line 271.
-
-
-LaTeX Warning: Citation `pan2001robust' on page 15 undefined on input line 271.
-
-
-
-LaTeX Warning: Citation `shete2004effect' on page 15 undefined on input line 27
-1.
-
-
-LaTeX Warning: Citation `zhang2014testing' on page 15 undefined on input line 2
-71.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 15 undefined on input line 27
-1.
-
-
-LaTeX Warning: Citation `litiere2007type' on page 15 undefined on input line 27
-1.
-
-
-LaTeX Warning: Citation `Xu2014' on page 15 undefined on input line 271.
-
-
-LaTeX Warning: Citation `zhang2014testing' on page 15 undefined on input line 2
-71.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 15 undefined on input line 27
-1.
-
-[15]
-
-LaTeX Warning: Citation `BloodPressureGenome-WideAssociationStudies2011' on pag
-e 16 undefined on input line 276.
-
-
-LaTeX Warning: Citation `Hirschhorn2009' on page 16 undefined on input line 276
-.
-
-
-LaTeX Warning: Citation `Zhong2010' on page 16 undefined on input line 276.
-
-
-LaTeX Warning: Citation `Wang2010' on page 16 undefined on input line 276.
-
-
-LaTeX Warning: Citation `Hirschhorn2005' on page 16 undefined on input line 276
-.
-
-
-LaTeX Warning: Citation `McCarthy2008' on page 16 undefined on input line 276.
-
-[16]
-
-LaTeX Warning: Citation `DelaCruz2010' on page 17 undefined on input line 278.
-
-
-LaTeX Warning: Citation `Wang2010' on page 17 undefined on input line 278.
-
-
-LaTeX Warning: Citation `Sham2014' on page 17 undefined on input line 278.
-
-
-LaTeX Warning: Citation `DelaCruz2010' on page 17 undefined on input line 278.
-
-
-LaTeX Warning: Citation `Weng2011' on page 17 undefined on input line 278.
-
-
-LaTeX Warning: Citation `Wang2010' on page 17 undefined on input line 278.
-
-
-LaTeX Warning: Citation `Ogata1999' on page 17 undefined on input line 278.
-
-
-LaTeX Warning: Citation `Nishimura2001' on page 17 undefined on input line 278.
-
-
-
-LaTeX Warning: Citation `Ashburner2000' on page 17 undefined on input line 278.
-
-
-
-LaTeX Warning: Citation `Gough2002' on page 17 undefined on input line 280.
-
-
-LaTeX Warning: Citation `Schaefer2009' on page 17 undefined on input line 280.
-
-
-LaTeX Warning: Citation `Karp2002' on page 17 undefined on input line 280.
-
-
-LaTeX Warning: Citation `Caspi2008' on page 17 undefined on input line 280.
-
-[17]
-
-LaTeX Warning: Citation `Goeman2007' on page 18 undefined on input line 283.
-
-
-LaTeX Warning: Citation `Liu2007' on page 18 undefined on input line 283.
-
-
-LaTeX Warning: Citation `Nam2008' on page 18 undefined on input line 283.
-
-
-LaTeX Warning: Citation `Wang2010' on page 18 undefined on input line 283.
-
-
-LaTeX Warning: Citation `Fridley2010' on page 18 undefined on input line 283.
-
-
-LaTeX Warning: Citation `Fridley2011' on page 18 undefined on input line 283.
-
-
-LaTeX Warning: Citation `Fridley2011' on page 18 undefined on input line 285.
-
-
-LaTeX Warning: Citation `Subramanian2005' on page 18 undefined on input line 28
-5.
-
-
-LaTeX Warning: Citation `DennisJr2003' on page 18 undefined on input line 285.
+Overfull \hbox (55.92146pt too wide) in paragraph at lines 193--196
+\OT1/cmr/m/n/12 clidean penal-ties and single-predictor penal-ties (lasso) into
+ lin-ear or lo-gis-tic re-gres-sion [[],
+ []
+
+[7] [8]
+Overfull \hbox (10.75351pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/12 the later im-proved ver-sion VAAST 2 [[]]. The weighted score t
+est [[]]
+ []
+
+[9] [10] [11] [12]
+Overfull \hbox (9.40112pt too wide) in paragraph at lines 262--264
+\OT1/cmr/m/n/12 across mul-ti-ple time points for each in-di-vid-ual [[], [],
+ []
+
+
+Overfull \hbox (3.39146pt too wide) in paragraph at lines 262--264
+\OT1/cmr/m/n/12 [[], [], [], []].
+ []
+
+[13] [14]
+Overfull \hbox (58.69934pt too wide) in paragraph at lines 270--271
+[]\OT1/cmr/m/n/12 Another ma-jor method, the marginal model with GEE was first 
+pro-posed in 1986 [[],
+ []
+
+
+Overfull \hbox (0.64102pt too wide) in paragraph at lines 272--273
+[]\OT1/cmr/m/n/12 ] and log link [[]]. Model fit-ting is straight-
+ []
+
+[15] [16] [17]
+Overfull \hbox (3.4998pt too wide) in paragraph at lines 282--285
+\OT1/cmr/m/n/12 ways, gene ex-pres-sion net-works as ex-am-ples [[], [],
+ []
+
+
+Overfull \hbox (41.0082pt too wide) in paragraph at lines 282--285
+\OT1/cmr/m/n/12 both of which man-u-ally cu-rated the cell sig-nal-ing path-way
+s; the Meta-Cyc database [[]]
+ []
 
 [18]
+Overfull \hbox (90.4989pt too wide) in paragraph at lines 286--288
+\OT1/cmr/m/n/12 rized into two ma-jor classes: self-contained ap-proach and com
+-pet-i-tive ap-proach [[],
+ []
+
+
+Overfull \hbox (77.89905pt too wide) in paragraph at lines 286--288
+[]\OT1/cmr/m/n/12 , [], [], [], []].
+ []
+
+[19]
 
 pdfTeX warning: pdflatex (file D:/Dissertation_proj/Template/UT thesis template
 /figure/CompetitiveVsConstrained_illustration_example.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 
-<figure/CompetitiveVsConstrained_illustration_example.pdf, id=261, 853.57898pt 
+<figure/CompetitiveVsConstrained_illustration_example.pdf, id=543, 853.57898pt 
 x 929.4725pt>
 File: figure/CompetitiveVsConstrained_illustration_example.pdf Graphic file (ty
 pe pdf)
  <use figure/CompetitiveVsConstrained_illustration_example.pdf>
 Package pdftex.def Info: figure/CompetitiveVsConstrained_illustration_example.p
-df used on input line 291.
+df used on input line 295.
 (pdftex.def)             Requested size: 426.78845pt x 464.73512pt.
 
+[20]
+Overfull \hbox (11.05945pt too wide) in paragraph at lines 300--303
+\OT1/cmr/m/n/12 metabochip [[]] and the CVD35/cardiovascular-IBC-array [[],
+ []
 
-LaTeX Warning: Citation `Fridley2011' on page 19 undefined on input line 293.
-
-
-LaTeX Warning: Citation `Fridley2011' on page 19 undefined on input line 293.
-
-[19]
-
-LaTeX Warning: Citation `Cortes2011' on page 20 undefined on input line 297.
-
-
-LaTeX Warning: Citation `Voight2012' on page 20 undefined on input line 297.
-
-
-LaTeX Warning: Citation `Cheng1999' on page 20 undefined on input line 297.
-
-
-LaTeX Warning: Citation `Keating2008' on page 20 undefined on input line 297.
-
-
-LaTeX Warning: Citation `Goeman2007' on page 20 undefined on input line 297.
-
-
-LaTeX Warning: Citation `wang2007pathway' on page 20 undefined on input line 29
-7.
-
-
-LaTeX Warning: Citation `Goeman2007' on page 20 undefined on input line 297.
-
-
-LaTeX Warning: Citation `Fridley2010' on page 20 undefined on input line 297.
-
-[20 <D:/Dissertation_proj/Template/UT thesis template/figure/CompetitiveVsConst
-rained_illustration_example.pdf>] [21]
-<figure/pathwayTests_definition.jpg, id=323, 733.23938pt x 677.53125pt>
+[21 <D:/Dissertation_proj/Template/UT thesis template/figure/CompetitiveVsConst
+rained_illustration_example.pdf>] [22]
+<figure/pathwayTests_definition.jpg, id=619, 733.23938pt x 677.53125pt>
 File: figure/pathwayTests_definition.jpg Graphic file (type jpg)
 
 <use figure/pathwayTests_definition.jpg>
 Package pdftex.def Info: figure/pathwayTests_definition.jpg used on input line 
-304.
+308.
 (pdftex.def)             Requested size: 366.61879pt x 338.76479pt.
-
-
-LaTeX Warning: Citation `Wang2010' on page 22 undefined on input line 306.
-
-
-LaTeX Warning: Citation `Wang2010' on page 22 undefined on input line 306.
-
-
-LaTeX Warning: Citation `wang2007pathway' on page 22 undefined on input line 31
-0.
-
-
-LaTeX Warning: Citation `wang2007pathway' on page 22 undefined on input line 31
-0.
-
-
-LaTeX Warning: Citation `Holden2008' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Zhang2010a' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Nam2010' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Medina2009' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `DelaCruz2010' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Chen2010' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Purcell2007' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Holmans2009' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `ODushlaine2009' on page 22 undefined on input line 310
-.
-
-
-LaTeX Warning: Citation `Chen2010a' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Chen2009' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Luo2010' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `peng2009gene' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Chai2009' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Yu2009' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `tintle2011inflated' on page 22 undefined on input line
- 310.
-
-
-LaTeX Warning: Citation `Wang2010' on page 22 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Fridley2011' on page 22 undefined on input line 310.
-
-[22 <D:/Dissertation_proj/Template/UT thesis template/figure/pathwayTests_defin
-ition.jpg>] [23]
-
-LaTeX Warning: Citation `Craig2008' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Inzucchi2012' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Go2013' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Association2014' on page 24 undefined on input line 31
-5.
-
-
-LaTeX Warning: Citation `Benros2014' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Hindorff2009' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Wang2005' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Hirschhorn2005' on page 24 undefined on input line 315
-.
-
-
-LaTeX Warning: Citation `McCarthy2008' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Hindorff2009' on page 24 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Cantor2010' on page 24 undefined on input line 315.
-
-[24]
-
-LaTeX Warning: Citation `Ansorge2009' on page 25 undefined on input line 317.
-
-
-LaTeX Warning: Citation `Metzker2009' on page 25 undefined on input line 317.
-
-
-LaTeX Warning: Citation `Mardis2008' on page 25 undefined on input line 317.
-
-
-LaTeX Warning: Citation `Shendure2008' on page 25 undefined on input line 317.
-
-
-LaTeX Warning: Citation `Eichler2010' on page 25 undefined on input line 317.
-
-[25]
-
-LaTeX Warning: Citation `Heiss1989' on page 26 undefined on input line 330.
-
-
-LaTeX Warning: Citation `Furlotte2012' on page 26 undefined on input line 330.
-
-
-LaTeX Warning: Citation `Xu2014' on page 26 undefined on input line 330.
-
-[26] [27]
-
-LaTeX Warning: Citation `pan2014powerful' on page 28 undefined on input line 46
-9.
-
-
-LaTeX Warning: Citation `Basu2011' on page 28 undefined on input line 469.
-
-
-LaTeX Warning: Citation `Pan2011' on page 28 undefined on input line 469.
-
-
-LaTeX Warning: Citation `Han2010' on page 28 undefined on input line 469.
-
-
-LaTeX Warning: Citation `Pan2009' on page 28 undefined on input line 469.
-
-[28]
-
-LaTeX Warning: Citation `Investigators1989' on page 29 undefined on input line 
-478.
-
-
-LaTeX Warning: Citation `Grove2013' on page 29 undefined on input line 480.
-
-
+ [23 <D:/Dissertation_proj/Template/UT thesis template/figure/pathwayTests_defi
+nition.jpg>] [24]
+Overfull \hbox (3.39146pt too wide) in paragraph at lines 317--320
+[]\OT1/cmr/m/n/12 , [], [], []]. 
+ []
+
+[25] [26] [27] [28] [29]
 
 pdfTeX warning: pdflatex (file D:/Dissertation_proj/Template/UT thesis template
 /figure/ARIC_CohortCharacteristics.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.5> allowed
-<figure/ARIC_CohortCharacteristics.pdf, id=355, 614.295pt x 794.97pt>
+<figure/ARIC_CohortCharacteristics.pdf, id=728, 614.295pt x 794.97pt>
 File: figure/ARIC_CohortCharacteristics.pdf Graphic file (type pdf)
 
 <use figure/ARIC_CohortCharacteristics.pdf>
 Package pdftex.def Info: figure/ARIC_CohortCharacteristics.pdf used on input li
-ne 485.
+ne 487.
 (pdftex.def)             Requested size: 460.72011pt x 596.22604pt.
- [29]
-Overfull \hbox (7.21765pt too wide) in paragraph at lines 501--502
+ [30]
+Overfull \hbox (7.21765pt too wide) in paragraph at lines 503--504
 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]; y[]; [] ; y[]\OT1/cmr/m/n/12 )[]$ with 
 $\OML/cmm/m/it/12 y[]$ \OT1/cmr/m/n/12 as a el-e-ment, $\OML/cmm/m/it/12 p$ \OT
 1/cmr/m/n/12 SNPs of in-ter-est as a row vec-tor $\OML/cmm/m/it/12 x[] \OT1/cmr
 /m/n/12 = (\OML/cmm/m/it/12 x[]; x[]; [] ; x[]\OT1/cmr/m/n/12 )$
  []
 
-[30 <D:/Dissertation_proj/Template/UT thesis template/figure/ARIC_CohortCharact
-eristics.pdf>] [31]
-
-LaTeX Warning: Citation `liang1986longitudinal' on page 32 undefined on input l
-ine 522.
-
-
-Overfull \hbox (39.33234pt too wide) in paragraph at lines 548--548
+[31 <D:/Dissertation_proj/Template/UT thesis template/figure/ARIC_CohortCharact
+eristics.pdf>] [32]
+Overfull \hbox (39.33234pt too wide) in paragraph at lines 550--550
 [] 
  []
 
-[32]
-
-LaTeX Warning: Citation `pan2001robust' on page 33 undefined on input line 559.
-
-
-
-Overfull \hbox (24.90463pt too wide) in paragraph at lines 567--567
+[33]
+Overfull \hbox (24.90463pt too wide) in paragraph at lines 569--569
 [] 
  []
 
-
-LaTeX Warning: Citation `pan2001robust' on page 33 undefined on input line 568.
-
-
-[33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 598--600
+[34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 604.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 606.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 604.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 35 undefined on input line 60
-4.
-
-
-LaTeX Warning: Citation `zhang2014testing' on page 35 undefined on input line 6
-04.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 35 undefined on input line 60
-6.
-
-
-LaTeX Warning: Citation `zhang2014testing' on page 35 undefined on input line 6
-06.
-
-
-LaTeX Warning: Citation `Pan2009a' on page 35 undefined on input line 608.
-
-
-LaTeX Warning: Citation `Pan2009' on page 35 undefined on input line 608.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 35 undefined on input line 60
-8.
-
-
-LaTeX Warning: Citation `zhang2014testing' on page 35 undefined on input line 6
-08.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 606.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 608.
-
-[35]
-
-LaTeX Warning: Citation `Pan2009' on page 36 undefined on input line 618.
+(amsmath)                 on input line 610.
 
 
-LaTeX Warning: Citation `Morgenthaler2007' on page 36 undefined on input line 6
-18.
-
-
-LaTeX Warning: Citation `Li2008' on page 36 undefined on input line 618.
-
-
-LaTeX Warning: Citation `Madsen2009' on page 36 undefined on input line 618.
-
-
-LaTeX Warning: Citation `Lee2012' on page 36 undefined on input line 618.
-
-
-LaTeX Warning: Citation `Ionita-Laza2013' on page 36 undefined on input line 61
-8.
-
-
-LaTeX Warning: Citation `Oualkacha2013' on page 36 undefined on input line 618.
-
-
-
-LaTeX Warning: Citation `Lee2012a' on page 36 undefined on input line 618.
-
-
-LaTeX Warning: Citation `Wu2011' on page 36 undefined on input line 618.
-
-
-LaTeX Warning: Citation `Neale2011' on page 36 undefined on input line 618.
-
-
-LaTeX Warning: Citation `Lin2011' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Madsen2009' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Sul2011' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Pan2011' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Han2010' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Li2008' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Zhang2011' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Lin2011' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Basu2011' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 36 undefined on input line 62
-4.
-
-
-LaTeX Warning: Citation `Basu2011' on page 36 undefined on input line 624.
-
-
-LaTeX Warning: Citation `Pan2011' on page 36 undefined on input line 624.
+Overfull \hbox (45.68019pt too wide) in paragraph at lines 609--611
+[]\OT1/cmr/m/n/12 ]. Specif-i-cally, we first sim-u-late the score vec-tor $\OM
+L/cmm/m/it/12 U[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 U[]; U[]; [] ; U[]\OT1/cm
+r/m/n/12 )[]$
+ []
 
 [36]
-
-LaTeX Warning: Citation `Neyman1937' on page 37 undefined on input line 626.
-
-[37]
-
-LaTeX Warning: Citation `pan2014powerful' on page 38 undefined on input line 64
-8.
+Overfull \hbox (10.57611pt too wide) in paragraph at lines 619--621
+[]\OT1/cmr/m/n/12 , [], []] and C-alpha test [[]],
+ []
 
 
-LaTeX Warning: Citation `Lin2005' on page 38 undefined on input line 648.
+Overfull \hbox (40.86055pt too wide) in paragraph at lines 625--627
+[]\OT1/cmr/m/n/12 , [], [], [], [],
+ []
+
+[37] [38] [39] [40] [41]
+Overfull \hbox (70.98254pt too wide) in paragraph at lines 717--721
+\OT1/cmr/m/n/12 I will gen-er-ate the sim-u-lated geno-types fol-low-ing [[], [
+], []].
+ []
 
 
-LaTeX Warning: Citation `Seaman2005' on page 38 undefined on input line 648.
+Overfull \hbox (4.59572pt too wide) in paragraph at lines 717--721
+\OT1/cmr/m/n/12 and the Atheroscle-ro-sis Risk in Com-mu-ni-ties (ARIC) data (h
+ttps://www2.cscc.unc.edu/aric/)
+ []
+
+[42] [43]
+Overfull \hbox (36.2676pt too wide) in paragraph at lines 730--732
+\OT1/cmr/m/n/12 To sim-u-late lon-gi-tu-di-nal quan-ti-ta-tive phe-no-type, I w
+ill fol-low the strat-egy used in [[]].
+ []
 
 
-LaTeX Warning: Citation `Chen2012' on page 38 undefined on input line 651.
-
-
-LaTeX Warning: Citation `Luo2010' on page 38 undefined on input line 651.
-
-
-LaTeX Warning: Citation `peng2009gene' on page 38 undefined on input line 651.
-
-
-LaTeX Warning: Citation `Derkach2013' on page 38 undefined on input line 651.
-
-[38] [39] [40]
-
-LaTeX Warning: Citation `Wang2007' on page 41 undefined on input line 715.
-
-
-LaTeX Warning: Citation `Pan2009' on page 41 undefined on input line 715.
-
-
-LaTeX Warning: Citation `Basu2011' on page 41 undefined on input line 715.
-
-
-LaTeX Warning: Citation `Song2013' on page 41 undefined on input line 718.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 41 undefined on input line 71
-8.
-
-
-LaTeX Warning: Citation `Basu2011' on page 41 undefined on input line 718.
-
-
-LaTeX Warning: Citation `Pan2011' on page 41 undefined on input line 718.
-
-
-LaTeX Warning: Citation `Han2010' on page 41 undefined on input line 718.
-
-
-LaTeX Warning: Citation `Pan2009' on page 41 undefined on input line 718.
-
-
-LaTeX Warning: Citation `Boyko2008' on page 41 undefined on input line 721.
-
-
-LaTeX Warning: Citation `Hernandez2008' on page 41 undefined on input line 721.
-
-
-
-LaTeX Warning: Citation `Wang2007' on page 41 undefined on input line 721.
-
-
-LaTeX Warning: Citation `Pan2009' on page 41 undefined on input line 721.
-
-
-LaTeX Warning: Citation `Han2010' on page 41 undefined on input line 721.
-
-
-LaTeX Warning: Citation `Pan2011' on page 41 undefined on input line 721.
-
-
-LaTeX Warning: Citation `Basu2011' on page 41 undefined on input line 721.
-
-
-LaTeX Warning: Citation `pan2014powerful' on page 41 undefined on input line 72
-1.
-
-
-LaTeX Warning: Citation `zhang2014testing' on page 41 undefined on input line 7
-21.
-
-[41] [42]
-
-LaTeX Warning: Citation `Song2013' on page 43 undefined on input line 729.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--741
+Underfull \hbox (badness 10000) in paragraph at lines 741--743
 
  []
 
-[43]
-
-LaTeX Warning: Citation `Lynch1998' on page 44 undefined on input line 808.
-
-[44] [45] [46]
-Overfull \hbox (8.54828pt too wide) in paragraph at lines 869--881
+[44] [45] [46] [47]
+Overfull \hbox (8.54828pt too wide) in paragraph at lines 871--883
 [][] 
  []
 
-[47] [48] [49] [50]
-Overfull \hbox (19.58083pt too wide) in paragraph at lines 1129--1131
+[48] [49] [50] [51]
+Overfull \hbox (19.58083pt too wide) in paragraph at lines 1131--1133
 []\OT1/cmr/bx/n/12 Empirical power bench-mark us-ing simulation-based P-value c
 al-cu-lat-ing method
  []
 
-
-Overfull \hbox (6.96959pt too wide) in paragraph at lines 1133--1186
+[52]
+Overfull \hbox (6.96959pt too wide) in paragraph at lines 1135--1188
 []\OT1/cmr/bx/n/12 Type I er-ror bench-mark us-ing permutation-based P-value ca
 l-cu-lat-ing method
  []
 
-[51] [52] [53] [54] [55] [56]
+[53] [54] [55] [56] [57] [58] [59] [60]
+("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.bbl"
+[61] [62] [63] [64]
+Underfull \hbox (badness 10000) in paragraph at lines 206--210
+[]\OT1/cmr/m/n/12 for Blood Pres-sure
+ []
 
-LaTeX Warning: Citation `Peloso2014' on page 57 undefined on input line 1369.
-
-
-LaTeX Warning: Citation `Grove2013' on page 57 undefined on input line 1371.
-
-
-LaTeX Warning: Citation `Lange2014' on page 57 undefined on input line 1371.
-
-
-LaTeX Warning: Citation `Peloso2014' on page 57 undefined on input line 1371.
-
-
-LaTeX Warning: Citation `Ogata1999' on page 57 undefined on input line 1371.
-
-
-LaTeX Warning: Citation `Nishimura2001' on page 57 undefined on input line 1371
-.
-
-
-LaTeX Warning: Citation `Grove2013' on page 57 undefined on input line 1371.
-
-[57]
-
-LaTeX Warning: Citation `Price2006' on page 58 undefined on input line 1377.
-
-
-LaTeX Warning: Citation `Wang2010a' on page 58 undefined on input line 1379.
-
-[58] [59]
-No file Dissertation_Yang.bbl.
+[65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79])
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 19.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1485.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1485.
-("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1485.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1485.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1497.
+[80]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1497.
+ ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1497.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1497.
 
 Package rerunfilecheck Info: File `Dissertation_Yang.out' has not changed.
-(rerunfilecheck)             Checksum: 7D862501C3C63E6869C721206F861695;2428.
+(rerunfilecheck)             Checksum: 2F66948CD7F10C7C9294436AE3CD9E0B;2777.
 
-
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10995 strings out of 493706
- 161872 string characters out of 3142156
- 278695 words of memory out of 3000000
- 14009 multiletter control sequences out of 15000+200000
+ 11181 strings out of 493706
+ 164681 string characters out of 3142156
+ 284228 words of memory out of 3000000
+ 14021 multiletter control sequences out of 15000+200000
  14316 words of font info for 55 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,16n,38p,4772b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,16n,41p,4772b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
@@ -1942,9 +1109,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Dissertation_Yang.pdf (65 pages, 1819815 bytes).
+Output written on Dissertation_Yang.pdf (86 pages, 1948665 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1212 PDF objects out of 1440 (max. 8388607)
+ 293 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

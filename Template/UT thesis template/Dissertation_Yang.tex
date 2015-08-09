@@ -31,14 +31,14 @@
 \begin{document}
 %\input{Proposal_draft-concordance}
 \begin{titlepage}
-\title{\normalsize Data-adaptive SNP-set-based Association Tests of Longitudinal Traits}
+\title{\normalsize DATA-ADAPTIVE SNP-SET-BASED ASSOCIATION TESTS OF LONGITUDINAL TRAITS}
 \date{}
 \maketitle
 
 {\normalsize
 \begin{center}
 by\\[5mm]
-Yang Yang, M.S\\[10mm]
+YANG YANG, B.S, M.S\\[10mm]
 APPROVED:\\[10mm]
 \end{center}}
 
@@ -91,11 +91,13 @@ Tianpeng Yang and Qi Lu
 \thispagestyle{empty}
 \doublespacing
 \begin{center}
-{\normalsize Data-adaptive SNP-set-based Association Tests of Longitudinal Traits }\\[3.2cm]
+{\normalsize DATA-ADAPTIVE SNP-SET-BASED ASSOCIATION TESTS OF LONGITUDINAL TRAITS }\\[3.2cm]
 
 by\\[0.5cm]
 
-Yang Yang, M.S\\[3.2cm]
+YANG YANG\\
+M.S, Indiana University, 2010\\
+B.S, Nanjing Agricultural University, 2006\\[2cm]
 
 Presented to the Faculty of The University of Texas\\
 School of Public Health\\
@@ -107,7 +109,7 @@ DOCTOR OF PHILOSOPHY\\[1.5cm]
 THE UNIVERSITY OF TEXAS\\
 SCHOOL OF PUBLIC HEALTH\\
 Houston, Texas\\
-July, 2015
+August, 2015
 \end{center}
 
 
@@ -117,32 +119,33 @@ July, 2015
 \begin{center}
 ACKNOWLEDGMENTS
 \end{center}
-Great thanks to my dissertation adviser Dr. Peng Wei, as he guided me ever from 2011, put countless efforts in training me to be a countable person, and then a qualified Ph.D. He taught me with his solid background in statistical theory, to make me an as well solid statistician to qualify for future career challenges; he corrected me many times to let me not bypass by instead overcome the difficulty in a native English style of written and oral communications; he also taught me the spirit of persistence, either in research or in life, which is indispensable to every kind of definition of success. I also want to appreciate the great helps from my dissertation committee members: Dr. Alanna C. Morrison, Dr. Yun-Xin Fu and Dr. Han Liang. They are talented experts in their fields and provided me with enormous valuable advice towards my research and writings. I also want to express my special gratitude to Dr. Han Liang. As I have been a Graduate Research Assistant in MD Anderson Cancer Center under his supervision and mentoring between 2012 to 2013, he inspired me to be a bioinformatics researcher rather than a proficient analyst, ignited me the passion in cancer genomics, influenced me to have innovative thinking and meticulous altitude in pursuing science.
+Great gratitude to my dissertation adviser Dr. Peng Wei, as he mentored me ever from 2011, put countless efforts in training me to be a countable person, and then a qualified Ph.D. He taught me with his solid background in statistical theory, to make me an as well solid statistician to qualify for future career challenges; he corrected me many times to let me not bypass by instead overcome the difficulty in speak and write in a native English style; he also taught me the spirit of persistence, either in research or in life, which is indispensable to every kind of definition of success. I also want to appreciate the great helps from my dissertation committee members: Dr. Alanna C. Morrison, Dr. Yun-Xin Fu and Dr. Han Liang. They are talented experts in their fields and provided me with enormous valuable advice towards my research and writings. I also want to express my special gratitude to Dr. Han Liang. As I have been a Graduate Research Assistant in MD Anderson Cancer Center under his supervision and mentoring between 2012 and 2013, he inspired me to be a bioinformatics researcher rather than a proficient analyst, ignited me the passion in cancer genomics, influenced me to have innovative thinking and meticulous altitude in pursuing science. In the end, I want to express my gratitude to the NIH/NHLBI grant "Association analysis of rare variants with sequencing data" (R01 HL116720), which has supported my dissertation research.
 
 
 \newpage
 \thispagestyle{empty}
 \doublespacing
 \begin{titlepage}
-\title{\normalsize Data-adaptive SNP-set-based Association Tests of Longitudinal Traits}
+\begin{center}
+\title{\normalsize DATA-ADAPTIVE SNP-SET-BASED ASSOCIATION TESTS OF LONGITUDINAL TRAITS}
 \date{}
 \maketitle
-\begin{center}
-%{\normalsize  Data-adaptive SNP-set-based Association Tests of Longitudinal Traits}\\[2.3cm]
+
+%{\normalsize  Data-adaptive SNP-set-based Association Tests of Longitudinal Traits}\
 \singlespacing
-Yang Yang, M.S\\
+Yang Yang, M.S, PhD\\
 The University of Texas\\
-School of Public Health, 2014\\[3.2cm]
-
-
-
+School of Public Health, 2015\\
+[1em]
+Dissertation Chair, Peng Wei, PhD\\
+%Minor Advisor, Alanna C. Morrison, PhD\\ 
+%Breadth Advisor, Yun-Xin Fu, PhD \\
+%External Advisor, Han Liang, PhD\\
+[1em]
 
 \doublespacing
-\noindent
-Dissertation Chair, Peng Wei, PhD\\
-Minor Advisor, Alanna C. Morrison, PhD\\ 
-Breadth Advisor, Yun-Xin Fu, PhD \\
-External Advisor, Han Liang, PhD\\
+< Write a short summary of the work done and the findings of greatest interest to a reader.  The abstract is generally kept to 350 words, no more than 2 pages.  Describe the question, the study group, and the methods employed to complete the activity (in past tense).  Include a summary of the results and your conclusions. >  
+
 
 \end{center}
 \end{titlepage}
@@ -162,11 +165,12 @@ External Advisor, Han Liang, PhD\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Background}\label{sec:background}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Literature Review}\label{Lit_Rev}
 \doublespacing
 % This is a template for UT SPH Phd proposal based on \LaTeX \cite{lamport1986document}.\\
 Genome-wide association studies (GWASs) have been popular since 2007. Hundreds of GWASs have been published already (A Catalog of Published Genome-Wide Association Studies: http://www.genome.gov/26525384). The most popular approach in GWAS is to test the association with complex traits on single nucleotide polymorphism (SNP), also known as single nucleotide variant (SNV), one by one, then select the the SNVs that meet a stringent significance level after multiple testing correction, such as the Bonferroni and false discovery rate (FDR) methods \cite{McCarthy2008,Hirschhorn2005}. However, this strategy will suffer from low power when the minor allele frequency (MAF) of the SNV is low (between $1\%$ and $5\%$), and as a result the signals contained within the low MAF SNVs are hard to detect \cite{Sham2014}. In addition, the usual regression coefficient estimate of SNV becomes unstable due to the small number of minor allele counts and the coefficient estimate's variance becomes very large \cite{Sham2014}. It will become an even more severe problem for rare variants (RVs) analysis. RVs are usually defined as SNVs with MAF below $1\%$ \cite{Bansal2010}. In spite of their extremely low MAF, RVs' important role in conferring disease risk cannot be underestimated. Due to the constraint of purifying selection, causal and functionally deleterious variants are often RVs. In turn, they typically have larger effect sizes than common variants \cite{Fu2013,Bansal2010,Sham2014,McCarthy2008}. Therefore, developing new association tests tailored to low MAF SNVs and RVs has been a very active research area in recent years. Due to the nature of low MAF, either increasing the total sample size or aggregating information across multiple variants in an analysis set (for example gene) is expected to achieve a practically acceptable power \cite{Capanu2011,Basu2011,Bansal2010,Sham2014}. As increasing the sample size is usually expensive and demanding, SNP-set or gene-set based association tests pooling together information have been the major research directions \cite{Ye2011,Pinto2010,Sham2014}. Sets of SNVs can be defined by gene boundaries (i.e., gene-based) or sliding windows; sets of genes can be defined by Gene Ontology terms, protein-protein interactions, canonical genetic signaling pathways or gene expression networks as examples. \cite{Sham2014,DelaCruz2010,Weng2011,Wang2010,Wei2012a}.
 
-\subsection{Gene-based association tests}\label{sec:bg:Gb test}
+\subsubsection{Gene-based association tests}\label{sec:bg:Gb test}
 A large number of gene-based association tests (mainly designed for RVs) have been proposed in recent years. The earliest methods include the cohort allelic sums test (CAST)\cite{Morgenthaler2007} and the combined multivariate and collapsing (CMC) method \cite{Li2008}. Afterward, more advanced tests were proposed. Those methods can be classified into major groups as follows.
 %%%%%%%%%%%
 %\begin{itemize}
@@ -206,7 +210,7 @@ For a detailed comparison among and discussion of some of these tests, Basu and 
 
 Due to the complexity of genetics association with a phenotype, for example, specific association effect direction and size, a given test favoring one scenario may or may not perform well in other scenarios \cite{Pan2009,Derkach2013,pan2014powerful,Sun2013}. In other words, there is no single test that is the most powerful in all testing scenarios. Therefore, there have been a lot of efforts  in developing adaptive/hybrid tests for RVs (for example, \cite{Derkach2013,Chen2012,Han2010,Lee2012,Lin2011,Pan2011,Sun2013,Zhang2011}). However, due to limited adaptability, for example, with a fixed set or pre-determined weights on individual RVs, these tests that combined some earlier tests' advantages (for example, the MB test, burden test and SKAT) are still not flexible enough to avoid power loss under some situations. Recently, a very prominent novel data adaptive test named aSPU has been proposed by \cite{pan2014powerful}. It features the ability to achieve quasi-optimal power in all scenarios, such as varying number of SNVs within the genetic region of interest, varying ratio of signal SNVs to noise ones, same directional effect alleles or a mixed directional effect of both protective and deleterious alleles, varying allele frequencies and varying effect sizes. It maintains the most power as compared to other state-of-the-art tests in the presence of a large number of RVs within a genetic region that only contains a small portion of signals. This is usually the case in association studies based on whole-exome or whole-genome sequencing data \cite{pan2014powerful}. In summary, the data-adaptive test is in general more powerful and robust than non-adaptive tests, and thus preferred in the future development of novel association tests. Among current data-adaptive association tests, the aSPU method is more adaptive than its predecessors. Hereby, I propose to extend the aSPU framework from the cross-sectional data scenario to the longitudinal data scenario. I also propose a few aSPU "variant" tests within the aSPU tests family. These aSPU 'variant' tests combine strength from the Score test and hence they are more robust in maintaining a higher power in almost all scenarios.
 
-\subsection{Longitudinal study design and analysis strategy in GWAS}\label{sec:bg:longi}
+\subsubsection{Longitudinal study design and analysis strategy in GWAS}\label{sec:bg:longi}
 \textbf{Comparison between longitudinal studies and cross-sectional studies}\\
 I first introduce two linear models for cross-sectional studies and longitudinal studies respectively. In a cross-sectional study ($n_i = 1$) we are restricted to the model
 %%%%%%%%%%%%%%%%%
@@ -270,7 +274,7 @@ The last major method, the transitional (Markov) model, describes the conditiona
 %There is a need to discuss more on the first two major methods, mixed models and marginal models. 
 Since transitional models are not widely used in the genetics association studies, we will omit its further discussion. Here we focus on the comparison between the mixed-effect and marginal-effect models. The application of GEE may be less appropriate when the time course of the response variable for each individual (subject-specific slope), for example, body mass index (BMI) measurements across several time points, is of primary interest, so as to the correlation parameters within the same subject \cite{zeger1988models,liang1986longitudinal}. The mixed-effect model could handle such inference of interests \cite{laird1982random}. However, in the genetic association studies, subject-specific time course effect and/or within-subject correlation parameters are usually not of major interests. In other words, they are often treated as nuisance parameters. On the other hand, for association tests of a set of SNPs, the increased number of explanatory variables, for example, the SNVs on the right hand side (RHS) of the regression-like equation tend to consume a lot of degrees of freedoms (dfs) and increase the difficulty of the optimization algorithm convergence. Large consumption of the dfs also leads to power loss and Type I error inflation, for example, excessive inflation in the Wald test \cite{guo2005small,pan2001robust,shete2004effect}. Algorithm convergence difficulty is very often encountered in mixed model when it has a lot of covariates. For some extreme scenarios, for example, with a binary trait, the maximum likelihood estimator (MLE) of a regression coefficient of a RV does not exist if the minor alleles of this RV only appear in case or control, resulting in the convergence failure with an iterative algorithm to obtain the MLE \cite{zhang2014testing,pan2014powerful}. Another caveat of the mixed model is that mis-specification of the random-effects distribution and/or omitting part of the random-effects (for example, keeping only the random intercept in the mixed model when the random slope is also needed) will lead to excessive Type I error inflation \cite{litiere2007type,Xu2014}. Compared with the mixed-effect models, GEE models suffer much less from these problems. In particular, the GEE Score test is proved to be robust to Type I error inflation in the presence of a large number of covariates; upon usage of the so-called sandwich or robust covariance matrix, GEE will give consistent estimates even when the working correlation is misspecified, in contrast to the misspecified random effect in the mixed-effect models. In addition, GEE model fitting requires only evaluation under the null hypothesis, which greatly accelerates the computation. With regard to the power loss in the presence of an increased number of covariates (SNVs), a recently proposed data-adaptive association test within the GEE framework demonstrated convincing capability in maintaining a high power \cite{zhang2014testing,pan2014powerful}. Although this work is designed for a single cross-sectional trait or multiple cross-sectional traits, it can be extended to the longitudinal design scenario as detailed in Aim One below. 
 Extending the gene-based association test to sets of multiple related genes could return more biological meaningful inference.
-\subsection{Gene-set/Pathway based association tests}\label{sec:bg:Pathway test}
+\subsubsection{Gene-set/Pathway based association tests}\label{sec:bg:Pathway test}
 In general, a gene set is a set of genes. A genetic pathway is a special gene set, which includes multiple genes interacting to form an aggregate biological function. Extending the gene-based association tests to sets of related genes could lead to more biological meaningful inference.
 %In vivo, there are usually multiple genes working together to fulfill a biological function. 
 By analyzing functional related genes together with the phenotype of interest, we are more likely to identify those signals hidden from or attenuated in single-gene based tests \cite{BloodPressureGenome-WideAssociationStudies2011,Hirschhorn2009,Zhong2010,Wang2010}. Complex diseases are known to be influenced by a combination of genetic factors in addition to environmental factors, lifestyle factors, and their interactions \cite{Hirschhorn2005,McCarthy2008}. Thus, by investigating the gene sets, more evidence contributing to a specific disease could be found. Another advantage of pathway-based association tests is similar to that of gene-based association tests: aggregating multiple genes/RVs, in contrast to testing each gene/RV separately, may boost the statistical power by combining moderate/weak signals. One convincing evidence is from the Cancer Genome Atlas project (TCGA: http://cancergenome.nih.gov/) in tumor sequencing studies. While only few oncogenes (for example, TP53 and EGFR) harbor many mutations, most others harbor few mutations in a tumor-dependent manner. Single gene-based association tests still suffer from low aggregated mutation frequency, whereas collectively, they have a much higher aggregated mutation frequency in a gene-set/pathway. Therefore, for some diseases such as cancer, a gene-set/pathway analysis by aggregating the somatic mutation information across genes will boost the statistical power, and is thus preferred.
@@ -309,7 +313,7 @@ Additionally, based on the input data type, the pathway-based tests can be broad
 \textbf{Existing pathway-based association tests}\\
 There are several popular existing methods for pathway-based association tests.  The earliest method is the gene-set enrichment analysis (GSEA) algorithm, a method adapted for pathway-based analysis of GWAS data. It calculates a weighted Kolmogorov-Smirnov-like running-sum statistics and uses a permutation-based procedure to evaluate the statistical significance \cite{wang2007pathway}. The GSEA-SNP, a modification of Wang et al's GSEA \cite{wang2007pathway}, uses the max-test and all SNPs in a gene \cite{Holden2008}. The i-GSEA4GWAS, first permutes the SNP labels (for example, the SNP rs id), then assigns SNPs to genes, and finally calculates the modified GSEA enrichment score\cite{Zhang2010a}. The Gene Set Analysis (GSA-SNP), computes the gene-level test statistic based on the SNP with the minimum P-value (or the second minimal), followed by gene-set-level test using either a Z-test, maxmean test, or GSEA \cite{Nam2010}. The Gene Set-based Analysis of Polymorphisms (GeSBAP), first calculates enrichment score using ranked gene list, then assigns the best SNP p-value to a gene, and finally uses Fisher's exact test for the gene-set association \cite{Medina2009}. De la Cruz et al (2010) proposed A modification of Fisher’s method for combing SNP P-values for gene-level or gene-set-level association \cite{DelaCruz2010}. The gene set ridge regression in association studies (GRASS), executes lasso regression (L1-norm) of eigenSNPs within each gene to achieve variable selection, while performing ridge regression (L2-norm) of eigenSNPs at the gene-set-level to achieve the shrinkage of gene effect (for example, disease odds ratio) estimates simultaneously \cite{Chen2010}. PLINK, a widely used software package in GWAS data analysis, provides an option to execute gene-set-level association analysis \cite{Purcell2007}. The association list go annotator (ALIGATOR) method, a 'p-value enrichment approach' requiring only pre-computed SNP p-values, uses Fisher's exact test on SNP with the minimum p-value for the gene-level association. It can correct for linkage disequilibrium (LD) between SNPs, various gene size, and multiple testing of nonindependent pathways \cite{Holmans2009}. The SNP ratio test (SRT) method, tests the ratio of significant SNPs in a pathway and computes the empirical p-value based on permutation \cite{ODushlaine2009}. The supervised principal component analysis, uses the Gumbel extreme value mixture distribution as test statistic's null distribution. The test statistic is standardized for pathway size using a simulation procedure \cite{Chen2010a}. The Prioritizing Risk Pathways fusing SNPs and pathways (PRP) method, executes the gene-level association test based on maximum risk statistic, followed by mean risk approach to obtain gene-set-level risk statistic, then weights this statistic by specific pathway degree (that is, total edges in a pathway) and standardizes it to a zero dimension (that is, the minimal value is 0) \cite{Chen2009}. Luo et al (2010) proposed three statistics  to combine a set of dependent p-values of SNPs into an overall significance level for a gene, and then combined a set of dependent p-values of genes into an overall significance level for a pathway. The three statistics, which take into account the LD among SNPs or correlation among genes in the specific pathway, are linear combination test (LCT) asymptotically following normal distribution under null hypothesis, Quadratic test (QT) asymptotically following central Chi-square distribution under null hypothesis, and decorrelateion test (DT) combineing decorrelated individual statistics by Fisher's combination test and asymptotically following a central Chi-square distribution under null hypothesis \cite{Luo2010}. In addition, Peng et al (2009) developed four methods to combine a list of SNP p-values or gene-level p-values with the assumption that individual SNPs/genes are independent. These four methods are Fisher's, Sidak's, Simes' and the FDR method \cite{peng2009gene}. The Gene-loci Set Analysis (GLOSSI) method, first uses the Cochran-Armitage trend test at single-SNP level assuming an additive SNP effect, then uses Fisher's combination test to combine individual p-values of SNPs, and finally corrects the test statistics by Brown's approximation to better control the Type I error \cite{Chai2009}. An adaptive rank truncated product (ARTP) statistic, combines permutation-based SNP-level p-value to derive gene-level significance level and/or combines gene-level p-values to derive pathway-level significance level \cite{Yu2009}. Detailed reviews about these and other pathway-based association tests can be found in \cite{tintle2011inflated,Wang2010,Fridley2011}. 
 
-\section{Public Health Significance}\label{sec:PHsig}
+\subsection{Public Health Significance}\label{sec:PHsig}
 The majority of human diseases are complex diseases, for example, cardiovascular disease, type 2 diabetes, Alzheimer's disease and autoimmune disease. These diseases have high incidence rate in the US and worldwide 
 %\cite{Craig2008,Cardon2001,Hirschhorn2005}. 
 \cite{Craig2008,Inzucchi2012,Go2013,Association2014,Benros2014}. The development of complex diseases involves genetic factors, environmental factors, behavior factors, and the interactions among them. In public health research, identification of the casual factors and the heritability of complex disease has always been a frontier topic. Researchers often first look for the genetic factors, followed by gene-gene and gene-environment interaction analyses.  The GWASs have already identified more than 1000 genetic loci associated with many human diseases and traits \cite{Hindorff2009}. These genetic loci have been validated by some validation procedures, such as replicate studies, meta analysis and wet lab experiments \cite{Wang2005,Hirschhorn2005,McCarthy2008,Hindorff2009,Cantor2010}. 
@@ -320,12 +324,10 @@ As the association pattern between variants and disease/trait is subtle and larg
 
 % \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Declaration on Human Subjects}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-This dissertation study will focus on statistical method development. I will use the ARIC cohort data for method demonstration purpose. I will use the blood lipid phenotypes, covariates such as demographic variables, and genotype (GWAS and ExomeChip) in the ARIC data set. All data are pre-existing and de-identified. The IRB approval for the use of ARIC data set in my dissertation research has been obtained by my dissertation advisor, Dr. Peng Wei, under UTHealth IRB approval (HSC-SPH-13-0492).
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Specific Aims}\label{sec:aims}
+\subsection{Specific Aims}\label{sec:aims}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 As reviewed before, current association testing methods are mainly designed for cross-sectional data analysis, while many cohort studies have the longitudinal measurements which have not been fully utilized. For instance, the Atherosclerosis Risk in Communities (ARIC) study \cite{Heiss1989} has multiple follow-up measurements across almost 30 years. Association tests that fully utilize the information across time points tend to achieve a higher power and identify more disease-associated loci \cite{Furlotte2012,Xu2014}. As both the common variants (CV) and rare variants (RV) are important in identifying the disease attributing genetic factors, a well-rounded association test should have the flexibility to work with either of them. It should also maintain a relatively high power in almost all scenarios encountered in real data analysis. In practice, it is hard to predict which specific method has the highest power and which methods suffer from a large power loss for a specific data set. To meet these urgent needs, I propose a powerful data-adaptive SNP-set based association test for the longitudinal data analysis, applicable to either CVs or RVs. The specific aims are as follows.\\
 %%%%%%%%%%%%%%
@@ -1412,7 +1414,9 @@ By implementing the real data application, I expect to verify known risk genes a
 %For Aim 2, we will focus on RVs in genes and genes in a well-defined pathway. The data application procedures for RVs in genes are the same as in section \ref{sec:Data Application-aim1}. The genes in pathway will be defined by any one from the KEGG \cite{Ogata1999}, BioCarta \cite{Nishimura2001} or Gene Ontology \cite{Ashburner2000}. We will consider the medium size pathways in selected database, for example the pathway with 20-100 genes.
 
 
-
+\subsection{Declaration on Human Subjects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This dissertation study will focus on statistical method development. I will use the ARIC cohort data for method demonstration purpose. I will use the blood lipid phenotypes, covariates such as demographic variables, and genotype (GWAS and ExomeChip) in the ARIC data set. All data are pre-existing and de-identified. The IRB approval for the use of ARIC data set in my dissertation research has been obtained by my dissertation advisor, Dr. Peng Wei, under UTHealth IRB approval (HSC-SPH-13-0492).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -1470,11 +1474,35 @@ By implementing the real data application, I expect to verify known risk genes a
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Journal Article 1}\label{JA_1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Title of Journal Article}
+Data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework.
+\textbf{Name of Journal Proposed for Article Submission}
+American Journal of Human Genetics
 
+\subsection*{Abstract}
+\subsection*{Introduction}
+\subsection*{Material and Methods}
+\subsection*{Results}
+\subsection*{Discussion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Journal Article 2}\label{JA_2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Title of Journal Article}
+Pathway-based Data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework.
+\textbf{Name of Journal Proposed for Article Submission}
+American Journal of Human Genetics
 
-
-
-
+\subsection*{Abstract}
+\subsection*{Introduction}
+\subsection*{Material and Methods}
+\subsection*{Results}
+\subsection*{Discussion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Journal Article 3}\label{JA_3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{apalike}
