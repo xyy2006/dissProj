@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.28)  28 JUL 2015 15:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.28)  10 AUG 2015 12:10
 entering extended mode
 **Dissertation_Yang.tex
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.tex"
@@ -693,14 +693,7 @@ Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 31.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux"
-
-LaTeX Warning: Label `JA_1' multiply defined.
-
-
-LaTeX Warning: Label `JA_1' multiply defined.
-
-)
+("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
@@ -1062,36 +1055,33 @@ Overfull \hbox (6.96959pt too wide) in paragraph at lines 1135--1188
 l-cu-lat-ing method
  []
 
-[53] [54] [55] [56] [57] [58] [59] [60]
+[53] [54] [55] [56] [57] [58] [59] [60] [61]
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.bbl"
-[61] [62] [63] [64]
+[62] [63] [64] [65] [66]
 Underfull \hbox (badness 10000) in paragraph at lines 206--210
 []\OT1/cmr/m/n/12 for Blood Pres-sure
  []
 
-[65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79])
+[67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81])
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 19.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1497.
-[80]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1497.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1516.
+[82]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1516.
  ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1497.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1497.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1516.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1516.
 
 Package rerunfilecheck Info: File `Dissertation_Yang.out' has not changed.
 (rerunfilecheck)             Checksum: 2F66948CD7F10C7C9294436AE3CD9E0B;2777.
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 11181 strings out of 493706
- 164681 string characters out of 3142156
- 284228 words of memory out of 3000000
- 14021 multiletter control sequences out of 15000+200000
+ 11195 strings out of 493706
+ 164817 string characters out of 3142156
+ 284271 words of memory out of 3000000
+ 14023 multiletter control sequences out of 15000+200000
  14316 words of font info for 55 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  36i,16n,41p,4772b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1109,9 +1099,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Dissertation_Yang.pdf (86 pages, 1948665 bytes).
+Output written on Dissertation_Yang.pdf (88 pages, 1952593 bytes).
 PDF statistics:
- 1212 PDF objects out of 1440 (max. 8388607)
- 293 named destinations out of 1000 (max. 500000)
+ 1232 PDF objects out of 1440 (max. 8388607)
+ 305 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

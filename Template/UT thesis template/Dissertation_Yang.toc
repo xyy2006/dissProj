@@ -26,6 +26,6 @@
 \contentsline {subsection}{\numberline {2.6}Methods for Real Data Application for Proposed Aims}{58}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Declaration on Human Subjects}{60}{subsection.2.7}
 \contentsline {section}{\numberline {3}Journal Article 1}{61}{section.3}
-\contentsline {section}{\numberline {4}Journal Article 2}{61}{section.4}
-\contentsline {section}{\numberline {5}Journal Article 3}{61}{section.5}
-\contentsline {section}{References}{61}{section.5}
+\contentsline {section}{\numberline {4}Journal Article 2}{62}{section.4}
+\contentsline {section}{\numberline {5}Journal Article 3}{63}{section.5}
+\contentsline {section}{References}{63}{section.5}
