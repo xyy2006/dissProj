@@ -1,0 +1,958 @@
+\begin{thebibliography}{}
+
+\bibitem[Ansorge, 2009]{Ansorge2009}
+Ansorge, W.~J. (2009).
+\newblock Next-generation dna sequencing techniques.
+\newblock {\em New biotechnology}, 25(4):195--203.
+
+\bibitem[Ashburner et~al., 2000]{Ashburner2000}
+Ashburner, M., Ball, C.~A., Blake, J.~A., Botstein, D., Butler, H., Cherry,
+  J.~M., Davis, A.~P., Dolinski, K., Dwight, S.~S., Eppig, J.~T., et~al.
+  (2000).
+\newblock Gene ontology: tool for the unification of biology.
+\newblock {\em Nature genetics}, 25(1):25--29.
+
+\bibitem[Association et~al., 2014]{Association2014}
+Association, A. et~al. (2014).
+\newblock 2014 alzheimer's disease facts and figures.
+\newblock {\em Alzheimer's \& Dementia}, 10(2):e47--e92.
+
+\bibitem[Aulchenko et~al., 2009]{Aulchenko2009}
+Aulchenko, Y.~S., Ripatti, S., Lindqvist, I., Boomsma, D., Heid, I.~M.,
+  Pramstaller, P.~P., Penninx, B. W. J.~H., Janssens, A. C. J.~W., Wilson,
+  J.~F., Spector, T., Martin, N.~G., Pedersen, N.~L., Kyvik, K.~O., Kaprio, J.,
+  Hofman, A., Freimer, N.~B., Jarvelin, M.-R., Gyllensten, U., Campbell, H.,
+  Rudan, I., Johansson, A., Marroni, F., Hayward, C., Vitart, V., Jonasson, I.,
+  Pattaro, C., Wright, A., Hastie, N., Pichler, I., Hicks, A.~A., Falchi, M.,
+  Willemsen, G., Hottenga, J.-J., {de Geus}, E. J.~C., Montgomery, G.~W.,
+  Whitfield, J., Magnusson, P., Saharinen, J., Perola, M., Silander, K.,
+  Isaacs, A., Sijbrands, E. J.~G., Uitterlinden, A.~G., Witteman, J. C.~M.,
+  Oostra, B.~A., Elliott, P., Ruokonen, A., Sabatti, C., Gieger, C., Meitinger,
+  T., Kronenberg, F., D{\"{o}}ring, A., Wichmann, H.-E., Smit, J.~H., McCarthy,
+  M.~I., {van Duijn}, C.~M., Peltonen, L., and ~, E. N. G. A. G. E.~C. (2009).
+\newblock Loci influencing lipid levels and coronary heart disease risk in 16
+  european population cohorts.
+\newblock {\em Nat Genet}, 41(1):47--55.
+
+\bibitem[Bansal et~al., 2010]{Bansal2010}
+Bansal, V., Libiger, O., Torkamani, A., and Schork, N.~J. (2010).
+\newblock Statistical analysis strategies for association studies involving
+  rare variants.
+\newblock {\em Nat Rev Genet}, 11(11):773--785.
+
+\bibitem[Basu and Pan, 2011]{Basu2011}
+Basu, S. and Pan, W. (2011).
+\newblock Comparison of statistical tests for disease association with rare
+  variants.
+\newblock {\em Genet Epidemiol}, 35(7):606--619.
+
+\bibitem[Belsky et~al., 2013]{Belsky2013}
+Belsky, D.~W., Moffitt, T.~E., Baker, T.~B., Biddle, A.~K., Evans, J.~P.,
+  Harrington, H., Houts, R., Meier, M., Sugden, K., Williams, B., et~al.
+  (2013).
+\newblock Polygenic risk and the developmental progression to heavy, persistent
+  smoking and nicotine dependence: evidence from a 4-decade longitudinal study.
+\newblock {\em JAMA psychiatry}, 70(5):534--542.
+
+\bibitem[Benros et~al., 2014]{Benros2014}
+Benros, M.~E., Nielsen, P.~R., Nordentoft, M., Eaton, W.~W., Dalton, S.~O., and
+  Mortensen, P.~B. (2014).
+\newblock Autoimmune diseases and severe infections as risk factors for
+  schizophrenia: a 30-year population-based register study.
+
+\bibitem[Bhatia et~al., 2010]{Bhatia2010}
+Bhatia, G., Bansal, V., Harismendy, O., Schork, N.~J., Topol, E.~J., Frazer,
+  K., and Bafna, V. (2010).
+\newblock A covering method for detecting genetic associations between rare
+  variants and common phenotypes.
+\newblock {\em PLoS computational biology}, 6(10):e1000954.
+
+\bibitem[Boyko et~al., 2008]{Boyko2008}
+Boyko, A.~R., Williamson, S.~H., Indap, A.~R., Degenhardt, J.~D., Hernandez,
+  R.~D., Lohmueller, K.~E., Adams, M.~D., Schmidt, S., Sninsky, J.~J., Sunyaev,
+  S.~R., et~al. (2008).
+\newblock Assessing the evolutionary impact of amino acid mutations in the
+  human genome.
+\newblock {\em PLoS genetics}, 4(5):e1000083.
+
+\bibitem[Cai et~al., 2012]{Cai2012}
+Cai, T., Lin, X., and Carroll, R.~J. (2012).
+\newblock Identifying genetic marker sets associated with phenotypes via an
+  efficient adaptive score test.
+\newblock {\em Biostatistics}, 13(4):776--790.
+
+\bibitem[Cantor et~al., 2010]{Cantor2010}
+Cantor, R.~M., Lange, K., and Sinsheimer, J.~S. (2010).
+\newblock Prioritizing gwas results: a review of statistical methods and
+  recommendations for their application.
+\newblock {\em The American Journal of Human Genetics}, 86(1):6--22.
+
+\bibitem[Capanu et~al., 2011]{Capanu2011}
+Capanu, M., Concannon, P., Haile, R.~W., Bernstein, L., Malone, K.~E., Lynch,
+  C.~F., Liang, X., Teraoka, S.~N., Diep, A.~T., Thomas, D.~C., Bernstein,
+  J.~L., ~, W. E. C. A. R. E. S. C.~G., and Begg, C.~B. (2011).
+\newblock Assessment of rare brca1 and brca2 variants of unknown significance
+  using hierarchical modeling.
+\newblock {\em Genet Epidemiol}, 35(5):389--397.
+
+\bibitem[Caspi et~al., 2008]{Caspi2008}
+Caspi, R., Foerster, H., Fulcher, C.~A., Kaipa, P., Krummenacker, M.,
+  Latendresse, M., Paley, S., Rhee, S.~Y., Shearer, A.~G., Tissier, C., et~al.
+  (2008).
+\newblock The metacyc database of metabolic pathways and enzymes and the biocyc
+  collection of pathway/genome databases.
+\newblock {\em Nucleic acids research}, 36(suppl 1):D623--D631.
+
+\bibitem[Chai et~al., 2009]{Chai2009}
+Chai, H.-S., Sicotte, H., Bailey, K.~R., Turner, S.~T., Asmann, Y.~W., and
+  Kocher, J.-P.~A. (2009).
+\newblock Glossi: a method to assess the association of genetic loci-sets with
+  complex diseases.
+\newblock {\em BMC bioinformatics}, 10(1):102.
+
+\bibitem[Chen et~al., 2009]{Chen2009}
+Chen, L., Zhang, L., Zhao, Y., Xu, L., Shang, Y., Wang, Q., Li, W., Wang, H.,
+  and Li, X. (2009).
+\newblock Prioritizing risk pathways: a novel association approach to searching
+  for disease pathways fusing snps and pathways.
+\newblock {\em Bioinformatics}, 25(2):237--242.
+
+\bibitem[Chen et~al., 2012]{Chen2012}
+Chen, L.~S., Hsu, L., Gamazon, E.~R., Cox, N.~J., and Nicolae, D.~L. (2012).
+\newblock An exponential combination procedure for set-based association tests
+  in sequencing studies.
+\newblock {\em The American Journal of Human Genetics}, 91(6):977--986.
+
+\bibitem[Chen et~al., 2010a]{Chen2010}
+Chen, L.~S., Hutter, C.~M., Potter, J.~D., Liu, Y., Prentice, R.~L., Peters,
+  U., and Hsu, L. (2010a).
+\newblock Insights into colon cancer etiology via a regularized approach to
+  gene set analysis of gwas data.
+\newblock {\em The American Journal of Human Genetics}, 86(6):860--871.
+
+\bibitem[Chen et~al., 2010b]{Chen2010a}
+Chen, X., Wang, L., Hu, B., Guo, M., Barnard, J., and Zhu, X. (2010b).
+\newblock Pathway-based analysis for genome-wide association studies using
+  supervised principal components.
+\newblock {\em Genetic epidemiology}, 34(7):716--724.
+
+\bibitem[Cheng et~al., 1999]{Cheng1999}
+Cheng, S., Grow, M.~A., Pallaud, C., Klitz, W., Erlich, H.~A., Visvikis, S.,
+  Chen, J.~J., Pullinger, C.~R., Malloy, M.~J., Siest, G., et~al. (1999).
+\newblock A multilocus genotyping assay for candidate markers of cardiovascular
+  disease risk.
+\newblock {\em Genome research}, 9(10):936--949.
+
+\bibitem[Cortes and Brown, 2011]{Cortes2011}
+Cortes, A. and Brown, M.~A. (2011).
+\newblock Promise and pitfalls of the immunochip.
+\newblock {\em Arthritis Res Ther}, 13(1):101.
+
+\bibitem[Cox and Snell, 1989]{cox1989analysis}
+Cox, D.~R. and Snell, E.~J. (1989).
+\newblock {\em Analysis of binary data}, volume~32.
+\newblock CRC Press.
+
+\bibitem[Craig et~al., 2008]{Craig2008}
+Craig, J. et~al. (2008).
+\newblock Complex diseases: Research and applications.
+\newblock {\em Nature Education}, 1(1):184.
+
+\bibitem[{De la Cruz} et~al., 2010]{DelaCruz2010}
+{De la Cruz}, O., Wen, X., Ke, B., Song, M., and Nicolae, D.~L. (2010).
+\newblock Gene, region and pathway level analyses in whole-genome studies.
+\newblock {\em Genet Epidemiol}, 34(3):222--231.
+
+\bibitem[Dennis~Jr et~al., 2003]{DennisJr2003}
+Dennis~Jr, G., Sherman, B.~T., Hosack, D.~A., Yang, J., Gao, W., Lane, H.~C.,
+  Lempicki, R.~A., et~al. (2003).
+\newblock David: database for annotation, visualization, and integrated
+  discovery.
+\newblock {\em Genome biol}, 4(5):P3.
+
+\bibitem[Derkach et~al., 2013]{Derkach2013}
+Derkach, A., Lawless, J.~F., and Sun, L. (2013).
+\newblock Robust and powerful tests for rare variants using fisher's method to
+  combine evidence of association from two or more complementary tests.
+\newblock {\em Genetic epidemiology}, 37(1):110--121.
+
+\bibitem[Diggle et~al., 2002]{Diggle2002}
+Diggle, P., Heagerty, P., Liang, K.-Y., and Zeger, S. (2002).
+\newblock {\em Analysis of longitudinal data}.
+\newblock Oxford University Press.
+
+\bibitem[Eichler et~al., 2010]{Eichler2010}
+Eichler, E.~E., Flint, J., Gibson, G., Kong, A., Leal, S.~M., Moore, J.~H., and
+  Nadeau, J.~H. (2010).
+\newblock Missing heritability and strategies for finding the underlying causes
+  of complex disease.
+\newblock {\em Nature Reviews Genetics}, 11(6):446--450.
+
+\bibitem[Fan et~al., 2013]{Fan2013}
+Fan, R., Wang, Y., Mills, J.~L., Wilson, A.~F., Bailey-Wilson, J.~E., and
+  Xiong, M. (2013).
+\newblock Functional linear models for association analysis of quantitative
+  traits.
+\newblock {\em Genetic epidemiology}, 37(7):726--742.
+
+\bibitem[Feng et~al., 2011]{Feng2011}
+Feng, T., Elston, R.~C., and Zhu, X. (2011).
+\newblock Detecting rare and common variants for complex traits: sibpair and
+  odds ratio weighted sum statistics (spwss, orwss).
+\newblock {\em Genetic epidemiology}, 35(5):398--409.
+
+\bibitem[for Blood Pressure Genome-Wide Association~Studies et~al.,
+  2011]{BloodPressureGenome-WideAssociationStudies2011}
+for Blood Pressure Genome-Wide Association~Studies, I.~C. et~al. (2011).
+\newblock Genetic variants in novel pathways influence blood pressure and
+  cardiovascular disease risk.
+\newblock {\em Nature}, 478(7367):103--109.
+
+\bibitem[Fridley and Biernacka, 2011]{Fridley2011}
+Fridley, B.~L. and Biernacka, J.~M. (2011).
+\newblock Gene set analysis of snp data: benefits, challenges, and future
+  directions.
+\newblock {\em European Journal of Human Genetics}, 19(8):837--843.
+
+\bibitem[Fridley et~al., 2010]{Fridley2010}
+Fridley, B.~L., Jenkins, G.~D., and Biernacka, J.~M. (2010).
+\newblock Self-contained gene-set analysis of expression data: an evaluation of
+  existing and novel methods.
+\newblock {\em PLoS One}, 5(9).
+
+\bibitem[Fu et~al., 2013]{Fu2013}
+Fu, W., O'Connor, T.~D., Jun, G., Kang, H.~M., Abecasis, G., Leal, S.~M.,
+  Gabriel, S., Rieder, M.~J., Altshuler, D., Shendure, J., Nickerson, D.~A.,
+  Bamshad, M.~J., ~, N. H. L. B. I. E. S.~P., and Akey, J.~M. (2013).
+\newblock Analysis of 6,515 exomes reveals the recent origin of most human
+  protein-coding variants.
+\newblock {\em Nature}, 493(7431):216--220.
+
+\bibitem[Furlotte et~al., 2012]{Furlotte2012}
+Furlotte, N.~A., Eskin, E., and Eyheramendy, S. (2012).
+\newblock Genome-wide association mapping with longitudinal data.
+\newblock {\em Genetic epidemiology}, 36(5):463--471.
+
+\bibitem[Go et~al., 2013]{Go2013}
+Go, A.~S., Mozaffarian, D., Roger, V.~L., Benjamin, E.~J., Berry, J.~D.,
+  Borden, W.~B., Bravata, D.~M., SHIFAN, D., Ford, E.~S., Fox, C.~S., et~al.
+  (2013).
+\newblock Executive summary: Heart disease and stroke statistics: 2013 update:
+  A report from the american heart association.
+\newblock {\em Circulation}, 127(1):143--146.
+
+\bibitem[Goeman and B{\"{u}}hlmann, 2007]{Goeman2007}
+Goeman, J.~J. and B{\"{u}}hlmann, P. (2007).
+\newblock Analyzing gene expression data in terms of gene sets: methodological
+  issues.
+\newblock {\em Bioinformatics}, 23(8):980--987.
+
+\bibitem[Gough, 2002]{Gough2002}
+Gough, N.~R. (2002).
+\newblock Science's signal transduction knowledge environment.
+\newblock {\em Annals of the New York Academy of Sciences}, 971(1):585--587.
+
+\bibitem[Grove et~al., 2013]{Grove2013}
+Grove, M.~L., Yu, B., Cochran, B.~J., Haritunians, T., Bis, J.~C., Taylor,
+  K.~D., Hansen, M., Borecki, I.~B., Cupples, L.~A., Fornage, M., et~al.
+  (2013).
+\newblock Best practices and joint calling of the humanexome beadchip: the
+  charge consortium.
+\newblock {\em PLoS One}, 8(7):e68095.
+
+\bibitem[Guo et~al., 2005]{guo2005small}
+Guo, X., Pan, W., Connett, J.~E., Hannan, P.~J., and French, S.~A. (2005).
+\newblock Small-sample performance of the robust score test and its
+  modifications in generalized estimating equations.
+\newblock {\em Statistics in medicine}, 24(22):3479--3495.
+
+\bibitem[Han and Pan, 2010]{Han2010}
+Han, F. and Pan, W. (2010).
+\newblock A data-adaptive sum test for disease association with multiple common
+  or rare variants.
+\newblock {\em Human heredity}, 70(1):42--54.
+
+\bibitem[Heiss, 1989]{Heiss1989}
+Heiss, G. (1989).
+\newblock Atherosclerosis risk in communities: a follow-up study of early
+  arterial lesions in the general population.
+\newblock {\em Pathology of Human Atherosclerotic Plaque. New York, NY:
+  Springer-Verlag}, 877:888.
+
+\bibitem[Hernandez, 2008]{Hernandez2008}
+Hernandez, R.~D. (2008).
+\newblock A flexible forward simulator for populations subject to selection and
+  demography.
+\newblock {\em Bioinformatics}, 24(23):2786--2787.
+
+\bibitem[Hindorff et~al., 2009]{Hindorff2009}
+Hindorff, L.~A., Sethupathy, P., Junkins, H.~A., Ramos, E.~M., Mehta, J.~P.,
+  Collins, F.~S., and Manolio, T.~A. (2009).
+\newblock Potential etiologic and functional implications of genome-wide
+  association loci for human diseases and traits.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  106(23):9362--9367.
+
+\bibitem[Hirschhorn, 2009]{Hirschhorn2009}
+Hirschhorn, J.~N. (2009).
+\newblock Genomewide association studies--illuminating biologic pathways.
+\newblock {\em New England Journal of Medicine}, 360(17):1699.
+
+\bibitem[Hirschhorn and Daly, 2005]{Hirschhorn2005}
+Hirschhorn, J.~N. and Daly, M.~J. (2005).
+\newblock Genome-wide association studies for common diseases and complex
+  traits.
+\newblock {\em Nature Reviews Genetics}, 6(2):95--108.
+
+\bibitem[Hoffmann et~al., 2010]{Hoffmann2010}
+Hoffmann, T.~J., Marini, N.~J., and Witte, J.~S. (2010).
+\newblock Comprehensive approach to analyzing rare genetic variants.
+\newblock {\em PLoS One}, 5(11):e13584.
+
+\bibitem[Holden et~al., 2008]{Holden2008}
+Holden, M., Deng, S., Wojnowski, L., and Kulle, B. (2008).
+\newblock Gsea-snp: applying gene set enrichment analysis to snp data from
+  genome-wide association studies.
+\newblock {\em Bioinformatics}, 24(23):2784--2785.
+
+\bibitem[Holmans et~al., 2009]{Holmans2009}
+Holmans, P., Green, E.~K., Pahwa, J.~S., Ferreira, M.~A., Purcell, S.~M.,
+  Sklar, P., Owen, M.~J., O'Donovan, M.~C., and Craddock, N. (2009).
+\newblock Gene ontology analysis of gwa study data sets provides insights into
+  the biology of bipolar disorder.
+\newblock {\em The American Journal of Human Genetics}, 85(1):13--24.
+
+\bibitem[Hu et~al., 2013]{Hu2013}
+Hu, H., Huff, C.~D., Moore, B., Flygare, S., Reese, M.~G., and Yandell, M.
+  (2013).
+\newblock Vaast 2.0: Improved variant classification and disease-gene
+  identification using a conservation-controlled amino acid substitution
+  matrix.
+\newblock {\em Genetic epidemiology}, 37(6):622--634.
+
+\bibitem[Investigators et~al., 1989]{Investigators1989}
+Investigators, A. et~al. (1989).
+\newblock The atherosclerosis risk in communit (aric) stui) y: Design and
+  objectwes.
+\newblock {\em American journal of epidemiology}, 129(4):687--702.
+
+\bibitem[Inzucchi et~al., 2012]{Inzucchi2012}
+Inzucchi, S.~E., Bergenstal, R.~M., Buse, J.~B., Diamant, M., Ferrannini, E.,
+  Nauck, M., Peters, A.~L., Tsapas, A., Wender, R., and Matthews, D.~R. (2012).
+\newblock Management of hyperglycemia in type 2 diabetes: a patient-centered
+  approach position statement of the american diabetes association (ada) and
+  the european association for the study of diabetes (easd).
+\newblock {\em Diabetes care}, 35(6):1364--1379.
+
+\bibitem[Ionita-Laza et~al., 2011]{Ionita-Laza2011}
+Ionita-Laza, I., Buxbaum, J.~D., Laird, N.~M., and Lange, C. (2011).
+\newblock A new testing strategy to identify rare variants with either risk or
+  protective effect on disease.
+\newblock {\em PLoS genetics}, 7(2):e1001289.
+
+\bibitem[Ionita-Laza et~al., 2013]{Ionita-Laza2013}
+Ionita-Laza, I., Lee, S., Makarov, V., Buxbaum, J.~D., and Lin, X. (2013).
+\newblock Sequence kernel association tests for the combined effect of rare and
+  common variants.
+\newblock {\em Am J Hum Genet}, 92(6):841--853.
+
+\bibitem[Ionita-Laza et~al., 2007]{Ionita-Laza2007}
+Ionita-Laza, I., McQueen, M.~B., Laird, N.~M., and Lange, C. (2007).
+\newblock Genomewide weighted hypothesis testing in family-based association
+  studies, with an application to a 100k scan.
+\newblock {\em The American Journal of Human Genetics}, 81(3):607--614.
+
+\bibitem[Kamatani et~al., 2010]{Kamatani2010}
+Kamatani, Y., Matsuda, K., Okada, Y., Kubo, M., Hosono, N., Daigo, Y.,
+  Nakamura, Y., and Kamatani, N. (2010).
+\newblock Genome-wide association study of hematological and biochemical traits
+  in a japanese population.
+\newblock {\em Nat Genet}, 42(3):210--215.
+
+\bibitem[Karp et~al., 2002]{Karp2002}
+Karp, P.~D., Riley, M., Paley, S.~M., and Pellegrini-Toole, A. (2002).
+\newblock The metacyc database.
+\newblock {\em Nucleic acids research}, 30(1):59--61.
+
+\bibitem[Kathiresan et~al., 2007]{Kathiresan2007}
+Kathiresan, S., Manning, A.~K., Demissie, S., D'Agostino, R.~B., Surti, A.,
+  Guiducci, C., Gianniny, L., Burtt, N.~P., Melander, O., Orho-Melander, M.,
+  Arnett, D.~K., Peloso, G.~M., Ordovas, J.~M., and Cupples, L.~A. (2007).
+\newblock A genome-wide association study for blood lipid phenotypes in the
+  framingham heart study.
+\newblock {\em BMC Med Genet}, 8 Suppl 1:S17.
+
+\bibitem[Keating et~al., 2008]{Keating2008}
+Keating, B.~J., Tischfield, S., Murray, S.~S., Bhangale, T., Price, T.~S.,
+  Glessner, J.~T., Galver, L., Barrett, J.~C., Grant, S.~F., Farlow, D.~N.,
+  et~al. (2008).
+\newblock Concept, design and implementation of a cardiovascular gene-centric
+  50 k snp array for large-scale genomic association studies.
+\newblock {\em PloS one}, 3(10):e3583.
+
+\bibitem[Kim et~al., 2014]{Kim2014}
+Kim, S., Pan, W., and Shen, X. (2014).
+\newblock Penalized regression approaches to testing for quantitative
+  trait-rare variant association.
+\newblock {\em Frontiers in genetics}, 5.
+
+\bibitem[Korn and Whittemore, 1979]{korn1979methods}
+Korn, E.~L. and Whittemore, A.~S. (1979).
+\newblock Methods for analyzing panel studies of acute health effects of air
+  pollution.
+\newblock {\em Biometrics}, pages 795--802.
+
+\bibitem[Kwee et~al., 2008]{Kwee2008}
+Kwee, L.~C., Liu, D., Lin, X., Ghosh, D., and Epstein, M.~P. (2008).
+\newblock A powerful and flexible multilocus association test for quantitative
+  traits.
+\newblock {\em The American Journal of Human Genetics}, 82(2):386--397.
+
+\bibitem[Laird and Ware, 1982]{laird1982random}
+Laird, N.~M. and Ware, J.~H. (1982).
+\newblock Random-effects models for longitudinal data.
+\newblock {\em Biometrics}, pages 963--974.
+
+\bibitem[Lange et~al., 2014]{Lange2014}
+Lange, L.~A., Hu, Y., Zhang, H., Xue, C., Schmidt, E.~M., Tang, Z.-Z., Bizon,
+  C., Lange, E.~M., Smith, J.~D., Turner, E.~H., et~al. (2014).
+\newblock Whole-exome sequencing identifies rare and low-frequency coding
+  variants associated with ldl cholesterol.
+\newblock {\em The American Journal of Human Genetics}, 94(2):233--245.
+
+\bibitem[Lee et~al., 2012a]{Lee2012}
+Lee, S., Emond, M.~J., Bamshad, M.~J., Barnes, K.~C., Rieder, M.~J., Nickerson,
+  D.~A., ~, N. H. L. B. I. G. O. E. S. P.-E. S. P. L. P.~T., Christiani, D.~C.,
+  Wurfel, M.~M., and Lin, X. (2012a).
+\newblock Optimal unified approach for rare-variant association testing with
+  application to small-sample case-control whole-exome sequencing studies.
+\newblock {\em Am J Hum Genet}, 91(2):224--237.
+
+\bibitem[Lee et~al., 2012b]{Lee2012a}
+Lee, S., Wu, M.~C., and Lin, X. (2012b).
+\newblock Optimal tests for rare variant effects in sequencing association
+  studies.
+\newblock {\em Biostatistics}, 13(4):762--775.
+
+\bibitem[Li and Leal, 2008]{Li2008}
+Li, B. and Leal, S.~M. (2008).
+\newblock Methods for detecting associations with rare variants for common
+  diseases: application to analysis of sequence data.
+\newblock {\em Am J Hum Genet}, 83(3):311--321.
+
+\bibitem[Liang and Zeger, 1986]{liang1986longitudinal}
+Liang, K.-Y. and Zeger, S.~L. (1986).
+\newblock Longitudinal data analysis using generalized linear models.
+\newblock {\em Biometrika}, 73(1):13--22.
+
+\bibitem[Lin, 2005]{Lin2005}
+Lin, D. (2005).
+\newblock An efficient monte carlo approach to assessing statistical
+  significance in genomic studies.
+\newblock {\em Bioinformatics}, 21(6):781--787.
+
+\bibitem[Lin and Tang, 2011]{Lin2011}
+Lin, D.-Y. and Tang, Z.-Z. (2011).
+\newblock A general framework for detecting disease associations with rare
+  variants in sequencing studies.
+\newblock {\em The American Journal of Human Genetics}, 89(3):354--367.
+
+\bibitem[Liti{\`e}re et~al., 2007]{litiere2007type}
+Liti{\`e}re, S., Alonso, A., and Molenberghs, G. (2007).
+\newblock Type i and type ii error under random-effects misspecification in
+  generalized linear mixed models.
+\newblock {\em Biometrics}, 63(4):1038--1044.
+
+\bibitem[Liu and Leal, 2010]{Liu2010}
+Liu, D.~J. and Leal, S.~M. (2010).
+\newblock A novel adaptive method for the analysis of next-generation
+  sequencing data to detect complex trait associations with rare variants due
+  to gene main effects and interactions.
+\newblock {\em PLoS Genet}, 6(10):e1001156.
+
+\bibitem[Liu et~al., 2007]{Liu2007}
+Liu, Q., Dinu, I., Adewale, A.~J., Potter, J.~D., and Yasui, Y. (2007).
+\newblock Comparative evaluation of gene-set analysis methods.
+\newblock {\em BMC Bioinformatics}, 8:431.
+
+\bibitem[Luo et~al., 2011]{Luo2011}
+Luo, L., Boerwinkle, E., and Xiong, M. (2011).
+\newblock Association studies for next-generation sequencing.
+\newblock {\em Genome research}, 21(7):1099--1108.
+
+\bibitem[Luo et~al., 2010]{Luo2010}
+Luo, L., Peng, G., Zhu, Y., Dong, H., Amos, C.~I., and Xiong, M. (2010).
+\newblock Genome-wide gene and pathway analysis.
+\newblock {\em European Journal of Human Genetics}, 18(9):1045--1053.
+
+\bibitem[Luo et~al., 2012a]{Luo2012a}
+Luo, L., Zhu, Y., and Xiong, M. (2012a).
+\newblock Quantitative trait locus analysis for next-generation sequencing with
+  the functional linear models.
+\newblock {\em Journal of medical genetics}, 49(8):513--524.
+
+\bibitem[Luo et~al., 2012b]{Luo2012}
+Luo, L., Zhu, Y., and Xiong, M. (2012b).
+\newblock Smoothed functional principal component analysis for testing
+  association of the entire allelic spectrum of genetic variation.
+\newblock {\em European Journal of Human Genetics}, 21(2):217--224.
+
+\bibitem[Lynch et~al., 1998]{Lynch1998}
+Lynch, M., Walsh, B., et~al. (1998).
+\newblock Genetics and analysis of quantitative traits.
+
+\bibitem[Madsen and Browning, 2009]{Madsen2009}
+Madsen, B.~E. and Browning, S.~R. (2009).
+\newblock A groupwise association test for rare mutations using a weighted sum
+  statistic.
+\newblock {\em PLoS Genet}, 5(2):e1000384.
+
+\bibitem[Mardis, 2008]{Mardis2008}
+Mardis, E.~R. (2008).
+\newblock Next-generation dna sequencing methods.
+\newblock {\em Annu. Rev. Genomics Hum. Genet.}, 9:387--402.
+
+\bibitem[McCarthy et~al., 2008]{McCarthy2008}
+McCarthy, M.~I., Abecasis, G.~R., Cardon, L.~R., Goldstein, D.~B., Little, J.,
+  Ioannidis, J. P.~A., and Hirschhorn, J.~N. (2008).
+\newblock Genome-wide association studies for complex traits: consensus,
+  uncertainty and challenges.
+\newblock {\em Nat Rev Genet}, 9(5):356--369.
+
+\bibitem[Medina et~al., 2009]{Medina2009}
+Medina, I., Montaner, D., Bonifaci, N., Pujana, M.~A., Carbonell, J., Tarraga,
+  J., Al-Shahrour, F., and Dopazo, J. (2009).
+\newblock Gene set-based analysis of polymorphisms: finding pathways or
+  biological processes associated to traits in genome-wide association studies.
+\newblock {\em Nucleic acids research}, 37(suppl 2):W340--W344.
+
+\bibitem[Melville et~al., 2012]{Melville2012}
+Melville, S.~A., Buros, J., Parrado, A.~R., Vardarajan, B., Logue, M.~W., Shen,
+  L., Risacher, S.~L., Kim, S., Jun, G., DeCarli, C., et~al. (2012).
+\newblock Multiple loci influencing hippocampal degeneration identified by
+  genome scan.
+\newblock {\em Annals of neurology}, 72(1):65--75.
+
+\bibitem[Metzker, 2009]{Metzker2009}
+Metzker, M.~L. (2009).
+\newblock Sequencing technologies the next generation.
+\newblock {\em Nature Reviews Genetics}, 11(1):31--46.
+
+\bibitem[Morgenthaler and Thilly, 2007]{Morgenthaler2007}
+Morgenthaler, S. and Thilly, W.~G. (2007).
+\newblock A strategy to discover genes that carry multi-allelic or mono-allelic
+  risk for common diseases: a cohort allelic sums test (cast).
+\newblock {\em Mutat Res}, 615(1-2):28--56.
+
+\bibitem[Nam et~al., 2010]{Nam2010}
+Nam, D., Kim, J., Kim, S.-Y., and Kim, S. (2010).
+\newblock Gsa-snp: a general approach for gene set analysis of polymorphisms.
+\newblock {\em Nucleic acids research}, page gkq428.
+
+\bibitem[Nam and Kim, 2008]{Nam2008}
+Nam, D. and Kim, S.-Y. (2008).
+\newblock Gene-set approach for expression pattern analysis.
+\newblock {\em Brief Bioinform}, 9(3):189--197.
+
+\bibitem[Neale et~al., 2011]{Neale2011}
+Neale, B.~M., Rivas, M.~A., Voight, B.~F., Altshuler, D., Devlin, B.,
+  Orho-Melander, M., Kathiresan, S., Purcell, S.~M., Roeder, K., and Daly,
+  M.~J. (2011).
+\newblock Testing for an unusual distribution of rare variants.
+\newblock {\em PLoS genetics}, 7(3):e1001322.
+
+\bibitem[Neyman, 1937]{Neyman1937}
+Neyman, J. (1937).
+\newblock Smooth test for goodness of fit.
+\newblock {\em Scandinavian Actuarial Journal}, 1937(3-4):149--199.
+
+\bibitem[Nishimura, 2001]{Nishimura2001}
+Nishimura, D. (2001).
+\newblock Biocarta.
+\newblock {\em Biotech Software \& Internet Report: The Computer Software
+  Journal for Scient}, 2(3):117--120.
+
+\bibitem[O'Dushlaine et~al., 2009]{ODushlaine2009}
+O'Dushlaine, C., Kenny, E., Heron, E.~A., Segurado, R., Gill, M., Morris,
+  D.~W., and Corvin, A. (2009).
+\newblock The snp ratio test: pathway analysis of genome-wide association
+  datasets.
+\newblock {\em Bioinformatics}, 25(20):2762--2763.
+
+\bibitem[Ogata et~al., 1999]{Ogata1999}
+Ogata, H., Goto, S., Sato, K., Fujibuchi, W., Bono, H., and Kanehisa, M.
+  (1999).
+\newblock Kegg: Kyoto encyclopedia of genes and genomes.
+\newblock {\em Nucleic acids research}, 27(1):29--34.
+
+\bibitem[Oualkacha et~al., 2013]{Oualkacha2013}
+Oualkacha, K., Dastani, Z., Li, R., Cingolani, P.~E., Spector, T.~D., Hammond,
+  C.~J., Richards, J.~B., Ciampi, A., and Greenwood, C. M.~T. (2013).
+\newblock Adjusted sequence kernel association test for rare variants
+  controlling for cryptic and family relatedness.
+\newblock {\em Genet Epidemiol}, 37(4):366--376.
+
+\bibitem[Pan, 2001]{pan2001robust}
+Pan, W. (2001).
+\newblock On the robust variance estimator in generalised estimating equations.
+\newblock {\em Biometrika}, 88(3):901--906.
+
+\bibitem[Pan, 2009]{Pan2009}
+Pan, W. (2009).
+\newblock Asymptotic tests of association with multiple snps in linkage
+  disequilibrium.
+\newblock {\em Genetic epidemiology}, 33(6):497--507.
+
+\bibitem[Pan et~al., 2009]{Pan2009a}
+Pan, W., Han, F., and Shen, X. (2009).
+\newblock Test selection with application to detecting disease association with
+  multiple snps.
+\newblock {\em Human heredity}, 69(2):120--130.
+
+\bibitem[Pan et~al., 2014]{pan2014powerful}
+Pan, W., Kim, J., Zhang, Y., Shen, X., and Wei, P. (2014).
+\newblock A powerful and adaptive association test for rare variants.
+\newblock {\em Genetics}, pages genetics--114.
+
+\bibitem[Pan and Shen, 2011]{Pan2011}
+Pan, W. and Shen, X. (2011).
+\newblock Adaptive tests for association analysis of rare variants.
+\newblock {\em Genet Epidemiol}, 35(5):381--388.
+
+\bibitem[Peloso et~al., 2014]{Peloso2014}
+Peloso, G.~M., Auer, P.~L., Bis, J.~C., Voorman, A., Morrison, A.~C., Stitziel,
+  N.~O., Brody, J.~A., Khetarpal, S.~A., Crosby, J.~R., Fornage, M., et~al.
+  (2014).
+\newblock Association of low-frequency and rare coding-sequence variants with
+  blood lipids and coronary heart disease in 56,000 whites and blacks.
+\newblock {\em The American Journal of Human Genetics}, 94(2):223--232.
+
+\bibitem[Peng et~al., 2009]{peng2009gene}
+Peng, G., Luo, L., Siu, H., Zhu, Y., Hu, P., Hong, S., Zhao, J., Zhou, X.,
+  Reveille, J.~D., Jin, L., et~al. (2009).
+\newblock Gene and pathway-based second-wave analysis of genome-wide
+  association studies.
+\newblock {\em European Journal of Human Genetics}, 18(1):111--117.
+
+\bibitem[Pinto et~al., 2010]{Pinto2010}
+Pinto, D., Pagnamenta, A.~T., Klei, L., Anney, R., Merico, D., Regan, R.,
+  Conroy, J., Magalhaes, T.~R., Correia, C., Abrahams, B.~S., Almeida, J.,
+  Bacchelli, E., Bader, G.~D., Bailey, A.~J., Baird, G., Battaglia, A., Berney,
+  T., Bolshakova, N., B{\"{o}}lte, S., Bolton, P.~F., Bourgeron, T., Brennan,
+  S., Brian, J., Bryson, S.~E., Carson, A.~R., Casallo, G., Casey, J., Chung,
+  B. H.~Y., Cochrane, L., Corsello, C., Crawford, E.~L., Crossett, A.,
+  Cytrynbaum, C., Dawson, G., {de Jonge}, M., Delorme, R., Drmic, I., Duketis,
+  E., Duque, F., Estes, A., Farrar, P., Fernandez, B.~A., Folstein, S.~E.,
+  Fombonne, E., Freitag, C.~M., Gilbert, J., Gillberg, C., Glessner, J.~T.,
+  Goldberg, J., Green, A., Green, J., Guter, S.~J., Hakonarson, H., Heron,
+  E.~A., Hill, M., Holt, R., Howe, J.~L., Hughes, G., Hus, V., Igliozzi, R.,
+  Kim, C., Klauck, S.~M., Kolevzon, A., Korvatska, O., Kustanovich, V.,
+  Lajonchere, C.~M., Lamb, J.~A., Laskawiec, M., Leboyer, M., {Le Couteur}, A.,
+  Leventhal, B.~L., Lionel, A.~C., Liu, X.-Q., Lord, C., Lotspeich, L., Lund,
+  S.~C., Maestrini, E., Mahoney, W., Mantoulan, C., Marshall, C.~R.,
+  McConachie, H., McDougle, C.~J., McGrath, J., McMahon, W.~M., Merikangas, A.,
+  Migita, O., Minshew, N.~J., Mirza, G.~K., Munson, J., Nelson, S.~F., Noakes,
+  C., Noor, A., Nygren, G., Oliveira, G., Papanikolaou, K., Parr, J.~R.,
+  Parrini, B., Paton, T., Pickles, A., Pilorge, M., Piven, J., Ponting, C.~P.,
+  Posey, D.~J., Poustka, A., Poustka, F., Prasad, A., Ragoussis, J., Renshaw,
+  K., Rickaby, J., Roberts, W., Roeder, K., Roge, B., Rutter, M.~L., Bierut,
+  L.~J., Rice, J.~P., Salt, J., Sansom, K., Sato, D., Segurado, R., Sequeira,
+  A.~F., Senman, L., Shah, N., Sheffield, V.~C., Soorya, L., Sousa, I., Stein,
+  O., Sykes, N., Stoppioni, V., Strawbridge, C., Tancredi, R., Tansey, K.,
+  Thiruvahindrapduram, B., Thompson, A.~P., Thomson, S., Tryfon, A., Tsiantis,
+  J., {Van Engeland}, H., Vincent, J.~B., Volkmar, F., Wallace, S., Wang, K.,
+  Wang, Z., Wassink, T.~H., Webber, C., Weksberg, R., Wing, K., Wittemeyer, K.,
+  Wood, S., Wu, J., Yaspan, B.~L., Zurawiecki, D., Zwaigenbaum, L., Buxbaum,
+  J.~D., Cantor, R.~M., Cook, E.~H., Coon, H., Cuccaro, M.~L., Devlin, B.,
+  Ennis, S., Gallagher, L., Geschwind, D.~H., Gill, M., Haines, J.~L.,
+  Hallmayer, J., Miller, J., Monaco, A.~P., Nurnberger, Jr, J.~I., Paterson,
+  A.~D., Pericak-Vance, M.~A., Schellenberg, G.~D., Szatmari, P., Vicente,
+  A.~M., Vieland, V.~J., Wijsman, E.~M., Scherer, S.~W., Sutcliffe, J.~S., and
+  Betancur, C. (2010).
+\newblock Functional impact of global rare copy number variation in autism
+  spectrum disorders.
+\newblock {\em Nature}, 466(7304):368--372.
+
+\bibitem[Price et~al., 2010]{Price2010}
+Price, A.~L., Kryukov, G.~V., {de Bakker}, P. I.~W., Purcell, S.~M., Staples,
+  J., Wei, L.-J., and Sunyaev, S.~R. (2010).
+\newblock Pooled association tests for rare variants in exon-resequencing
+  studies.
+\newblock {\em Am J Hum Genet}, 86(6):832--838.
+
+\bibitem[Price et~al., 2006]{Price2006}
+Price, A.~L., Patterson, N.~J., Plenge, R.~M., Weinblatt, M.~E., Shadick,
+  N.~A., and Reich, D. (2006).
+\newblock Principal components analysis corrects for stratification in
+  genome-wide association studies.
+\newblock {\em Nature genetics}, 38(8):904--909.
+
+\bibitem[Purcell et~al., 2007]{Purcell2007}
+Purcell, S., Neale, B., Todd-Brown, K., Thomas, L., Ferreira, M.~A., Bender,
+  D., Maller, J., Sklar, P., De~Bakker, P.~I., Daly, M.~J., et~al. (2007).
+\newblock Plink: a tool set for whole-genome association and population-based
+  linkage analyses.
+\newblock {\em The American Journal of Human Genetics}, 81(3):559--575.
+
+\bibitem[Sabatti et~al., 2008]{Sabatti2008}
+Sabatti, C., Service, S.~K., Hartikainen, A.-L., Pouta, A., Ripatti, S.,
+  Brodsky, J., Jones, C.~G., Zaitlen, N.~A., Varilo, T., Kaakinen, M., et~al.
+  (2008).
+\newblock Genome-wide association analysis of metabolic traits in a birth
+  cohort from a founder population.
+\newblock {\em Nature genetics}, 41(1):35--46.
+
+\bibitem[Schaefer et~al., 2009]{Schaefer2009}
+Schaefer, C.~F., Anthony, K., Krupa, S., Buchoff, J., Day, M., Hannay, T., and
+  Buetow, K.~H. (2009).
+\newblock Pid: the pathway interaction database.
+\newblock {\em Nucleic acids research}, 37(suppl 1):D674--D679.
+
+\bibitem[Seaman and M{\"u}ller-Myhsok, 2005]{Seaman2005}
+Seaman, S. and M{\"u}ller-Myhsok, B. (2005).
+\newblock Rapid simulation of p values for product methods and multiple-testing
+  adjustment in association studies.
+\newblock {\em The American Journal of Human Genetics}, 76(3):399--408.
+
+\bibitem[Sham and Purcell, 2014]{Sham2014}
+Sham, P.~C. and Purcell, S.~M. (2014).
+\newblock Statistical power and significance testing in large-scale genetic
+  studies.
+\newblock {\em Nat Rev Genet}, 15(5):335--346.
+
+\bibitem[Shendure and Ji, 2008]{Shendure2008}
+Shendure, J. and Ji, H. (2008).
+\newblock Next-generation dna sequencing.
+\newblock {\em Nature biotechnology}, 26(10):1135--1145.
+
+\bibitem[Shete et~al., 2004]{shete2004effect}
+Shete, S., Beasley, T.~M., Etzel, C.~J., Fern{\'a}ndez, J.~R., Chen, J.,
+  Allison, D.~B., and Amos, C.~I. (2004).
+\newblock Effect of winsorization on power and type 1 error of variance
+  components and related methods of qtl detection.
+\newblock {\em Behavior genetics}, 34(2):153--159.
+
+\bibitem[Silver et~al., 2012]{Silver2012}
+Silver, M., Janousova, E., Hua, X., Thompson, P.~M., and Montana, G. (2012).
+\newblock Identification of gene pathways implicated in alzheimer's disease
+  using longitudinal imaging phenotypes with sparse regression.
+\newblock {\em NeuroImage}, 63(3):1681--1694.
+
+\bibitem[Song et~al., 2013]{Song2013}
+Song, P., Xue, J., and Li, Z. (2013).
+\newblock Simulation of longitudinal exposure data with variance-covariance
+  structures based on mixed models.
+\newblock {\em Risk Anal}, 33(3):469--479.
+
+\bibitem[Subramanian et~al., 2005]{Subramanian2005}
+Subramanian, A., Tamayo, P., Mootha, V.~K., Mukherjee, S., Ebert, B.~L.,
+  Gillette, M.~A., Paulovich, A., Pomeroy, S.~L., Golub, T.~R., Lander, E.~S.,
+  et~al. (2005).
+\newblock Gene set enrichment analysis: a knowledge-based approach for
+  interpreting genome-wide expression profiles.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 102(43):15545--15550.
+
+\bibitem[Sul et~al., 2011]{Sul2011}
+Sul, J.~H., Han, B., He, D., and Eskin, E. (2011).
+\newblock An optimal weighted aggregated association test for identification of
+  rare variants involved in common diseases.
+\newblock {\em Genetics}, 188(1):181--188.
+
+\bibitem[Sun et~al., 2013]{Sun2013}
+Sun, J., Zheng, Y., and Hsu, L. (2013).
+\newblock A unified mixed-effects model for rare-variant association in
+  sequencing studies.
+\newblock {\em Genetic epidemiology}, 37(4):334--344.
+
+\bibitem[Tintle et~al., 2011]{tintle2011inflated}
+Tintle, N., Aschard, H., Hu, I., Nock, N., Wang, H., and Pugh, E. (2011).
+\newblock Inflated type i error rates when using aggregation methods to analyze
+  rare variants in the 1000 genomes project exon sequencing data in unrelated
+  individuals: summary results from group 7 at genetic analysis workshop 17.
+\newblock {\em Genetic epidemiology}, 35(S1):S56--S60.
+
+\bibitem[Tsay, 1984]{tsay1984regression}
+Tsay, R.~S. (1984).
+\newblock Regression models with time series errors.
+\newblock {\em Journal of the American Statistical Association},
+  79(385):118--124.
+
+\bibitem[Voight et~al., 2012]{Voight2012}
+Voight, B.~F., Kang, H.~M., Ding, J., Palmer, C.~D., Sidore, C., Chines, P.~S.,
+  Burtt, N.~P., Fuchsberger, C., Li, Y., Erdmann, J., et~al. (2012).
+\newblock The metabochip, a custom genotyping array for genetic studies of
+  metabolic, cardiovascular, and anthropometric traits.
+\newblock {\em PLoS genetics}, 8(8):e1002793.
+
+\bibitem[Wang et~al., 2012]{Wang2012}
+Wang, H., Nie, F., Huang, H., Yan, J., Kim, S., Nho, K., Risacher, S.~L.,
+  Saykin, A.~J., Shen, L., et~al. (2012).
+\newblock From phenotype to genotype: an association study of longitudinal
+  phenotypic markers to alzheimer's disease relevant snps.
+\newblock {\em Bioinformatics}, 28(18):i619--i625.
+
+\bibitem[Wang et~al., 2007]{wang2007pathway}
+Wang, K., Li, M., and Bucan, M. (2007).
+\newblock Pathway-based approaches for analysis of genomewide association
+  studies.
+\newblock {\em The American Journal of Human Genetics}, 81(6):1278--1283.
+
+\bibitem[Wang et~al., 2010a]{Wang2010}
+Wang, K., Li, M., and Hakonarson, H. (2010a).
+\newblock Analysing biological pathways in genome-wide association studies.
+\newblock {\em Nat Rev Genet}, 11(12):843--854.
+
+\bibitem[Wang et~al., 2010b]{Wang2010a}
+Wang, K., Li, M., and Hakonarson, H. (2010b).
+\newblock Annovar: functional annotation of genetic variants from
+  high-throughput sequencing data.
+\newblock {\em Nucleic acids research}, 38(16):e164--e164.
+
+\bibitem[Wang and Elston, 2007]{Wang2007}
+Wang, T. and Elston, R.~C. (2007).
+\newblock Improved power by use of a weighted score test for linkage
+  disequilibrium mapping.
+\newblock {\em The american journal of human genetics}, 80(2):353--360.
+
+\bibitem[Wang et~al., 2005]{Wang2005}
+Wang, W.~Y., Barratt, B.~J., Clayton, D.~G., and Todd, J.~A. (2005).
+\newblock Genome-wide association studies: theoretical and practical concerns.
+\newblock {\em Nature Reviews Genetics}, 6(2):109--118.
+
+\bibitem[Wang et~al., 2013]{Wang2013}
+Wang, X., Lee, S., Zhu, X., Redline, S., and Lin, X. (2013).
+\newblock Gee-based snp set association test for continuous and discrete traits
+  in family-based association studies.
+\newblock {\em Genetic epidemiology}, 37(8):778--786.
+
+\bibitem[WARE et~al., 1990]{WARE1990}
+WARE, J.~H., DOCKERY, D.~W., LOUIS, T.~A., XU, X., FERRIS, B.~G., and SPEIZER,
+  F.~E. (1990).
+\newblock Longitudinal and cross-sectional estimates of pulmonary function
+  decline in never-smoking adults.
+\newblock {\em American journal of epidemiology}, 132(4):685--700.
+
+\bibitem[Wedderburn, 1974]{wedderburn1974quasi}
+Wedderburn, R.~W. (1974).
+\newblock Quasi-likelihood functions, generalized linear models, and the
+  gauss—newton method.
+\newblock {\em Biometrika}, 61(3):439--447.
+
+\bibitem[Wei et~al., 2012]{Wei2012a}
+Wei, P., Tang, H., and Li, D. (2012).
+\newblock Insights into pancreatic cancer etiology from pathway analysis of
+  genome-wide association study data.
+\newblock {\em PloS one}, 7(10):e46887.
+
+\bibitem[Weng et~al., 2011]{Weng2011}
+Weng, L., Macciardi, F., Subramanian, A., Guffanti, G., Potkin, S.~G., Yu, Z.,
+  and Xie, X. (2011).
+\newblock Snp-based pathway enrichment analysis for genome-wide association
+  studies.
+\newblock {\em BMC Bioinformatics}, 12:99.
+
+\bibitem[Wu et~al., 2010]{Wu2010}
+Wu, M.~C., Kraft, P., Epstein, M.~P., Taylor, D.~M., Chanock, S.~J., Hunter,
+  D.~J., and Lin, X. (2010).
+\newblock Powerful snp-set analysis for case-control genome-wide association
+  studies.
+\newblock {\em Am J Hum Genet}, 86(6):929--942.
+
+\bibitem[Wu et~al., 2011]{Wu2011}
+Wu, M.~C., Lee, S., Cai, T., Li, Y., Boehnke, M., and Lin, X. (2011).
+\newblock Rare-variant association testing for sequencing data with the
+  sequence kernel association test.
+\newblock {\em Am J Hum Genet}, 89(1):82--93.
+
+\bibitem[Xu et~al., 2014]{Xu2014}
+Xu, Z., Shen, X., Pan, W., Initiative, A. D.~N., et~al. (2014).
+\newblock Longitudinal analysis is more powerful than cross-sectional analysis
+  in detecting genetic association with neuroimaging phenotypes.
+\newblock {\em PloS one}, 9(8):e102312.
+
+\bibitem[Yandell et~al., 2011]{Yandell2011}
+Yandell, M., Huff, C., Hu, H., Singleton, M., Moore, B., Xing, J., Jorde,
+  L.~B., and Reese, M.~G. (2011).
+\newblock A probabilistic disease-gene finder for personal genomes.
+\newblock {\em Genome research}, 21(9):1529--1542.
+
+\bibitem[Ye and Engelman, 2011]{Ye2011}
+Ye, K.~Q. and Engelman, C.~D. (2011).
+\newblock Detecting multiple causal rare variants in exome sequence data.
+\newblock {\em Genet Epidemiol}, 35 Suppl 1:S18--S21.
+
+\bibitem[Yu et~al., 2009]{Yu2009}
+Yu, K., Li, Q., Bergen, A.~W., Pfeiffer, R.~M., Rosenberg, P.~S., Caporaso, N.,
+  Kraft, P., and Chatterjee, N. (2009).
+\newblock Pathway analysis by adaptive combination of p-values.
+\newblock {\em Genetic epidemiology}, 33(8):700--709.
+
+\bibitem[Zeger and Liang, 1986]{zeger1986longitudinal}
+Zeger, S.~L. and Liang, K.-Y. (1986).
+\newblock Longitudinal data analysis for discrete and continuous outcomes.
+\newblock {\em Biometrics}, pages 121--130.
+
+\bibitem[Zeger et~al., 1988]{zeger1988models}
+Zeger, S.~L., Liang, K.-Y., and Albert, P.~S. (1988).
+\newblock Models for longitudinal data: a generalized estimating equation
+  approach.
+\newblock {\em Biometrics}, pages 1049--1060.
+
+\bibitem[Zeger et~al., 1985]{zeger1985analysis}
+Zeger, S.~L., Liang, K.-Y., and Self, S.~G. (1985).
+\newblock The analysis of binary longitudinal data with time independent
+  covariates.
+\newblock {\em Biometrika}, 72(1):31--38.
+
+\bibitem[Zeger and Qaqish, 1988]{zeger1988markov}
+Zeger, S.~L. and Qaqish, B. (1988).
+\newblock Markov regression models for time series: a quasi-likelihood
+  approach.
+\newblock {\em Biometrics}, pages 1019--1031.
+
+\bibitem[Zhang et~al., 2010a]{Zhang2010a}
+Zhang, K., Cui, S., Chang, S., Zhang, L., and Wang, J. (2010a).
+\newblock i-gsea4gwas: a web server for identification of pathways/gene sets
+  associated with traits by applying an improved gene set enrichment analysis
+  to genome-wide association study.
+\newblock {\em Nucleic acids research}, 38(suppl 2):W90--W95.
+
+\bibitem[Zhang et~al., 2010b]{Zhang2010}
+Zhang, L., Pei, Y.-F., Li, J., Papasian, C.~J., and Deng, H.-W. (2010b).
+\newblock Efficient utilization of rare variants for detection of
+  disease-related genomic regions.
+\newblock {\em PloS one}, 5(12):e14288.
+
+\bibitem[Zhang et~al., 2011]{Zhang2011}
+Zhang, Q., Irvin, M.~R., Arnett, D.~K., Province, M.~A., and Borecki, I.
+  (2011).
+\newblock A data-driven method for identifying rare variants with heterogeneous
+  trait effects.
+\newblock {\em Genetic epidemiology}, 35(7):679--685.
+
+\bibitem[Zhang et~al., 2014]{zhang2014testing}
+Zhang, Y., Xu, Z., Shen, X., and Pan, W. (2014).
+\newblock Testing for association with multiple traits in generalized
+  estimation equations, with application to neuroimaging data.
+\newblock {\em NeuroImage}, 96:309--325.
+
+\bibitem[Zhong et~al., 2010]{Zhong2010}
+Zhong, H., Yang, X., Kaplan, L.~M., Molony, C., and Schadt, E.~E. (2010).
+\newblock Integrating pathway analysis and genetics of gene expression for
+  genome-wide association studies.
+\newblock {\em The American Journal of Human Genetics}, 86(4):581--591.
+
+\bibitem[Zhou et~al., 2010]{Zhou2010}
+Zhou, H., Sehl, M.~E., Sinsheimer, J.~S., and Lange, K. (2010).
+\newblock Association screening of common and rare genetic variants by
+  penalized regression.
+\newblock {\em Bioinformatics}, 26(19):2375.
+
+\bibitem[Zhu et~al., 2010]{Zhu2010}
+Zhu, X., Feng, T., Li, Y., Lu, Q., and Elston, R.~C. (2010).
+\newblock Detecting rare variants for complex traits using family and unrelated
+  data.
+\newblock {\em Genetic epidemiology}, 34(2):171--187.
+
+\end{thebibliography}

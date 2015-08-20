@@ -1,30 +1,27 @@
-\contentsline {section}{\numberline {1}Background}{10}{section.1}
-\contentsline {subsection}{\numberline {1.1}Gene-based association tests}{11}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Longitudinal study design in GWAS and the strategy}{15}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Gene-Set/Pathway based association test}{21}{subsection.1.3}
-\contentsline {section}{\numberline {2}Public Health Significance}{29}{section.2}
-\contentsline {section}{\numberline {3}Specific Aims and Hypotheses}{31}{section.3}
-\contentsline {subsection}{\numberline {3.1}Aim One: Data-adaptive association tests for longitudinal data analysis within GEE framework}{31}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}1(a): A data-adaptive association test for longitudinal data analysis within GEE framework}{32}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}1(b): Longitudinal aSPU family tests on Rare Variants}{33}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Aim Two: Pathway-based longitudinal aSPU family tests: Path-aSPU}{34}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Aim Three: Package/software development}{35}{subsection.3.3}
-\contentsline {section}{\numberline {4}Real Data Introduction}{36}{section.4}
-\contentsline {section}{\numberline {5}Methods}{38}{section.5}
-\contentsline {subsection}{\numberline {5.1}Aim One (1a): A data-adaptive association test for longitudinal data analysis within GEE framework}{38}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Statistical Modeling}{38}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Methods for Simulation Studies}{50}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Plans for Simulation Studies}{54}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Aim One (1b): Longitudinal aSPU family tests on Rare Variants}{58}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Statistical Modeling}{58}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Methods for Simulation Studies}{60}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Plans for Simulation Studies}{61}{subsubsection.5.2.3}
-\contentsline {subsection}{\numberline {5.3}Aim Two: Longitudinal aSPU family tests in a pathway-based manner: Path-aSPU}{63}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Statistical Modeling}{63}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Methods for Simulation Studies}{65}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Plan for Simulation Studies}{65}{subsubsection.5.3.3}
-\contentsline {subsection}{\numberline {5.4}Aim Three: Package/software development}{66}{subsection.5.4}
-\contentsline {section}{\numberline {6}Real Data Application of the methods}{66}{section.6}
-\contentsline {subsection}{\numberline {6.1}Data application for Aim One}{67}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Data application for Aim Two}{68}{subsection.6.2}
-\contentsline {section}{References}{69}{subsection.6.2}
+\select@language {english}
+\contentsline {section}{\numberline {1}Background}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}Gene-based association tests}{6}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Longitudinal study design and analysis strategy in GWAS}{11}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Gene-set/Pathway based association tests}{18}{subsection.1.3}
+\contentsline {section}{\numberline {2}Public Health Significance}{26}{section.2}
+\contentsline {section}{\numberline {3}Declaration on Human Subjects}{27}{section.3}
+\contentsline {section}{\numberline {4}Specific Aims}{27}{section.4}
+\contentsline {section}{\numberline {5}Methods}{29}{section.5}
+\contentsline {subsection}{\numberline {5.1}Overall Study Design}{29}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Simulation studies}{29}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Real data application}{29}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Methods for Aim 1(a): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for common variants}{32}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Statistical Modeling}{32}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Methods for Simulation Settings}{42}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Plan for Simulation Studies}{46}{subsubsection.5.2.3}
+\contentsline {subsection}{\numberline {5.3}Methods for Aim 1(b): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for rare variants}{50}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Statistical Modeling}{50}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Methods for Simulation Settings}{51}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Plan for Simulation Studies}{51}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}Methods for Aim 2: To develop the pathway-based data-adaptive association tests for longitudinal data analysis}{54}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Statistical Modeling}{55}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Methods for Simulation Settings}{56}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Plan for Simulation Studies}{57}{subsubsection.5.4.3}
+\contentsline {subsection}{\numberline {5.5}Methods for Aim 3: To develop the software package for method implementation}{57}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Methods for Real Data Application for Proposed Aims}{58}{subsection.5.6}
+\contentsline {section}{References}{61}{subsection.5.6}

@@ -1,0 +1,1518 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage {setspace} %% for line space
+\usepackage[hang,flushmargin]{footmisc} %control footnote indent
+\usepackage{url} % for website links
+\usepackage{amssymb,amsmath}%for matrix
+\usepackage{graphicx}%for figure
+\usepackage{appendix}%for appendix
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{morefloats}%in case there are too many float tables and figures
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\captionsetup[subtable]{font=normal}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{pdflscape}
+
+\setlength{\parindent}{0em}% paragraph indention
+\setlength{\parskip}{0.5em}
+
+\graphicspath{{figure/}}
+
+
+\begin{document}
+%\input{Proposal_draft-concordance}
+\begin{titlepage}
+\title{\normalsize DATA-ADAPTIVE SNP-SET-BASED ASSOCIATION TESTS OF LONGITUDINAL TRAITS}
+\date{}
+\maketitle
+
+{\normalsize
+\begin{center}
+by\\[5mm]
+YANG YANG, B.S, M.S\\[10mm]
+APPROVED:\\[10mm]
+\end{center}}
+
+\begin{table}[h]
+\begin{flushright}
+\begin{tabular}{ p{8cm}}
+
+\hline
+Dissertation Chair, PHD\ \\[0.8cm]
+\hline
+Minor Advisor, PHD\\[0.8cm]
+\hline
+Breadth Advisor, PHD\\[0.8cm]
+\hline
+External Advisor, PHD\\[0.8cm]
+
+
+\end{tabular}
+\end{flushright}
+\label{default}
+\end{table}
+
+\thispagestyle{empty}
+\pagestyle{empty}
+\end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+Coptyright\\
+by\\
+Yang Yang, M.S\\
+2015
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{center}
+DEDICATION\\
+Persistent support from my family members:\\
+Nainan Hei\\
+\&\\
+Tianpeng Yang and Qi Lu
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{center}
+{\normalsize DATA-ADAPTIVE SNP-SET-BASED ASSOCIATION TESTS OF LONGITUDINAL TRAITS }\\[3.2cm]
+
+by\\[0.5cm]
+
+YANG YANG\\
+M.S, Indiana University, 2010\\
+B.S, Nanjing Agricultural University, 2006\\[2cm]
+
+Presented to the Faculty of The University of Texas\\
+School of Public Health\\
+in Partial Fulfillment\\
+of the Requirements\\
+for the Degree of\\[1.5cm]
+DOCTOR OF PHILOSOPHY\\[1.5cm]
+\singlespacing
+THE UNIVERSITY OF TEXAS\\
+SCHOOL OF PUBLIC HEALTH\\
+Houston, Texas\\
+August, 2015
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{center}
+ACKNOWLEDGMENTS
+\end{center}
+Great gratitude to my dissertation adviser Dr. Peng Wei, as he mentored me ever from 2011, put countless efforts in training me to be a countable person, and then a qualified Ph.D. He taught me with his solid background in statistical theory, to make me an as well solid statistician to qualify for future career challenges; he corrected me many times to let me not bypass by instead overcome the difficulty in speak and write in a native English style; he also taught me the spirit of persistence, either in research or in life, which is indispensable to every kind of definition of success. I also want to appreciate the great helps from my dissertation committee members: Dr. Alanna C. Morrison, Dr. Yun-Xin Fu and Dr. Han Liang. They are talented experts in their fields and provided me with enormous valuable advice towards my research and writings. I also want to express my special gratitude to Dr. Han Liang. As I have been a Graduate Research Assistant in MD Anderson Cancer Center under his supervision and mentoring between 2012 and 2013, he inspired me to be a bioinformatics researcher rather than a proficient analyst, ignited me the passion in cancer genomics, influenced me to have innovative thinking and meticulous altitude in pursuing science. In the end, I want to express my gratitude to the NIH/NHLBI grant "Association analysis of rare variants with sequencing data" (R01 HL116720), which has supported my dissertation research.
+
+
+\newpage
+\thispagestyle{empty}
+\doublespacing
+\begin{titlepage}
+\begin{center}
+\title{\normalsize DATA-ADAPTIVE SNP-SET-BASED ASSOCIATION TESTS OF LONGITUDINAL TRAITS}
+\date{}
+\maketitle
+
+%{\normalsize  Data-adaptive SNP-set-based Association Tests of Longitudinal Traits}\
+\singlespacing
+Yang Yang, M.S, PhD\\
+The University of Texas\\
+School of Public Health, 2015\\
+[1em]
+Dissertation Chair, Peng Wei, PhD\\
+%Minor Advisor, Alanna C. Morrison, PhD\\ 
+%Breadth Advisor, Yun-Xin Fu, PhD \\
+%External Advisor, Han Liang, PhD\\
+[1em]
+
+\doublespacing
+< Write a short summary of the work done and the findings of greatest interest to a reader.  The abstract is generally kept to 350 words, no more than 2 pages.  Describe the question, the study group, and the methods employed to complete the activity (in past tense).  Include a summary of the results and your conclusions. >  
+
+
+\end{center}
+\end{titlepage}
+
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoftables
+
+\newpage
+\listoffigures
+ 
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background}\label{sec:background}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Literature Review}\label{Lit_Rev}
+\doublespacing
+% This is a template for UT SPH Phd proposal based on \LaTeX \cite{lamport1986document}.\\
+Genome-wide association studies (GWASs) have been popular since 2007. Hundreds of GWASs have been published already (A Catalog of Published Genome-Wide Association Studies: http://www.genome.gov/26525384). The most popular approach in GWAS is to test the association with complex traits on single nucleotide polymorphism (SNP), also known as single nucleotide variant (SNV), one by one, then select the the SNVs that meet a stringent significance level after multiple testing correction, such as the Bonferroni and false discovery rate (FDR) methods \cite{McCarthy2008,Hirschhorn2005}. However, this strategy will suffer from low power when the minor allele frequency (MAF) of the SNV is low (between $1\%$ and $5\%$), and as a result the signals contained within the low MAF SNVs are hard to detect \cite{Sham2014}. In addition, the usual regression coefficient estimate of SNV becomes unstable due to the small number of minor allele counts and the coefficient estimate's variance becomes very large \cite{Sham2014}. It will become an even more severe problem for rare variants (RVs) analysis. RVs are usually defined as SNVs with MAF below $1\%$ \cite{Bansal2010}. In spite of their extremely low MAF, RVs' important role in conferring disease risk cannot be underestimated. Due to the constraint of purifying selection, causal and functionally deleterious variants are often RVs. In turn, they typically have larger effect sizes than common variants \cite{Fu2013,Bansal2010,Sham2014,McCarthy2008}. Therefore, developing new association tests tailored to low MAF SNVs and RVs has been a very active research area in recent years. Due to the nature of low MAF, either increasing the total sample size or aggregating information across multiple variants in an analysis set (for example gene) is expected to achieve a practically acceptable power \cite{Capanu2011,Basu2011,Bansal2010,Sham2014}. As increasing the sample size is usually expensive and demanding, SNP-set or gene-set based association tests pooling together information have been the major research directions \cite{Ye2011,Pinto2010,Sham2014}. Sets of SNVs can be defined by gene boundaries (i.e., gene-based) or sliding windows; sets of genes can be defined by Gene Ontology terms, protein-protein interactions, canonical genetic signaling pathways or gene expression networks as examples. \cite{Sham2014,DelaCruz2010,Weng2011,Wang2010,Wei2012a}.
+
+\subsubsection{Gene-based association tests}\label{sec:bg:Gb test}
+A large number of gene-based association tests (mainly designed for RVs) have been proposed in recent years. The earliest methods include the cohort allelic sums test (CAST)\cite{Morgenthaler2007} and the combined multivariate and collapsing (CMC) method \cite{Li2008}. Afterward, more advanced tests were proposed. Those methods can be classified into major groups as follows.
+%%%%%%%%%%%
+%\begin{itemize}
+
+%\item 
+A very famous category of these methods is the so-called "burden test" or "sum test", such as a weighted sum statistic (WSS) \cite{Madsen2009}, which uses MAF based weighting scheme to combine the test statistics from multiple SNVs in a region, with the assumption that all the alleles to be deleterious. WSS is also known as Madsen and Browning test (MB test). Many other tests within the "burden test" category inherited and improved the WSS performance in some scenarios \cite{Hoffmann2010,Zhang2010,Ionita-Laza2011,Feng2011}. Such improved "burden tests" includes the sibpair and odds ratio weighted sum statistics (SPWSS, ORWSS) \cite{Zhu2010,Feng2011}; the replication-based test (RBT) \cite{Ionita-Laza2011} which is built on WSS with the aim to be less sensitive to the presence of both risk and protective effects in a genetic region of interest; the yet another weighted-sum test with a "step-up" approach to choose the "best" combination of rare variants into a single aggregated group \cite{Hoffmann2010}; the MB test with approximately optimal collapsing (AOC) method \cite{Zhang2010}; a data-driven P-value Weighted Sum Test (PWST) \cite{Zhang2011} which used both significance and direction of individual variant effect from single-variant analysis to calculate a single weighted sum score.
+%%%%% 
+%\item 
+
+Another major category of gene-based association tests is the so-called "variance-component test", which can be formulated as testing on a variance component in a random-effects (R-E) model. These tests include the Sum of Squared U-statistics test (SSU) \cite{Pan2009}, which is equivalent to a variance-component test; the C-alpha test \cite{Neale2011}, which handles RVs with mixed effect directions well but is not able to adjust for covariates (such as the principal components used to correct for population stratification confounders); the kernel machine regression (KMR) method \cite{Wu2010,Kwee2008}, which provides the flexibility of choosing different kernel functions $h(.)$ to measure the genomic similarity between the genotypes of subject $i$ and $j$. It then regresses response on the specified kernel functions (if linear kernel, it is equivalent to the SSU test \cite{Pan2009}); the widely used sequence kernel association test (SKAT)\cite{Wu2011}, which up-weights the SNVs with lower MAFs and assumes the effect of variants are independently and identically distributed with an arbitrary distribution of mean 0 and variance $\tau^2$; the SKAT-O \cite{Lee2012a,Lee2012}, which is a weighted linear combination of a burden test and the SKAT variance component test% of $\tau^2 = 0$
+; the adjusted-SKAT \cite{Oualkacha2013}, which allows the variant effects to have an equal correlation $\rho$ besides the usual assumption in SKAT; the GEE-based linear kernel machine SNP set association test \cite{Wang2013} which is very closed to the SSU test.
+%%%%% 
+
+%\item 
+The collapsing-based test inherited the idea from CMC/CAST method, and this type of tests is actually closely related to "sum test". Here are a few most representative methods: the RARECOVER algorithm \cite{Bhatia2010}, which is a model-free method, collapses only a subset of the variants in a region to achieve the strongest association with a phenotype; the kernel-based adaptive cluster (KBAC) method \cite{Liu2010}, comparing the difference of weighted multi-site genotype frequencies between cases and controls; the rare variant weighted aggregate statistic (RWAS) method \cite{Sul2011}, which groups rare variants and computes a weighted sum of differences between case and control mutation counts.  
+%%%%% 
+%\item "Sums difference based test" inherited the idea from CAST method. The kernel-based adaptive cluster (KBAC) \cite{Liu2010}, compares the difference of weighted multi-site genotype frequencies between cases and controls. The rare variant weighted aggregate statistic (RWAS)\cite{Sul2011}, groups rare variants and computes a weighted sum of differences between case and control mutation counts. 
+
+%\item 
+Lasso and group-penalized regression based methods incorporated a mixture of group Euclidean penalties and single-predictor penalties (lasso) into linear or logistic regression \cite{Zhou2010,Kim2014}. Group penalties are applied to SNVs within a single gene or within several genes in a pathway, while single-predictor penalties are applied at the single SNV level. The authors developed the coordinate descent algorithms that allow exceptionally fast computation and
+permit the optimal tuning of the penalty constant by cross-validation method.
+%%%%% 
+
+%\item 
+Functional linear models (FLM) and (smoothed) functional principal component analysis (FPCA) based association tests \cite{Luo2011,Luo2012, Luo2012a,Fan2013} treated a chromosome as a continuum, on which variants identified from next-generation sequencing platform approximately evenly distributed. For FLM methods, the authors incorporated the genomic position $t$ into the penalized regression equation for both genotype function and coefficient function, and then used basis function expansion method to solve the FLM. For FPCA methods, the authors incorporated the genomic position $t$ into the eigenfunction for both genotype function and weight function, and then used either discretization method or basis function expansion method to solve the eigenfunction. If smoothing was used, the smoothing parameter $\lambda$ was chosen by cross validation. The statistics from both FLM and FPCA follow the central $\chi^2$ distribution.
+%%%%%
+%\item 
+
+Adaptive or hybrid tests combined the advantages from at least two major categories above to make the new test more data adaptive and more powerful. A few most representative methods are as follows: The EREC method \cite{Lin2011} builds a general framework for association testing, which combines strength from MB test and variable-threshold (VT) test \cite{Price2010} to form the most powerful test by setting the weight function $\epsilon$ proportional to the set of estimated regression coefficients $\hat{beta}$ in the test statistic. A data adaptive test combines the score test, SSU test and Sum test's advantages \cite{Pan2011}. An exponential combination (EC) framework for set-based association tests \cite{Chen2012} features with the sum of exponential statistics (statistics should follow either independent normal or independent chi-square distribution). The sum of exponential statistics are parametric and standardized from previous MB test and C-alpha test. A robust and powerful test uses Fisher's method to combine linear and quadratic statistics \cite{Derkach2013}. A unified mixed-effect model \cite{Sun2013} tests both group effect equal to 0 and variance component equal to 0. It includes both burden and SKAT tests as special cases by embedding the variant functional information and allowing a variant specific random effect in the model.
+%%%%
+
+%\item 
+There are other miscellaneous tests. Some of them can be classified into more than one category mentioned above, thus I include them here as well as other miscellaneous tests. A variable-threshold (VT test) approach \cite{Price2010} computes z-score $z(T)$ for each different MAF threshold $T$, defines $z_{max}$ as the maximum z-score across values of $z(T)$, and finally assesses the statistical significance of $z_{max}$ by permutations on phenotypes. A data-adaptive sum test (aSum) is capable of handling both deleterious and protective effects and allowing collapsing common variants (CV) into the test \cite{Han2010}. A probabilistic disease-gene finder employs an aggregative variant association test that combines both amino acid substitution and allele frequencies as implemented in VAAST \cite{Yandell2011} and the later improved version VAAST 2 \cite{Hu2013}. The weighted score test \cite{Cai2012} up- or down-weights the contribution from each member of the marker-set based on the Z-scores of their effects.
+%\end{itemize}
+
+For a detailed comparison among and discussion of some of these tests, Basu and Pan have done a very comprehensive review and simulation-based benchmark \cite{Basu2011}. Another comprehensive review can be found in \cite{Bansal2010}. Recently Pan et al. also did a comparison of several latest methods including the PWST, EREC, aSSU, SKAT-O and their newly proposed aSPU method \cite{pan2014powerful}.
+
+Due to the complexity of genetics association with a phenotype, for example, specific association effect direction and size, a given test favoring one scenario may or may not perform well in other scenarios \cite{Pan2009,Derkach2013,pan2014powerful,Sun2013}. In other words, there is no single test that is the most powerful in all testing scenarios. Therefore, there have been a lot of efforts  in developing adaptive/hybrid tests for RVs (for example, \cite{Derkach2013,Chen2012,Han2010,Lee2012,Lin2011,Pan2011,Sun2013,Zhang2011}). However, due to limited adaptability, for example, with a fixed set or pre-determined weights on individual RVs, these tests that combined some earlier tests' advantages (for example, the MB test, burden test and SKAT) are still not flexible enough to avoid power loss under some situations. Recently, a very prominent novel data adaptive test named aSPU has been proposed by \cite{pan2014powerful}. It features the ability to achieve quasi-optimal power in all scenarios, such as varying number of SNVs within the genetic region of interest, varying ratio of signal SNVs to noise ones, same directional effect alleles or a mixed directional effect of both protective and deleterious alleles, varying allele frequencies and varying effect sizes. It maintains the most power as compared to other state-of-the-art tests in the presence of a large number of RVs within a genetic region that only contains a small portion of signals. This is usually the case in association studies based on whole-exome or whole-genome sequencing data \cite{pan2014powerful}. In summary, the data-adaptive test is in general more powerful and robust than non-adaptive tests, and thus preferred in the future development of novel association tests. Among current data-adaptive association tests, the aSPU method is more adaptive than its predecessors. Hereby, I propose to extend the aSPU framework from the cross-sectional data scenario to the longitudinal data scenario. I also propose a few aSPU "variant" tests within the aSPU tests family. These aSPU 'variant' tests combine strength from the Score test and hence they are more robust in maintaining a higher power in almost all scenarios.
+
+\subsubsection{Longitudinal study design and analysis strategy in GWAS}\label{sec:bg:longi}
+\textbf{Comparison between longitudinal studies and cross-sectional studies}\\
+I first introduce two linear models for cross-sectional studies and longitudinal studies respectively. In a cross-sectional study ($n_i = 1$) we are restricted to the model
+%%%%%%%%%%%%%%%%%
+\begin{equation}
+Y_{i1} = \beta_C x_{i1} + \epsilon_{i1}, \quad i = 1,\ldots,m,
+\label{eq:crosssec}
+\end{equation}
+where $Y$ represents the quantitative trait, $x$ represents the covariate, $i$ represents the $i$th subject, $j$ represents the $j$th measurement, $n_i$ represents total measurement number for $i$th subject. Therefore, $Y_{i1}$ represents the $i$th subject's trait measured at baseline while $x_{i1}$ represents the $i$th subject's covariate measured at baseline. Furthermore, $\beta_C$ represents the difference in average $Y$ across two sub-populations (samples) which differ by one unit in $x$. With repeated measurements, the above linear model can be extended to
+%%%%%%%%%%%%%%%%
+\begin{equation}
+Y_{ij} = \beta_C x_{i1} + \beta_L ( x_{ij} - x_{i1} ) + \epsilon_{ij}, \quad i = 1, \ldots, m; \ j = 1, \ldots, n_i 
+\label{eq:longitudinal}
+\end{equation}
+\cite{WARE1990}. Now $\beta_C$ still represents the time-averaged cross-sectional difference while $\beta_L$ is interpreted as the expected change in $Y$ over time per unit change in $x$ for a given subject. The inference about $\beta_C$ is a comparison of individuals with a particular value of $x$ to other individuals with a different value of $x$ at baseline. In contrast, the parameter estimation of $\beta_L$ is by comparing a person's responses at two times, assuming that a person's $x$ changes with time.
+
+Based on above formula, we can better explain the merits of longitudinal studies over cross-sectional studies. 
+%\begin{enumerate}
+Longitudinal studies allow us to estimate both the cross-sectional difference ($\beta_C$) and the rate change over time ($\beta_L$), the latter of which cross-sectional studies cannot estimate.
+Even when $\beta_C = \beta_L$, that is only time-averaged cross-sectional difference exists, longitudinal studies tend to be more powerful than cross-sectional studies. This is due to the fact that in longitudinal studies, each person can be thought of serving as his/her own control. For most outcomes $Y$, there is considerable variability across individuals due to the influence of unmeasured characteristics such as genetic make-up, environmental exposures, personal behaviors/habits, and so forth. While these factors tend to persist over time for the same individual, their influences are canceled in the estimation of the $\beta_L$ or equivalently here the $\beta_C$, and thus lead to more accurate estimate (with smaller variance).
+%%%%%%%
+Another merit of the longitudinal study is its ability to distinguish the degree of variation in $Y$ across time for one subject from the variation in $Y$ across subjects. With repeated measurements, we can borrow strength across time for the same person of interest as well as across individuals. If there is little variation across subjects, one subject's estimate can rely on data from others as in the cross-sectional case. However, if the variation across individuals is large, we might prefer to use more data for the same individual across time.
+%%%%%%
+Last but not least, with longitudinal studies, we can estimate a person's current and future outcomes.
+%\end{enumerate}
+
+In my dissertation, I will mainly study the scenario under $\beta_C = \beta_L$ for longitudinal association test. I assume the SNPs in a region contribute to the outcome $Y$ as the main effect only and the fixed effect remains the same across time ($\beta_C = \beta_L$). There is more to explain here about the efficiency of the longitudinal study. Let $e = Var(\hat{\beta}_L) / Var(\hat{\beta}_C)$ be the specific measure of efficiency. Apparently, the smaller the value of $e$, the greater is the information gained by taking additional measurements across time on each person. The value of $e$ depends on a number of factors, including correlation structure $R$ (for example, compound symmetry or auto-regression), number of measurements ($n_i$), magnitude of within-subject correlation ($\rho$) and the ratio $\delta$ of within-subject variation in $x$ to between-subjects variation in $x$ at baseline. In general, increasing $n_i$ (for example, more measurements) and increasing $\delta$ (for example, uneven measurement intervals) will lead to a smaller $e$ under the scenario $\beta_C = \beta_L$. Besides, except when $\delta$ is small and $\rho$ is high at the same time, there is much to be gained by conducting longitudinal studies even when the number of repeated observations $n_i$ is as small as two according to \cite{Diggle2002}. 
+
+Under different hypothesis testing scenarios, the identified significant signal loci from a longitudinal study may be the \textbf{same} or \textbf{different} from a comparable cross-sectional study. In the GWAS settings, the cross-sectional study always tests the SNP main effect ($\beta_{main}$), and this will equate the longitudinal study with \textbf{only time-averaged SNP main effect} (i.e., $\beta_C = \beta_L$ in Equation \ref{eq:longitudinal}). However, when the longitudinal study includes \textbf{the additional SNP $\times$ time interaction term}, either joint testing both of the main effect and interaction effect equal to 0 or individual testing either effect equal to 0 will possibly lead to different significant loci from the corresponding cross-sectional study.
+
+%This is equivalent to requiring a smaller sample size $m$ to achieve the pre-determined power or a larger power given fixed $m$ when testing the $\beta_L = 0$.
+\textbf{Factors that influence the statistical power in longitudinal studies}\\
+In any study, investigators must provide the following quantities to determine the power $P$, including the Type I error rate ($\alpha$), smallest meaningful difference ($d$) to be detected, sample size ($n$), variance ($\sigma^2$) in response variable. In longitudinal studies, there are several additional factors to consider, including the number of repeated observations per person ($n_i$) and the correlation among the repeated observations within the same person ($\rho$). Let us briefly describe the relationship between these quantities and the power $P$: increasing $\alpha$ will increase $P$; increasing $d$ will increase $P$; increasing $n$ will increase $P$; reducing $\sigma^2$ will increase $P$; increasing $n_i$ will increase $P$. For $\rho$, the relationship with $P$ is not fixed but depends on which hypothesis is tested. In the $\beta_C = \beta_L$ scenario, we are testing the time-averaged (group) main effect. An \textbf{decreasing} $\rho$ will lead to a larger power. In contrast, in the $\beta_C \neq \beta_L$ scenario when we are testing the slope effect $\beta_L$, an \textbf{increasing} $\rho$ will lead to a larger power in testing the $\beta_L = 0$, that is the rate change over time equal to 0. This, at the first glance, seems counter-intuitive but is indeed reasonable. In the $\beta_C = \beta_L$ scenario, the parameter of interest is the expected average of the $Y$'s for individuals in a group (i.e., the $\beta_C$). A decreased $\rho$ leads to an effectively larger sample size (within-subject measurements are more distinct), which in turn results in a smaller variance of $\beta_C$ estimate. On the contrary, in the $\beta_C \neq \beta_L$ scenario when we are testing $\beta_L = 0$, the rate of the change in $Y$, the contribution from each subject to the estimation of $\beta_L$ is a linear contrast of the $Y_{ij}$. The $Y_{ij}$'s variance is decreasing as $\rho$ increases, i.e., within-subject measurements are more alike. Thus, an increasing $\rho$ will lead to a larger power of testing the significant deviation from $\beta_L = 0$.
+
+%%%%%%%%%
+%\textbf{Longitudinal studies and cross-sectional studies in GWAS}\\
+%For cross-sectional analysis of the baseline data in GWAS, we use a (standard) linear regression model:
+%\begin{equation}
+%Y_i = \beta_0 + \sum_{j=1}^5 X_{ij} \beta_j + SNP_i \beta_6 + \epsilon_i,
+%\end{equation}
+%for subject $i$, $i = 1, 2, 3, \ldots, n$.  $X_{ij}$ represents one of the five covariates; $SNP_i = 0, 1 or 2$ is the count of the minor alleles for the $SNP_i$ of interest.
+%
+%For longitudinal analysis, we use a linear mixed-effect model with a random intercept and a random slope:
+%\begin{equation}
+%Y_{ik} = (\gamma_{00} + U_{})
+%\end{equation}
+
+
+%%%%%%%%%%%%%%%%
+\textbf{Longitudinal studies in GWAS}\\
+Many GWASs have been performed in cohort studies, where phenotypes have been collected across multiple time points for each individual \cite{Aulchenko2009,Ionita-Laza2007,Kamatani2010,Kathiresan2007,Sabatti2008}. However, the longitudinal information has not been fully utilized as the majority of the current association tests only considered either the baseline measurement or average measurement for each individual \cite{Sabatti2008,Ionita-Laza2007,Kamatani2010,Kathiresan2007}. Compared with large number of GWASs, only very few studies involved longitudinal data analysis. One such study on smoking and nicotine dependence by \cite{Belsky2013} has data from a four-decade longitudinal study. They used generalized estimating equation model to analyze the longitudinal data while accounting for correlation within subject. There are also several GWASs on Alzheimer's Disease involving the analyses of longitudinal phenotypic information collected at multiple time points \cite{Wang2012,Melville2012,Silver2012}. Increased power from longitudinal study has been elucidated herein before, and recently this fact has been studied in depth by either simulation study and/or real data analysis in the GWAS settings \cite{Xu2014,Furlotte2012}. Depending on the specific parameters settings in simulation studies (for example, correlation among repeated measurements, genetic variance, and environmental variance) and case by case for real data analysis (for example, the sample size and the SNV effect size), the power gain from longitudinal data analysis as compared to baseline data analysis can range from a moderate to a significant amount \cite{Xu2014,Furlotte2012}. For example, the increased power was demonstrated from 0 to 0.4 with the maximal possible power value being 1 ideally, or the longitudinal analysis has as much as an eightfold gain in power over the baseline analysis. Therefore, a longitudinal study design and performing the longitudinal data analysis when data are available are appealing in the GWAS settings.
+
+\textbf{Classical longitudinal data analysis methods}\\
+Existing methods in longitudinal data analysis can be categorized into three main categories: 1, mixed-effect models; 2, marginal models with regression coefficients estimated by generalized estimating equations (GEE); 3, transition (Markov) models. 
+
+The mixed-effect model was first proposed in 1982 \cite{laird1982random}. Mixed-effect model is an extension of a regression model to model longitudinal (correlated) data. It contains fixed effects and random effects, where random effects are subject-specific and are used to model between-subject variation and the correlation induced by this variation. Mixed-effect model is a two-stage method, which treats probability distributions for the response vectors of different individuals as a single family and the random-effects parameters which hold the same for the same individual as another distribution. Parameter estimation is usually done by restricted maximum likelihood (REML) and expectation-maximization (EM) algorithm \cite{laird1982random}. 
+
+Another major method, the marginal model with GEE was first proposed in 1986 \cite{zeger1986longitudinal,liang1986longitudinal}. It is an extension of the quasi-likelihood methods by Wedderburn \cite{wedderburn1974quasi}. Rather than giving subject-specific (SS) estimates as in mixed-effect models, GEE gives population-averaged (PA) estimates by only describing the marginal expectation of the outcome variable as a function of the covariates and the variance of the outcome variable as a known function of the marginal expectation. By specifying a "working" correlation matrix, GEE method accounts for the correlation among the repeated observations for a given subject. Another appealing property of GEE is, by using the so-called sandwich variance estimator, the "working" correlation matrix does not need to be correctly specified in order to achieve consistent estimates. The generalized estimating equations are thus derived without specifying the joint likelihood function of a subject's observations as needed in the SS model. The covariance structure across time is treated as a nuisance parameter. GEE can finally give consistent estimators of the regression coefficients by simply solving the score equations and doing iteratively reweighted linear regression. 
+
+The last major method, the transitional (Markov) model, describes the conditional distribution of each response $y_{ij}$ as an explicit function of first $q$ prior observations $y_{ij-1},\dots,y_{ij-q}$ from history response vector: $H_{ij} = \{ y_{ik}, k = 1,\dots,j - 1\}$ and covariates $x_{ij}$. The integer $q$ is referred as the order of the Markov models. With different link functions, Markov models can be applied to a range of GLMs as dealt in mixed models and marginal models. A few examples are linear link \cite{tsay1984regression}, logit link \cite{cox1989analysis,zeger1985analysis,korn1979methods} and log link \cite{zeger1988markov}. Model fitting is straightforward for linear link, as in Gaussian autoregressive models, the full maximum likelihood estimation is available \cite{tsay1984regression}. For logistic and log-linear cases, the full likelihood is unavailable and the alternative is to maximize the conditional likelihood with GEE-like iterative weighted least square algorithm to solve the conditional score function and obtain consistent estimates \cite{cox1989analysis,zeger1985analysis,korn1979methods,zeger1988markov}.
+
+%There is a need to discuss more on the first two major methods, mixed models and marginal models. 
+Since transitional models are not widely used in the genetics association studies, we will omit its further discussion. Here we focus on the comparison between the mixed-effect and marginal-effect models. The application of GEE may be less appropriate when the time course of the response variable for each individual (subject-specific slope), for example, body mass index (BMI) measurements across several time points, is of primary interest, so as to the correlation parameters within the same subject \cite{zeger1988models,liang1986longitudinal}. The mixed-effect model could handle such inference of interests \cite{laird1982random}. However, in the genetic association studies, subject-specific time course effect and/or within-subject correlation parameters are usually not of major interests. In other words, they are often treated as nuisance parameters. On the other hand, for association tests of a set of SNPs, the increased number of explanatory variables, for example, the SNVs on the right hand side (RHS) of the regression-like equation tend to consume a lot of degrees of freedoms (dfs) and increase the difficulty of the optimization algorithm convergence. Large consumption of the dfs also leads to power loss and Type I error inflation, for example, excessive inflation in the Wald test \cite{guo2005small,pan2001robust,shete2004effect}. Algorithm convergence difficulty is very often encountered in mixed model when it has a lot of covariates. For some extreme scenarios, for example, with a binary trait, the maximum likelihood estimator (MLE) of a regression coefficient of a RV does not exist if the minor alleles of this RV only appear in case or control, resulting in the convergence failure with an iterative algorithm to obtain the MLE \cite{zhang2014testing,pan2014powerful}. Another caveat of the mixed model is that mis-specification of the random-effects distribution and/or omitting part of the random-effects (for example, keeping only the random intercept in the mixed model when the random slope is also needed) will lead to excessive Type I error inflation \cite{litiere2007type,Xu2014}. Compared with the mixed-effect models, GEE models suffer much less from these problems. In particular, the GEE Score test is proved to be robust to Type I error inflation in the presence of a large number of covariates; upon usage of the so-called sandwich or robust covariance matrix, GEE will give consistent estimates even when the working correlation is misspecified, in contrast to the misspecified random effect in the mixed-effect models. In addition, GEE model fitting requires only evaluation under the null hypothesis, which greatly accelerates the computation. With regard to the power loss in the presence of an increased number of covariates (SNVs), a recently proposed data-adaptive association test within the GEE framework demonstrated convincing capability in maintaining a high power \cite{zhang2014testing,pan2014powerful}. Although this work is designed for a single cross-sectional trait or multiple cross-sectional traits, it can be extended to the longitudinal design scenario as detailed in Aim One below. 
+Extending the gene-based association test to sets of multiple related genes could return more biological meaningful inference.
+\subsubsection{Gene-set/Pathway based association tests}\label{sec:bg:Pathway test}
+In general, a gene set is a set of genes. A genetic pathway is a special gene set, which includes multiple genes interacting to form an aggregate biological function. Extending the gene-based association tests to sets of related genes could lead to more biological meaningful inference.
+%In vivo, there are usually multiple genes working together to fulfill a biological function. 
+By analyzing functional related genes together with the phenotype of interest, we are more likely to identify those signals hidden from or attenuated in single-gene based tests \cite{BloodPressureGenome-WideAssociationStudies2011,Hirschhorn2009,Zhong2010,Wang2010}. Complex diseases are known to be influenced by a combination of genetic factors in addition to environmental factors, lifestyle factors, and their interactions \cite{Hirschhorn2005,McCarthy2008}. Thus, by investigating the gene sets, more evidence contributing to a specific disease could be found. Another advantage of pathway-based association tests is similar to that of gene-based association tests: aggregating multiple genes/RVs, in contrast to testing each gene/RV separately, may boost the statistical power by combining moderate/weak signals. One convincing evidence is from the Cancer Genome Atlas project (TCGA: http://cancergenome.nih.gov/) in tumor sequencing studies. While only few oncogenes (for example, TP53 and EGFR) harbor many mutations, most others harbor few mutations in a tumor-dependent manner. Single gene-based association tests still suffer from low aggregated mutation frequency, whereas collectively, they have a much higher aggregated mutation frequency in a gene-set/pathway. Therefore, for some diseases such as cancer, a gene-set/pathway analysis by aggregating the somatic mutation information across genes will boost the statistical power, and is thus preferred.
+
+Among association tests for sets of functional related genes, pathway-based association test is probably the most popular one \cite{DelaCruz2010,Wang2010}. Other types include Gene Ontology terms, protein-protein interaction, canonical genetic signaling pathways, gene expression networks as examples \cite{Sham2014,DelaCruz2010,Weng2011,Wang2010}. A "pathway" in the GWAS setting usually means a set of genes involved in the same biological function or process, for example, apoptosis. Some commonly used public pathway and gene-set databases/repositories include Kyoto Encyclopedia of Genes and Genomes (KEGG) \cite{Ogata1999}, BioCarta \cite{Nishimura2001} and Gene Ontology \cite{Ashburner2000}. KEGG and BioCarta provide manually curated pathways in different biological processes, whereas Gene Ontology mainly contains computational annotations for human genes. Several commercialized databases are also available including Ingenuity Pathway Analysis (IPA) and MetaCore from GeneGo. They combine the manually curated evidence, literature review and algorithm predicted results. There are also other specialized pathway databases,
+% which curate specific types of pathways, 
+such as Science Signal Transduction Knowledge Environment \cite{Gough2002} and Nature Pathway Interaction Database \cite{Schaefer2009}, both of which manually curated the cell signaling pathways; the MetaCyc database \cite{Karp2002} and BioCyc database \cite{Caspi2008}, both of which contain metabolic pathways. In summary, there are abundant existing biological pathway databases, which will facilitate the pathway-based association study analysis.
+
+\textbf{Major classes of pathway-based association tests}\\
+Depending on the null hypothesis to be tested, pathway-based association tests can be categorized into two major classes: self-contained approach and competitive approach \cite{Goeman2007,Liu2007,Nam2008,Wang2010,Fridley2010,Fridley2011}. Self-contained (a.k.a. Constrained) approach hypothesizes there is no gene in the gene set associated with the phenotype, while competitive approach hypothesizes the same level of association of a gene set with the given phenotype as the complement of the gene set.  Figure \ref{fig: CompetitiveVsConstrained} illustrates the hypothesis testing difference between the two classes of approaches.  
+
+Competitive methods usually start with identifying SNPs/genes that are significantly associated with a phenotype, and then evaluate whether the significantly associated SNPs tend to be enriched in a predefined gene-set/pathway. These methods are called 'competitive' because they compare the frequency of significantly associated SNPs in a particular set of genes/pathway with the frequency of significant associations among all genes not in the set \cite{Fridley2011}. Representatives of competitive approach are gene set enrichment analysis (GSEA) \cite{Subramanian2005}, which is based on the Kolmogorov-Smirnov test and DAVID \cite{DennisJr2003}, which uses a modified Fisher's exact test.
+
+In contrast, self-contained approach considers the null hypothesis that no SNPs/genes in the gene-set of interest are associated with the trait versus the alternative hypothesis that some SNPs/genes in the gene-set are associated with the trait. Methods in the self-contained class are more flexible. Their statistical significance can be assessed (1) by the deviation from the expected number of significant SNPs under the null hypothesis of no association between the phenotype and the gene-set/pathway, (2) by computing the association p-values for each SNP in a gene-set/pathway, followed by testing whether the difference between the observed distribution of the SNP-level p-values and the expected distribution under the null hypothesis is significant, (3) by modeling the effect of gene via aggregating multiple SNPs, followed by modeling the effect of gene-set via aggregating multiple relevant genes, or (4) by directly modeling the effect of gene-set by aggregating the SNPs within the gene-set, skipping the gene-level statistics.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{CompetitiveVsConstrained_illustration_example}
+
+\caption{ \textbf{Examples of competitive approach and self-contained approach based testings using Fisher's exact test as a demonstration} (A). Example of competitive approach; (B). Example of self-contained approach. This figure is adopted from \cite{Fridley2011}. \label{fig: CompetitiveVsConstrained}}
+\end{figure}
+
+The self-contained approaches have a few edges over the competitive approach. A limitation of the competitive approaches is that they cannot be applied to studies of candidate gene-sets for
+which only SNPs in the candidate gene-sets have been genotyped but not in the complemented ones. The reason is straightforward: competitive approaches require a comparison between many different pathways. On the other hand, self-contained approaches require only genotypes from a collection of candidate genes, which in turn enable the genome-wide studies, candidate gene studies, pathway studies or specific disease gene group studies. Specific disease gene group studies are very popular, for example, the cardiovascular diseases, the metabolic traits and the autoimmune diseases. These studies usually come with the disease-specific genotyping platforms, for example, the ImmunoChip \cite{Cortes2011}, the metabochip \cite{Voight2012} and the CVD35/cardiovascular-IBC-array \cite{Cheng1999,Keating2008}. The self-contained approaches have also been reported to be more powerful than the competitive approaches \cite{Goeman2007}. This follows immediately from the fact that the self-contained null hypothesis is more restrictive than the competitive null hypothesis, as noted before. As a result, a self-contained test will almost always reject the null hypothesis for more gene-sets than a competitive null. Nevertheless, some drawbacks of the self-contained approach have been reported, for example, the global inflation of test statistics is often observed or not adequately adjusted, finally leading to an inflated Type I error \cite{wang2007pathway,Goeman2007,Fridley2010}. 
+%the "single-gene-pitfall", which means when a gene-set/pathway contains only one single gene (rarely happen), the self-contained test will generalize the single gene testing to be equivalent to the gene set testing, in the sense that the two procedures are completely equivalent for singleton gene sets. On the contrary, competitive approach treats the two procedures quite differently \cite{Goeman2007}. 
+
+Additionally, based on the input data type, the pathway-based tests can be broadly classified into two categories: those that require raw genotypes and those that require a list of SNP p-values. The first approach, 'raw genotype approach', requires raw SNP genotypes as input to derive gene-level and pathway-level test statistics, whereas the second approach, 'p-value enrichment approach', requires a list of pre-calculated SNP p-values to determine whether a specific group of p-values for SNPs (or genes) is enriched with association signals. The 'p-value enrichment approach' only requires pre-computed SNP pvalues and it greatly saves the labor in coordinating data analysis and data sharing, however, the 'raw genotype approach' provides more flexible solutions such as multi-SNP tests which requires individual genotype data to derive gene-level test statistics (some of these methods pool all the SNPs in a pathway together without calculating test statistics for pathway gene members). Another example is those methods based on single-SNP p-values but require raw genotype data to execute phenotype permutation-based test. In this way, those methods can come up with a more unbiased pathway enrichment score. The 'raw genotype approach' is also less biased, such as it can adjust for gene length, the distance threshold to assign SNPs to nearby genes and the way to summarize gene-level test statistics. The graphic demonstration of the method categorization is shown in Figure \ref{fig: pathwayTests}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{pathwayTests_definition}
+
+\caption{ \textbf{Types of pathway association tests in GWAS.} (a). Categorization based on data input type; (b). Categorization based on hypothesis testing. This figure is adopted from Wang et al (2010) \cite{Wang2010}. \label{fig: pathwayTests}}
+\end{figure}
+
+\textbf{Existing pathway-based association tests}\\
+There are several popular existing methods for pathway-based association tests.  The earliest method is the gene-set enrichment analysis (GSEA) algorithm, a method adapted for pathway-based analysis of GWAS data. It calculates a weighted Kolmogorov-Smirnov-like running-sum statistics and uses a permutation-based procedure to evaluate the statistical significance \cite{wang2007pathway}. The GSEA-SNP, a modification of Wang et al's GSEA \cite{wang2007pathway}, uses the max-test and all SNPs in a gene \cite{Holden2008}. The i-GSEA4GWAS, first permutes the SNP labels (for example, the SNP rs id), then assigns SNPs to genes, and finally calculates the modified GSEA enrichment score\cite{Zhang2010a}. The Gene Set Analysis (GSA-SNP), computes the gene-level test statistic based on the SNP with the minimum P-value (or the second minimal), followed by gene-set-level test using either a Z-test, maxmean test, or GSEA \cite{Nam2010}. The Gene Set-based Analysis of Polymorphisms (GeSBAP), first calculates enrichment score using ranked gene list, then assigns the best SNP p-value to a gene, and finally uses Fisher's exact test for the gene-set association \cite{Medina2009}. De la Cruz et al (2010) proposed A modification of Fisher’s method for combing SNP P-values for gene-level or gene-set-level association \cite{DelaCruz2010}. The gene set ridge regression in association studies (GRASS), executes lasso regression (L1-norm) of eigenSNPs within each gene to achieve variable selection, while performing ridge regression (L2-norm) of eigenSNPs at the gene-set-level to achieve the shrinkage of gene effect (for example, disease odds ratio) estimates simultaneously \cite{Chen2010}. PLINK, a widely used software package in GWAS data analysis, provides an option to execute gene-set-level association analysis \cite{Purcell2007}. The association list go annotator (ALIGATOR) method, a 'p-value enrichment approach' requiring only pre-computed SNP p-values, uses Fisher's exact test on SNP with the minimum p-value for the gene-level association. It can correct for linkage disequilibrium (LD) between SNPs, various gene size, and multiple testing of nonindependent pathways \cite{Holmans2009}. The SNP ratio test (SRT) method, tests the ratio of significant SNPs in a pathway and computes the empirical p-value based on permutation \cite{ODushlaine2009}. The supervised principal component analysis, uses the Gumbel extreme value mixture distribution as test statistic's null distribution. The test statistic is standardized for pathway size using a simulation procedure \cite{Chen2010a}. The Prioritizing Risk Pathways fusing SNPs and pathways (PRP) method, executes the gene-level association test based on maximum risk statistic, followed by mean risk approach to obtain gene-set-level risk statistic, then weights this statistic by specific pathway degree (that is, total edges in a pathway) and standardizes it to a zero dimension (that is, the minimal value is 0) \cite{Chen2009}. Luo et al (2010) proposed three statistics  to combine a set of dependent p-values of SNPs into an overall significance level for a gene, and then combined a set of dependent p-values of genes into an overall significance level for a pathway. The three statistics, which take into account the LD among SNPs or correlation among genes in the specific pathway, are linear combination test (LCT) asymptotically following normal distribution under null hypothesis, Quadratic test (QT) asymptotically following central Chi-square distribution under null hypothesis, and decorrelateion test (DT) combineing decorrelated individual statistics by Fisher's combination test and asymptotically following a central Chi-square distribution under null hypothesis \cite{Luo2010}. In addition, Peng et al (2009) developed four methods to combine a list of SNP p-values or gene-level p-values with the assumption that individual SNPs/genes are independent. These four methods are Fisher's, Sidak's, Simes' and the FDR method \cite{peng2009gene}. The Gene-loci Set Analysis (GLOSSI) method, first uses the Cochran-Armitage trend test at single-SNP level assuming an additive SNP effect, then uses Fisher's combination test to combine individual p-values of SNPs, and finally corrects the test statistics by Brown's approximation to better control the Type I error \cite{Chai2009}. An adaptive rank truncated product (ARTP) statistic, combines permutation-based SNP-level p-value to derive gene-level significance level and/or combines gene-level p-values to derive pathway-level significance level \cite{Yu2009}. Detailed reviews about these and other pathway-based association tests can be found in \cite{tintle2011inflated,Wang2010,Fridley2011}. 
+
+\subsection{Public Health Significance}\label{sec:PHsig}
+The majority of human diseases are complex diseases, for example, cardiovascular disease, type 2 diabetes, Alzheimer's disease and autoimmune disease. These diseases have high incidence rate in the US and worldwide 
+%\cite{Craig2008,Cardon2001,Hirschhorn2005}. 
+\cite{Craig2008,Inzucchi2012,Go2013,Association2014,Benros2014}. The development of complex diseases involves genetic factors, environmental factors, behavior factors, and the interactions among them. In public health research, identification of the casual factors and the heritability of complex disease has always been a frontier topic. Researchers often first look for the genetic factors, followed by gene-gene and gene-environment interaction analyses.  The GWASs have already identified more than 1000 genetic loci associated with many human diseases and traits \cite{Hindorff2009}. These genetic loci have been validated by some validation procedures, such as replicate studies, meta analysis and wet lab experiments \cite{Wang2005,Hirschhorn2005,McCarthy2008,Hindorff2009,Cantor2010}. 
+
+The advent of the Next-Generation Sequencing (NGS) technique has brought human genetics to a new era \cite{Ansorge2009,Metzker2009,Mardis2008,Shendure2008}, and has the potential to explain some of the missing heritability via disease/trait-associated rare variants \cite{Eichler2010}. Researchers have delivered tremendous efforts in developing powerful association tests either for common variants or rare variants, in gene-based and/or pathway-based manner as aforementioned. These tests are mainly designed for cross-sectional data analysis, which utilizes less information and is thus less powerful than longitudinal data analysis. Although some of the existing methods have the potential to be extended for longitudinal data scenario, the work has not been done yet.
+%Although some of these tests have the flexible framework underpinned to enable extending themselves to accommodate the longitudinal data scenario, the development is not yet done or still undergoing (unpublished). 
+As the association pattern between variants and disease/trait is subtle and largely unpredictable, more and more novel "data-adaptive" association tests have been developed. The so-called "data-adaptive" test can maintain a high power for various real world data sets. In my dissertation, I will develop statistical methods that will provide researchers with more powerful and robust data-adaptive association tests for either common variants (CVs) or rare variants (RVs) in the longitudinal data settings. Both gene-based and pathway-based test strategies will be implemented. Furthermore, an R package or independent Linux command-line based software implementing the methods will be released as part of the methodology development, which will greatly facilitate the research community to use the new methods in real data analysis. In conclusion, my dissertation work will provide useful methods and tools to identify the underlying genetic factors and explain the heritability of human complex diseases. In the long run, it may contribute to the prevention, diagnosis and cure of complex diseases.
+
+% \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Specific Aims}\label{sec:aims}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+As reviewed before, current association testing methods are mainly designed for cross-sectional data analysis, while many cohort studies have the longitudinal measurements which have not been fully utilized. For instance, the Atherosclerosis Risk in Communities (ARIC) study \cite{Heiss1989} has multiple follow-up measurements across almost 30 years. Association tests that fully utilize the information across time points tend to achieve a higher power and identify more disease-associated loci \cite{Furlotte2012,Xu2014}. As both the common variants (CV) and rare variants (RV) are important in identifying the disease attributing genetic factors, a well-rounded association test should have the flexibility to work with either of them. It should also maintain a relatively high power in almost all scenarios encountered in real data analysis. In practice, it is hard to predict which specific method has the highest power and which methods suffer from a large power loss for a specific data set. To meet these urgent needs, I propose a powerful data-adaptive SNP-set based association test for the longitudinal data analysis, applicable to either CVs or RVs. The specific aims are as follows.\\
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%\newpage
+\textbf{Aim 1: To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework.}
+%\begin{enumerate}
+%\item \textbf{Aim One}
+The proposed test, namely aSPU test, will have relatively high power in most data scenarios and avoid drastic power loss in any single data scenario, as compared to existing methods. This will be the first data-adaptive association test method for longitudinal data analysis. There are two \textbf{sub-aims}: \textbf{1(a).} model development for common variants; \textbf{1(b).} model development for rare variants. %Both common variants and rare variants are important to explain the missing heritability of human complex diseases.
+%%%%%%%%%%%%%%
+%\subsubsection{Aim One(a): To develop data-adaptive association tests for longitudinal data analysis within the GEE framework for common variants}
+%%\begin{enumerate}
+%%\item[(1a)]
+%I propose to develop a SNP-set based data-adaptive association test for longitudinal data within the GEE framework for common variants. The SNP set will be defined based on either sliding-windows or gene regions for real GWAS data. Since missing data is usually encountered in longitudinal data analysis, for example, an individual may only have three out of four possible measurements, I will develop the method capable of fully utilizing the available information instead of deleting the whole subject. The GEE will still provide consistent coefficient estimates as long as the missing data are due to the missing at complete random (MACR) \cite{rubin1976inference,Xu2014}.
+%%and still provides consistent coefficients estimates as long as the data missing follows the Missing At Complete Random (MACR) rule \cite{rubin1976inference,Xu2014}.
+%
+%I will evaluate the proposed methods' performance using simulated data. Specifically, I will simulate genotype data for common variants and longitudinal phenotype data mimicking real data. After simulation studies, I will apply the proposed methods to the Atherosclerosis Risk in Communities (ARIC) data (https://www2.cscc.unc.edu/aric/). Details about simulation studies and real data application are discussed in the Method section.
+%%Since CVs are usually coming from traditional SNP genotyping platform (for example selection of tagging SNPs), the SNPs are almost evenly distributed on the whole chromosome. To include, say a constant number of 40 SNPs, the regions covering the 40 SNPs on a chromosome are by large of the same physical length (for example 1kb), which makes the slide-window based manner reasonable to detect signals from a specific chromosome region. Gene-based manner has been extensively discussed in section \ref{sec:background}. Since missing data scenario is usually the case in longitudinal data analysis, for example an individual has three out of four total measurements, the developed algorithm is expected to utilize the partial information fully instead of deleting the whole subject, and still provides consistent coefficients estimates as long as the data missing follows the Missing At Complete Random (MACR) rule \cite{rubin1976inference,Xu2014}.
+%
+%
+%%%%%%%%%%%%%%%%%%%%
+%\subsubsection{Aim One(b): To develop data-adaptive association tests for longitudinal data analysis within the GEE framework for rare variants}
+%%\item[(1b)]
+%I propose to extend the data-adaptive association test for longitudinal data within the GEE framework to work on rare variants. Since RVs has much lower MAFs than CVs, assumptions such as the coefficient estimator follows an asymptotic normal distribution may not hold. Therefore, we will develop the permutation or parametric bootstrap based algorithm, specially designed for longitudinal data, to help obtain a less biased association significance level and maintain the Type I error at the nominal level.
+%
+%I will evaluate the proposed methods' performance using simulated data. Specifically, I will simulate genotype data for rare variants and longitudinal phenotype data mimicking real data. After simulation studies, I will apply the proposed methods to the Atherosclerosis Risk in Communities (ARIC) data (https://www2.cscc.unc.edu/aric/). Details about simulation studies and real data application are discussed in the Method section.
+
+
+
+%\textbf{Plan for real data application}\label{sec:subsub1-3}\\
+%I will apply the developed novel method to the Atherosclerosis Risk in Communities (ARIC) data (https://www2.cscc.unc.edu/aric/). Specifically, we will select one or several traits from ARIC cohort data as the response variable(s) with longitudinal measurements. Such trait candidates are four closely cardiovascular disease related traits, which are total cholesterol (tch), High-density lipoprotein cholesterol(HDL-C), Low-density lipoprotein cholesterol (LDL-C) and triglycerides (trgs). For genetic data part, we will use the rare variants from the ExomeChip platform \cite{Grove2013} in the ARIC study. We will adopt classical Quality Control (QC) criteria for rare variant analysis. For example, the MAF of any SNV should be less than $5\%$, missing rate of both single SNP and single subject should be less than $5\%$, HWE test p-value should be greater than $0.001$ and region aggregate counts of minor alleles should be greater than 20 or 40 as previously done in \cite{Lange2014,Peloso2014}. We will include several top principal components eigenvectors (PCs) produced by EIGENSTRAT \cite{Price2006} in the longitudinal regression model to adjust for the potential population structure within the ARIC Caucasian subjects. We will run gene-based test with gene boundary defined by ANNOVAR \cite{Wang2010a}.
+%%as our longitudinal response variables (will fit each one separately by our proposed model). We will \textbf{take cautions before using these lipid traits} such as accounting for lipid-lowering therapy in TC and LDL traits, and natural log transformation on the trgs trait according to the procedures described in \cite{Peloso2014}. 
+%We will exclusively use Caucasian samples ($n$ = 11478 ). For the covariates, we will include but not limited to subject's demographic information such as age, gender and BMI, and a few top PCs. We hope to validate known rare variant genetic loci as reported in literature \cite{Teslovich2010,Lange2014,Peloso2014,Consortium2013,Maxwell2013}, and identify the potential novel genetic loci associated with any of these traits.
+%
+%%we will use the RVs from ExomeChip \cite{Grove2013} used in ARIC study as our genotype data. We will run gene-based test with gene boundary defined by ANNOVAR \cite{Wang2010a}. We will use similar QC criteria as for CVs, except we will use aggregate MAF cutoffs (based on gene level RV counts, for example 20 or 40 minor alleles within a gene) as previously done in \cite{Lange2014,Peloso2014}. 
+
+
+%\end{enumerate}
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+\textbf{Aim 2: To develop the pathway-based data-adaptive association tests for longitudinal data analysis.}
+%\item \textbf{Aim Two}
+I propose to extend the proposed method in Aim 1 to the pathway-based association test version, namely Path-aSPU. It will work for either common variants or rare variants in a gene-set/pathway-based manner. Currently, there are no statistical models designed for pathway-based association test in longitudinal data settings, let alone the data-adaptive merit.
+
+%I will evaluate the proposed methods' performance using simulated data. Specifically, I will simulate genotype data for rare variants and longitudinal phenotype data mimicking real data. I will simulate pathways consisting of multiple genes and each gene including multiple SNPs. After simulation studies, I will apply the proposed methods to the Atherosclerosis Risk in Communities (ARIC) data (https://www2.cscc.unc.edu/aric/). Details about simulation studies and real data application are discussed in the Method section.
+
+
+
+%\textbf{Plan for real data application}\label{sec:subsub1-3}\\
+%With regard to data application, we will define the gene pathway by public pathway resources like KEGG \cite{Ogata1999} and BioCarta \cite{Nishimura2001}. We will consider the medium size pathways in selected database, for example the pathway with 20-100 genes.  We will define gene boundary using ANNOVAR \cite{Wang2010a}. We will apply Path-aSPU on ARIC data to find significant association between a specific pathway (containing multiple genes) and a specific longitudinal trait. Specifically, we will select one or several traits from ARIC cohort data as the response variable(s) with longitudinal measurements. Such trait candidates are four closely cardiovascular disease related traits, which are total cholesterol (tch), High-density lipoprotein cholesterol(HDL-C), Low-density lipoprotein cholesterol (LDL-C) and triglycerides (trgs). For genetic data part, we will use the rare variants from the ExomeChip platform \cite{Grove2013} in the ARIC study. We will adopt classical Quality Control (QC) criteria for rare variant analysis. For example, the MAF of any SNV should be less than $5\%$, missing rate of both single SNP and single subject should be less than $5\%$, HWE test p-value should be greater than $0.001$ and region aggregate counts of minor alleles should be greater than 20 or 40 as previously done in \cite{Lange2014,Peloso2014}. We will include several top principal components eigenvectors (PCs) produced by EIGENSTRAT \cite{Price2006} in the longitudinal regression model to adjust for the potential population structure within the ARIC Caucasian subjects.
+%%as our longitudinal response variables (will fit each one separately by our proposed model). We will \textbf{take cautions before using these lipid traits} such as accounting for lipid-lowering therapy in TC and LDL traits, and natural log transformation on the trgs trait according to the procedures described in \cite{Peloso2014}. 
+%We will exclusively use Caucasian samples ($n$ = 11478 ). For the covariates, we will include but not limited to subject's demographic information such as age, gender and BMI, and a few top PCs. We hope to validate known pathway affecting the cardiovascular related trait level, and identify the potential novel pathway associated with any of these traits.
+
+
+%For Aim 2, we will focus on RVs in genes and genes in a well-defined pathway. The data application procedures for RVs in genes are the same as in section \ref{sec:Data Application-aim1}. The genes in pathway will be defined by any one from the KEGG \cite{Ogata1999}, BioCarta \cite{Nishimura2001} or Gene Ontology \cite{Ashburner2000}. We will consider the medium size pathways in selected database, for example the pathway with 20-100 genes.
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+\textbf{Aim 3: To develop the software package for method implementation.}
+%\item \textbf{Aim Three}
+I will provide an R package or a Linux command-line based software program to enable convenient implementation of proposed methods. The package/software will be released to public (for example, CRAN) eventually.
+%\end{enumerate}
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Real Data Introduction}\label{sec:data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%[To Dr. Morrison's concern: revise real data introduction, for example remove unnecessary figure and add description of fifth follow-up measurement]
+%%Real data used in my dissertation will be obtained from
+%%the Atherosclerosis Risk in Communities (ARIC) Study (https://www2.cscc.unc.edu/aric/). The Atherosclerosis Risk in Communities Study (ARIC), sponsored by the National Heart, Lung, and Blood Institute (NHLBI) is a prospective epidemiological study conducted in four U.S. communities.  ARIC is designed to investigate the causes of atherosclerosis and its clinical outcomes, and variation in cardiovascular risk factors, medical care, and disease by race, gender, location, and date. To date, the ARIC project has published over 800 articles in peer-reviewed journals. ARIC includes two parts: the Cohort Component and the Community Surveillance Component. %The ARIC study is a longitudinal cohort study designed to ascertain the etiology and predictors of cardiovascular disease (CVD). The ARIC study enrolled 15,792 middle-aged adults from four U.S. communities (Forsyth County, NC; Jackson, MS; suburbs of Minneapolis, MN; and Washington County, MD) between 1987–89 and followed by four completed visits with each approximately three years apart, in 1987–89, 1990–92, 1993–95, and 1996–98. In general, each visit included interviews and a physical examination. A detailed description of the ARIC study design and methods was published elsewhere [39]. 
+%%
+%%The Cohort Component of the ARIC study, which will be applied to our new methods, began in 1987, and each of the four ARIC field centers (Washington County, MD; Forsyth County, NC; Jackson, MS; and Minneapolis, MN) randomly selected and recruited a cohort sample of approximately 4,000 individuals aged 45-64 from a defined population in their community. A total of 15,792 participants received an extensive examination, including medical, social, and demographic data.  These participants were re-examined every three years with the first screen (baseline) occurring in 1987-89, the second in 1990-92, the third in 1993-95, and the fourth exam was in 1996-98. The fifth screen is farther apart from the previous screens and was finished during 2011-2013. A detailed description of the ARIC study design and methods was published elsewhere \cite{Investigators1989}.
+%%%In 2009, the NHLBI funded a fifth exam, which is currently being conducted.
+%%
+%%%In the Community Surveillance Component, the four communities are investigated to determine the long term trends in hospitalized myocardial infarction (MI) and coronary heart disease (CHD) deaths in approximately 470,000 men and women aged 35-84 years.\\
+%Real data used in my dissertation will be obtained from the Atherosclerosis Risk in Communities (ARIC) Study (https://www2.cscc.unc.edu/aric/). The Atherosclerosis Risk in Communities Study (ARIC), sponsored by the National Heart, Lung, and Blood Institute (NHLBI), is a prospective epidemiological study conducted in four U.S. communities. ARIC is designed to investigate the causes of atherosclerosis and its clinical outcomes, the variation in cardiovascular risk factors, medical care, and disease by race, gender, location, and time. To date, the ARIC project has published over 800 articles in peer-reviewed journals. ARIC data include two parts: the Cohort Component and the Community Surveillance Component.
+%
+%The Cohort Component of the ARIC study, on which we will apply our proposed methods, began in 1987. Each of the four ARIC field centers (Washington County, MD; Forsyth County, NC; Jackson, MS; and Minneapolis, MN) randomly selected and recruited a cohort sample of approximately 4,000 individuals aged 45-64 from a defined population in their community. A total of 15,792 participants received an extensive examination, including medical, social, and demographic data. These participants were re-examined every three years with the first screen (baseline) occurring in 1987-89, the second in 1990-92, the third in 1993-95, and the fourth exam was in 1996-98. The fifth screen is farther apart from the previous screens and was finished during 2011-2013. A detailed description of the ARIC study design and methods was published elsewhere \cite{Investigators1989}.
+%
+%%%%%%%%%%%
+%%%%%%%
+%%%%
+%%%
+%% Dr. Morrison pointed out this figure should be removed as it is not appropriate.
+%%To help the audience to gain a fast and general understanding of the ARIC data two components, I borrowed a flowchart from the ARIC website here as in Figure \ref{fig: ARICcomponents}
+%%\begin{figure}[H]
+%%\centering
+%%\includegraphics[width=1\textwidth]{{{ARICcomponents}}}
+%%\caption{ARIC Cohort and Community Surveillance Components. Figure adopted from the ARIC website}
+%%\label{fig: ARICcomponents}
+%%\end{figure}
+%
+%
+%%\textbf{The objectives of the ARIC Study}
+%%\begin{itemize}
+%%\item \textbf{Examine} the ARIC cohort to characterize heart failure stages in the community, identify genetic and environmental factors leading to ventricular dysfunction and vascular stiffness, and assess longitudinal changes in pulmonary function and identify determinants of its decline.
+%%
+%%\item \textbf{Cohort follow-up} for cardiovascular events, including CHD, heart failure, stroke, and atrial fibrillation; and for the study of risk factors related to progression of subclinical to clinical CVD.
+%%
+%%\item \textbf{Enhance} the ARIC cohort study with cardiovascular outcomes research to assess quality and outcomes of medical care for heart failure and heart failure risk factors.
+%%
+%%\item \textbf{Community surveillance} to monitor long-term trends in hospitalized MI, CHD deaths, and heart failure (inpatient and outpatient).
+%%
+%%\item \textbf{Provide} a platform for ancillary studies, training for new investigators, and data sharing.
+%%\end{itemize} 
+%
+%
+%%\textbf{The objectives of my dissertation usage of ARIC data}\\
+%%Since the ARIC cohort data currently has five follow-ups till now, it's a perfect data set for my dissertation research on data-adaptive association test for longitudinal data. We propose to use four closely cardiovascular-disease-related traits measured in ARIC cohort data, which are total cholesterol (tch), High-density lipoprotein (HDL), Low-density lipoprotein (LDL) and triglycerides (trgs), as our response variables (will fit each one separately by our proposed model). We hope to validate known genetic loci as reported in literatures \cite{Teslovich2010,Lange2014,Peloso2014,Consortium2013,Maxwell2013} as well as identifying potential novel genetic loci associated with any of these traits. We will exclusively use Caucasian samples. For the covariates, we will include but not limited to subject's demographic information such as age, gender and BMI. The application of the new methods on ARIC cohort data will on one hand help evaluate the performance of proposed methods, and on the other hand will have chance to identify more genetic loci contributed to atherosclerosis risk.
+%
+%A demographic introduction of the ARIC cohort data is shown in Figure \ref{fig: ARIC_CohortCharacteristics}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.75]{{{ARIC_CohortCharacteristics}}}
+%\caption{ARIC Cohort Characteristics by Gender or Race. Table adopted from the ARIC website }
+%\label{fig: ARIC_CohortCharacteristics}
+%\end{figure}
+%
+%%%%%%%%%%%%%%%%%%%
+%\textbf{Human Subjects}\\
+%The dissertation study will focus on statistical method development. I will use ARIC cohort component data for method demonstration purpose only. The ARIC data can be freely requested at (https://www2.cscc.unc.edu/aric/distribution-agreements). I will use the phenotype (several traits aforementioned) and genotype (SNP array or ExomeChip) data, which are all de-identified. The IRB approval of the use of ARIC data in my dissertation research has been obtained by my dissertation advisor, Dr. Peng Wei, from UTHealth IRB (HSC-SPH-13-0492) for the NIH funded project "Association analysis of rare variants with sequencing data".
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Methods}\label{sec:method}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%To get the adjusted P-value for MinP, one generally needs a two-level permutation procedure
+%[Hoh, et al. 2001; Westfall and Young 1993] with the inner level for estimating and the
+%outer level for the adjustment needed to account for multiple testing over different truncation
+%Yu et al. Page 3
+%Genet Epidemiol. Author manuscript; available in PMC 2009 December 8.
+%NIH-PA Author Manuscript NIH-PA Author Manuscript NIH-PA Author Manuscript
+%points. This type of permutation procedure, however, can become computationally infeasible
+%if the number of tests L is relatively large. We propose to use a single layer of permutation for
+%determining the significance level of the ARTP statistic by borrowing techniques originally
+%introduced for gene-expression data analysis [Ge, et al. 2003]. We first obtain P-values for
+%Ge et al. [Ge, et al. 2003] to avoid the computationally intensive multilevel
+%permutation procedure.
+\subsection{Overall Study Design}\label{sec:overall study design}
+\subsubsection{Simulation studies}
+I will first generate the simulated dataset for testing the performance of our proposed novel methods in Aim 1(a), Aim 1(b) and Aim 2. Specifically, I will generate the simulated genotypes within a gene, that is simulated CVs for Aim 1(a) and simulated RVs for Aim 1(b) and Aim 2. I will also generate the simulated longitudinal phenotype mimicking the real data, the ARIC cohort data, used for Aim 1 and 2. Additionally, for Aim 2, I will simulate the pathway containing multiple genes for testing the pathway-based association. For all simulations, I will refer to several literature \cite{pan2014powerful,Basu2011,Pan2011,Han2010,Pan2009} and the ARIC data to set up the simulation parameters, thereby the simulated dataset will be more close to the real dataset. %In return, we could expect the real data performance of the proposed method is more the same as we observe from simulation studies. 
+In the simulation studies for Aim 1 and 2, I will evaluate the proposed methods' performance on maintaining the nominal Type I error and a higher empirical power under different simulation scenarios. I will compare the proposed tests to a few existing methods to demonstrate the advantages.
+
+\subsubsection{Real data application}
+After simulation studies, I will apply the proposed methods in Aim 1 and Aim 2 on the real dataset. A brief introduction to the real dataset is as follows.
+
+%Real data used in my dissertation will be obtained from the Atherosclerosis Risk in Communities (ARIC) Study (https://www2.cscc.unc.edu/aric/). 
+The Atherosclerosis Risk in Communities Study (ARIC), sponsored by the National Heart, Lung, and Blood Institute (NHLBI), is a prospective epidemiological study conducted in four U.S. communities. ARIC is designed to investigate the causes of atherosclerosis and its clinical outcomes, the variation in cardiovascular risk factors, medical care, and disease by race, gender, location, and time. ARIC data include two parts: the Cohort Component and the Community Surveillance Component.
+
+The Cohort Component of the ARIC study, on which I will apply our proposed methods, began in 1987. Each of the four ARIC field centers (Washington County, MD; Forsyth County, NC; Jackson, MS; and Minneapolis, MN) randomly selected and recruited a cohort sample of approximately 4,000 individuals aged 45-64 from a defined population in their community. A total of 15,792 participants received an extensive examination, including medical, social, and demographic data. These participants were re-examined every three years with the first examination (baseline) occurring in 1987-89, the second in 1990-92, the third in 1993-95, and the fourth exam was in 1996-98. The fifth examination is farther apart from the previous screens and was finished during 2011-2013. A detailed description of the ARIC study design and methods was published elsewhere \cite{Investigators1989}.
+
+As for real data application purpose for both Aim 1 and Aim 2, I will exclusively use the Caucasian samples ($n$ = 11478) in the ARIC cohort dataset. I will use lipid traits in the ARIC cohort as the response variables with longitudinal measurements. Candidate traits include four closely cardiovascular disease-related traits, which are total cholesterol (TC), High-density lipoprotein cholesterol(HDL-C), Low-density lipoprotein cholesterol (LDL-C) and triglycerides (TRG). For genotype data part, I will use the common variants for Aim 1(a) and the rare variants for Aim 1(b) and Aim 2. Both CVs and RVs are genotyped by ExomeChip platform \cite{Grove2013} in the ARIC study. Through real data application, I will try to validate the reported risky loci for cardiovascular disease and identify potential novel loci, on a specific gene (Aim 1) or within a specific pathway (Aim 2). The method details for real data application is put below in Section \ref{sec:sub-RDAA}.
+
+A demographic introduction of the ARIC cohort data is shown in Figure \ref{fig: ARIC_CohortCharacteristics}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{{{ARIC_CohortCharacteristics}}}
+\caption{ARIC Cohort Characteristics by Gender or Race. Table adopted from the ARIC website }
+\label{fig: ARIC_CohortCharacteristics}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+%We will select one or several traits from available traits in ARIC cohort data as the response variable(s) with longitudinal measurements. Such trait candidates include four closely cardiovascular disease related traits, which are total cholesterol (tch), High-density lipoprotein cholesterol(HDL-C), Low-density lipoprotein cholesterol (LDL-C) and triglycerides (trgs). We will \textbf{take cautions before using these lipid traits} such as accounting for lipid-lowering therapy in TC and LDL traits, and natural log transformation on the trgs trait according to the procedures described in \cite{Peloso2014}.  For genetic data part, we will either use the common variants from genotyping platform in the ARIC study or use the rare variants from the ExomeChip platform \cite{Grove2013} in the ARIC study. We will apply Quality Control procedures on these variants before running any association test. We will define gene boundary and pathway for aim II according to literature. We expect to verify known risk genes and/or pathways related to either cardiovascular disease or associated trait level, therefore we can validate the functionality of our proposed method. We also look forward to identify the novel risk genes and/or pathways, which will provide new valuable information to the disease research consortium.
+
+%We will also provide a software to implement our new methods. We will test its correctness and robustness on both simulation dataset and real dataset.
+
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Methods for Aim 1(a): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for common variants}\label{sec:subsec1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Statistical Modeling}\label{sec:subsub1-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Suppose for each subject $i = 1,\ldots,n$, we have $k$ total longitudinal measurements $y_i = (y_{i1}, y_{i2}, \ldots, y_{ik})'$ with $y_{im}$ as a element, $p$ SNPs of interest as a row vector $x_i = (x_{i1}, x_{i2}, \ldots, x_{ip})$ with $x_{ij}$ coded as 0,1 or 2 for the count of the minor allele for SNP $j = 1, \ldots, p$, and $z_i = (z_{i1}, z_{i2}, \ldots, z_{iq})$ is a row vector for $q$ variates. We assume common effect sizes (a.k.a., time-averaged group effect) of the SNPs and covariates on the longitudinal phenotype/trait measurements. Thus, we construct the design matrix for the SNPs and covariates as:
+$$
+  X_i = \begin{pmatrix}
+          x_{i}\\
+          x_{i}\\
+          \vdots\\
+          x_{i}
+          \end{pmatrix} 
+  , 
+  Z_{i}=\begin{pmatrix}1 & z_{i}\\
+          1 & z_{i}\\
+          \vdots & \vdots\\
+          1 & z_{i}
+          \end{pmatrix}
+$$
+where $x_i$ and $z_i$ are row vectors of length p and q respectively. $X_i$ is a $k \times p$ matrix, and $Z_{i}$ is a $k \times (q+1)$ matrix. Denote the regression coefficient $\beta = (\beta_1, \beta_2, \ldots, \beta_p)'$ and $\varphi = (\varphi_1, \varphi_2, \ldots, \varphi_{q+1})'$ for $X_i$ and $Z_i$ respectively. The marginal mean of each measurement, $E(y_{im}|x_i,z_i) = \mu_{im}$ where $m = 1,2, \ldots, k$ for $k$ total measurements, or the vectorized format of all measurements, $E(y_{i}|x_i,z_i) = \mu_{i}$, relates to the SNPs and covariates through a generalized linear model (GLM):
+$$
+g(\mu_i) = \eta_i = Z_i \varphi + X_i \beta = H_i \theta
+$$
+\noindent with $H_i = (Z_i, X_i), \theta = (\varphi', \beta')'$ and $g(.)$ as a suitable link function. For continuous outcome, an identity link is usually used.
+
+The consistent and asymptotically Normal estimates of $\beta$ and $\varphi$ can be obtained by solving the GEE \cite{liang1986longitudinal}: 
+
+\begin{align*}
+U(\varphi,\beta) & =\sum_{i=}^{n}U_{i}(\varphi,\beta)=\sum_{i=1}^{n}(\frac{\partial\mu_{i}}{\partial\theta'})'V_i^{-1}(Y_{i}-\mu_{i})=0,\\
+\textrm{with}\\
+\frac{\partial\mu_{i}}{\partial\theta'} & =\frac{\partial g^{-1}(H_{i}\theta)}{\partial\theta'}, V_i = \phi A_{i}^{\frac{1}{2}}R_{w}A_{i}^{\frac{1}{2}},\\
+\textrm{and}\\
+A_{i} &= 
+\begin{bmatrix}
+ v(\mu_{i1}) & 0 & \cdots & 0\\
+ 0 & v(\mu_{i2}) & 0 & 0\\
+ \vdots & 0 & \ddots & \vdots\\
+ 0 & 0 & \cdots & v(\mu_{ik})
+\end{bmatrix}
+\end{align*}
+
+$\phi$ in $V_i$ is the dispersion parameter in GEE and is usually treated as nuisance parameter. $v(\mu_{im}) = \phi \textrm{Var}(y_{im} | x_i, z_i) $. $R_w(\alpha)$ is a working correlation matrix depending on some unknown parameter $\alpha$. For convenience, a working independence model
+with $R_w = I$ is often used. With a canonical link function and a working independence model, we have a closed form of the U vector with two parts corresponding to SNPs and covariates, and its covariance estimator:
+\begin{align}
+U & =\left(U_{.1}',U_{.2}'\right)'=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\mu_{i})\nonumber \\
+% \vspace{-2em}
+\widetilde{\Sigma} & = \widehat{\textrm{Cov} }(U) = \sum_{i}\left(Z_{i},X_{i}\right)'\widehat{\textrm{var}(Y_{i})}\left(Z_{i},X_{i}\right)=\sum_{i}\left(Z_{i},X_{i}\right)'(Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})'\left(Z_{i},X_{i}\right)=\begin{pmatrix}V_{11} & V_{12} \\
+V_{21} & V_{22}
+\end{pmatrix}
+\label{eq:1}
+% \end{alignat}
+\end{align}
+where $\hat \mu_i$ is an estimator of $\mu_i$, $\widetilde{\Sigma}$ is an estimate of the covariance of score (U) vector. $\widetilde{\Sigma}$ is partitioned with the dimensions according to the score vector component $U_{.1}$ and $U_{.2}$ for $\varphi$ and $\beta$ respectively.
+
+\textit{Quantitative traits}\\
+\indent We use the identity link, i.e. $g(\mu_{im}) = \mu_{im}$ and $v(\mu_{im}) = \phi \times 1 = \phi$. Then we have:
+\begin{align}
+U & = \sum_{i}\left(Z_{i},X_{i}\right)' R_w^{-1} (Y_{i}-\mu_{i}) \nonumber\\
+\widetilde{\Sigma} & = \sum_{i}\left(Z_{i},X_{i}\right)' R_w^{-1} (Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})' R_w^{-1} \left(Z_{i},X_{i}\right)
+\label{eq:2}
+\end{align}
+
+if the assumption of a common covariance matrices across $Y_i$ for $i$ is valid, for example for quantitative continuous traits study \cite{pan2001robust}, we can adopt a more efficient covariance estimator:
+\begin{align*}
+\widetilde{\Sigma} & = \sum_{i=1}^n \left(Z_{i},X_{i}\right)'\widehat{\textrm{var}(Y_{i})}\left(Z_{i},X_{i}\right)
+ = \sum_{i=1}^n \left(Z_{i},X_{i}\right)'\left(\sum_{i=1}^n \frac{(Y_{i}-\hat{\mu_{i}})(Y_{i}-\hat{\mu_{i}})'}{n}\right)\left(Z_{i},X_{i}\right) = 
+\begin{pmatrix}
+V_{11} & V_{12}\\
+ V_{21} & V_{22}
+\end{pmatrix}
+\end{align*}
+which is used by default for its better finite-sample performance \cite{pan2001robust}.
+
+In my dissertation, I will \textbf{focus on} the case with quantitative traits, since they are most typical traits used as response variable in the longitudinal data analysis. Nevertheless, I introduce the strategy for binary traits below. In general, the only difference is the canonical link function, with all other equations/formulas keep the same.
+
+\textit{Binary traits}\\
+\indent For binary traits (trait value coded as 0 and 1), we use the logit link function so that $g(\mu_{im}) = log \frac{\mu_{im}}{1 - \mu_{im}}$ and $v(\mu_{im}) = \mu_{im} (1 - \mu_{im})$. Additionally the $(m, l)$th element of $\frac{\partial\mu_{i}}{\partial\theta'}$ is
+$
+H_{i,ml} \mu_{im} (1- \mu_{im})
+$
+with $H_{i,ml}$ as the $(m, l)$th element of $H_i$, which is the short notation for $(Z_{i},X_{i})$.\\
+Then we have:
+\begin{align*}
+U & = \sum_{i=1} (\frac{\partial\mu_{i}}{\partial\theta'})' V_i^{-1} (Y_{i}-\mu_{i})\\
+& = \sum_{i=1} (\frac{\partial\mu_{i}}{\partial\theta'})' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} (Y_{i}-\mu_{i})\\
+\end{align*}
+and
+\begin{align*}
+\widetilde{\Sigma} & = \sum_{i}\left(\frac{\partial\mu_{i}}{\partial\theta'}\right)' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} (Y_{i}-\hat{\mu_{i}}) (Y_{i}-\hat{\mu_{i}})' \phi A_{i}^{-\frac{1}{2}} R_{w}^{-1} A_{i}^{-\frac{1}{2}} \left( \frac{\partial\mu_{i}}{\partial\theta'} \right)\\
+& = 
+\begin{pmatrix}
+V_{11} & V_{12}\\
+ V_{21} & V_{22}
+\end{pmatrix}
+\end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textit{Several Existing Association Tests}\\
+Our goal is to detect whether there is any association between the longitudinal trait and the SNPs via testing on hypothesis $H_{o}:\beta=(\beta_{1},\beta_{2},\ldots,\beta_{p})'=0$. We have under the null hypothesis with $g(Y_i)=Z_i\varphi$ to obtain $\varphi$ and predict $\hat{\mu}=g^{-1}(Z\hat{\varphi})$. We hereby have score vector under the null hypothesis, with a working independence model, is:
+$$U(\hat{\varphi},0)=(U_{.1}^{'}, U_{.2}^{'})'=\sum_{i=1}^{n}(U_{i1}^{'},U_{i2}^{'})'$$
+where
+$$U_{.1}=\sum_{i}Z_{i}'(Y_{i}-\hat{\mu_{i}}), U_{.2}=\sum_{i}X_{i}'(Y_{i}-\hat{\mu_{i}})$$ 
+As $U$ asymptotically follows a multivariate normal distribution under $H_{0}$, then the score vector for $\beta$ also has an asymptotic normal distribution:\\
+$$
+U_{.2}\sim N(0,\Sigma_{.2}),\,\Sigma_{.2}= \widehat{Cov} (U_{.2}) = V_{22} - V_{21} V_{11}^{-1} V_{12}
+$$, where $V_{xx}$ are defined in Equation \ref{eq:1}.
+\begin{itemize}
+\item \textbf{The Wald Test:} The Wald Test known as $T=\hat{\beta'}\text{cov (\ensuremath{\hat{\beta}}) }\hat{\beta}$ is most commonly used, where $\hat{\beta}$ is the estimate of $\beta$ after fitting the full GEE model with $g(\mu_i) = Z_i\varphi + X_i \beta$. Under $H_0$, we have $T \sim \chi_{p}^2$. The Wald test is more time consuming by fitting full model, may fail to converge with many SNPs put on RHS of the regression-like equation to test, and even worse, the type I error tends to inflate in such case \cite{pan2014powerful,zhang2014testing}.
+\item \textbf{The Score Test:} $T=U_{.2}^{'}\Sigma_{.2}^{-1}U_{.2}^{-1}$, where $U_{.2}$ and $\Sigma_{.2}$ are discussed above; the statistic is asymptotically equivalent to the Wald test with the same null distribution $T \sim \chi_{p}^2$. Since we only need to fit the null model with covariates, it is computationally easier and less likely to have numerical convergence
+problems. More importantly, the score test controls the type I error well \cite{pan2014powerful,zhang2014testing}.
+\item \textbf{The UminP Test: }$T=\underset{j}{max}\frac{U_{.2,j}^{2}}{\Sigma_{.2,jj}}$
+for $j\in 1,2,\dots,p$, of $j$th SNP effect. The $\Sigma_{.2,jj}$ is the $j$th entry on the diagonal of $\Sigma_{.2}$. With max $T$, we can get minimal p-value accordingly. An asymptotic multivariate normal distribution numerical integration based method provided a fast way to calculate its p-value \cite{Pan2009a,Pan2009}; alternatively, a simulation based method relying on the asymptotic normal distribution of the score vector can be used to calculate its p-value \cite{pan2014powerful,zhang2014testing}. Specifically, we first simulate the score vector $U_{(b)} = ( U_{(b).1}, U_{(b).2},\ldots, U_{(b).p} )'$ from its null distribution  $U_{(b)} \sim N(0, \Sigma_{.2} )$ for $b = 1, 2, \ldots, B$, then calculate a total number of B null statistics: $T^{(b)} = \textrm{max}_{j = 1,\ldots,p} { U^2_{(b).j} \over  \Sigma_{.2,jj} }$, and the p-value is calculated as $\sum_{b=1}^B { I(T^{(b)} \geq T ) + 1  \over B + 1 } $.
+
+With a working independence correlation matrix $R_w = I$, every element $\frac{U_{.2,j}^{2}}{\Sigma_{.2,jj}}$ is equivalent to running the model on each single SNP (for example $j$th) one by one and obtain the Score test statistics. Hence, in this condition, the GEE-UminP test is equivalent to the usual UminP test that combines multiple single-SNP based longitudinal association test statistics.
+\end{itemize}
+
+\textit{A new class of tests and a data-adaptive test in longitudinal data settings}\\
+Before I introduce the proposed new test method, let me explain the logic in current GEE and Score test based methods.
+$$
+T_{Sum} = 1' U = \sum_{j=1}^p U_j, \qquad T_{SSU} = U'U = \sum_{j=1}^p U_j^2,
+$$
+These two tests are called Sum test and SSU test \cite{Pan2009} respectively. The former is closely related to other burden tests such like those in \cite{Morgenthaler2007,Li2008,Madsen2009}. If there is a common association either in direction or strength for causal SNVs with no or few non-associated SNVs, then Sum test and the likes will be most powerful; otherwise, the SSU test and its closely relatives, such as kernel machine regression (KMR or SKAT) \cite{Lee2012,Ionita-Laza2013,Oualkacha2013,Lee2012a,Wu2011} and C-alpha test \cite{Neale2011}, will be most powerful. 
+
+Sum test and SSU test are all based on score vector. A more general form of score-based statistic can be generalized as:
+$$
+T_w = W' U = \sum_{j=1}^p W_j U_j
+$$
+where $W = (W_1, \ldots, W_p)'$ is a vector of weights for the $p$ SNVs \cite{Lin2011}. Different researchers proposed different weighting schemes to pool the information of all SNVs in a region of interest, such as those used in \cite{Madsen2009,Sul2011,Pan2011,Han2010,Li2008,Zhang2011,Lin2011,Basu2011}. However, all of these weighting schema have used fixed weights, for example, their weights were chosen to be proportional to the MAFs of SNPs, to the standard deviations of SNPs, to the regression coefficients, or to the single SNP p-value. There is no uniformly best weighting scheme as discussed in \cite{pan2014powerful,Basu2011,Pan2011}. 
+
+As a complement to SNPs weighted average, SNPs selection is preferred in the case that there are many non-associated SNPs among the group of SNPs to be tested. Such methods include aSum+ and aSSU which are based on Neyman-type tests \cite{Neyman1937}. However, variable selection will also omit those variables with mild to moderate information. In our context, due to extremely low MAF of RVs, even underlying fact is that the individual RV is strongly associated with trait, there is only limited information stored in this single RV. Dumping seemingly non-informative RVs may actually omit the signals within the group of SNPs. Therefore, we expect the model averaging based tests will outperform the model selection based tests in above settings.
+
+\textbf{The SPU test}\\
+Our goal is to specify a whole class of weights which can cover a wide range of association patterns: for any given data with unknown association pattern, we hope at least one member of the whole class of weights can render a powerful test. We reason that, since association information is largely maintained in the score vector itself as comparable to regression coefficient, score vector is not only the basis in GEE and Score test based methods aforementioned, but may be an informative and simple weight! Specifically, we propose a class of weights 
+$$W_j = U_{.2, j} ^ { \gamma - 1} $$
+for a series of integer value $\gamma = 1,2,\ldots,\infty$, leading to the sum of powered score ($U$) tests called SPU tests:
+$$
+T_{ SPU ( \gamma ) } = \sum_{j=1}^p U_{.2, j} ^ { \gamma - 1} U_{.2, j}
+$$
+
+When $\gamma = 1$, the SPU(1) test uses $\textbf{1}$ as weight and sums up the information contained in all the SNPs in the region of interest, equivalent to Sum test or burden test; when $\gamma = 2$, the SPU(2) test uses $U$ as weight to itself and is equivalent to SSU test and other variance-component test such as SKAT; when $\gamma$ keeps increasing, the SPU($\gamma$) test puts higher weights on the $j$th SNV with larger $|U_{.2,j}|$, while gradually decreasing the weights of other SNVs with smaller $|U_{.2,j}|$. As the large value of $|U_{.2,j}|$ indicates strong association information stored in SNV $j$ and small value of $|U_{.2,j}|$ indicates weak or none association information stored in SNV $j$, a higher $\gamma$ tends to put more and more weights on those informative SNVs. When $\gamma \rightarrow \infty$ as an extreme situation, where $\infty$ is assumed to be an even number, we have
+$$
+T_{ SPU(\gamma) } \propto ||U||_{\gamma} = \left( \sum_{j=1}^p |U_{.2, j}| ^ { \gamma } \right) ^ { 1 \over \gamma } \ \rightarrow \ ||U||_{\infty} = \textrm{max}_{j=1} ^ p |U_{.2, j}| \equiv T_{ SPU(\infty) }.
+$$ 
+which takes only the largest element (in absolute value) of score vector. Apparently, SPU($\infty$) is equivalent to UminP test except the variance of each score component is replaced by 1 as in the denominator part.
+
+%By above explanation, we can see SPU($\gamma$) test can connect to a few current test with a simplified framework though. Treating $U^{\gamma - 1}$ as the weight with $\gamma \geq 1$ have at least two advantages:\\ 
+%First, score vector is as informative as a vector of the estimated regression coefficient while being computationally much simpler and more stable in the case of low frequency SNVs. Specifically, since $U_j$ contains association information about SNV $j$ and $U_j$ under null hypothesis follows $N(0, V)$, a larger component of $|U_j|$ corresponds to strong evidence of association between the $j$th SNV and the trait;
+%
+%%%%%%
+%Second, it leads to a simple interpretation and a guidance: as the value of $\gamma$ increases, we up-weight more and more the larger components of the score vector while gradually ignoring the remaining components. Such process smoothly combines the variable weighting and variable selection schema. Besides, an even integer of $\gamma$ automatically eliminates the effect of opposite signs of $U_j$, thus avoid power loss due to opposite direction effects canceling out each other; an odd integer of $\gamma$ might be more appropriate, as in SPU(1), Sum test or other burden tests, when the SNV effects are all in the same direction.
+
+In our experience, SPU($\gamma$) test with a large $\gamma > 8$ usually gave similar results as that of SPU($\infty$) test \cite{pan2014powerful}, thus I will only use $\gamma \in \Gamma = \{1,2,\ldots,8,\infty \} $ for the whole dissertation work. Suppose the sample size is large enough or MAF of SNP is large enough, thus the theory that the asymptotic normal distribution of the score vector can hold under the null hypothesis, I will use a simulation based method to calculate the p-value from each $T_{ SPU(\gamma) }$ \cite{Lin2005,Seaman2005}. Specifically, suppose $T$ is a short notation of $T_{ SPU(\gamma) }$ for a specific $\gamma$ and $\hat{\Sigma}_{.2}$ is the covariance matrix of the score vector $U_{.2}$ based on the original data (see Equation \ref{eq:1}). We draw B samples of the score vector from its null distribution: $U_{.2}^{ (b) } \sim MVN \left( 0, \hat{\Sigma}_{.2} \right)$, with $b = 1,2,\ldots,B$, and thus obtain a statistics under null hypothesis: $T ^ {(b)} = \sum_{j=1}^p U^{ (b)\gamma }_{.2, j} $. We then can calculate the p-value of $T_{ SPU(\gamma) }$ as $P_{ SPU(\gamma) } = \sum_{b=1}^B { I(T^{(b)} \geq T ^ {obs} ) + 1  \over B + 1 } $. 
+
+\textbf{The aSPU test}\\
+Given we have a list of SPU($\gamma$) statistics and p-values, we are still not sure which one is the most powerful in a specific data situation. Thus, it will be convenient to have a test which data-adaptively and automatically select/combine the best SPU($\gamma$) test(s). I hereby propose an adaptive SPU (aSPU) test to achieve such a purpose. There is a number of combining methods, such as the exponential combine \cite{Chen2012}, linear combine, quadratic combine and fisher's combine methods \cite{Luo2010,peng2009gene,Derkach2013}. In this dissertation work, I will use the minimum-P-value combining method exclusively with room left for other combining methods. For different $\gamma$, it is difficult to characterize the power curve of an SPU test in real data situation. Thus, I will use the p-value of a SPU test to approximate its power; this idea has been prevalent in practice. Accordingly, we will have the aSPU test statistic:
+$$
+T_{aSPU} = \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) },
+$$
+where $P_{ SPU(\gamma) }$ is the p-value of a specific SPU($\gamma$) test.
+
+Similarly as the above simulation based method to obtain p-value of $T_{ SPU(\gamma) }$, the \textit{same strategy} can be applied to obtain the p-value of $T_{aSPU}$. Since the previous simulated $U_{.2}^{ (b) }$ and $T^{ (b) }_{ SPU(\gamma) }$ can be reused here, another simulation work becomes \textit{unnecessary}. Specifically, at the SPU test stage we already have the $U_{.2}^{ (b) }$ for $b = 1,2,\ldots,B$. We then calculate the corresponding SPU test statistics $T^{ (b) }_{ SPU(\gamma) }$ and p-value 
+$$
+P^{ (b) }_{ SPU(\gamma) } =  \sum_{b_1 \neq b}^B { I(T^{ (b_1) }_{ SPU(\gamma) } \geq T^{ (b) }_{ SPU(\gamma) } ) + 1  \over (B-1) + 1 } 
+$$
+for every $\gamma$ and every $b$. Then, we will have $ 
+T ^ {(b)} _{aSPU} = \underset{\gamma\in\Gamma}{ \textrm{min} } P^{ (b) }_{ SPU(\gamma) }
+$, and the final p-value of aSPU test is:
+$$
+P_{aSPU} = \sum_{b=1}^B { I(T ^ {(b)} _{aSPU} \leq T ^ {obs} _{aSPU} ) + 1  \over B + 1 }.
+$$
+It is worth noting again that the same $B$ simulated score vectors have been used in calculating the $P_{aSPU}$. 
+
+In practice for genome wide scan purpose, we can use a stage-wise aSPU test strategy: we first start with a smaller $B$, for example, use $B = 1000$ to scan the genomes, then gradually increase $B$ to, for example, $10^6$ for a few selected groups of SNPs. For example, we could choose specific genes or windows which passed a pre-determined significance cutoff (for example, p-value $ \leq 5/B$) in the previous stage; we then repeat this process until the pre-determined significance level is reached. For example, a p-value of $\leq 10 ^ {-7}$ requires we increase $B \geq 10^7$. In this stage-wise way, we will be able to apply the aSPU test to GWAS data. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Other versions of aSPU test}
+\begin{itemize}
+\item \textbf{aSPUw test}\\
+The SPUw test is a \textit{diagonal-variance-weighted} version of the SPU test, defined as:
+\begin{eqnarray*}
+T_{SPUw(\gamma)} & = & \sum_{j=1}^{p}\left(\frac{U_{.2,j}}{\sqrt{\hat{\Sigma}_{.2,jj}}}\right)^{\gamma}
+\end{eqnarray*}
+Accordingly, \textbf{the aSPUw test} statistic is defined as
+\begin{eqnarray*}
+T_{aSPUw} & = & \underset{\gamma\in\Gamma}{min}P_{SPUw(\gamma)}
+\end{eqnarray*}
+where $P_{SPUw(\gamma)}$ is the p-value from $T_{SPUw(\gamma)}$. The procedures of getting these values are exactly the same as the above \textbf{aSPU} test. Finally, aSPUw p-value can be obtained by:
+$$
+P_{aSPUw} = \sum_{b=1}^B { I(T ^ {(b)} _{aSPUw} \leq T ^ {obs} _{aSPUw} ) + 1  \over B + 1 },
+$$
+%again the same formula as \textbf{aSPU} test. 
+It is worth noting that \textbf{aSPU} and \textbf{aSPUw} test can be implemented in the meantime using the same simulated score vector, which makes the computation more efficient.
+
+%The \textbf{aSPUw} test is designed to complement the performance of aSPU test. As the standard deviations of SNVs in a region may vary a lot, there is possibility that a \textit{non-informative} SNV has \textit{larger} standard deviations than other associated SNVs. Thus, the SPU test statistic will be dominated by the noise coming from the null but with a larger standard deviation SNV, and then leads to concealing association signals and eventually reduce the test power. Another advantage \textbf{aSPUw} brings about is it makes jointly analyze the effect of RVs and CVs possible by giving them an inverse-standard-deviation weight closely related to MAF. 
+%
+%The \textbf{aSPUw} test also has disadvantages. When \textbf{variance} of SNVs are quite \textbf{homogeneous}, put a variance-based weight (always positive) in the denominator will shrink the test statistics and thus lead to less power. In brief, there will be some scenarios, the aSPU test will dominate aSPUw test, and vice versa. Therefore, it is worth generating both test results for all real-data scenarios of which we don't know the underlying SNV variance situation (homogeneous or heterogeneous). We can compare the results afterwards. There is another thing worth noting: the two tests can be executed at the same time without much extra computation burden, as they share the same simulated or permuted null distribution of $U_{.2}^{ (b) }$.
+%%, otherwise, we will not keep mentioning \textbf{aSPU} test as our flagship test within the aSPU test family (including aSPU, aSPUw, and below aSPU.Score and aSPUw.Score tests)%
+
+\item \textbf{aSPU(w).Score test}\\
+Although the \textbf{GEE Score test} will lose power in some scenario of the gene-based GWAS analysis as aforementioned, it still has the unique advantage in some scenarios when the correlation structure among SNPs matters. GEE Score test in the form of $T=U_{.2}^{'}\Sigma_{.2}^{-1}U_{.2}^{-1}$ will keep the covariance matrix in the denominator, which preserves the information of possible linkage disequilibrium among SNPs. To combine the strengths from GEE Score test and aSPU(w) test, I propose to adopt the minimum-P-value combining strategy again, yielding the aSPU(w).Score test statistic:
+$$
+T_{aSPU.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) }, P_{Score} \Big\},
+$$ 
+where $P_{Score}$ is the p-value of the Score test. 
+%To calculate the p-value of the aSPU(w).Score test, it is just as simple as to include the Score test p-value along with the other SPU($\gamma$) p-values, select the minimum p-value among them to form the new statistic $T_{aSPU.Score}$, then use the same simulation algorithm as discussed earlier to obtain the the $P_{aSPU.Score}$.
+
+%The advantage of \textbf{aSPU(w).Score} test is we only need to sacrifice a little test performance (based on our extensive simulation studies, which is though not shown here), to exchange for a huge improved stability in maintaining a high power in most scenarios (usually when aSPU family performs not so impressive, and Score test happen to be on the edge due to its retaining of the LD information among SNVs).
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsubsection{Plan for Simulation Studies and Preliminary Simulation Results}\label{sec:subsub1-2}
+\subsubsection{Methods for Simulation Settings}\label{sec:subsub1-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%[To Dr. Fu's concern about whether there is SNP x time interaction effect involved in the simulation, we clarify here]\\
+I will generate the simulated genotypes following \cite{Wang2007,Pan2009,Basu2011}. In brief,
+I will generate two independent blocks of SNPs for each subject: the
+first block will included causal SNPs and null SNPs in linkage
+disequilibrium (LD); the second block will include only null SNPs in LD. I will use the first-order auto-regression (AR(1)) correlation structure to imitate real-world LD among SNPs. I will simulate the longitudinal response variables using AR(1) following \cite{Song2013}. Then I will take into account the SNPs main effect and time course main effect as fixed effects on the longitudinal response variables \textbf{without consideration of SNP $\times$ time interaction}. I will not consider other covariate effects (such as demographic) in the simulation studies, though they can be simply added without any change to the method. I will refer to several literatures \cite{pan2014powerful,Basu2011,Pan2011,Han2010,Pan2009} and the Atherosclerosis Risk in Communities (ARIC) data (https://www2.cscc.unc.edu/aric/) to set up the simulation parameters, for example, $\rho_y$ across longitudinal measurements and $\rho_x$ across SNVs as used in AR(1) correlation structure model.
+
+%[To Dr. Fu's concern about genotype simulation method, we clarify here]\\
+I did notice that there are other strategies in simulating the genotype data, such as the forward time simulation method to generate population genetic data, which includes coalescence models like two-epoch model and six parameter complex bottleneck model, and allows for simulation of purifying selection effect and scaled fitness effect as well \cite{Boyko2008,Hernandez2008}. Compared with the populational genetics simulation method, my simulation strategy does not take into account the population coalescence theory and assumes each sampled individual genotype is independent to the others. The lack of these properties may be a limit in my simulation studies. However, my simulation strategy takes the edges on the flexible control over the correlation magnitude among SNPs, the desired MAF of SNPs and the proportion of casual SNPs. Such advantages were proved and utilized in developing new association tests in a number of past researches \cite{Wang2007,Pan2009,Han2010,Pan2011,Basu2011,pan2014powerful,zhang2014testing}. 
+
+\textbf{Methods for simulation of genotype data}\\
+To construct a block of SNPs for subject $i$, at first, a latent vector $G_i = (G_{i1}, \ldots, G_{ip})'$ will be drawn from a \textbf{multivariate normal distribution} $N(0,R)$, where $R$ had a AR(1) correlation structure with its $(i,j)$th element in terms of purely correlation $r_{ij} =\textrm{Corr} (G_{if}, G_{ig}) = \rho ^ { |f - g| }$ between any two latent components, $G_{if}$ and $G_{ig}$ for $f \neq g$. The default $\rho$ will be set at  $0.8$ to mimic the real data. Secondly, the latent vector will be dichotomized to yield a haplotype with each latent element $G_{ij}$ dichotomized to 0 or 1 with probability $\textrm{Prob} (G_{ij} = 1) = $ MAF of $j$th SNP; the MAFs will be randomly drawn from a uniform distribution: for causal SNPs, the MAFs will be set between 0.3 and 0.4; for null SNPs, the MAFs will be set between 0.1 and 0.5. Thirdly, we will combine two independent haplotypes to form the genotype $X_i = (X_{i1}, \ldots, X_{ip})' $ for subject $i$. The haplotypes for different subject will be generated \textbf{independently}, that is, the subjects will be simulated as perfectly \textbf{independent} subjects with no identity by descent (IBD). 
+
+Using this strategy, I will placed 35 SNPs in the first block with AR(1) correlation structure to imitate the real LD structure among these SNPs; out of 35 SNPs, I will randomly select 5 SNPs to be causal (that is, they will have non-zero coefficients). To mimic the case in the SNP genotyping array platforms, for example, tag SNPs are genotyped but not the causal SNPs. I will excluded the 5 casual SNPs from the later test procedure. Therefore, in the first block, only null SNPs in LD with these 5 casual SNPs will be retained. I will further place 15 null SNPs in the second block as I planed for the first block. Note that the first block and second block are independent to each other. All the 15 null SNPs from the second block will participate in the test.
+
+\textbf{Methods for simulation of phenotype data}\\
+To simulate longitudinal quantitative phenotype, I will follow the strategy used in \cite{Song2013}. Specifically, I will first implement an exploratory analysis, that is the generalized least square estimation with AR(1) correlation structure, on the candidate lipid traits from the ARIC study, to get an approximate estimate of the correlation coefficient between traits across time points. For example, I will obtain $\rho_{data} = 0.7$ on average for different lipid trait candidates. 
+
+Secondly, I will setup the mixed effect model to achieve the AR(1) correlation structure as:\\
+\begin{equation}
+y_{im} = \mu_{i} + b_i + \underbrace{ \rho e_{i,m-1} + s_{i,m} }_{ e_{i,m} }  ,
+\label{eq:y_im_split}
+\end{equation}
+with $m = 1,\ldots,k$ indexes the longitudinal measurements within subject $i$ as stated in section \ref{sec:subsub1-1}; $\mu_{i} = Z_i \varphi + X_i \beta = H_i \theta$ as in quantitative trait case (see section \ref{sec:subsub1-1}); $b_i$ is the random intercept representing the subject-level random effect, and
+$$
+\rho e_{i,m-1} + s_{i,m} = e_{i,m},
+$$ 
+where $\rho$ is lag-one autocorrelation coefficient. I can simply plugin the estimate from the real data here, by setting up $\rho = 0.7$. $e_{i,m}$ is the total residual, which can be divided into two parts: the first part depends on $e_{i,m-1}$ and the second part is an independent term. I assume the following distribution:\\
+\begin{align*}
+b_i & \sim N(0,\sigma_b^2)\\
+e_{i,m} & \sim  N(0, \sigma_e^2)\\
+s_{i,m} & \sim  N(0, (1 - \rho^2) \sigma_e^2 )
+\end{align*}
+It's not difficult to see the term $\rho e_{i,m-1} + s_{i,m}$'s variance is equal to the variance of $e_{i,m}$ by algebraically summing up two parts. Under this assumption, the variance-covariance matrix across longitudinal measurements becomes (assuming $k = 4$ for the number of longitudinal measurements):
+\begin{eqnarray}
+\Sigma_{4\times 4} = Var 
+\begin{pmatrix}
+b_i + e_{i1}\\
+b_i + \rho e_{i1} + s_{i2}\\
+b_i + \rho e_{i2} + s_{i3}\\
+b_i + \rho e_{i3} + s_{i4}
+\end{pmatrix}
+= \sigma_b^2
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1
+\end{pmatrix}
++ \sigma_e^2 
+\begin{pmatrix}
+1 & \rho & \rho^2 & \rho^3 \\
+\rho & 1 & \rho & \rho^2 \\
+\rho^2 & \rho & 1 & \rho \\
+\rho^3 & \rho^2 & \rho & 1
+\end{pmatrix}
+\label{eq:v-cov_split}
+\end{eqnarray}
+Among the rightmost two parts summed together in Equation \eqref{eq:v-cov_split}, the first part defines the inter-subject variances, and the second part allows the measurements with a $k$-interval lag to have a correlation coefficient of $\rho ^ k$. This is closer to reality in some cases for longitudinal data.
+
+%To mimic real GWA data, the design matrix $X_i$ for SNPs part is treated as a random variable with variance. So for each subject $i$ with a single SNP $j$, we assume a $Var(X_{ij})$ coming from subject's genotype data. Accordingly, the $\Sigma_{4\times 4}$ becomes:
+%\begin{eqnarray}
+%\Sigma_{4\times 4} = Var 
+%\begin{pmatrix}
+%X_i \beta + b_i + e_{i1}\\
+%X_i \beta + b_i + \rho e_{i1} + s_{i2}\\
+%X_i \beta + b_i + \rho e_{i2} + s_{i3}\\
+%X_i \beta + b_i + \rho e_{i3} + s_{i4}
+%\end{pmatrix}
+%= 
+% Var(X_{ij}) \beta_j^2 
+% \begin{pmatrix}
+%1 & 1 & 1 & 1\\
+%1 & 1 & 1 & 1\\
+%1 & 1 & 1 & 1\\
+%1 & 1 & 1 & 1
+%\end{pmatrix}
+%+ \sigma_b^2
+%\begin{pmatrix}
+%1 & 1 & 1 & 1\\
+%1 & 1 & 1 & 1\\
+%1 & 1 & 1 & 1\\
+%1 & 1 & 1 & 1
+%\end{pmatrix}
+%+ \sigma_e^2 
+%\begin{pmatrix}
+%1 & \rho & \rho^2 & \rho^3 \\
+%\rho & 1 & \rho & \rho^2 \\
+%\rho^2 & \rho & 1 & \rho \\
+%\rho^3 & \rho^2 & \rho & 1
+%\end{pmatrix}
+%\label{eq:v-cov_split}
+%\end{eqnarray}
+
+\textbf{Methods for tuning simulated genetic effect}\\
+As noted in association tests, different SNPs contribute to the phenotype with different effect sizes. However, the SNP effect magnitude tuning in the simulation study is not a trivial task. Instead of assigning a $\beta_d$ coefficient to a SNP with a arbitrary numerical value, for example, $0.1$ or $10000$, there is a way to use genetic heritability to control the association magnitude from the $j$th SNP \cite{Lynch1998}. Let I first introduce the formula of the variance of the phenotype  :
+\begin{align}
+Var(y_{im} ) & = Var(X_{ij}) \beta_j^2 + \sigma_{oth} ^ 2  = 2f(1-f) \beta_j^2 + \sigma_{oth}^2
+\label{eq:variance_split_ge_oth}
+\end{align}
+where the Hard-Weinberg equilibrium (HWE) is assumed to hold. $f$ is the MAF of the SNP; $\sigma_{oth}^2$ is the residual variance after removing the effect of $j$th SNP. Obviously we can see $\sigma_b^2$ and $\sigma_e^2$ are contained in $\sigma_{oth}^2$ (see equation \eqref{eq:y_im_split}), and if other SNPs' effect are negligible, we expect $\sigma_b^2 + \sigma_e^2 \approx \sigma_{oth}^2$. Now let we look at the relationship between genetic heritability (narrow-sense heritability) and equation \eqref{eq:variance_split_ge_oth}:
+\begin{align}
+h^2 = \frac{Var(A)}{Var(P)}
+\end{align}
+This is the classical formula of narrow-sense heritability, with $Var(A)$ represents the variance due to the additive effects of the alleles, and $Var(P)$ represents the total variance in the phenotype. In our situation for $j$th SNP, this can be expanded to:
+\begin{align}
+h_j^2 = \frac{Var_j(A)}{Var(P)} = \frac{Var(X_{ij}) \beta_j^2 } {Var(y_{im} )} = \frac{Var(y_{im} ) - \sigma^2_{oth} } {Var(y_{im} )} \approx \frac{Var(y_{im} ) - \sigma_b^2 - \sigma_e^2 } {Var(y_{im} )}
+\label{eq:h_j_derive_to_var_y_im}
+\end{align}
+By systematically solving the equations \eqref{eq:variance_split_ge_oth} and \eqref{eq:h_j_derive_to_var_y_im}, we can easily calculate the $\beta_j$ for $j$th SNP once we have pre-determined the value of $h_j^2$, $\sigma_b^2$, $\sigma_e^2$ and $f$. Usually a $h_j^2$ for a single SNP $j$ will not be high for complex disease, and we will use $h_j^2 = 0.001$ as default value in the simulation studies to control $\beta_j$.
+%, with other parameters set as: $\sigma_b^2 = 1$, $\sigma_e^2 = 1$ and $k = 4$ representing the number of longitudinal measurements for a single subject. Without special indication, we will use the simulated data set with 1000 replicates; significance level is set at 0.05. \\ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Plan for Simulation Studies}\label{sec:aim1a-PSS}
+%\textbf{Preliminary Simulation Results}
+%[To Dr. Fu's concern: 1000 replicates may be not enough to evalute type I error accurately.]\\
+I will evaluate the proposed method's performance using simulated data. Specifically, I will simulate genotype data and longitudinal phenotype data mimicking real data. For example, the simulated genotype data will allow LD structure among SNPs and the simulated longitudinal trait will allow flexible control over the between-subject variance, the within-subject variance, the number of measurements and the correlation structure among measurements. I will benchmark the new test against several existing methods, such as Sum test, UminP test and Score test. Specifically, I will evaluate whether the Type I error can be controlled at the nominal level (neither inflated nor conservative), and compare the empirical power under different simulation scenarios.
+%We will simulate genotypes to mimic the real human genotypes in a region of a chromosome. For example, we will implement the correlation structure among SNVs, allow different minor allele frequencies (MAF) for simulated SNVs, and mix the causal SNVs with neighboring null SNVs in a region. We will also simulate the longitudinal response variable and then connect the SNV main effect to the simulated response variable. Besides, we will include the time course as another main effect. We will refer to literature \cite{pan2014powerful,Basu2011,Pan2011,Han2010,Pan2009} and the Atherosclerosis Risk in Communities (ARIC) data (https://www2.cscc.unc.edu/aric/) exploratory analysis to set up the simulation parameters, for instance, $\rho_y$ across longitudinal measurements and $\rho_x$ across SNVs as used in AR(1) correlation structure model.  
+
+%We first summarize the default parameters used in simulation studies here:
+%\begin{itemize}
+%\item $h_j^2 = 0.001$
+%%\item $\sigma_b^2 = 7$%
+%%\item $\sigma_e^2 = 20$%
+%\item $n$ varies between $500$ and $3000$ 
+%\item $k = 4$
+%\item 1000 replicates of simulated dataset (may increase to \textbf{2000} to evaluate the type I error more accurately)
+%\item $\alpha = 0.05$
+%\item $\rho_y = 0.7$
+%\item $\rho_x = 0.8$
+%\item $R = AR(1)$ as the correlation structure to simulate longitudinal trait
+%\item $Rw = I$ as the working independence correlation structure used in GEE estimation
+%\end{itemize}
+
+I plan to perform the following simulation studies:
+\begin{enumerate}
+\item \textbf{Power comparison between longitudinal study and cross-sectional study}\\
+I will evaluate the power gain from longitudinal study over cross-sectional study by estimating the empirical powers as a function of the number of visits (starting from one, that is actually the cross-sectional study, to $k$, for example, four as the maximum measurement number). We will also test the power gain magnitude under different levels of within-subject correlation coefficient.
+
+The quantities of interested include:
+\begin{enumerate}
+\item the magnitude of power gain at different levels of $\rho$, the within-subject correlation coefficient as used in the simulation of the AR(1) correlation structure. For example, $\rho = 0.3$ represents a weak correlation between measurements of the same subject, while $\rho = 0.7$ represents a strong correlation; 
+%%%%%%%%%
+\item the empirical powers as a function of the number of visits. We want to confirm the magnitude of the power gain coming from each extra follow-up measurement. There may be the case when $k$ increases to a specific level, for example three, the power gain after it will be negligible as compared to previous power gains. This is the so called "elbow point", which is quite meaningful in deciding a sufficient point to stop. In our settings, we do not want to infinitely increasing the $k$, which will lead to a larger and unnecessary cost. A sufficient $k$ will achieve a relatively higher power to meet the study requirement, for example, a power of $0.9$ in longitudinal studies, while avoiding unnecessary cost from pursuing an even larger $k$.
+\end{enumerate}
+
+
+
+\item \textbf{Type I error benchmark under the default simulation settings with varying sample sizes}\\
+I will evaluate the Type I error of the aSPU test and its extensions (we will call them aSPU family hereinafter) as compared with several existing tests: Score GEE, UminP, Sum Test, weighted Sum Test and SSU test. I will set the significance level at $0.05$. I provide a sample table below to show format of the future result presentation (dummy numbers shown in each cell).
+%%%%%%
+% part of table data already modified to be random number.
+\begin{center}
+\small
+\begin{table}[H]
+\begin{tabular}{lcccccccccccc}
+\hline 
+n & Score & UminP & SumP & SumP.w & SSU & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\ 
+\hline 
+500 & 0.038 & 0.059 & 0.048 & 0.033 & 0.034 & 0.052 & 0.045 & 0.040 & 0.058 \\ 
+1000 & 0.048 & 0.054 & 0.049 & 0.059 & 0.045 & 0.035 & 0.044 & 0.049 & 0.047 \\ 
+2000 & 0.056 & 0.042 & 0.043 & 0.033 & 0.049 & 0.062 & 0.045 & 0.048 & 0.048 \\ 
+3000 & 0.055 & 0.053 & 0.067 & 0.050 & 0.055 & 0.033 & 0.054 & 0.046 & 0.049 \\ 
+\hline 
+\end{tabular}
+% \vspace{-1em}%%%%%%%%% reduce the space between table and text
+% \captionof{table}{Type I error using working independence Rw}
+\caption{Sample Table of Type I error Benchmark among tests}
+\label{table:type_I_error_CV_varySampleSize}
+\end{table}
+\end{center}
+%%%%%%%%%%%%%%%%%%%
+
+
+%We used working independence correlation matrix by default in simulations.
+%%%%%%%
+%\begin{center}
+%\small
+%\begin{table}[H]
+%\begin{tabular}{lcccccccccccc}
+%\hline 
+%n & Score & UminP & SumP & SumP.w & SSU & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\ 
+%\hline 
+%500 & 0.038 & 0.056 & 0.058 & 0.053 & 0.044 & 0.052 & 0.051 & 0.050 & 0.048 \\ 
+%1000 & 0.047 & 0.054 & 0.048 & 0.049 & 0.065 & 0.065 & 0.064 & 0.059 & 0.057 \\ 
+%2000 & 0.055 & 0.041 & 0.053 & 0.053 & 0.059 & 0.052 & 0.055 & 0.058 & 0.058 \\ 
+%3000 & 0.055 & 0.054 & 0.057 & 0.060 & 0.065 & 0.063 & 0.054 & 0.056 & 0.059 \\ 
+%\hline 
+%\end{tabular}
+%% \vspace{-1em}%%%%%%%%% reduce the space between table and text
+%% \captionof{table}{Type I error using working independence Rw}
+%\caption{Type I error under using working independence $R_w$}
+%\label{table:type_I_error_CV_varySampleSize}
+%\end{table}
+%\end{center}
+%%%%%%%%%%%%%%%%%%%%
+%As in Table \ref{table:type_I_error_CV_varySampleSize}, we can see for sample size $n$ from $500$ to $3000$, all the tests can control type I error quite well except the Score test is a little bit conservative under the scenario $n = 500$, which somewhat explains the reason that Score test will lose power in some association test scenarios. 
+
+
+%%%%%%%%%%%
+\item \textbf{Empirical power benchmark under the default simulation settings with varying sample sizes}\\
+I will benchmark the empirical power among aSPU family tests and several existing tests. I will keep the significance level $\alpha$ at 0.05, and evaluate the empirical power for sample size $n$ equal to 500, 1000, 2000 and 3000. We will present either a figure plotting power curve as a function of $n$ for each participating test or a power table in the similar format as the empirical Type I error table above.
+%%%%%%%%%%%%%%%%%%% 
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.75]{{{PowerCurve_independenceWkCor_on_AR1data_h0.001}}}
+%\caption{Empirical power benchmark under different $n$ using working independence $R_w$}
+%\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001}
+%\end{figure}
+%
+%As shown in Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001}, aSPU family performs the best together with SSU test, which is close related to SPU(2) test. UminP test is after them, then follows GEE Score Test, with Sum test at the bottom. The observations on the other hand indicates that the SPU(2) is powerful in this testing scenario, which boost the aSPU family performance, while SPU(1) with its low performance is ignored by aSPU family. A closer look within aSPU family also tells us the original aSPU test performs the best while other modifications are close to it. 
+
+\item \textbf{Empirical power benchmark under the simulation settings where half of casual SNPs are in the opposite effect direction}\\
+Out of the 5 causal SNPs (simulated in the region with all other SNPs but excluded from the tests assuming that the causal SNPs are not genotyped), I will set 2 of them to have opposite effect direction copmared with the rest 3 SNPs by flipping the signs of SNP main effects. Other settings will remain the same as above. I will  keep the significance level $\alpha$ at 0.05, and evaluate the empirical power for sample size $n$ equal to 500, 1000, 2000 and 3000. I will present either a figure plotting power curve as a function of $n$ for each test under consideration or a power table in the similar format as the empirical Type I error table above.
+
+%We have the empirical power benchmark result as below:
+%%%%%%%%%%%%%%%%%%%% 
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.75]{{{PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects}}}
+%\caption{Empirical power benchmark under a mixed SNP effects}
+%\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects}
+%\end{figure}
+%
+%As shown in Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects}, we can see all the tests lost their power a lot. aSPU family still performs the best together with SSU test. In this scenario, we still found SPU(2) boosts the performance of aSPU family, while SPU(1) related test, such as Sum test, is not only of lower power, but also not increasing the power at all as $n$ goes up! Similar observation is on the GEE Score test, which has its lowest power measured at $n = 1000$, a weird decrease form $n = 500$. This observation repeats the conclusion we made before that GEE Score test sometimes performs very poor depending on the unknown association pattern between phenotype and SNPs. However, we can see some aSPU family members, which combines the Score test statistics, explicitly aSPU(w).sco, almost not affected by the poor performance of GEE Score test at all. This finding strongly proved the data-adaptive robustness of aSPU family members. 
+
+\item \textbf{Empirical power benchmark under the simulation settings where the number of null SNPs number grows}\\
+%In previous two tests scenarios, we confirmed the ability of aSPU family members and concluded the SPU(2) is most powerful and contribute to the good performance of aSPU family. 
+%Now we are curious how higher $\gamma$ will bring aSPU family to the edge. We gradually increased the number of null SNPs number from 50 to 75, 100, 200, then finally a seemingly extreme number 400. We used $n = 3000$ as the sample size. We kept all other settings the same with previous scenarios. The empirical power benchmark result is shown below:
+In association testing, there is sometimes the case that in a region of interest, casual SNP signals are very sparse. Namely, there exists many null SNPs. I hence want to investigate the performance of the aSPU family tests in the presence of a larger proportion of null SNPs in the region. I will gradually increase the number of null SNPs from 50 to 75, 100, 200, and then finally 400. I will only consider $n = 3000$ as the sample size in this scenario. I will keep all other settings the same as Scenario 3 (the default simulation settings) above. I will present either a figure plotting power curve as a function of number of null SNPs for each test under consideration or a power table in the similar format as the empirical Type I error table above.
+
+%The empirical power benchmark result is shown below:
+%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.75]{{{PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull}}}
+%\caption{Empirical power benchmark under an increasing number of Null SNPs}
+%\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull}
+%\end{figure}
+%
+%As shown in Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull}, we can see that as the number of null SNPs increases,  the aSPU family members reveals their greatest potential to maintain a higher power than other tests. The champion is original aSPU test, which only decreased from a power of 0.9 to 0.7, while the worst one weighted Sum test decreased from a power of 0.3 to below 0.1. GEE Score test also lost its power quickly. The SSU test suddenly lost its power with a steep linear slope ever since $n = 100$, indicating SPU(2) is not sufficient any more in maintaining a good power for aSPU family. UminP test (as equivalent to SPU($\infty$)) performs quite well as it just follows the bottom line of aSPU family members, i.e. aSPUw.Sco, which has at least two illuminations: first, UminP will be more and more sufficient when SNP number grows to $\infty$, which is meaningless though; second, aSPU family performance in this scenario is actually boosted by SPU($\gamma$) with $\gamma$ between 3 and 8, as neither SPU($2$) nor SPU($\infty$) performs better than any member of aSPU family. It's reasonable to believe when null SNP number increased from 50 to 400, a specific test from SPU($3$) to SPU($8$) takes its advantage and thus leads the aSPU family to the champion position.
+%
+%This scenario is more the case encountered in the Next-Generation Sequencing data. By using NG-seq techniques, high-density rare variants can be identified as supplement to common variants whole-genome-widely or exome-based, and then aSPU methods can be applied accordingly. This is also the sub aim (1b) for my dissertation research on extending the longitudinal aSPU test to RV case.\
+
+%%%%%%
+\item \textbf{Empirical power benchmark under the simulation settings where working correlation structure varies}\\
+I will investigate the aSPU family tests' performance under other working correlation structures than the working independence, such as AR(1), compound symmetry, and unstructured. Note that, as I simulated the longitudinal trait using the AR(1) correlation structure as described in Section \ref{sec:subsub1-2}, fitting GEE with the AR(1) working correlation matrix is actually using the true correlation matrix. I will keep all other settings the same as Scenario 3 (the default simulation settings) above. I will present either a figure plotting power curve as a function of $n$ for each test under comparison under a specific working correlation matrix or a power table in the similar format as the empirical Type I error table above. It is of interest to investigate the effect of combining a specific working correlation matrix and a specific $n$ for each test. 
+\end{enumerate}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsubsection{More Simulation Studies}\label{sec:subsub1-3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%More simulation studies will be considered such as: \\
+
+
+
+
+
+%2, tune the correlation among longitudinal measurements within same subject $i$ to a lower value, say 0.3, then evaluate the aSPU family performance as we did above with $\rho_y = 0.7$; 
+
+%3, compare the power gain from longitudinal GWAS to cross-sectional GWAS in the simulation, specifically, with a varying $\rho_y$, for example from 0.1 to 0.9, test the performances of aSPU family as well as other tests discussed in preliminary simulations in the longitudinal case and cross-sectional case respectively. Cross-sectional data can be easily get by using the first/baseline measurement generated in longitudinal data simulated.
+%[To Dr. Morrison's concern: Add the paragraph of introducing the simulation and analysis of the ARIC data in Aim section]\\
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Methods for Aim 1(b): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for rare variants}\label{sec:subsec2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Statistical Modeling}\label{sec:subsub2-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the previous section \ref{sec:subsub1-1}, I have discussed the method development of the aSPU family tests on common variants with a longitudinal trait. In this section, I will discuss the extension of the proposed methods to rare variants.
+
+While MAF of RVs are usually low, for example, between 0.001 to 0.01, the property of asymptotically normal distribution of either the regression coefficient or score vector may not hold. The simulation-based p-value calculating method as proposed in Aim 1(a) for CVs may not be sufficient for RV analysis. Specifically, in last section, we have:
+$$
+U_{.2}^{ (b) } \sim MVN \left( 0, \hat{\Sigma}_{.2} \right)
+$$
+with $b = 1,2,\ldots,B$, and thus obtain a statistics under null hypothesis: $T ^ {(b)} = \sum_{j=1}^p U^{ (b)\gamma }_{.2, j} $. We then calculate the p-value of $T_{ SPU(\gamma) }$ as $P_{ SPU(\gamma) } = \sum_{b=1}^B { I(T^{(b)} \geq T ^ {obs} ) + 1  \over B + 1 } $. 
+
+The above algorithms will hold in the RV case by large, except that the $U_{.2}^{ (b) }$ may not follow the multivariate normal distribution any longer. As a remedy, I propose a permutation based method to generates the empirical null distribution of $U_{.2}^{ (b) }$ instead of the previous simulation based method. The permutation strategy will maintain the relationship between longitudinal traits and possible covariates such as age and gender for subject $i$, in other words, the permutation strategy will only permute the genotype part in the regression model. The algorithm will be also robust to missing data as this is usually the case in longitudinal data settings. 
+%The permutation algorithm can be implemented as follows:
+%\begin{enumerate}
+%\item identify the max $k$ across all $n$ subjects, which is the number of longitudinal measurements, for example $k = 4$ as used in simulation study in section \ref{sec:subsub1-3}.
+%%%%
+%\item detect if the data has missing values, if yes, fill the missing value with NA to complement the data dimension (for example, subject $i$ with $Y_{i} = ( y_{i,1},,,y_{i,4} )'$ has two missing measurements at time 2 and time 3. After missing value complementing, it becomes $Y_{i} = ( y_{i,1},\textrm{NA},\textrm{NA},y_{i,4} )'$). Now we should have all the subjects with each $Y_{i}$ of dimension equal to $k \times 1$.  
+%%%%
+%\item complement $H_i$ to be of full dimension, i.e. $k \times (p + q + 1)$, for covariates and SNVs. Now we should have
+%$\begin{pmatrix}
+%Y_i & H_i
+%\end{pmatrix}$
+%as an augmented matrix of dimension $k \times (p + q + 2)$ for each subject $i$, where $H_i = (Z_i,X_i)$. For total $n$ subjects, we have row-wise binded matrix
+%$$
+%M = 
+%\begin{pmatrix}
+%Y_1 & H_1\\
+%Y_2 & H_2\\
+%\vdots & \vdots\\
+%Y_n & H_n
+%\end{pmatrix}
+%$$ 
+%of dimension $nk \times (p + q + 2)$.
+%%%%
+%\item permute the SNV chunk among different individuals, i.e. the $X_i$ in
+%$\begin{pmatrix}
+%Y_i & Z_i,X_i
+%\end{pmatrix}$ 
+%with the $X_j$ in 
+%$\begin{pmatrix}
+%Y_j & Z_j,X_j
+%\end{pmatrix}$
+%, where $i \neq j$. 
+%%%%
+%\item with permuted 
+%$$
+%M^{*(b)} = 
+%\begin{pmatrix}
+%Y_1 & Z_1, X_1^{*(b)}\\
+%Y_2 & Z_1, X_2^{*(b)}\\
+%\vdots & \vdots\\
+%Y_n & Z_1, X_n^{*(b)}
+%\end{pmatrix}
+%$$
+%we refit the GEE model and get the $ U_{.2}^{ *(b) } $
+%%%%
+%\item repeat step 4 - 5 B times to produce $U_{.2}^{ *(b) }$ with $b = 1,2,\ldots,B$.
+%\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+After we obtain enough $U_{.2}^{ *(b) }$ from permutation strategy to form an empirical null distribution, the left work of the aSPU tests for RVs will be exactly the same as we did on CVs. This is because, the only difference between the CV analysis and RV analysis is, the null distribution of score vectors for CVs is obtained by simulation based method, while for RVs, the null distribution of score vectors is obtained by permutation based method.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsubsection{Plan for Simulation Studies and Preliminary Simulation Results}\label{sec:subsub2-2}
+\subsubsection{Methods for Simulation Settings}\label{sec:subsub2-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The simulation strategy of RV genotype data is almost the same as previous strategy for generating CV genotype data (see section \ref{sec:subsub1-2}), except that:
+\begin{enumerate}
+\item the MAF of RVs, regardless of casual one or null one, are set between 0.001 and 0.01.
+\item the casual RVs are not excluded from later test stage as we expect the whole-genome sequencing or exome sequencing platform will identify high density variants including the casual ones.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%
+We will use the same simulated longitudinal phenotype data as for CVs.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsubsection{More Simulation Studies}\label{sec:subsub2-3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For aim1(b), more simulation studies will be considered such as: \\
+%1, compare the simulation-based method vs. permutation-based method on type I error and power for RV data.
+%
+%since we already know within aSPU, aSPUw, and the Score test, there must be at least one having a satisfactory power in a data scenario, we can combine the three tests like we did before to combine aSPU and Score to become aSPU.Score test. We can try the same minimum p-value combining strategy as we did for aSPU.Score
+%$$
+%T_{aSPU.aSPUw.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) },\underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPUw(\gamma) }, P_{Score} \Big\},
+%$$ 
+%We can then test if the performance of aSPU.aSPUw.Score will be all the time high in all scenarios (regardless of the variance homogeneity of RVs).
+%
+\subsubsection{Plan for Simulation Studies}\label{sec:aim1b-PSS}
+%\textbf{Preliminary Simulation Results}
+%[To Dr. Fu's concern: 1000 replicates may be not enough to evalute type I error accurately.]\\
+I will test the proposed methods' performance using simulated data. Specifically, we will simulate RV genotype data and longitudinal phenotype data mimicking real data. For example, the simulated genotype data will allow LD structure among SNPs and the simulated longitudinal trait will allow flexible control over the between-subject variance, the within-subject variance, the number of measurements and the correlation structure among measurements. I will benchmark the new test against several existing methods, such as Sum test, UminP test and Score test. Specifically, I will evaluate whether the Type I error could be controlled at the nominal level (neither inflated nor conservative), and compare the empirical power under different simulation scenarios.
+%[To Dr. Morrison's concern: Add the paragraph of introducing the simulation and analysis of the ARIC data in Aim section]\\
+I will evaluate, on simulation data, the effect of implementing permutation or parametric bootstrap strategy. We expect to see such procedures can provide a better control of type I error and a more unbiased estimate of the real power.
+%[To Dr. Morrison's concern: special ways that lipids must be treated when analyzing the ARIC data]\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsubsection{Plan for Simulation Studies}\label{sec:subsub2-3}
+%%\textbf{Preliminary Simulation Results}
+I plan to perform the following simulation studies:
+\begin{enumerate}
+\item \textbf{Type I error benchmark using simulation-based P-value calculating method under the default settings with varying sample sizes}\\
+Similarly as I planed for CVs in Aim 1(a), I will evaluate the aSPU family tests' Type I error performance as compared to a few existing tests for RVs. I will still use the simulation-based P-value calculating method as we planned for CVs before. I will compare the aSPU family tests with SSU, SSUw, Score, Sum, UminP (calculated by simulation-based method) and mvn.UminP (calculated by approximating a multivariate normal distribution) test. I will set the significance level $\alpha$ at 0.05. I provide a sample table below to show the format of future presentation (dummy numbers shown in each cell). 
+%The type I error is in Table \ref{table:Empirical type I error using simulation-based method in RV analysis}.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% sample table with dummy input.
+\begin{table}[ht]
+\centering
+\resizebox{1\textwidth}{!}
+{
+\centering
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrr}
+  \hline
+ n & pSSU & pSSUw & pScore & pSum & mvn.UminP  & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\
+  \hline
+500  & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.055 & 0.021 & 0.055 & 0.035 \\
+1000 & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.055 & 0.055 & 0.055 & 0.055 \\
+2000 & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.066 & 0.062 & 0.062 & 0.062 \\
+3000 & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.055 & 0.055 & 0.055 & 0.055 & 0.055  & 0.055 & 0.055 & 0.055 & 0.055 \\
+   \hline
+\end{tabular}
+
+}
+\caption{\footnotesize Sample Table of Type I error Benchmark among tests using simulation-based method in RV analysis. mvn.UminP: UminP calculated by approximating a MVN distribution; UminP: UminP method calculated by simulation-based method.  \label{table: Sample Empirical type I error in RV analysis}}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{table}[ht]
+%\resizebox{0.66\textwidth}{!}
+%{\begin{minipage}{\textwidth}
+%\centering
+%\begin{tabular}{rrrrrrrrrrrrrrrrrr}
+%  \hline
+% n & pSSU & pSSUw & pScore & pSum & mvn.UminP  & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\
+%  \hline
+%500  & 0.053 & 0.054 & 0.052 & 0.049 & 0.047  & 0.022 & 0.052 & 0.026 & 0.063 & 0.025  & 0.056 & \textbf{0.021} & 0.059 & \textbf{0.035} \\
+%1000 & 0.055 & 0.040 & 0.042 & 0.048 & 0.054  & 0.049 & 0.048 & 0.046 & 0.061 & 0.044  & 0.045 & 0.045 & 0.053 & 0.047 \\
+%2000 & 0.054 & 0.050 & 0.048 & 0.049 & 0.046  & 0.045 & 0.053 & 0.044 & 0.063 & 0.061  & \textbf{0.066} & \textbf{0.062} & \textbf{0.062} & \textbf{0.062} \\
+%3000 & 0.045 & 0.044 & 0.039 & 0.060 & 0.053  & 0.055 & 0.057 & 0.058 & 0.058 & 0.052  & 0.049 & 0.055 & 0.055 & 0.057 \\
+%   \hline
+%\end{tabular}
+%\caption{Empirical type I error using simulation-based method in RV analysis. mvn.UminP: UminP method based MVN distribution; UminP: UminP method based on simulation.  \label{table:Empirical type I error using simulation-based method in RV analysis}}
+%\end{minipage}}
+%\end{table}
+
+%Surprisingly, as we can see from the Type I error table above, actually the simulation-based aSPU family perform not bad at all in control the Type I error. There are several minor issues: 1), we see a little Type I error inflation in $n = 2000$ situation; 2), when $n = 500$, aSPUw and aSPUw.score, i.e. weighted aSPU family members, tend to be over conservative, which is confirmed in the power study below.  
+
+\item \textbf{Empirical power benchmark using simulation-based P-value calculating method under the default settings with varying sample sizes}\\
+I will benchmark the empirical power among aSPU family tests and several existing tests in RV analysis using simulation-based P-value calculating method. I will keep the significance level $\alpha$ at 0.05, and evaluate the empirical power for sample size $n$ equal to 500, 1000, 2000 and 3000. I will present either a figure plotting power curve as a function of $n$ for each test considered or a power table in the similar format as the empirical Type I error table above.
+
+
+\item \textbf{Type I error benchmark using permutation-based P-value calculating method under the default settings with varying sample sizes}\\
+I plan to compare the result from previous Scenario 1 to the Type I error benchmark result from using \textbf{permutation-based} P-value calculating method. %We hereby test the aSPU family tests' type I error performance as compared to a few existing representative tests for RVs using the permutation-based P-value calculating method. 
+I will compare the aSPU family tests with SSU, SSUw, Score, Sum, UminP (calculated by simulation-based method) and mvn.UminP (calculated by approximating a multivariate normal distribution) tests. I will set the significance level $\alpha$ at 0.05. I will present the result using a similar table as the previous example table \ref{table: Sample Empirical type I error in RV analysis}.
+%Similarly as we planed the simulation studies for CVs in section \ref{sec:subsub1-3}, we will test the aSPU family tests' type I error performance as compared to a few existing representative tests for RVs. We will still use the simulation-based P-value calculating method as we tested on CVs before. We compared aSPU family tests with SSU, SSUw, Score, Sum, UminP (calculated by simulation-based method) and mvn.UminP (calculated by approximating a multivariate normal distribution) tests. We set up the nominal type I error at 0.05. We provide a sample table below to show the future presentation format (dummy number shown in each cell). 
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.75]{{{PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}}}
+%\caption{Empirical power benchmark using simulation-based method in RV analysis}
+%\label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}
+%\end{figure}
+%
+% 
+%In Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}, we demonstrated the power of our aSPU family and other earlier mentioned tests. The figure have several implications:
+%\begin{enumerate}
+%\item aSPU family members have the highest powers, with SPU(2) test is a little better in $n = 1000$ case.\\
+%As previously noted, SPU(2) is closely related to SSU(w), this is confirmed in the figure - they are just below SPU(2) and overlapped with aSPU(.sco).
+%%%%%
+%\item UminP based on MVN distribution and UminP based on simulation have large discrepancy when $n$ is small, for example $n = 500$ and $n = 1000$, while almost the same (overlapping) with a larger $n$ afterwards. \\
+%This indicates either the insufficiency of the MVN assumption of UminP or the insufficiency of the simulation-based UminP depending on the MVN assumption of the null score vector. We will determine it with later permutation-based test as a validation.
+%%%%%
+%\item Sum, SPU(1) and SPUw(1) tests are very similar to each other, the reason is already explained in section \ref{sec:subsub1-1}. They didn't perform well in testing RVs.
+%%%%%
+%\item Very interestingly, four members of aSPU family are actually not nearly-parallel any more as they used to be in CVs scenario (see Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001}), \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects} and \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull} ).\\
+%It looks weird but after a closer look, we will find the unweighted version of aSPU(.sco) are nearly-parallel (group UW), the weighted version of aSPU(.sco) are nearly-parallel (group W), but the two groups (UW and W) were behaving distinctively to each other! Weighted version are poorer under a smaller $n$, for example 500 and 1000, but they fight back and perform better under a larger $n$, for example 2000 and 3000. We can see a obvious intersection point of two groups at about $n = 1300$ (interpolated). 
+%
+%The reason, after some careful thoughts, is actually straightforward: when $n$ is small, RV MAF fluctuation, which accordingly leads to RV variance fluctuation, are negligible (for example MAF = 0.001 or MAF = 0.005 does not make much difference when $n = 500$; there are larger chance that both MAFs will lead to a same small minor allele count, say 1 copy, for a specific RV, and the actually data-driven estimated MAF is the same for both RVs). In this case, the weighted version will not have its edge out of the pocket, but instead, the performance will be penalized by the positive weight in the test statistic denominator (thus the test statistic shrinked, and power lost); however, when $n$ is large, RV MAF fluctuation, which accordingly leads to RV variance fluctuation, are obvious (for example MAF = 0.001 and MAF = 0.005 under $n = 3000$ will in theory lead to 6 and 30 copies respectively. The true number will vary, but it doesn't erase the large gap between the two RVs and the data-driven MAF estimates will still be approximately 0.001 and 0.005, which in turn leads to heterogeneous variances ($nf(1-f)$) of the two RVs. Now, the weighted aSPU can play its strength out by normalizing the RV variance to avoid noise dominance due to larger variance RVs (see section \ref{sec:subsub1-1} for details about the advantage and disadvantage of aSPUw over aSPU).
+%
+%\item aSPU(w).Score version always step back a little bit from its original, which confirms that  aSPU(w).Score has compromised the performance between aSPU and Score test, which for sure will not surpass any single one of them (details about aSPU(w).Score is introduced in section \ref{sec:subsub1-1}).
+%\end{enumerate}
+%
+%   As there are many participating tests shown in Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}, it may not be clear enough to visually check the details. I hereby put the exact number of power estimates in below Table \ref{table:Empirical power benchmark using simulation-based method in RV analysis}.
+%
+%
+%%\begin{landscape}	% need to use landscape to enable wide table.
+%					% with \resizebox, we can put it still in original paper.
+%\begin{table}[ht]
+%\resizebox{0.66\textwidth}{!}
+%{\begin{minipage}{\textwidth}
+%\centering
+%\begin{tabular}{rrrrrrrrrrrrrrrrrrrrr}
+%  \hline
+% n & pSSU & pSSUw & pScore & pSum & mvn.UminP  & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\
+%  \hline
+%	500    & 0.154 & 0.165 & 0.103 & 0.128 & 0.120  & 0.061 & 0.129 & 0.076 & 0.163 & 0.070 &  \textbf{0.167} & 0.084 & 0.158 & 0.103 \\
+%  	1000 & 0.299 & 0.301 & 0.189 & 0.186 & 0.233  & 0.198 & 0.184 & 0.160 & \textbf{0.321} & 0.275 &  \textbf{0.303} & 0.270 & 0.298 & 0.282 \\
+%  	2000 & 0.594 & 0.634 & 0.449 & 0.352 & 0.544  & 0.554 & 0.351 & 0.365 & 0.623 & 0.660 &  0.617 & \textbf{0.692} & 0.614 & 0.680 \\
+%  	3000 & 0.751 & 0.804 & 0.645 & 0.462 & 0.718  & 0.722 & 0.465 & 0.471 & 0.770 & 0.821 &  0.746 & \textbf{0.837} & 0.764 & 0.833 \\
+%   \hline
+%\end{tabular}
+%\caption{Empirical power benchmark using simulation-based method in RV analysis \label{table:Empirical power benchmark using simulation-based method in RV analysis}}
+%\end{minipage} }
+%\end{table}
+%\end{landscape}
+
+
+\item \textbf{Empirical power benchmark using permutation-based P-value calculating method under the default settings with varying sample sizes}\\
+I will benchmark the empirical power among aSPU family tests and several existing tests in RV analysis using \textbf{permutation-based} P-value calculating method. I will also compare them to the one computed by \textbf{simulation-based} P-value calculating method in Scenario 2. I will discuss the observed difference between these two methods for RV analysis. I will keep the significance level $\alpha$ at 0.05, and evaluate the empirical power for sample size $n$ equal to 500, 1000, 2000 and 3000. I will present either a figure plotting power curve as a function of $n$ for each test under comparison or a power table in the similar format as the previous example table \ref{table: Sample Empirical type I error in RV analysis}.
+
+%\item \textbf{Permutation-based Test under default settings with varying sample size}\\
+%As noted before, there are some minor issues in using simulated-based aSPU method to test RVs, we thus tested the aSPU performance based on permutation algorithm as detailed in section \ref{sec:subsub2-1}. The type I error is shown in Table \ref{table:Empirical type I error using permutation-based method in RV analysis}.\\
+%
+%
+%\begin{table}[ht]
+%\resizebox{0.66\textwidth}{!}
+%{\begin{minipage}{\textwidth}
+%\centering
+%\begin{tabular}{rrrrrrrrrrrrrrrrrrrr}
+% \hline
+%n    & pSSU & pSSUw & pScore & pSum & mvn.UminP & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\
+% \hline
+%500  & 0.053 & 0.054 & 0.052 & 0.049 & 0.047  & 0.046 & 0.050 & 0.049 & 0.056 & 0.061  & 0.054 & 0.053 & 0.060 & 0.056  \\
+%1000 & 0.055 & 0.040 & 0.042 & 0.048 & 0.054  & 0.056 & 0.048 & 0.049 & 0.056 & 0.043  & 0.047 & 0.045 & 0.052 & 0.051  \\
+%
+%2000 & 0.054 & 0.050 & 0.048 & 0.049 & 0.046  & 0.046 & 0.049 & 0.043 & 0.053 & 0.052  & 0.063 & 0.057 & 0.058 & 0.056  \\
+%
+%3000 & 0.045 & 0.044 & 0.039 & 0.060 & 0.053  & 0.050 & 0.058 & 0.058 & 0.047 & 0.048  & 0.049 & 0.053 & 0.049 & 0.053  \\
+%
+%  \hline
+%\end{tabular}
+%\caption{Empirical type I error using permutation-based method in RV analysis. mvn.UminP: UminP method based MVN distribution; UminP: UminP method based on permutation.  \label{table:Empirical type I error using permutation-based method in RV analysis}}
+%\end{minipage}}
+%\end{table}
+%
+%
+%%============================================================%
+%% below is the type I error from hiding the casual RVs.
+%%\begin{table}[ht]
+%%\resizebox{0.8\textwidth}{!}
+%%{\begin{minipage}{\textwidth}
+%%\centering
+%%\begin{tabular}{rrrrrrrrrrrrrrrrrr}
+%%  \hline
+%%n &  mvn.UminP & pScore & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aSPU & aSPUw & aSPU.sco & aSPUw.sco \\
+%%  \hline
+%%500   & 0.047 & 0.052 & 0.048 & 0.050 & 0.048 & 0.057 & 0.062  & 0.052 & 0.051 & 0.062 & 0.051 \\
+%%1000  & 0.055 & 0.050 & 0.059 & 0.050 & 0.049 & 0.057 & 0.048  & 0.048 & 0.049 & 0.053 & 0.050 \\
+%%2000  & 0.048 & 0.049 & 0.047 & 0.049 & 0.047 & 0.049 & 0.046  & 0.058 & 0.057 & 0.055 & 0.054 \\
+%%3000  & 0.048 & 0.038 & 0.047 & 0.063 & 0.059 & 0.048 & 0.051  & 0.049 & 0.052 & 0.050 & 0.052 \\
+%%   \hline
+%%\end{tabular}
+%%\caption{Empirical type I error using permutation-based method in RV analysis. mvn.UminP: UminP method based MVN distribution; UminP: UminP method based on permutation.  \label{table:Empirical type I error using permutation-based method in RV analysis}}
+%%\end{minipage}}
+%%\end{table}
+%
+%
+%
+%%============================================================%
+%% below is the type I error from including the casual RVs, has aspu_aspuw.sco and aspu_aspuw included. The graph of power corresponding to this type I error table is "PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU_moreTests.pdf".
+%%\begin{table}[ht]
+%%\centering
+%%\begin{tabular}{rrrrrrrrrrrrrrrrrrrr}
+%%  \hline
+%%n    & pSSU & pSSUw & pScore & pSum & mvn.UminP & UminP & SPU(1) & SPUw(1) & SPU(2) & SPUw(2) & aspu\_P & aspu\_weighted\_P & aspu\_sco\_P & aspu\_
+%%weighted\_sco\_P & aspu\_aspuw.sco\_P & aspu\_aspuw\_P \\
+%%  \hline
+%%500  & 0.053 & 0.054 & 0.052 & 0.049 & 0.047  & 0.046 & 0.050 & 0.049 & 0.056 & 0.061  & 0.054 & 0.053 & 0.060 & 0.056 & 0.058 & 0.051 \\
+%%1000 & 0.055 & 0.040 & 0.042 & 0.048 & 0.054  & 0.056 & 0.048 & 0.049 & 0.056 & 0.043  & 0.047 & 0.045 & 0.052 & 0.051 & 0.051 & 0.046 \\
+%%
+%%2000 & 0.054 & 0.050 & 0.048 & 0.049 & 0.046  & 0.046 & 0.049 & 0.043 & 0.053 & 0.052  & 0.063 & 0.057 & 0.058 & 0.056 & 0.057 & 0.057 \\
+%%
+%%3000 & 0.045 & 0.044 & 0.039 & 0.060 & 0.053  & 0.050 & 0.058 & 0.058 & 0.047 & 0.048  & 0.049 & 0.053 & 0.049 & 0.053 & 0.053 & 0.053 \\
+%%
+%%   \hline
+%%\end{tabular}
+%%\end{table}
+%
+%
+%
+%As we happily find, all the minor issues in simulation-based aSPU test scenario disappeared: type I error is controlled at the nominal value without too conserved ones (simulation-based will have over conserved type I error under $n = 500$).
+%
+%The power analysis result is shown in Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU}, we can see by large the pattern is the same as simulation-based aSPU test shown in Figure \ref{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVsimulatedU}. However, there are some improvements: 
+%\begin{enumerate}
+%\item  weighted version aSPU tests now are best for all $n$, especially they restore their performances under $n = 500$ and $n = 1000$.
+%%%%%
+%\item the intersection point between group UW and group W as previously defined disappeared, with group W still performs much better than group UW when $n$ goes larger.
+%%%%
+%\item UminP based on MVN distribution and UminP based on permutation are now almost the same, especially for a smaller $n$, for example $n = 500$ and $n = 1000$. \\
+%This confirms the insufficiency of the simulation-based UminP depending on the MVN assumption of the null score vector; in a small sample size case, the simulation-based UminP will not perform well or correct; use either UminP based on MVN distribution or UminP based on permutation strategy seemed to be a correct way.
+%\end{enumerate}
+%
+%Overall, the inference will be permutation algorithm has remedied the fallacy of asymptotic Normal distribution assumption of score vector, under extreme low MAF case and extreme small sample size case, which is especially the case here of $n = 500$ and $n = 1000$. For $n = 2000$ and $n = 3000$, the simulation algorithm appeared to be as sufficient as permutation algorithm.
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.75]{{{PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU}}}
+%\caption{Empirical power benchmark using permutation-based method in RV analysis \label{fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_RVpermutedU} }
+%\end{figure}
+
+\item \textbf{Evaluation of the performance of proposed aSPU.aSPUw.Score test}\\
+Within the aSPU, aSPUw, and Score test, there may be at least one test having a high power in a specific data scenario, depending on the association pattern and the correlation structure within SNPs. I plan to combine the three tests to the aSPU.aSPUw.Score test. 
+%We can adopt the same minimum p-value combining strategy as we did for aSPU.Score, specifically
+$$
+T_{aSPU.aSPUw.Score} = \textrm{min} \Big\{ \underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPU(\gamma) },\underset{\gamma\in\Gamma}{ \textrm{min} } P_{ SPUw(\gamma) }, P_{Score} \Big\},
+$$ 
+Afterwards, I will evaluate the performance of the proposed test with regard to empirical Type I error and power. We are interested in whether the proposed new test, that have combined advantages from two adaptive tests and the score test, can control the Type I error well and maintain a higher power in all scenarios (regardless of the variance homogeneity of RVs). I will present the result using a similar table or power curve plot as above. 
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Methods for Aim 2: To develop the pathway-based data-adaptive association tests for longitudinal data analysis}
+\label{sec:aim2}
+In the previous sections, I have discussed the method development of the aSPU family tests in a gene-based or region-based manner for CVs and RVs. Here, I will discuss the extension of the new methods to the pathway-based manner, the so called \textbf{Path-aSPU}. Path-aSPU is proposed mainly for analyzing RVs. Since RVs have extreme low MAFs, they need more aggregation to increase the test power. Like we aggregate the RVs in a gene, we further aggregate the genes in a pathway. Additionally, there may be a large number of non-associated RVs, a preferred case for the aSPU family. Thus I expect Path-aSPU will perform well when comparing to existing methods, such as SSU, Sum and UminP test. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Statistical Modeling}\label{sec:aim2-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A pathway analysis will involve multiple genes (for example, 20 or 50). Too few or too many genes in a pathway will make the pathway difficult to interpret in the biological perspective. For example, a pathway with only two genes and another pathway with 2000 genes are both difficult to interpret. Therefore, I will consider the pathway with a reasonable number of genes, for example, 20 to 200. For each gene within a pathway, it may contain different numbers of RVs. For example, a gene has 10 RVs while another gene has 400 RVs. This bring over a new problem that a larger gene (a gene with more RVs) may dominate a smaller gene (a gene with fewer RVs). Hereby, I propose to modify the aSPU test to adjust for various gene length, thus avoid the dominant influence from a large (or small) gene.
+
+Let the short notation $U_{g.}$ represent $U_{.2}$ for genotype data %for the $X_i$ part in the whole score vector (see section \ref{sec:subsub1-1})
+, and $U_{g.} = (U_{g,1},U_{g,1},\ldots, U_{g,p_g})'$ represent the score vector for gene $g$ with $p_g$ RVs from the GEE fitting. Given a pathway (or a gene set) $S$, the gene-specific SPU statistic is as follows:
+\begin{equation}
+T_ { SPU(\gamma ; g) } \propto || Ug.||_{\gamma} =  \left( \frac{  \sum_{j=1} ^ {p_g} |U_{g, j}| ^ { \gamma }  }{p_g} \right) ^ { 1 \over \gamma }
+\end{equation}  
+Then accordingly, the pathway-based SPU statistic is
+\begin{equation}
+T _ { Path-SPU(\gamma, \gamma2 ; S) } = \sum_{g \in S} ( T_ { SPU(\gamma ; g) } ) ^ {\gamma2}
+\end{equation}  
+
+Note the $T_ { SPU(\gamma ; g) }$ is now standardized by the gene-specific number of RVs, $p_g$; for a given gene $g$, $T_ { SPU(\gamma ; g) }$ is equivalent to previous notation $T_ { SPU(\gamma ) }$ by large. Again, for any given $(\gamma, \gamma2)$, I will recourse to the same simulation or permutation based strategy to calculate the p-value $P _ { Path-SPU(\gamma, \gamma2 ; S) }$ from $T _ { Path-SPU(\gamma, \gamma2 ; S) }$. Then we will have the \textbf{pathway-based aSPU} test statistic:
+\begin{equation}
+T _ { Path-aSPU(S) } = min_{\gamma, \gamma2} P _ { Path-SPU(\gamma, \gamma2 ; S) }
+\end{equation}
+We again adopt the same strategy as previous, that is we will utilize the same set of simulated $U$ generated in the previous step for calculating $P _ { Path-SPU(\gamma, \gamma2 ; S) }$) to calculate the final \textbf{pathway-based aSPU} p-value $P _ { Path-aSPU(S) }$.
+
+The intuition of $\gamma 2$ is like that of $\gamma$: If we treat the pathway as the gene and the gene as the RVs. A larger $\gamma 2$ ($\gamma$) put more weights on heavily associated genes (RVs), when gradually ignoring the less associated genes (RVs) in a pathway (gene). An extreme case is $\gamma 2 = \infty$, as I already explained $\gamma = \infty$'s interpretation in section \ref{sec:subsub1-1}, it indicates the pathway-based analysis actually used only one gene - the most heavily associated gene with the trait. Since the goal of pathway-based analysis is to take advantage of multiple "co-working" genes, and aggregate more RVs, it is less meaningful to consider the use of a $\gamma 2= \infty$. Instead, I propose to use $\gamma 2 \in \Gamma 2 = \{1,2,4,8\}$. The reason is that, at the pathway level, the statistic $T_ { SPU(\gamma ; g) }$ is always a positive number, not like that $U_{.2,j}$ from the GEE model fitting for variants can have different signs (SNP effect directions). Thus, deliberately assigning both odd and even number of $\gamma 2$ becomes unnecessary, and I can actually use most representative $\gamma 2$ values and expect them to have most distinct effects from each other. Fewer $\gamma 2$ candidates will also expedite the computation. To these purposes, $\gamma 2 \in \Gamma 2 = \{1,2,4,8\}$ will cover Sum-like test, SSU-like test, and two more tests preferring the sparse-casual-gene situation (for example, only 2 or 3 genes are associated with the longitudinal trait in a pathway with 20 genes). 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Methods for Simulation Settings}\label{sec:aim2-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The simulation strategy of RVs within a gene is the the same as section \ref{sec:subsub2-2}. I will use the same simulated longitudinal phenotype data as in Aim 1(a).
+
+With regard to the pathway consisting of multiple genes, I will simulate a pathway with 20 genes. Each gene $g$ will contain $p_g$ RVs with $p_g$ randomly draw from a uniform distribution $U(5,20)$. 5 of the 20 genes will be randomly selected to be causal, with each casual gene containing $U(1,3)$ causal RVs.
+
+%We will test Path-aSPU family on the simulated data to evaluate the type I error and power, with comparison to other existing tests like SSU, Sum, Score and UminP test.
+
+%GRASS \cite{Chen2010},which executes lasso regression (L1-norm) of eigenSNPs within each gene to achieve variable selection, while performing ridge regression (L2-norm) of eigenSNPs at the gene-set-level to achieve gene effect estimates shrinkage simultaneously; ALIGATOR \cite{Holmans2009}, the association list go annotator, which is a 'p-value enrichment approach' requiring only pre-computed SNP p-values, uses Fisher's exact test on SNP with minimum p-value for the gene-level association; Plink \cite{Purcell2007}, which is a very popular GWAS analysis tool and plinkSet module within it implements the set-based associate test; the famous GSEA test in association study settings by \cite{wang2007pathway}.
+
+%We could further consider more extensive simulation studies, such as changing the casual RV number within a casual gene or changing the number of casual genes, using independent RVs within a gene instead of correlated RVs in AR(1), and using different working correlation matrix in GEE fitting.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Plan for Simulation Studies}\label{sec:aim2-PSS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%I will simulate the genotype data and longitudinal phenotype data following the Aim 1. Additionally, since in practice, a pathway usually contains multiple genes and a gene usually contains multiple SNPs, I will accordingly simulate a pathway with multiple genes and each gene with multiple SNVs. I will select one or more genes to be causal. Within a selected causal gene, I will choose one or more SNPs to be causal.
+I will test the Path-aSPU tests' performance on the simulated data to evaluate the empirical Type I error and power, with comparison to several existing tests like SSU, Sum, Score and UminP test. I will fix the sample size $n =  1000$; I will set the single SNP heritability $h_j^2 \in \{0.001, 0.0025, 0.005, 0.0075, 0.01\}$ to control the effect size. All other settings will be the same as Scenario 2 of Aim 1(a) simulation study plan (see section \ref{sec:aim1a-PSS}). 
+
+%GRASS \cite{Chen2010},which executes lasso regression (L1-norm) of eigenSNPs within each gene to achieve variable selection, while performing ridge regression (L2-norm) of eigenSNPs at the gene-set-level to achieve gene effect estimates shrinkage simultaneously; ALIGATOR \cite{Holmans2009}, the association list go annotator, which is a 'p-value enrichment approach' requiring only pre-computed SNP p-values, uses Fisher's exact test on SNP with minimum p-value for the gene-level association; Plink \cite{Purcell2007}, which is a very popular GWAS analysis tool and plinkSet module within it implements the set-based associate test; the famous GSEA test in association study settings by \cite{wang2007pathway}.
+
+Optionally, I may consider more extensive simulation studies, such as tuning the casual RV number within a casual gene or tuning the number of casual genes within a pathway, using independent RVs within a gene instead of correlated RVs in AR(1), and using different working correlation matrix. In these ways,  I can evaluate the robustness of the Path-aSPU performance.
+%[To Dr. Morrison's concern: Add the paragraph of introducing the simulation and analysis of the ARIC data in Aim section]\\
+%In summary, I will simulate the gene pathway including multiple genes, and each gene contains multiple SNVs. We will test our Path-aSPU's performance in controlling type I error and maintaining a higher power under different simulation scenarios. We will compare Path-aSPU to a few existing tests such like SSU, Score, Sum, and UminP test. Although other existing tests like GRASS \cite{Chen2010} and ALIGATOR \cite{Holmans2009} are very famous pathway-based association tests, they were designed for cross-sectional data analysis, and thus unavailable to compare with under our longitudinal settings.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Methods for Aim 3: To develop the software package for method implementation}
+\label{sec:aim3}
+I will develop a software package using R language and Linux shell script mainly. The package/software will require a few existing R packages, such as "data.table" enables big data manipulation and "geepack" enables GEE estimation, to make itself functional and more efficient. All dependent R packages can be freely downloaded from CRAN (http://cran.r-project.org/). The software package will install the dependent R packages automatically upon first time software installation/setup. 
+
+The software package will have a list of nice properties. It will be straightforward to install and use for 1st-time user. The software package will allow user to run the program in a very flexible parallel computation framework. For example, user can choose to use a single node with multiple cores or use multiple nodes with multiple cores. I will employ either SOCKET or MPI as the parallel computing protocol. I will use R packages "SNOW", "doSNOW" and "doMC" to fulfill the parallel function. The software package will also have the state-of-the-arts technique to enable efficient implementation of the aSPU methods, such as the hash table, radix sort, memory-efficient task send and collect among nodes, and calling C++ code for some intensive loops. 
+
+The software package will finally have a clear help document with demonstration examples in addition to on-screen help brief (triggered by command, for example, "Executable.r -h"). The software can be operated though Linux command line arguments. For example, the command line that "Executable.r -i inputname -o outputname -p FALSE -S SNOW -m FALSE", will use the executable file "Executable.r" to process the input file "inputname" and later output the file "outputname". It disables the permutation-based method, instead uses the simulation-based method by specifying "-p FALSE". It uses parallel computing schema set by "SNOW" and executes on single node with multiple cores as indicated by "-m FALSE". This is a short example, the real arguments could be more complicated to allow more flexible control of the software package.  
+
+%\textbf{Plan for simulation studies}\\
+I will test our software package on the simulated dataset for the purpose of debugging and optimization. Since we know the "real answer" for simulated dataset, testing the software package on such dataset and evaluate the result can help us confirm the scientific function of the software package is correct.
+
+%\textbf{Plan for real data application}
+I will test our software package on the ARIC data for the purpose of debugging and optimization. I expect the real dataset can give us more useful feedback from, for example, the innate data complexity, which simulated dataset usually lack, to help us improve the robustness, convenience and efficiency of the software package.
+
+%\begin{enumerate}
+%\item the package/software will be straightforward to install and use for 1st-time user
+%\item the package/software will have the ability to run in a very flexible parallel computation framework, for example can use single node with multiple cores or use multiple nodes with multiple cores. The parallel protocol we will adopt is either SOCKET or MPI.
+%\item the package/software will have state-of-the-arts technique to enable efficient implementation of aSPU algorithms, such as hash table, radix sort, memory-efficient task send \& collect among nodes and calling C++ code for some intensive loops. 
+%\item the package/software will have a help document with demo examples
+%\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Methods for Real Data Application for Proposed Aims}\label{sec:sub-RDAA}
+Here I will summarize the methods of real data application for proposed Aims 1 and 2. For Aim 3, since it is for software package development, I will use the package, test it, and improve its performance and robustness through the whole real data application processes for Aim 1 and 2. As shared in common, I will apply the developed novel methods for both Aims 1 and 2 to the Atherosclerosis Risk in Communities (ARIC) data (https://www2.cscc.unc.edu/aric/). I will exclusively use the Caucasian samples ($n$ = 11478). Specifically, I will select one or several traits from ARIC cohort data as the response variable(s) with longitudinal measurements. Candidate traits include four cardiovascular disease-related lipid traits, which are total cholesterol (TC), high-density lipoprotein cholesterol (HDL-C), low-density lipoprotein cholesterol (LDL-C) and triglycerides (TRG). I will \textbf{take cautions before using these lipid traits}, such as accounting for lipid-lowering therapy in TC and LDL-C traits, and natural log transformation on the TRG trait according to the procedures described in \cite{Peloso2014}. 
+
+For genotype data part, in Aim 1(a), I will use the common variants genotyped by the ExomeChip \cite{Grove2013} platform in the ARIC study. I will follow conventional quality control (QC) criteria for GWAS. For example, the MAF of any SNP should be greater than $5\%$, missing rate of both single SNP and single subject should be less than $5\%$  and hardy-weinberg-equilibrium (HWE) test p-value should be greater than $0.001$. In Aim 1(b), I will use the rare variants genotyped by the same ExomeChip platform in the AIRC study. I will follow conventional QC criteria for rare variants analysis. For example, the MAF of any SNP should be less than $5\%$, missing rate of both single SNP and single subject should be less than $5\%$, HWE test p-value should be greater than $0.001$ and region aggregate counts of minor alleles should be greater than 20 or 40 as previously done in \cite{Lange2014,Peloso2014}. In Aim 2, I will define the gene pathway by public pathway resources like KEGG \cite{Ogata1999} and BioCarta \cite{Nishimura2001}. I will consider the medium size pathways in selected database, for example, the pathway with 20 to 100 genes. I will use the rare variants from the ExomeChip platform \cite{Grove2013} in the ARIC study. I will adopt the same QC criteria for rare variant analysis as in Aim 1(b). 
+%%as our longitudinal response variables (will fit each one separately by our proposed model). We will \textbf{take cautions before using these lipid traits} such as accounting for lipid-lowering therapy in TC and LDL traits, and natural log transformation on the trgs trait according to the procedures described in \cite{Peloso2014}. 
+%We will exclusively use Caucasian samples ($n$ = 11478 ). For the covariates, we will include but not limited to subject's demographic information such as age, gender and BMI, and a few top PCs. We hope to validate known pathway affecting the cardiovascular related trait level, and identify the potential novel pathway associated with any of these traits.
+
+%For Aim 2, we will focus on RVs in genes and genes in a well-defined pathway. The data application procedures for RVs in genes are the same as in section \ref{sec:Data Application-aim1}. The genes in pathway will be defined by any one from the KEGG \cite{Ogata1999}, BioCarta \cite{Nishimura2001} or Gene Ontology \cite{Ashburner2000}. We will consider the medium size pathways in selected database, for example the pathway with 20-100 genes.
+
+With regard to covariates, I will include top two principal components eigenvectors (PCs) produced by EIGENSTRAT \cite{Price2006} in the longitudinal regression model to adjust for the potential population structure within the ARIC Caucasian subjects. Additionally, I will include subject's demographic information such as age, gender and BMI. I will also include the fixed time course effect as a covariate.
+
+I will run gene-based test with gene boundary defined by ANNOVAR \cite{Wang2010a}, a software package providing functional annotation of genetic variants from high-throughput sequencing data or array data. Optionally, if sliding-window based test is chosen for Aim 1(a), I will set the window size to 40 consecutive SNPs in a window, while neighboring windows share 10 SNPs as the step size so that SNPs signals in the gap between two windows would not be omitted. 
+%as our longitudinal response variables (will fit each one separately by our proposed model). We will \textbf{take cautions before using these lipid traits} such as accounting for lipid-lowering therapy in TC and LDL traits, and natural log transformation on the trgs trait according to the procedures described in \cite{Peloso2014}. 
+
+By implementing the real data application, I expect to verify known risk genes and/or pathways related to either cardiovascular disease or associated trait level, therefore I can validate the functionality of our proposed methods. I also look forward to identify the novel risk genes and/or pathways, which will provide new valuable information to the disease research consortium. Since I will provide a software package to implement our new methods, I will test its correctness and robustness through the whole real data application.  
+
+%I hope to validate known genetic loci as reported in the literature \cite{Teslovich2010,Lange2014,Peloso2014,Consortium2013,Maxwell2013}, and identify potential novel genetic loci associated with any of the candidate traits.
+
+
+%For example, the MAF of any SNP should be greater than $5\%$, missing rate of both single SNP and single subject should be less than $5\%$  and HWE test p-value should be greater than $0.001$.
+%%%%%%%%%%
+%We will adopt classical Quality Control (QC) criteria for rare variant analysis. For example, the MAF of any SNV should be less than $5\%$, missing rate of both single SNP and single subject should be less than $5\%$, HWE test p-value should be greater than $0.001$ and region aggregate counts of minor alleles should be greater than 20 or 40 as previously done in \cite{Lange2014,Peloso2014}.
+%%%%%%%%%%%%%%%%%%%%%
+%as our longitudinal response variables (will fit each one separately by our proposed model). We will \textbf{take cautions before using these lipid traits} such as accounting for lipid-lowering therapy in TC and LDL traits, and natural log transformation on the trgs trait according to the procedures described in \cite{Peloso2014}. 
+%For the covariates, we will include but not limited to subject's demographic information such as baseline age, gender and BMI, time effect, and a few top PCs.
+
+%We hope to validate known common variant genetic loci as reported in literature \cite{Teslovich2010,Lange2014,Peloso2014,Consortium2013,Maxwell2013}, and identify the potential novel genetic loci associated with any of these traits.
+%We will define gene boundary and pathway containing multiple genes (for aim II) according to annotation software, database resource, or literature. We expect to verify known risk genes and/or pathways related to either cardiovascular disease or associated trait level, therefore we can validate the functionality of our proposed method. We also look forward to identify the novel risk genes and/or pathways, which will provide new valuable information to the disease research consortium. We will also provide a software to implement our new methods. We will test its correctness and robustness on both simulation dataset and real dataset.  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Real Data Application of the methods}
+%\label{sec:Data Application}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%[To Dr. Morrison's concern: special ways that lipids must be treated when analyzing the ARIC data]\\
+%We will apply the novel method on ARIC data as detailed in section \ref{sec:data}. Specifically, we will use the four closely cardiovascular-disease-related traits measured in ARIC cohort data, which are total cholesterol (tch), High-density lipoprotein (HDL), Low-density lipoprotein (LDL) and triglycerides (trgs), as our longitudinal response variables (will fit each one separately by our proposed model). We will \textbf{take cautions before using these lipid traits} such as accounting for lipid-lowering therapy in TC and LDL traits, and natural log transformation on the trgs trait according to the procedures described in \cite{Peloso2014}. We hope to validate known genetic loci as reported in literatures \cite{Teslovich2010,Lange2014,Peloso2014,Consortium2013,Maxwell2013}, and identify the potential novel genetic loci associated with any of these traits. We will exclusively use Caucasian samples ($n$ = 11478 as from Figure \ref{fig: ARIC_CohortCharacteristics}). For the covariates, we will include but not limited to subject's demographic information such as age, gender and BMI. 
+
+%\subsection{Data application for Aim One}
+%\label{sec:Data Application-aim1}
+%For Aim (1a), we will use the CVs from traditional SNP genotyping platform used in ARIC study as our genotype data. We will use classical Quality Control (QC) criteria as for GWAS, for instance the MAF, missing rate and HWE. We will include several top principal components eigenvectors (PCs) in the regression to adjust for the potential population structure within Caucasian subjects. We will run gene-based test with gene boundary defined by ANNOVAR \cite{Wang2010a}, a software providing functional annotation of genetic variants from high-throughput sequencing data or array data.  We will also run sliding-window based test with 40 consecutive SNPs in a window, while neighboring windows share 10 SNPs (so we will not omit the SNPs signals in the gap between two windows). 
+
+%For Aim (1b), we will use the RVs from ExomeChip \cite{Grove2013} used in ARIC study as our genotype data. We will run gene-based test with gene boundary defined by ANNOVAR \cite{Wang2010a}. We will use similar QC criteria as for CVs, except we will use aggregate MAF cutoffs (based on gene level RV counts, for example 20 or 40 minor alleles within a gene) as previously done in \cite{Lange2014,Peloso2014}. 
+
+%\subsection{Data application for Aim Two}
+%\label{sec:Data Application-aim2}
+%For Aim 2, we will focus on RVs in genes and genes in a well-defined pathway. The data application procedures for RVs in genes are the same as in section \ref{sec:Data Application-aim1}. The genes in pathway will be defined by any one from the KEGG \cite{Ogata1999}, BioCarta \cite{Nishimura2001} or Gene Ontology \cite{Ashburner2000}. We will consider the medium size pathways in selected database, for example the pathway with 20-100 genes.
+
+
+\subsection{Declaration on Human Subjects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This dissertation study will focus on statistical method development. I will use the ARIC cohort data for method demonstration purpose. I will use the blood lipid phenotypes, covariates such as demographic variables, and genotype (GWAS and ExomeChip) in the ARIC data set. All data are pre-existing and de-identified. The IRB approval for the use of ARIC data set in my dissertation research has been obtained by my dissertation advisor, Dr. Peng Wei, under UTHealth IRB approval (HSC-SPH-13-0492).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Plan for Simulation Studies}\label{sec:simulation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Subsection one}\label{sec:subsimulation1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsection{Subsection two}\label{sec:subsimulation2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%\begin{table}[H]
+%\begin{center}
+%\caption{Example table}
+%\begin{tabular}{cccccccccc}
+%\hline
+%&  & \multicolumn{2}{c}{\emph{A}} && \multicolumn{2}{c}{\emph{B}} & &\multicolumn{2}{c}{\emph{C}} \\
+%\cline{3-4}\cline{6-7}\cline{9-10}
+%\emph{par}& \emph{truth}& \emph{est}    & \emph{95\% CI} & & \emph{est.}    & \emph{95\% CI}  && \emph{est.} & \emph{95\% CI}\\
+%\hline
+%$\beta_1$ & 10 &   &( , )& &  & ( , )& &  &( , )\\
+%$\beta_2$ & 1 & &( ,  ) & &  & ( , )& &  &( , )\\
+%$\beta_3$ & -1 &  &( ,  ) & &  & ( , )& & &( , )\\
+%\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsubsection{Subsubsection one}\label{sec:subsimulation2-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.5]{SPH_2c_vert+below_lrg}
+%\label{fig: sample}
+%\caption{Sample figure.}
+%\end{figure}
+%
+%
+%
+%
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Journal Article 1}\label{JA_1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Title of Journal Article}
+Data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework.
+\textbf{Name of Journal Proposed for Article Submission}
+American Journal of Human Genetics
+
+\subsection*{Abstract}
+Genetic association studies with longitudinal traits collected for complex diseases may bring more power to identify associated genetic variants than their cross-sectional only counterparts through multiple measurements across study time on each single subject. Since these traits are more likely affected by a set of genetic variant, a set-based analysis of these variants may help explain additional phenotypic variation. Due to the complexity in the association pattern between genetic variants and traits, a single association testing method may not perform well in many analysis scenarios. Thus, a data-adaptive association testing method is preferred as it accommodates different data scenarios. In this article, we propose a family of data-adaptive SNP-set based association tests for longitudinal trait within the Generalized Estimating Equations (GEE) framework. We propose different strategies to correctly handle common variants or rare variants in the association studies. We show the methods are robust to misspecification of within-subject correlation, a feature desirable for longitudinal analysis; we also show the methods can handle subject with missing measurements effectively. We build software package to implement the methods and make it scalable for large-scale genome-wide association studies (GWAS). We evaluated the performance of proposed methods by extensive simulation studies. We illustrated the application of proposed methods using data from the Atherosclerosis Risk in Communities (ARIC) study. Our simulation studies demonstrate substantial power gain: (i) using proposed methods over several existed set-based methods for longitudinal data analysis; (ii) using proposed and existed methods when compared with the same methods applied to baseline measurement as the outcome. The real data application illustrates our proposed method is able to identify the same genetic variants associated with high-density lipoprotein cholesterol (HDL-C) trait as reported in other cohort studies with much larger sample size but using only the baseline measurement. In addition, the real data application identifies a novel signal on XXXXXXX.
+
+\subsection*{Introduction}
+Genome-wide association studies (GWAS) have been popular since 2007. Hundreds of GWAS have been published already (A Catalog of Published Genome-Wide Association Studies: http://www.genome.gov/26525384). For genetic studies on cardiovascular disease risk factors, for example, the Atherosclerosis Risk in Communities (ARIC) study, repeated measurements of traits across study time are available for each individual \cite{Heiss1989}. Association tests that fully utilize the information across time points tend to achieve a higher power and identify more disease-associated loci \cite{Furlotte2012,Xu2014}. However, current statistical methods for testing the association in longitudinal settings, even for one single nucleotide polymorphism (SNP) at a time, are limited \cite{Fan2012,Furlotte2012}. Investigators often take simplified approaches that collapse the repeated measurements into a single value, such as use baseline measurement and use average measurement, to handle the longitudinal data in GWAS. These approaches cannot fully harness the power of the complete information contained in the longitudinal trajectory. On the other hand, researchers can also apply the standard methods for correlated outcome model to longitudinal GWAS settings, namely, random effect models \cite{laird1982random} and marginal models estimated by generalized estimating equations (GEE) \cite{liang1986longitudinal,zeger1988models}. However, these standard methods are not optimized for testing a large number of SNPs, a common scenario in set-based association test, for example, in a gene or in a region of interest.
+
+Recent studies showed the advantages set-based association tests brought over the single SNP based analyses. First, the recent prevalence of next-generation sequencing technology enables investigators to access exome sequencing data or even whole-genome sequencing data. Compared to the previous microarray or chip based genotyping platform, sequencing platform could catch much more dense markers as in base pair accuracy. More markers inevitably lead to heavier computation burden and multiple tests correction burden using the single SNP based analyses, however, they are greatly alleviated by set-based association tests. Second, set-based tests enhance the power of identifying rare variant association in next-generation sequencing studies due to aggregated information \cite{Morris2010}. Third, in a region of interest, the genetic markers in linkage disequilibrium (LD) with the causal SNP(s) may bring additional information so that it increases the power of set-based tests to identify the true effect. Last, set-based tests have the edge in analysis of multi-ethnic cohorts because of the differences in LD structures across ethnic groups and thus meta-analysis of a set-based statistic is likely to be more consistent than meta-analysis of a single SNP based statistic across ethnic groups. There are many existing popular set-based methods, such as Uniformly min-Pvalue (UminP), Gee-Score, the weighted sum statistic (WSS) \cite{Madsen2009}, the the sum of squared U-statistics test (SSU) \cite{Pan2009}, variable-threshold (VT) test \cite{Price2010}, and sequence kernel association test (SKAT) \cite{Wu2011}. All these methods could drastically reduce the number of regression parameters, capable of handling high-dimensional variants. Nevertheless, they have the difference in their underlying framework and general idea. For example, Uniformly min
+\subsection*{Material and Methods}
+\subsection*{Results}
+\subsection*{Discussion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Journal Article 2}\label{JA_2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Title of Journal Article}
+Pathway-based Data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework.
+\textbf{Name of Journal Proposed for Article Submission}
+American Journal of Human Genetics
+
+\subsection*{Abstract}
+\subsection*{Introduction}
+\subsection*{Material and Methods}						
+\subsection*{Results}
+\subsection*{Discussion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Journal Article 3}\label{JA_3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{apalike}
+\addcontentsline{toc}{section}{References}
+\bibliography{proposal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

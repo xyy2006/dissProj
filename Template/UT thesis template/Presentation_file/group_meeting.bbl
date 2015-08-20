@@ -1,0 +1,162 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{FWM{\etalchar{+}}13}
+
+\bibitem[BM12]{Bush2012}
+William~S Bush and Jason~H Moore, \emph{Genome-wide association studies}, PLoS
+  computational biology \textbf{8} (2012), no.~12, e1002822.
+
+\bibitem[CHG{\etalchar{+}}12]{Chen2012}
+Lin~S Chen, Li~Hsu, Eric~R Gamazon, Nancy~J Cox, and Dan~L Nicolae, \emph{An
+  exponential combination procedure for set-based association tests in
+  sequencing studies}, The American Journal of Human Genetics \textbf{91}
+  (2012), no.~6, 977--986.
+
+\bibitem[DLS13]{Derkach2013}
+Andriy Derkach, Jerry~F Lawless, and Lei Sun, \emph{Robust and powerful tests
+  for rare variants using fisher's method to combine evidence of association
+  from two or more complementary tests}, Genetic epidemiology \textbf{37}
+  (2013), no.~1, 110--121.
+
+\bibitem[FWM{\etalchar{+}}13]{Fan2013}
+Ruzong Fan, Yifan Wang, James~L Mills, Alexander~F Wilson, Joan~E
+  Bailey-Wilson, and Momiao Xiong, \emph{Functional linear models for
+  association analysis of quantitative traits}, Genetic epidemiology
+  \textbf{37} (2013), no.~7, 726--742.
+
+\bibitem[HP10]{Han2010}
+Fang Han and Wei Pan, \emph{A data-adaptive sum test for disease association
+  with multiple common or rare variants}, Human heredity \textbf{70} (2010),
+  no.~1, 42--54.
+
+\bibitem[KPS14]{Kim2014}
+Sunkyung Kim, Wei Pan, and Xiaotong Shen, \emph{Penalized regression approaches
+  to testing for quantitative trait-rare variant association}, Frontiers in
+  genetics \textbf{5} (2014).
+
+\bibitem[LBX11]{Luo2011}
+Li~Luo, Eric Boerwinkle, and Momiao Xiong, \emph{Association studies for
+  next-generation sequencing}, Genome research \textbf{21} (2011), no.~7,
+  1099--1108.
+
+\bibitem[LEB{\etalchar{+}}12]{Lee2012}
+Seunggeun Lee, Mary~J. Emond, Michael~J. Bamshad, Kathleen~C. Barnes, Mark~J.
+  Rieder, Deborah~A. Nickerson, N.~H. L. B. I G. O Exome Sequencing Project-E.
+  S. P Lung Project~Team ~, David~C. Christiani, Mark~M. Wurfel, and Xihong
+  Lin, \emph{Optimal unified approach for rare-variant association testing with
+  application to small-sample case-control whole-exome sequencing studies.}, Am
+  J Hum Genet \textbf{91} (2012), no.~2, 224--237 (eng).
+
+\bibitem[LL08]{Li2008}
+Bingshan Li and Suzanne~M. Leal, \emph{Methods for detecting associations with
+  rare variants for common diseases: application to analysis of sequence
+  data.}, Am J Hum Genet \textbf{83} (2008), no.~3, 311--321 (eng).
+
+\bibitem[LT11]{Lin2011}
+Dan-Yu Lin and Zheng-Zheng Tang, \emph{A general framework for detecting
+  disease associations with rare variants in sequencing studies}, The American
+  Journal of Human Genetics \textbf{89} (2011), no.~3, 354--367.
+
+\bibitem[LW82]{laird1982random}
+Nan~M Laird and James~H Ware, \emph{Random-effects models for longitudinal
+  data}, Biometrics (1982), 963--974.
+
+\bibitem[LWL12]{Lee2012a}
+Seunggeun Lee, Michael~C. Wu, and Xihong Lin, \emph{Optimal tests for rare
+  variant effects in sequencing association studies.}, Biostatistics
+  \textbf{13} (2012), no.~4, 762--775 (eng).
+
+\bibitem[LZ86]{liang1986longitudinal}
+Kung-Yee Liang and Scott~L Zeger, \emph{Longitudinal data analysis using
+  generalized linear models}, Biometrika \textbf{73} (1986), no.~1, 13--22.
+
+\bibitem[LZX12a]{Luo2012a}
+Li~Luo, Yun Zhu, and Momiao Xiong, \emph{Quantitative trait locus analysis for
+  next-generation sequencing with the functional linear models}, Journal of
+  medical genetics \textbf{49} (2012), no.~8, 513--524.
+
+\bibitem[LZX12b]{Luo2012}
+\bysame, \emph{Smoothed functional principal component analysis for testing
+  association of the entire allelic spectrum of genetic variation}, European
+  Journal of Human Genetics \textbf{21} (2012), no.~2, 217--224.
+
+\bibitem[MB09]{Madsen2009}
+Bo~Eskerod Madsen and Sharon~R. Browning, \emph{A groupwise association test
+  for rare mutations using a weighted sum statistic.}, PLoS Genet \textbf{5}
+  (2009), no.~2, e1000384 (eng).
+
+\bibitem[NRV{\etalchar{+}}11]{Neale2011}
+Benjamin~M Neale, Manuel~A Rivas, Benjamin~F Voight, David Altshuler, Bernie
+  Devlin, Marju Orho-Melander, Sekar Kathiresan, Shaun~M Purcell, Kathryn
+  Roeder, and Mark~J Daly, \emph{Testing for an unusual distribution of rare
+  variants}, PLoS genetics \textbf{7} (2011), no.~3, e1001322.
+
+\bibitem[Pan01]{pan2001robust}
+Wei Pan, \emph{On the robust variance estimator in generalised estimating
+  equations}, Biometrika \textbf{88} (2001), no.~3, 901--906.
+
+\bibitem[Pan09]{Pan2009}
+\bysame, \emph{Asymptotic tests of association with multiple snps in linkage
+  disequilibrium}, Genetic epidemiology \textbf{33} (2009), no.~6, 497--507.
+
+\bibitem[PHS09]{Pan2009a}
+Wei Pan, Fang Han, and Xiaotong Shen, \emph{Test selection with application to
+  detecting disease association with multiple snps}, Human heredity \textbf{69}
+  (2009), no.~2, 120--130.
+
+\bibitem[PKZ{\etalchar{+}}14]{pan2014powerful}
+Wei Pan, Junghi Kim, Yiwei Zhang, Xiaotong Shen, and Peng Wei, \emph{A powerful
+  and adaptive association test for rare variants}, Genetics (2014),
+  genetics--114.
+
+\bibitem[PS11]{Pan2011}
+Wei Pan and Xiaotong Shen, \emph{Adaptive tests for association analysis of
+  rare variants.}, Genet Epidemiol \textbf{35} (2011), no.~5, 381--388 (eng).
+
+\bibitem[SZH13]{Sun2013}
+Jianping Sun, Yingye Zheng, and Li~Hsu, \emph{A unified mixed-effects model for
+  rare-variant association in sequencing studies}, Genetic epidemiology
+  \textbf{37} (2013), no.~4, 334--344.
+
+\bibitem[WDL{\etalchar{+}}90]{WARE1990}
+JAMES~H WARE, DOUGLAS~W DOCKERY, THOMAS~A LOUIS, XIPING XU, BENJAMIN~G FERRIS,
+  and FRANK~E SPEIZER, \emph{Longitudinal and cross-sectional estimates of
+  pulmonary function decline in never-smoking adults}, American journal of
+  epidemiology \textbf{132} (1990), no.~4, 685--700.
+
+\bibitem[WLC{\etalchar{+}}11]{Wu2011}
+Michael~C. Wu, Seunggeun Lee, Tianxi Cai, Yun Li, Michael Boehnke, and Xihong
+  Lin, \emph{Rare-variant association testing for sequencing data with the
+  sequence kernel association test.}, Am J Hum Genet \textbf{89} (2011), no.~1,
+  82--93 (eng).
+
+\bibitem[WZM{\etalchar{+}}09]{Wang2009}
+Kai Wang, Haitao Zhang, Deqiong Ma, Maja Bucan, Joseph~T Glessner, Brett~S
+  Abrahams, Daria Salyakina, Marcin Imielinski, Jonathan~P Bradfield,
+  Patrick~MA Sleiman, et~al., \emph{Common genetic variants on 5p14. 1
+  associate with autism spectrum disorders}, Nature \textbf{459} (2009),
+  no.~7246, 528--533.
+
+\bibitem[XSP{\etalchar{+}}14]{Xu2014}
+Zhiyuan Xu, Xiaotong Shen, Wei Pan, Alzheimer's Disease~Neuroimaging
+  Initiative, et~al., \emph{Longitudinal analysis is more powerful than
+  cross-sectional analysis in detecting genetic association with neuroimaging
+  phenotypes}, PloS one \textbf{9} (2014), no.~8, e102312.
+
+\bibitem[ZSSL10]{Zhou2010}
+Hua Zhou, Mary~E Sehl, Janet~S Sinsheimer, and Kenneth Lange, \emph{Association
+  screening of common and rare genetic variants by penalized regression},
+  Bioinformatics \textbf{26} (2010), no.~19, 2375.
+
+\bibitem[ZXSP14]{zhang2014testing}
+Yiwei Zhang, Zhiyuan Xu, Xiaotong Shen, and Wei Pan, \emph{Testing for
+  association with multiple traits in generalized estimation equations, with
+  application to neuroimaging data}, NeuroImage \textbf{96} (2014), 309--325.
+
+\end{thebibliography}

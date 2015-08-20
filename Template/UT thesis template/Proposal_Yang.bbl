@@ -12,6 +12,11 @@ Ashburner, M., Ball, C.~A., Blake, J.~A., Botstein, D., Butler, H., Cherry,
 \newblock Gene ontology: tool for the unification of biology.
 \newblock {\em Nature genetics}, 25(1):25--29.
 
+\bibitem[Association et~al., 2014]{Association2014}
+Association, A. et~al. (2014).
+\newblock 2014 alzheimer's disease facts and figures.
+\newblock {\em Alzheimer's \& Dementia}, 10(2):e47--e92.
+
 \bibitem[Aulchenko et~al., 2009]{Aulchenko2009}
 Aulchenko, Y.~S., Ripatti, S., Lindqvist, I., Boomsma, D., Heid, I.~M.,
   Pramstaller, P.~P., Penninx, B. W. J.~H., Janssens, A. C. J.~W., Wilson,
@@ -49,6 +54,12 @@ Belsky, D.~W., Moffitt, T.~E., Baker, T.~B., Biddle, A.~K., Evans, J.~P.,
   smoking and nicotine dependence: evidence from a 4-decade longitudinal study.
 \newblock {\em JAMA psychiatry}, 70(5):534--542.
 
+\bibitem[Benros et~al., 2014]{Benros2014}
+Benros, M.~E., Nielsen, P.~R., Nordentoft, M., Eaton, W.~W., Dalton, S.~O., and
+  Mortensen, P.~B. (2014).
+\newblock Autoimmune diseases and severe infections as risk factors for
+  schizophrenia: a 30-year population-based register study.
+
 \bibitem[Bhatia et~al., 2010]{Bhatia2010}
 Bhatia, G., Bansal, V., Harismendy, O., Schork, N.~J., Topol, E.~J., Frazer,
   K., and Bafna, V. (2010).
@@ -84,10 +95,13 @@ Capanu, M., Concannon, P., Haile, R.~W., Bernstein, L., Malone, K.~E., Lynch,
   using hierarchical modeling.
 \newblock {\em Genet Epidemiol}, 35(5):389--397.
 
-\bibitem[Cardon and Bell, 2001]{Cardon2001}
-Cardon, L.~R. and Bell, J.~I. (2001).
-\newblock Association study designs for complex diseases.
-\newblock {\em Nature Reviews Genetics}, 2(2):91--99.
+\bibitem[Caspi et~al., 2008]{Caspi2008}
+Caspi, R., Foerster, H., Fulcher, C.~A., Kaipa, P., Krummenacker, M.,
+  Latendresse, M., Paley, S., Rhee, S.~Y., Shearer, A.~G., Tissier, C., et~al.
+  (2008).
+\newblock The metacyc database of metabolic pathways and enzymes and the biocyc
+  collection of pathway/genome databases.
+\newblock {\em Nucleic acids research}, 36(suppl 1):D623--D631.
 
 \bibitem[Chai et~al., 2009]{Chai2009}
 Chai, H.-S., Sicotte, H., Bailey, K.~R., Turner, S.~T., Asmann, Y.~W., and
@@ -95,14 +109,6 @@ Chai, H.-S., Sicotte, H., Bailey, K.~R., Turner, S.~T., Asmann, Y.~W., and
 \newblock Glossi: a method to assess the association of genetic loci-sets with
   complex diseases.
 \newblock {\em BMC bioinformatics}, 10(1):102.
-
-\bibitem[Chambless et~al., 1997]{Chambless1997}
-Chambless, L.~E., Heiss, G., Folsom, A.~R., Rosamond, W., Szklo, M., Sharrett,
-  A.~R., and Clegg, L.~X. (1997).
-\newblock Association of coronary heart disease incidence with carotid arterial
-  wall thickness and major risk factors: the atherosclerosis risk in
-  communities (aric) study, 1987--1993.
-\newblock {\em American journal of epidemiology}, 146(6):483--494.
 
 \bibitem[Chen et~al., 2009]{Chen2009}
 Chen, L., Zhang, L., Zhao, Y., Xu, L., Shang, Y., Wang, Q., Li, W., Wang, H.,
@@ -136,11 +142,6 @@ Cheng, S., Grow, M.~A., Pallaud, C., Klitz, W., Erlich, H.~A., Visvikis, S.,
 \newblock A multilocus genotyping assay for candidate markers of cardiovascular
   disease risk.
 \newblock {\em Genome research}, 9(10):936--949.
-
-\bibitem[Consortium et~al., 2013]{Consortium2013}
-Consortium, G. L.~G. et~al. (2013).
-\newblock Discovery and refinement of loci associated with lipid levels.
-\newblock {\em Nature genetics}.
 
 \bibitem[Cortes and Brown, 2011]{Cortes2011}
 Cortes, A. and Brown, M.~A. (2011).
@@ -232,11 +233,32 @@ Furlotte, N.~A., Eskin, E., and Eyheramendy, S. (2012).
 \newblock Genome-wide association mapping with longitudinal data.
 \newblock {\em Genetic epidemiology}, 36(5):463--471.
 
+\bibitem[Go et~al., 2013]{Go2013}
+Go, A.~S., Mozaffarian, D., Roger, V.~L., Benjamin, E.~J., Berry, J.~D.,
+  Borden, W.~B., Bravata, D.~M., SHIFAN, D., Ford, E.~S., Fox, C.~S., et~al.
+  (2013).
+\newblock Executive summary: Heart disease and stroke statistics: 2013 update:
+  A report from the american heart association.
+\newblock {\em Circulation}, 127(1):143--146.
+
 \bibitem[Goeman and B{\"{u}}hlmann, 2007]{Goeman2007}
 Goeman, J.~J. and B{\"{u}}hlmann, P. (2007).
 \newblock Analyzing gene expression data in terms of gene sets: methodological
   issues.
 \newblock {\em Bioinformatics}, 23(8):980--987.
+
+\bibitem[Gough, 2002]{Gough2002}
+Gough, N.~R. (2002).
+\newblock Science's signal transduction knowledge environment.
+\newblock {\em Annals of the New York Academy of Sciences}, 971(1):585--587.
+
+\bibitem[Grove et~al., 2013]{Grove2013}
+Grove, M.~L., Yu, B., Cochran, B.~J., Haritunians, T., Bis, J.~C., Taylor,
+  K.~D., Hansen, M., Borecki, I.~B., Cupples, L.~A., Fornage, M., et~al.
+  (2013).
+\newblock Best practices and joint calling of the humanexome beadchip: the
+  charge consortium.
+\newblock {\em PLoS One}, 8(7):e68095.
 
 \bibitem[Guo et~al., 2005]{guo2005small}
 Guo, X., Pan, W., Connett, J.~E., Hannan, P.~J., and French, S.~A. (2005).
@@ -249,6 +271,13 @@ Han, F. and Pan, W. (2010).
 \newblock A data-adaptive sum test for disease association with multiple common
   or rare variants.
 \newblock {\em Human heredity}, 70(1):42--54.
+
+\bibitem[Heiss, 1989]{Heiss1989}
+Heiss, G. (1989).
+\newblock Atherosclerosis risk in communities: a follow-up study of early
+  arterial lesions in the general population.
+\newblock {\em Pathology of Human Atherosclerotic Plaque. New York, NY:
+  Springer-Verlag}, 877:888.
 
 \bibitem[Hernandez, 2008]{Hernandez2008}
 Hernandez, R.~D. (2008).
@@ -307,6 +336,14 @@ Investigators, A. et~al. (1989).
   objectwes.
 \newblock {\em American journal of epidemiology}, 129(4):687--702.
 
+\bibitem[Inzucchi et~al., 2012]{Inzucchi2012}
+Inzucchi, S.~E., Bergenstal, R.~M., Buse, J.~B., Diamant, M., Ferrannini, E.,
+  Nauck, M., Peters, A.~L., Tsapas, A., Wender, R., and Matthews, D.~R. (2012).
+\newblock Management of hyperglycemia in type 2 diabetes: a patient-centered
+  approach position statement of the american diabetes association (ada) and
+  the european association for the study of diabetes (easd).
+\newblock {\em Diabetes care}, 35(6):1364--1379.
+
 \bibitem[Ionita-Laza et~al., 2011]{Ionita-Laza2011}
 Ionita-Laza, I., Buxbaum, J.~D., Laird, N.~M., and Lange, C. (2011).
 \newblock A new testing strategy to identify rare variants with either risk or
@@ -331,6 +368,11 @@ Kamatani, Y., Matsuda, K., Okada, Y., Kubo, M., Hosono, N., Daigo, Y.,
 \newblock Genome-wide association study of hematological and biochemical traits
   in a japanese population.
 \newblock {\em Nat Genet}, 42(3):210--215.
+
+\bibitem[Karp et~al., 2002]{Karp2002}
+Karp, P.~D., Riley, M., Paley, S.~M., and Pellegrini-Toole, A. (2002).
+\newblock The metacyc database.
+\newblock {\em Nucleic acids research}, 30(1):59--61.
 
 \bibitem[Kathiresan et~al., 2007]{Kathiresan2007}
 Kathiresan, S., Manning, A.~K., Demissie, S., D'Agostino, R.~B., Surti, A.,
@@ -469,13 +511,6 @@ Madsen, B.~E. and Browning, S.~R. (2009).
 Mardis, E.~R. (2008).
 \newblock Next-generation dna sequencing methods.
 \newblock {\em Annu. Rev. Genomics Hum. Genet.}, 9:387--402.
-
-\bibitem[Maxwell et~al., 2013]{Maxwell2013}
-Maxwell, T.~J., Ballantyne, C.~M., Cheverud, J.~M., Guild, C.~S., Ndumele,
-  C.~E., and Boerwinkle, E. (2013).
-\newblock Apoe modulates the correlation between triglycerides, cholesterol,
-  and chd through pleiotropy, and gene-by-gene interactions.
-\newblock {\em Genetics}, 195(4):1397--1405.
 
 \bibitem[McCarthy et~al., 2008]{McCarthy2008}
 McCarthy, M.~I., Abecasis, G.~R., Cardon, L.~R., Goldstein, D.~B., Little, J.,
@@ -645,17 +680,19 @@ Price, A.~L., Kryukov, G.~V., {de Bakker}, P. I.~W., Purcell, S.~M., Staples,
   studies.
 \newblock {\em Am J Hum Genet}, 86(6):832--838.
 
+\bibitem[Price et~al., 2006]{Price2006}
+Price, A.~L., Patterson, N.~J., Plenge, R.~M., Weinblatt, M.~E., Shadick,
+  N.~A., and Reich, D. (2006).
+\newblock Principal components analysis corrects for stratification in
+  genome-wide association studies.
+\newblock {\em Nature genetics}, 38(8):904--909.
+
 \bibitem[Purcell et~al., 2007]{Purcell2007}
 Purcell, S., Neale, B., Todd-Brown, K., Thomas, L., Ferreira, M.~A., Bender,
   D., Maller, J., Sklar, P., De~Bakker, P.~I., Daly, M.~J., et~al. (2007).
 \newblock Plink: a tool set for whole-genome association and population-based
   linkage analyses.
 \newblock {\em The American Journal of Human Genetics}, 81(3):559--575.
-
-\bibitem[Rubin, 1976]{rubin1976inference}
-Rubin, D.~B. (1976).
-\newblock Inference and missing data.
-\newblock {\em Biometrika}, 63(3):581--592.
 
 \bibitem[Sabatti et~al., 2008]{Sabatti2008}
 Sabatti, C., Service, S.~K., Hartikainen, A.-L., Pouta, A., Ripatti, S.,
@@ -664,6 +701,12 @@ Sabatti, C., Service, S.~K., Hartikainen, A.-L., Pouta, A., Ripatti, S.,
 \newblock Genome-wide association analysis of metabolic traits in a birth
   cohort from a founder population.
 \newblock {\em Nature genetics}, 41(1):35--46.
+
+\bibitem[Schaefer et~al., 2009]{Schaefer2009}
+Schaefer, C.~F., Anthony, K., Krupa, S., Buchoff, J., Day, M., Hannay, T., and
+  Buetow, K.~H. (2009).
+\newblock Pid: the pathway interaction database.
+\newblock {\em Nucleic acids research}, 37(suppl 1):D674--D679.
 
 \bibitem[Seaman and M{\"u}ller-Myhsok, 2005]{Seaman2005}
 Seaman, S. and M{\"u}ller-Myhsok, B. (2005).
@@ -721,14 +764,6 @@ Sun, J., Zheng, Y., and Hsu, L. (2013).
 \newblock A unified mixed-effects model for rare-variant association in
   sequencing studies.
 \newblock {\em Genetic epidemiology}, 37(4):334--344.
-
-\bibitem[Teslovich et~al., 2010]{Teslovich2010}
-Teslovich, T.~M., Musunuru, K., Smith, A.~V., Edmondson, A.~C., Stylianou,
-  I.~M., Koseki, M., Pirruccello, J.~P., Ripatti, S., Chasman, D.~I., Willer,
-  C.~J., et~al. (2010).
-\newblock Biological, clinical and population relevance of 95 loci for blood
-  lipids.
-\newblock {\em Nature}, 466(7307):707--713.
 
 \bibitem[Tintle et~al., 2011]{tintle2011inflated}
 Tintle, N., Aschard, H., Hu, I., Nock, N., Wang, H., and Pugh, E. (2011).

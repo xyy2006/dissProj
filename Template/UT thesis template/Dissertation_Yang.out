@@ -1,0 +1,30 @@
+\BOOKMARK [1][-]{section.1}{Background}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Literature Review}{section.1}% 2
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Gene-based association tests}{subsection.1.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Longitudinal study design and analysis strategy in GWAS}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{Gene-set/Pathway based association tests}{subsection.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.2}{Public Health Significance}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.3}{Specific Aims}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{Methods}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Overall Study Design}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Simulation studies}{subsection.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Real data application}{subsection.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.2}{Methods for Aim 1\(a\): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations \(GEE\) framework for common variants}{section.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Statistical Modeling}{subsection.2.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Methods for Simulation Settings}{subsection.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Plan for Simulation Studies}{subsection.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.3}{Methods for Aim 1\(b\): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations \(GEE\) framework for rare variants}{section.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Statistical Modeling}{subsection.2.3}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Methods for Simulation Settings}{subsection.2.3}% 18
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Plan for Simulation Studies}{subsection.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.4}{Methods for Aim 2: To develop the pathway-based data-adaptive association tests for longitudinal data analysis}{section.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Statistical Modeling}{subsection.2.4}% 21
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Methods for Simulation Settings}{subsection.2.4}% 22
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Plan for Simulation Studies}{subsection.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.5}{Methods for Aim 3: To develop the software package for method implementation}{section.2}% 24
+\BOOKMARK [2][-]{subsection.2.6}{Methods for Real Data Application for Proposed Aims}{section.2}% 25
+\BOOKMARK [2][-]{subsection.2.7}{Declaration on Human Subjects}{section.2}% 26
+\BOOKMARK [1][-]{section.3}{Journal Article 1}{}% 27
+\BOOKMARK [1][-]{section.4}{Journal Article 2}{}% 28
+\BOOKMARK [1][-]{section.5}{Journal Article 3}{}% 29
+\BOOKMARK [1][-]{section.5}{References}{}% 30

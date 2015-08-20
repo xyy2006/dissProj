@@ -1,0 +1,202 @@
+\beamer@endinputifotherversion {3.33pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Background}{3}{Background}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Introduction to Genome-wide association study (GWAS)}}\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{Introduction to Genome-wide association study (GWAS)}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{1}{2}{4/4}{Introduction to Genome-wide association study (GWAS)}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{3}{5/5}{Introduction to Genome-wide association study (GWAS)}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {1}{1}{4}{6/6}{Introduction to Genome-wide association study (GWAS)}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {1}{1}{5}{7/7}{Introduction to Genome-wide association study (GWAS)}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {1}{1}{6}{8/8}{Introduction to Genome-wide association study (GWAS)}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {1}{1}{7}{9/9}{Introduction to Genome-wide association study (GWAS)}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{10}{SNP-set based association tests}}\headcommand {\beamer@subsectionpages {3}{9}}
+\headcommand {\slideentry {1}{2}{1}{10/10}{SNP-set based association tests}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {1}{2}{2}{11/11}{SNP-set based association tests}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {1}{2}{3}{12/12}{SNP-set based association tests}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {1}{2}{3}{12/13}{SNP-set based association tests}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{14}{Longitudinal data analysis strategy in GWAS}}\headcommand {\beamer@subsectionpages {10}{13}}
+\headcommand {\slideentry {1}{3}{1}{14/14}{Longitudinal data analysis strategy in GWAS}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {1}{3}{2}{15/15}{Longitudinal data analysis strategy in GWAS}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {1}{3}{3}{16/16}{Longitudinal data analysis strategy in GWAS}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {1}{3}{3}{16/17}{Longitudinal data analysis strategy in GWAS}{0}}
+\headcommand {\beamer@framepages {16}{17}}
+\headcommand {\slideentry {1}{3}{3}{16/18}{Longitudinal data analysis strategy in GWAS}{0}}
+\headcommand {\beamer@framepages {16}{18}}
+\headcommand {\slideentry {1}{3}{4}{19/19}{Longitudinal data analysis strategy in GWAS}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\sectionentry {2}{Research Aims}{20}{Research Aims}{0}}
+\headcommand {\beamer@sectionpages {3}{19}}
+\headcommand {\beamer@subsectionpages {14}{19}}
+\headcommand {\slideentry {2}{0}{5}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {2}{0}{6}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\sectionentry {3}{Specific Aims, Methods and Results}{22}{Specific Aims, Methods and Results}{0}}
+\headcommand {\beamer@sectionpages {20}{21}}
+\headcommand {\beamer@subsectionpages {20}{21}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{22}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}}\headcommand {\beamer@subsectionpages {22}{21}}
+\headcommand {\slideentry {3}{1}{1}{22/22}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{1}{2}{23/23}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{1}{24}{Methods}}
+\headcommand {\slideentry {3}{1}{3}{24/24}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {3}{1}{4}{25/25}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {3}{1}{4}{25/26}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {25}{26}}
+\headcommand {\slideentry {3}{1}{4}{25/27}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {25}{27}}
+\headcommand {\slideentry {3}{1}{4}{25/28}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {25}{28}}
+\headcommand {\slideentry {3}{1}{4}{25/29}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {25}{29}}
+\headcommand {\slideentry {3}{1}{4}{25/30}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {25}{30}}
+\headcommand {\slideentry {3}{1}{4}{25/31}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {25}{31}}
+\headcommand {\slideentry {3}{1}{5}{32/32}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {3}{1}{5}{32/33}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {32}{33}}
+\headcommand {\slideentry {3}{1}{5}{32/34}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {32}{34}}
+\headcommand {\slideentry {3}{1}{5}{32/35}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {32}{35}}
+\headcommand {\slideentry {3}{1}{5}{32/36}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {32}{36}}
+\headcommand {\slideentry {3}{1}{5}{32/37}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {32}{37}}
+\headcommand {\slideentry {3}{1}{5}{32/38}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {32}{38}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{2}{39}{Methods in data simulation}}
+\headcommand {\slideentry {3}{1}{6}{39/39}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {3}{1}{7}{40/40}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {3}{1}{7}{40/41}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {40}{41}}
+\headcommand {\slideentry {3}{1}{7}{40/42}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {40}{42}}
+\headcommand {\slideentry {3}{1}{7}{40/43}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {40}{43}}
+\headcommand {\slideentry {3}{1}{7}{40/44}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {40}{44}}
+\headcommand {\slideentry {3}{1}{7}{40/45}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {40}{45}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{3}{46}{Simulation results}}
+\headcommand {\slideentry {3}{1}{8}{46/46}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\slideentry {3}{1}{9}{47/47}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {3}{1}{9}{47/48}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {47}{48}}
+\headcommand {\slideentry {3}{1}{9}{47/49}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {47}{49}}
+\headcommand {\slideentry {3}{1}{9}{47/50}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {47}{50}}
+\headcommand {\slideentry {3}{1}{9}{47/51}{Aim 1: A data-adaptive association test for longitudinal data analysis within GEE framework}{0}}
+\headcommand {\beamer@framepages {47}{51}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{52}{Aim 2: Longitudinal aSPU family tests on Rare Variants}}\headcommand {\beamer@subsectionpages {22}{51}}
+\headcommand {\slideentry {3}{2}{1}{52/52}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {3}{2}{2}{53/53}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{54}{Methods}}
+\headcommand {\slideentry {3}{2}{3}{54/54}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\slideentry {3}{2}{4}{55/55}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\slideentry {3}{2}{4}{55/56}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {55}{56}}
+\headcommand {\slideentry {3}{2}{4}{55/57}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {55}{57}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{2}{58}{Methods in data simulation}}
+\headcommand {\slideentry {3}{2}{5}{58/58}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {3}{2}{6}{59/59}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{3}{60}{Simulation results}}
+\headcommand {\slideentry {3}{2}{7}{60/60}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {3}{2}{8}{61/61}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {3}{2}{8}{61/62}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {61}{62}}
+\headcommand {\slideentry {3}{2}{8}{61/63}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {61}{63}}
+\headcommand {\slideentry {3}{2}{8}{61/64}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {61}{64}}
+\headcommand {\slideentry {3}{2}{8}{61/65}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {61}{65}}
+\headcommand {\slideentry {3}{2}{8}{61/66}{Aim 2: Longitudinal aSPU family tests on Rare Variants}{0}}
+\headcommand {\beamer@framepages {61}{66}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{67}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}}\headcommand {\beamer@subsectionpages {52}{66}}
+\headcommand {\slideentry {3}{3}{1}{67/67}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {3}{3}{2}{68/68}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {3}{3}{3}{69/69}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {3}{3}{3}{69/70}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}{0}}
+\headcommand {\beamer@framepages {69}{70}}
+\headcommand {\slideentry {3}{3}{4}{71/71}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {3}{3}{5}{72/72}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\slideentry {3}{3}{5}{72/73}{Aim 3: Pathway-based longitudinal aSPU family tests: Path-aSPU}{0}}
+\headcommand {\beamer@framepages {72}{73}}
+\headcommand {\sectionentry {4}{Real Data Application}{74}{Real Data Application}{0}}
+\headcommand {\beamer@sectionpages {22}{73}}
+\headcommand {\beamer@subsectionpages {67}{73}}
+\headcommand {\slideentry {4}{0}{6}{74/74}{}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\slideentry {4}{0}{7}{75/75}{}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\slideentry {4}{0}{8}{76/76}{}{0}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\sectionentry {5}{Acknowledgement}{77}{Acknowledgement}{0}}
+\headcommand {\beamer@sectionpages {74}{76}}
+\headcommand {\beamer@subsectionpages {74}{76}}
+\headcommand {\slideentry {5}{0}{9}{77/77}{}{0}}
+\headcommand {\beamer@framepages {77}{77}}
+\headcommand {\slideentry {5}{0}{10}{78/78}{}{0}}
+\headcommand {\beamer@framepages {78}{78}}
+\headcommand {\slideentry {5}{0}{11}{79/79}{}{0}}
+\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\sectionentry {6}{References}{80}{References}{0}}
+\headcommand {\beamer@sectionpages {77}{79}}
+\headcommand {\beamer@subsectionpages {77}{79}}
+\headcommand {\slideentry {6}{0}{12}{80/80}{}{0}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\slideentry {6}{0}{12}{80/81}{}{0}}
+\headcommand {\beamer@framepages {80}{81}}
+\headcommand {\slideentry {6}{0}{12}{80/82}{}{0}}
+\headcommand {\beamer@framepages {80}{82}}
+\headcommand {\slideentry {6}{0}{12}{80/83}{}{0}}
+\headcommand {\beamer@framepages {80}{83}}
+\headcommand {\beamer@partpages {1}{83}}
+\headcommand {\beamer@subsectionpages {80}{83}}
+\headcommand {\beamer@sectionpages {80}{83}}
+\headcommand {\beamer@documentpages {83}}
+\headcommand {\def \inserttotalframenumber {83}}
