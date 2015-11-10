@@ -1,0 +1,61 @@
+1, 5000 Type I and power we have for CV simulated method
+# 1, alpha table is the same as I stored before
+  #  Test_Simulation_result_collect_andPlot_forMoreTestPlayers.r -f Result_analyzeWith_independenceOn_RVsimulatedU_scoUpdated_simulated_data_AR1_simuDatasets5000_nulls_h0_totalSampleSize -o alpha_ind_5000replicates -S SNOW -j F
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & pSSU & pSSUw & pScore & pSum & pUminP & geescoreP & UminP & aveP & aveP\_weighted & KM\_P & geescor
+eP\_withDiagSigma & spu\_Inf\_P & spu\_weighted\_Inf\_P & aspu\_P & aspu\_weighted\_P & aspu\_sco\_P &
+ aspu\_weighted\_sco\_P & aspu\_aspuw.sco\_P & aspu\_aspuw\_P \\
+  \hline
+independenceOn\_RVsimulatedU\_scoUpdated\_AR1\_h0\_500 & 0.047 & 0.048 & 0.047 & 0.052 & 0.048 & 0.047
+ & 0.053 & 0.052 & 0.051 & 0.058 & 0.059 & 0.054 & 0.053 & 0.060 & 0.058 & 0.058 & 0.055 & 0.058 & 0.0
+60 \\
+  independenceOn\_RVsimulatedU\_scoUpdated\_AR1\_h0\_1000 & 0.047 & 0.046 & 0.044 & 0.058 & 0.048 & 0.
+044 & 0.051 & 0.057 & 0.057 & 0.059 & 0.056 & 0.051 & 0.051 & 0.057 & 0.057 & 0.057 & 0.054 & 0.057 &
+0.057 \\
+  independenceOn\_RVsimulatedU\_scoUpdated\_AR1\_h0\_2000 & 0.049 & 0.047 & 0.051 & 0.048 & 0.048 & 0.
+051 & 0.052 & 0.048 & 0.049 & 0.058 & 0.055 & 0.052 & 0.052 & 0.061 & 0.058 & 0.058 & 0.058 & 0.058 &
+0.058 \\
+  independenceOn\_RVsimulatedU\_scoUpdated\_AR1\_h0\_3000 & 0.051 & 0.052 & 0.052 & 0.052 & 0.050 & 0.
+052 & 0.053 & 0.051 & 0.052 & 0.061 & 0.060 & 0.054 & 0.053 & 0.063 & 0.060 & 0.059 & 0.057 & 0.059 &
+0.062 \\
+   \hline
+\end{tabular}
+\end{table}
+# 2, power as well, the plot.
+  # Test_Simulation_result_collect_andPlot_forMoreTestPlayers.r -f Result_analyzeWith_independenceOn_RVsimulatedU_scoUpdated_simulated_data_AR1_simuDatasets5000_signals_h0.001_totalSampleSize -o power_ind_5000replicates -S SNOW -j F
+
+#==========================================================================================================#  
+
+2, 5000 Type I and power we have for CV permuted method, only has sample size 1000 and 3000
+# 1, alpha table, new table
+  # Test_Simulation_result_collect_andPlot_forMoreTestPlayers.r -f Result_analyzeWith_independenceOn_RVpermutedU_scoUpdated_simulated_data_AR1_simuDatasets5000_nulls_h0_totalSampleSize -o alpha_ind_5000replicates_permuted -S SNOW -j F
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & pSSU & pSSUw & pScore & pSum & pUminP & geescoreP & UminP & aveP & aveP\_weighted & KM\_P & geescor
+eP\_withDiagSigma & spu\_Inf\_P & spu\_weighted\_Inf\_P & aspu\_P & aspu\_weighted\_P & aspu\_sco\_P &
+ aspu\_weighted\_sco\_P & aspu\_aspuw.sco\_P & aspu\_aspuw\_P \\
+  \hline
+independenceOn\_RVpermutedU\_scoUpdated\_AR1\_h0\_1000 & 0.047 & 0.046 & 0.044 & 0.058 & 0.048 & 0.044
+ & 0.049 & 0.057 & 0.058 & 0.050 & 0.050 & 0.048 & 0.049 & 0.052 & 0.050 & 0.053 & 0.051 & 0.053 & 0.0
+52 \\
+  independenceOn\_RVpermutedU\_scoUpdated\_AR1\_h0\_3000 & 0.051 & 0.052 & 0.052 & 0.052 & 0.050 & 0.0
+52 & 0.051 & 0.051 & 0.050 & 0.053 & 0.053 & 0.053 & 0.051 & 0.054 & 0.051 & 0.052 & 0.052 & 0.051 & 0
+.054 \\
+   \hline
+\end{tabular}
+\end{table}
+# 2, power plot fails, due to no 500 and 2000.
+
+#==========================================================================================================#  deal with:
+  # Result_longiPointIncreaseTest_1timepoints_analyzeWith_independenceOn_RVsimulatedU_scoUpdated_simulated_data_AR1_simuDatasets5000_signals_h0.001_totalSampleSize1000_commonVariant
+# enter R.
+for (i in 1:4)
+{
+  
+
+}

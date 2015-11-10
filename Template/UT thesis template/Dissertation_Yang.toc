@@ -1,31 +1,63 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Background}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}Literature Review}{5}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Gene-based association tests}{6}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}Longitudinal study design and analysis strategy in GWAS}{10}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}Gene-set/Pathway based association tests}{17}{subsubsection.1.1.3}
-\contentsline {subsection}{\numberline {1.2}Public Health Significance}{26}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Specific Aims}{27}{subsection.1.3}
-\contentsline {section}{\numberline {2}Methods}{29}{section.2}
-\contentsline {subsection}{\numberline {2.1}Overall Study Design}{29}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Simulation studies}{29}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Real data application}{29}{subsubsection.2.1.2}
-\contentsline {subsection}{\numberline {2.2}Methods for Aim 1(a): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for common variants}{32}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Statistical Modeling}{32}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Methods for Simulation Settings}{42}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Plan for Simulation Studies}{46}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}Methods for Aim 1(b): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for rare variants}{50}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Statistical Modeling}{50}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Methods for Simulation Settings}{51}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Plan for Simulation Studies}{51}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Methods for Aim 2: To develop the pathway-based data-adaptive association tests for longitudinal data analysis}{54}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Statistical Modeling}{55}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Methods for Simulation Settings}{56}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Plan for Simulation Studies}{57}{subsubsection.2.4.3}
-\contentsline {subsection}{\numberline {2.5}Methods for Aim 3: To develop the software package for method implementation}{57}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Methods for Real Data Application for Proposed Aims}{58}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Declaration on Human Subjects}{60}{subsection.2.7}
-\contentsline {section}{\numberline {3}Journal Article 1}{61}{section.3}
-\contentsline {section}{\numberline {4}Journal Article 2}{62}{section.4}
-\contentsline {section}{\numberline {5}Journal Article 3}{63}{section.5}
-\contentsline {section}{References}{63}{section.5}
+\contentsline {section}{\numberline {1}Background}{8}{section.1}
+\contentsline {subsection}{\numberline {1.1}Literature Review}{8}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Gene-based association tests}{9}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Longitudinal study design and analysis strategy in GWAS}{13}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}Gene-set/Pathway based association tests}{20}{subsubsection.1.1.3}
+\contentsline {subsection}{\numberline {1.2}Public Health Significance}{29}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Specific Aims}{30}{subsection.1.3}
+\contentsline {section}{\numberline {2}Methods}{32}{section.2}
+\contentsline {subsection}{\numberline {2.1}Overall Study Design}{32}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Simulation studies}{32}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Real data application}{32}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Methods for Aim 1(a): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for common variants}{35}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Statistical Modeling}{35}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Methods for Simulation Settings}{45}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Plan for Simulation Studies}{49}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Methods for Aim 1(b): To develop data-adaptive SNP-set based association tests for longitudinal data analysis within the Generalized Estimating Equations (GEE) framework for rare variants}{53}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Statistical Modeling}{53}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Methods for Simulation Settings}{54}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Plan for Simulation Studies}{54}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Methods for Aim 2: To develop the pathway-based data-adaptive association tests for longitudinal data analysis}{57}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Statistical Modeling}{58}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Methods for Simulation Settings}{59}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Plan for Simulation Studies}{60}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}Methods for Aim 3: To develop the software package for method implementation}{60}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Methods for Real Data Application for Proposed Aims}{61}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Declaration on Human Subjects}{63}{subsection.2.7}
+\contentsline {section}{\numberline {3}Journal Article 1}{64}{section.3}
+\contentsline {subsection}{\numberline {3.1}Introduction}{67}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Material and Methods}{70}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Data and Notation}{70}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Several Existing Association Tests}{73}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}The Data-Adaptive LaSPU Test}{75}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Other Modifications}{77}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Extension to Rare Variant Analysis}{79}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Simulation Set-ups}{81}{subsubsection.3.2.6}
+\contentsline {subsection}{\numberline {3.3}Results}{85}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Simulation Results for CVs}{85}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Simulation results for RVs}{93}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Application to the ARIC study}{97}{subsubsection.3.3.3}
+\contentsline {subsection}{\numberline {3.4}Discussion}{104}{subsection.3.4}
+\contentsline {section}{\numberline {4}Journal Article 2}{108}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{110}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Material and Methods}{114}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Data and Notation}{114}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Several Existing Set-based Association Tests}{118}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Review: The Data-Adaptive aSPU Test}{120}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}A Data-Adaptive Pathway-Based longitudinal test: LaSPUpath}{122}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Extension to Rare Variant Analysis}{124}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Simulation Set-ups}{126}{subsubsection.4.2.6}
+\contentsline {subsection}{\numberline {4.3}Results}{131}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Simulation Results for CVs}{131}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Application to the ARIC study}{132}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Discussion}{135}{subsection.4.4}
+\contentsline {section}{\numberline {5}Journal Article 3}{139}{section.5}
+\contentsline {subsection}{\numberline {5.1}Introduction}{141}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Methods}{141}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Features}{141}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Workflow}{142}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}Conclusion}{145}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Appendix for Article 3 - LaSPU Manual}{145}{subsection.5.4}
+\contentsline {section}{\numberline {6}Conclusion and Future Directions}{148}{section.6}
+\contentsline {section}{References}{151}{section.6}

@@ -25,6 +25,38 @@
 \BOOKMARK [2][-]{subsection.2.6}{Methods for Real Data Application for Proposed Aims}{section.2}% 25
 \BOOKMARK [2][-]{subsection.2.7}{Declaration on Human Subjects}{section.2}% 26
 \BOOKMARK [1][-]{section.3}{Journal Article 1}{}% 27
-\BOOKMARK [1][-]{section.4}{Journal Article 2}{}% 28
-\BOOKMARK [1][-]{section.5}{Journal Article 3}{}% 29
-\BOOKMARK [1][-]{section.5}{References}{}% 30
+\BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.2}{Material and Methods}{section.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Data and Notation}{subsection.3.2}% 30
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Several Existing Association Tests}{subsection.3.2}% 31
+\BOOKMARK [3][-]{subsubsection.3.2.3}{The Data-Adaptive LaSPU Test}{subsection.3.2}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Other Modifications}{subsection.3.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Extension to Rare Variant Analysis}{subsection.3.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Simulation Set-ups}{subsection.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.3}{Results}{section.3}% 36
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Simulation Results for CVs}{subsection.3.3}% 37
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Simulation results for RVs}{subsection.3.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Application to the ARIC study}{subsection.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.4}{Discussion}{section.3}% 40
+\BOOKMARK [1][-]{section.4}{Journal Article 2}{}% 41
+\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 42
+\BOOKMARK [2][-]{subsection.4.2}{Material and Methods}{section.4}% 43
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Data and Notation}{subsection.4.2}% 44
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Several Existing Set-based Association Tests}{subsection.4.2}% 45
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Review: The Data-Adaptive aSPU Test}{subsection.4.2}% 46
+\BOOKMARK [3][-]{subsubsection.4.2.4}{A Data-Adaptive Pathway-Based longitudinal test: LaSPUpath}{subsection.4.2}% 47
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Extension to Rare Variant Analysis}{subsection.4.2}% 48
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Simulation Set-ups}{subsection.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.3}{Results}{section.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Simulation Results for CVs}{subsection.4.3}% 51
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Application to the ARIC study}{subsection.4.3}% 52
+\BOOKMARK [2][-]{subsection.4.4}{Discussion}{section.4}% 53
+\BOOKMARK [1][-]{section.5}{Journal Article 3}{}% 54
+\BOOKMARK [2][-]{subsection.5.1}{Introduction}{section.5}% 55
+\BOOKMARK [2][-]{subsection.5.2}{Methods}{section.5}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Features}{subsection.5.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Workflow}{subsection.5.2}% 58
+\BOOKMARK [2][-]{subsection.5.3}{Conclusion}{section.5}% 59
+\BOOKMARK [2][-]{subsection.5.4}{Appendix for Article 3 - LaSPU Manual}{section.5}% 60
+\BOOKMARK [1][-]{section.6}{Conclusion and Future Directions}{}% 61
+\BOOKMARK [1][-]{section.6}{References}{}% 62

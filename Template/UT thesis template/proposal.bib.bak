@@ -243,6 +243,20 @@ longitudinal},
   Url                      = {http://www.nature.com/ejhg/journal/v20/n5/abs/ejhg2011236a.html}
 }
 
+@Article{Bild2002,
+  Title                    = {Multi-ethnic study of atherosclerosis: objectives and design},
+  Author                   = {Bild, Diane E and Bluemke, David A and Burke, Gregory L and Detrano, Robert and Roux, Ana V Diez and Folsom, Aaron R and Greenland, Philip and JacobsJr, David R and Kronmal, Richard and Liu, Kiang and others},
+  Journal                  = {American journal of epidemiology},
+  Year                     = {2002},
+  Number                   = {9},
+  Pages                    = {871--881},
+  Volume                   = {156},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Review                   = {MESA},
+  Timestamp                = {2015.10.04}
+}
+
 @Article{BloodPressureGenome-WideAssociationStudies2011,
   Title                    = {Genetic variants in novel pathways influence blood pressure and cardiovascular disease risk},
   Author                   = {International Consortium for Blood Pressure Genome-Wide Association Studies and others},
@@ -378,6 +392,21 @@ longitudinal},
   Timestamp                = {2015.05.02}
 }
 
+@Article{Casserly2004,
+  Title                    = {Convergence of atherosclerosis and Alzheimer's disease: inflammation, cholesterol, and misfolded proteins},
+  Author                   = {Casserly, Ivan and Topol, Eric J},
+  Journal                  = {The Lancet},
+  Year                     = {2004},
+  Number                   = {9415},
+  Pages                    = {1139--1146},
+  Volume                   = {363},
+
+  File                     = {:D\:\\Dissertation_proj\\1-s2.0-S014067360415900X-main.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.09.27}
+}
+
 @Article{Chai2009,
   Title                    = {GLOSSI: a method to assess the association of genetic loci-sets with complex diseases},
   Author                   = {Chai, High-Seng and Sicotte, Hugues and Bailey, Kent R and Turner, Stephen T and Asmann, Yan W and Kocher, Jean-Pierre A},
@@ -476,6 +505,20 @@ longitudinal},
   Timestamp                = {2014.11.14}
 }
 
+@Article{Chen2010b,
+  Title                    = {Insights into colon cancer etiology via a regularized approach to gene set analysis of GWAS data},
+  Author                   = {Chen, Lin S and Hutter, Carolyn M and Potter, John D and Liu, Yan and Prentice, Ross L and Peters, Ulrike and Hsu, Li},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {860--871},
+  Volume                   = {86},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.09.13}
+}
+
 @Article{Chen2010a,
   Title                    = {Pathway-based analysis for genome-wide association studies using supervised principal components},
   Author                   = {Chen, Xi and Wang, Lily and Hu, Bo and Guo, Mingsheng and Barnard, John and Zhu, Xiaofeng},
@@ -505,6 +548,21 @@ longitudinal},
   Publisher                = {Cold Spring Harbor Lab},
   Timestamp                = {2014.11.18},
   Url                      = {http://genome.cshlp.org/content/9/10/936.short}
+}
+
+@Article{Collins2015,
+  Title                    = {A new initiative on precision medicine},
+  Author                   = {Collins, Francis S and Varmus, Harold},
+  Journal                  = {New England Journal of Medicine},
+  Year                     = {2015},
+  Number                   = {9},
+  Pages                    = {793--795},
+  Volume                   = {372},
+
+  __markedentry            = {[ThomasYY:6]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Mass Medical Soc},
+  Timestamp                = {2015.11.01}
 }
 
 @Article{Conneely2007,
@@ -630,6 +688,21 @@ longitudinal},
   Timestamp                = {2014.12.24}
 }
 
+@Article{Duchesne2010,
+  Title                    = {Computing the distribution of quadratic forms: Further comparisons between the Liu--Tang--Zhang approximation and exact methods},
+  Author                   = {Duchesne, Pierre and De Micheaux, Pierre Lafaye},
+  Journal                  = {Computational Statistics \& Data Analysis},
+  Year                     = {2010},
+  Number                   = {4},
+  Pages                    = {858--862},
+  Volume                   = {54},
+
+  File                     = {:D\:\\Dissertation_proj\\Computing chi2 pvalue methods comparison.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.08.21}
+}
+
 @Article{Eichler2010,
   Title                    = {Missing heritability and strategies for finding the underlying causes of complex disease},
   Author                   = {Eichler, Evan E and Flint, Jonathan and Gibson, Greg and Kong, Augustine and Leal, Suzanne M and Moore, Jason H and Nadeau, Joseph H},
@@ -643,6 +716,20 @@ longitudinal},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.19},
   Url                      = {http://www.nature.com/nrg/journal/v11/n6/abs/nrg2809.html}
+}
+
+@Article{Fan1996,
+  Title                    = {Test of significance based on wavelet thresholding and Neyman's truncation},
+  Author                   = {Fan, Jianqing},
+  Journal                  = {Journal of the American Statistical Association},
+  Year                     = {1996},
+  Number                   = {434},
+  Pages                    = {674--688},
+  Volume                   = {91},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Taylor \& Francis},
+  Timestamp                = {2015.08.21}
 }
 
 @Article{Fan2013,
@@ -668,6 +755,7 @@ longitudinal},
   Number                   = {8},
   Pages                    = {856--869},
   Volume                   = {36},
+
   File                     = {:D\:\\Dissertation_proj\\Longitudinal association analysis of quantitative traits.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
@@ -688,6 +776,20 @@ longitudinal},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2014.11.13},
   Url                      = {http://onlinelibrary.wiley.com/doi/10.1002/gepi.20588/full}
+}
+
+@Article{Fernandes1999,
+  Title                    = {Effects of apolipoprotein E genotype on blood lipid composition and membrane platelet fluidity in Alzheimer's disease},
+  Author                   = {Fernandes, MAS and Proenca, MT and Nogueira, AJA and Oliveira, LMV and Santiago, B and Santana, I and Oliveira, CR},
+  Journal                  = {Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease},
+  Year                     = {1999},
+  Number                   = {1},
+  Pages                    = {89--96},
+  Volume                   = {1454},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.09.27}
 }
 
 @Article{Fridley2011,
@@ -865,6 +967,20 @@ longitudinal},
   Timestamp                = {2015.05.17}
 }
 
+@Article{Gui2011,
+  Title                    = {Comparisons of seven algorithms for pathway analysis using the WTCCC Crohn's Disease dataset},
+  Author                   = {Gui, Hongsheng and Li, Miaoxin and Sham, Pak C and Cherny, Stacey S},
+  Journal                  = {BMC research notes},
+  Year                     = {2011},
+  Number                   = {1},
+  Pages                    = {386},
+  Volume                   = {4},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {BioMed Central Ltd},
+  Timestamp                = {2015.09.07}
+}
+
 @Article{guo2005small,
   Title                    = {Small-sample performance of the robust score test and its modifications in generalized estimating equations},
   Author                   = {Guo, Xu and Pan, Wei and Connett, John E and Hannan, Peter J and French, Simone A},
@@ -913,6 +1029,7 @@ longitudinal},
   Author                   = {He, Zihuai and Zhang, Min and Lee, Seunggeun and Smith, Jennifer A and Guo, Xiuqing and Palmas, Walter and Kardia, Sharon LR and Roux, Ana V Diez and Mukherjee, Bhramar},
   Journal                  = {Biometrics},
   Year                     = {2015},
+
   File                     = {:D\:\\Dissertation_proj\\Set-based Tests for Genetic As.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
@@ -928,7 +1045,6 @@ longitudinal},
   Pages                    = {471--479},
   Volume                   = {70},
 
-  __markedentry            = {[ThomasYY:]},
   File                     = {:D\:\\Dissertation_proj\\Modeling and Testing for Joint Association Using a Genetic Random Field Model.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Wiley Online Library},
@@ -1019,6 +1135,20 @@ longitudinal},
   Timestamp                = {2014.11.12}
 }
 
+@Article{Hofman1997,
+  Title                    = {Atherosclerosis, apolipoprotein E, and prevalence of dementia and Alzheimer's disease in the Rotterdam Study},
+  Author                   = {Hofman, Albert and Ott, Alewijn and Breteler, Monique MB and Bots, Michiel L and Slooter, Arjen JC and van Harskamp, Frans and van Duijn, Cornelia N and Van Broeckhoven, Christine and Grobbee, Diederick E},
+  Journal                  = {The Lancet},
+  Year                     = {1997},
+  Number                   = {9046},
+  Pages                    = {151--154},
+  Volume                   = {349},
+  File                     = {:D\:\\Dissertation_proj\\1-s2.0-S0140673696093282-main.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.09.27}
+}
+
 @Article{Holden2008,
   Title                    = {GSEA-SNP: applying gene set enrichment analysis to SNP data from genome-wide association studies},
   Author                   = {Holden, Marit and Deng, Shiwei and Wojnowski, Leszek and Kulle, Bettina},
@@ -1033,6 +1163,17 @@ longitudinal},
   Publisher                = {Oxford Univ Press},
   Timestamp                = {2014.11.18},
   Url                      = {http://bioinformatics.oxfordjournals.org/content/24/23/2784.short}
+}
+
+@Article{Holmans2009a,
+  Title                    = {Statistical methods for pathway analysis of genome-wide data for association with complex genetic traits.},
+  Author                   = {Holmans, Peter},
+  Journal                  = {Advances in genetics},
+  Year                     = {2009},
+  Pages                    = {141--179},
+  Volume                   = {72},
+  Owner                    = {ThomasYY},
+  Timestamp                = {2015.10.31}
 }
 
 @Article{Holmans2009,
@@ -1173,6 +1314,19 @@ and a real sequence dataset on Type-1 diabetes.},
   Owner                    = {Nainan},
   Publisher                = {Elsevier},
   Timestamp                = {2014.10.18}
+}
+
+@Article{Joshi-Tope2005,
+  Title                    = {Reactome: a knowledgebase of biological pathways},
+  Author                   = {Joshi-Tope, G and Gillespie, Marc and Vastrik, Imre and D'Eustachio, Peter and Schmidt, Esther and de Bono, Bernard and Jassal, Bijay and Gopinath, GR and Wu, GR and Matthews, Lisa and others},
+  Journal                  = {Nucleic acids research},
+  Year                     = {2005},
+  Number                   = {suppl 1},
+  Pages                    = {D428--D432},
+  Volume                   = {33},
+  Owner                    = {ThomasYY},
+  Publisher                = {Oxford Univ Press},
+  Timestamp                = {2015.10.31}
 }
 
 @Article{Kamatani2010,
@@ -1375,6 +1529,17 @@ and a real sequence dataset on Type-1 diabetes.},
   Url                      = {http://dx.doi.org/10.1016/j.ajhg.2012.06.007}
 }
 
+@TechReport{Lee2011,
+  Title                    = {Power and sample size calculations for designing rare variant sequencing association studies},
+  Author                   = {Lee, Seunggeun and Wu, Michael C and Cai, Tianxi and Li, Yun and Boehnke, Michael and Lin, Xihong},
+  Institution              = {Harvard University Technical Report.(http://www. hsph. harvard. edu/\~{} xlin)},
+  Year                     = {2011},
+
+  File                     = {:D\:\\Dissertation_proj\\SampleSize_Technical_Report.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Timestamp                = {2015.08.21}
+}
+
 @Article{Lee2012a,
   Title                    = {Optimal tests for rare variant effects in sequencing association studies.},
   Author                   = {Lee, Seunggeun and Wu, Michael C. and Lin, Xihong},
@@ -1426,6 +1591,34 @@ and a real sequence dataset on Type-1 diabetes.},
 and demonstrated that the CMC method is both powerful and robust. The CMC method},
   Timestamp                = {2014.11.12},
   Url                      = {http://dx.doi.org/10.1016/j.ajhg.2008.06.024}
+}
+
+@Article{Li2011,
+  Title                    = {GATES: a rapid and powerful gene-based association test using extended Simes procedure},
+  Author                   = {Li, Miao-Xin and Gui, Hong-Sheng and Kwan, Johnny SH and Sham, Pak C},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2011},
+  Number                   = {3},
+  Pages                    = {283--293},
+  Volume                   = {88},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.09.07}
+}
+
+@Article{Li2012,
+  Title                    = {HYST: a hybrid set-based test for genome-wide association studies, with application to protein-protein interaction-based association analysis},
+  Author                   = {Li, Miao-Xin and Kwan, Johnny SH and Sham, Pak C},
+  Journal                  = {The American Journal of Human Genetics},
+  Year                     = {2012},
+  Number                   = {3},
+  Pages                    = {478--488},
+  Volume                   = {91},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.09.07}
 }
 
 @Article{liang1986longitudinal,
@@ -1778,6 +1971,21 @@ penalized multivariate linear mixed model},
   Url                      = {http://cancerres.aacrjournals.org/content/70/11/4453.short}
 }
 
+@Article{Merched2000,
+  Title                    = {Decreased high-density lipoprotein cholesterol and serum apolipoprotein AI concentrations are highly correlated with the severity of Alzheimer's disease},
+  Author                   = {Merched, A and Xia, Y and Visvikis, S and Serot, JM and Siest, G},
+  Journal                  = {Neurobiology of aging},
+  Year                     = {2000},
+  Number                   = {1},
+  Pages                    = {27--30},
+  Volume                   = {21},
+
+  File                     = {:D\:\\Dissertation_proj\\apAIalz.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.09.27}
+}
+
 @Article{Metzker2009,
   Title                    = {Sequencing technologies the next generation},
   Author                   = {Metzker, Michael L},
@@ -1791,6 +1999,20 @@ penalized multivariate linear mixed model},
   Publisher                = {Nature Publishing Group},
   Timestamp                = {2014.11.19},
   Url                      = {http://www.nature.com/nrg/journal/v11/n1/abs/nrg2626.html}
+}
+
+@Article{Michikawa2003,
+  Title                    = {Cholesterol paradox: is high total or low HDL cholesterol level a risk for Alzheimer's disease?},
+  Author                   = {Michikawa, Makoto},
+  Journal                  = {Journal of neuroscience research},
+  Year                     = {2003},
+  Number                   = {2},
+  Pages                    = {141--146},
+  Volume                   = {72},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.09.27}
 }
 
 @Article{Morgenthaler2007,
@@ -1827,7 +2049,7 @@ penalized multivariate linear mixed model},
   Pages                    = {188},
   Volume                   = {34},
 
-  __markedentry            = {[ThomasYY:6]},
+  File                     = {:D\:\\Dissertation_proj\\gepi0034-0188.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Blackwell Publishing},
   Timestamp                = {2015.08.17}
@@ -1910,6 +2132,32 @@ penalized multivariate linear mixed model},
   Pmid                     = {22604722},
   Timestamp                = {2014.10.17},
   Url                      = {http://dx.doi.org/10.1126/science.1217876}
+}
+
+@Article{Network2011,
+  Title                    = {Integrated genomic analyses of ovarian carcinoma},
+  Author                   = {Cancer Genome Atlas Research Network and others},
+  Journal                  = {Nature},
+  Year                     = {2011},
+  Number                   = {7353},
+  Pages                    = {609--615},
+  Volume                   = {474},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.09.06}
+}
+
+@Article{Newton2012,
+  Title                    = {A model-based analysis to infer the functional content of a gene list},
+  Author                   = {Newton, Michael A and He, Qiuling and Kendziorski, Christina},
+  Journal                  = {Statistical applications in genetics and molecular biology},
+  Year                     = {2012},
+  Number                   = {2},
+  Volume                   = {11},
+
+  Owner                    = {ThomasYY},
+  Timestamp                = {2015.09.20}
 }
 
 @Article{Neyman1937,
@@ -2073,6 +2321,20 @@ penalized multivariate linear mixed model},
   Timestamp                = {2015.02.24}
 }
 
+@Article{Pan2015a,
+  Title                    = {Testing for Polygenic Effects in Genome-Wide Association Studies},
+  Author                   = {Pan, Wei and Chen, Yue-Ming and Wei, Peng},
+  Journal                  = {Genetic epidemiology},
+  Year                     = {2015},
+  Number                   = {4},
+  Pages                    = {306--316},
+  Volume                   = {39},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.08.21}
+}
+
 @Article{Pan2009a,
   Title                    = {Test selection with application to detecting disease association with multiple SNPs},
   Author                   = {Pan, Wei and Han, Fang and Shen, Xiaotong},
@@ -2107,6 +2369,7 @@ penalized multivariate linear mixed model},
   Number                   = {1},
   Pages                    = {86--98},
   Volume                   = {97},
+
   File                     = {:D\:\\Dissertation_proj\\ajhg1895_0y40je.pdf:PDF},
   Owner                    = {ThomasYY},
   Publisher                = {Elsevier},
@@ -2273,6 +2536,21 @@ the best way EMMAX + PC},
   Timestamp                = {2014.12.16}
 }
 
+@Article{Puglielli2003,
+  Title                    = {Alzheimer's disease: the cholesterol connection},
+  Author                   = {Puglielli, Luigi and Tanzi, Rudolph E and Kovacs, Dora M},
+  Journal                  = {Nature neuroscience},
+  Year                     = {2003},
+  Number                   = {4},
+  Pages                    = {345--351},
+  Volume                   = {6},
+
+  File                     = {:D\:\\Dissertation_proj\\NN_AD_cholesterol_03.pdf:PDF},
+  Owner                    = {ThomasYY},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.09.27}
+}
+
 @Article{Purcell2007,
   Title                    = {PLINK: a tool set for whole-genome association and population-based linkage analyses},
   Author                   = {Purcell, Shaun and Neale, Benjamin and Todd-Brown, Kathe and Thomas, Lori and Ferreira, Manuel AR and Bender, David and Maller, Julian and Sklar, Pamela and De Bakker, Paul IW and Daly, Mark J and others},
@@ -2348,6 +2626,20 @@ the best way EMMAX + PC},
   Owner                    = {ThomasYY},
   Publisher                = {Oxford Univ Press},
   Timestamp                = {2015.05.02}
+}
+
+@Article{Schaid2012,
+  Title                    = {Using the gene ontology to scan multilevel gene sets for associations in genome wide association studies},
+  Author                   = {Schaid, Daniel J and Sinnwell, Jason P and Jenkins, Gregory D and McDonnell, Shannon K and Ingle, James N and Kubo, Michiaki and Goss, Paul E and Costantino, Joseph P and Wickerham, D Lawrence and Weinshilboum, Richard M},
+  Journal                  = {Genetic epidemiology},
+  Year                     = {2012},
+  Number                   = {1},
+  Pages                    = {3--16},
+  Volume                   = {36},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.09.20}
 }
 
 @Article{Schork2009,
@@ -2500,6 +2792,21 @@ use nlme R package},
   Publisher                = {National Acad Sciences},
   Timestamp                = {2014.11.18},
   Url                      = {http://www.pnas.org/content/102/43/15545.short}
+}
+
+@Article{Sudlow2015,
+  Title                    = {UK Biobank: an Open Access resource for identifying the causes of a wide range of complex diseases of middle and old age},
+  Author                   = {Sudlow, Cathie and Gallacher, John and Allen, Naomi and Beral, Valerie and Burton, Paul and Danesh, John and Downey, Paul and Elliott, Paul and Green, Jane and Landray, Martin and others},
+  Journal                  = {PLoS medicine},
+  Year                     = {2015},
+  Number                   = {3},
+  Pages                    = {1--10},
+  Volume                   = {12},
+
+  __markedentry            = {[ThomasYY:]},
+  Owner                    = {ThomasYY},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2015.11.01}
 }
 
 @Article{Sul2011,
@@ -3151,6 +3458,20 @@ We used simulations to demonstrate the usefulness in controlling for substructur
   Timestamp                = {2014.11.12}
 }
 
+@Article{Zhou2013,
+  Title                    = {Empirical pathway analysis, without permutation},
+  Author                   = {Zhou, Yi-Hui and Barry, William T and Wright, Fred A},
+  Journal                  = {Biostatistics},
+  Year                     = {2013},
+  Number                   = {3},
+  Pages                    = {573--585},
+  Volume                   = {14},
+
+  Owner                    = {ThomasYY},
+  Publisher                = {Biometrika Trust},
+  Timestamp                = {2015.09.20}
+}
+
 @Article{Zhu2010,
   Title                    = {Detecting rare variants for complex traits using family and unrelated data},
   Author                   = {Zhu, Xiaofeng and Feng, Tao and Li, Yali and Lu, Qing and Elston, Robert C},
@@ -3174,16 +3495,17 @@ We used simulations to demonstrate the usefulness in controlling for substructur
 1 ExplicitGroup:RV association test methods\;0\;Basu2011\;Chen2012\;Co
 nneely2007\;Derkach2013\;Fan2013\;Han2010\;He2014\;Kwee2008\;Lee2012\;
 Li2008\;Lin2005\;Lin2011\;Morris2010\;Neyman1937\;Pan2009\;Pan2009a\;P
-an2011\;Pan2011a\;Seaman2005\;Sun2013\;Zhang2011\;pan2014powerful\;zha
-ng2014testing\;;
+an2011\;Pan2011a\;Pan2015a\;Seaman2005\;Sun2013\;Zhang2011\;pan2014pow
+erful\;zhang2014testing\;;
 1 ExplicitGroup:pathway_geneSet\;0\;2013\;Ashburner2000\;Baranzini2009
 \;Biernacka2011\;BloodPressureGenome-WideAssociationStudies2011\;Chai2
-009\;Chen2009\;Chen2010\;Chen2010a\;DelaCruz2010\;Fridley2010\;Fridley
-2011\;Goeman2007\;Hirschhorn2009\;Holden2008\;Holmans2009\;Liu2007\;Lu
-o2010\;Medina2009\;Menashe2010\;Nam2008\;Nam2010\;Nishimura2001\;ODush
-laine2009\;Ogata1999\;Pan2015\;Purcell2007\;Ritchie2009\;Silver2012\;W
-ang2010\;Wang2011\;Wei2012a\;Weng2011\;Yu2009\;Zhang2010a\;Zhong2010\;
-peng2009gene\;tintle2011inflated\;wang2007pathway\;;
+009\;Chen2009\;Chen2010\;Chen2010a\;Chen2010b\;DelaCruz2010\;Fridley20
+10\;Fridley2011\;Goeman2007\;Gui2011\;Hirschhorn2009\;Holden2008\;Holm
+ans2009\;Holmans2009a\;Li2011\;Li2012\;Liu2007\;Luo2010\;Medina2009\;M
+enashe2010\;Nam2008\;Nam2010\;Newton2012\;Nishimura2001\;ODushlaine200
+9\;Ogata1999\;Pan2015\;Purcell2007\;Ritchie2009\;Schaid2012\;Silver201
+2\;Wang2010\;Wang2011\;Wei2012a\;Weng2011\;Yu2009\;Zhang2010a\;Zhong20
+10\;Zhou2013\;peng2009gene\;tintle2011inflated\;wang2007pathway\;;
 1 ExplicitGroup:used_in_public_health_significance\;0\;Association2014
 \;Benros2014\;Cardon2001\;Craig2008\;Go2013\;Heiss1989\;Inzucchi2012\;
 ;
@@ -3192,19 +3514,24 @@ es\;0\;DennisJr2003\;Subramanian2005\;;
 1 ExplicitGroup:genotyping platforms\;0\;Cheng1999\;Cortes2011\;Grove2
 013\;Keating2008\;Voight2012\;;
 1 ExplicitGroup:pathway_annotation_resource\;0\;Ashburner2000\;Caspi20
-08\;Gough2002\;Karp2002\;Nishimura2001\;Ogata1999\;Schaefer2009\;;
+08\;Gough2002\;Joshi-Tope2005\;Karp2002\;Nishimura2001\;Ogata1999\;Sch
+aefer2009\;;
 1 ExplicitGroup:review_of_GWAS\;0\;Ansorge2009\;Bush2012\;Cantor2010\;
-Eichler2010\;Hirschhorn2005\;Mardis2008\;McCarthy2008\;Metzker2009\;Sc
-hork2009\;Shendure2008\;Wang2005\;;
+Eichler2010\;Hirschhorn2005\;Mardis2008\;McCarthy2008\;Metzker2009\;Ne
+twork2011\;Schork2009\;Shendure2008\;Wang2005\;;
 1 ExplicitGroup:exome_data_ref\;0\;Chambless1997\;Consortium2013\;Inve
 stigators1989\;Lange2014\;Maxwell2013\;Peloso2014\;Teslovich2010\;;
 1 ExplicitGroup:human_genetics_classic\;0\;Lynch1998\;;
 1 ExplicitGroup:current_software_tools\;0\;Gonzalez2007\;Price2006\;Wa
 ng2014\;;
-1 ExplicitGroup:longitudinal_GWAS\;0\;Beyene2014\;Diggle2002\;Fan2012\
-;Furlotte2012\;He2015\;Kerner2009\;Liu2014\;Londono2013\;Price2010a\;S
-mith2010\;Tan2014\;Tang2014\;WARE1990\;Zhang2010b\;;
+1 ExplicitGroup:longitudinal_GWAS\;0\;Beyene2014\;Bild2002\;Diggle2002
+\;Fan2012\;Furlotte2012\;He2015\;Kerner2009\;Liu2014\;Londono2013\;Pri
+ce2010a\;Smith2010\;Tan2014\;Tang2014\;WARE1990\;Zhang2010b\;;
 1 ExplicitGroup:populational genetics data simulation methods\;0\;Boyk
 o2008\;Hernandez2008\;;
+1 ExplicitGroup:power and sample size estimation\;0\;Fan1996\;Lee2011\
+;;
+1 ExplicitGroup:AD_and_HDL_relationship\;0\;Casserly2004\;Fernandes199
+9\;Hofman1997\;Merched2000\;Michikawa2003\;Puglielli2003\;;
 }
 
