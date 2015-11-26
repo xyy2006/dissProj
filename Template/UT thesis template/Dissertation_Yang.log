@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  10 NOV 2015 03:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  24 NOV 2015 23:03
 entering extended mode
 **Dissertation_Yang.tex
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.tex"
@@ -1806,12 +1806,12 @@ Package pdftex.def Info: figure/Article2_SNPs_aggregation_flowchart.pdf used on
  input line 2227.
 (pdftex.def)             Requested size: 469.75502pt x 293.5989pt.
  [114] [115 <D:/Dissertation_proj/Template/UT thesis template/figure/Article2_S
-NPs_aggregation_flowchart.pdf>] [116]
+NPs_aggregation_flowchart.pdf>]
 Overfull \hbox (39.33234pt too wide) in paragraph at lines 2279--2279
 [] 
  []
 
-
+[116]
 Overfull \hbox (24.90463pt too wide) in paragraph at lines 2298--2298
 [] 
  []
@@ -1874,43 +1874,43 @@ atedU_pathwayAnalysis.pdf used on input line 2723.
  [131] [132 <D:/Dissertation_proj/Template/UT thesis template/figure/PowerCurve
 _independenceWkCor_on_AR1data_RVsimulatedU_pathwayAnalysis.pdf>] [133]
 [134]
-Overfull \hbox (19.64503pt too wide) in paragraph at lines 2767--2767
+Overfull \hbox (19.64503pt too wide) in paragraph at lines 2769--2769
  []$[]$ 
  []
 
 
-Overfull \hbox (54.37437pt too wide) in paragraph at lines 2790--2792
+Overfull \hbox (54.37437pt too wide) in paragraph at lines 2792--2794
 \OT1/cmr/m/n/12 GWAS [[], [], [], [],
  []
 
 [135]
-Overfull \hbox (72.02411pt too wide) in paragraph at lines 2793--2794
+Overfull \hbox (72.02411pt too wide) in paragraph at lines 2795--2796
 []\OT1/cmr/m/n/12 , [], [], [], []].
  []
 
-[136]
-Overfull \hbox (91.60675pt too wide) in paragraph at lines 2795--2796
+[136] [137]
+Overfull \hbox (91.60675pt too wide) in paragraph at lines 2797--2798
 \OT1/cmr/m/n/12 struc-tural al-ter-na-tions. The Hu-man Epigenome At-las (http:
 //www.genboree.org/epigenomeatlas/index.rhtml)
  []
 
-[137] [138]
-Underfull \hbox (badness 10000) in paragraph at lines 2805--2807
+[138]
+Underfull \hbox (badness 10000) in paragraph at lines 2807--2809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2805--2807
+Underfull \hbox (badness 10000) in paragraph at lines 2807--2809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2808--2810
+Underfull \hbox (badness 10000) in paragraph at lines 2810--2812
 
  []
 
 [139]
-Overfull \hbox (42.87737pt too wide) in paragraph at lines 2814--2818
+Overfull \hbox (42.87737pt too wide) in paragraph at lines 2816--2820
 \OT1/cmr/m/n/12 cenced un-der the CC BY-NC 4.0 li-cence and freely avail-able a
 t https://github.com/xyy2006/LaSPU/.
  []
@@ -1919,7 +1919,7 @@ t https://github.com/xyy2006/LaSPU/.
 File: figure/Article3_workflow.pdf Graphic file (type pdf)
 
 <use figure/Article3_workflow.pdf>
-Package pdftex.def Info: figure/Article3_workflow.pdf used on input line 2842.
+Package pdftex.def Info: figure/Article3_workflow.pdf used on input line 2845.
 (pdftex.def)             Requested size: 469.75502pt x 352.32034pt.
 
 <figure/Article3_LaSPU_example_result.pdf, id=2584, 845.1575pt x 597.45204pt>
@@ -1927,7 +1927,7 @@ File: figure/Article3_LaSPU_example_result.pdf Graphic file (type pdf)
 
 <use figure/Article3_LaSPU_example_result.pdf>
 Package pdftex.def Info: figure/Article3_LaSPU_example_result.pdf used on input
- line 2849.
+ line 2852.
 (pdftex.def)             Requested size: 469.75502pt x 332.08209pt.
  [143] [144 <D:/Dissertation_proj/Template/UT thesis template/figure/Article3_w
 orkflow.pdf>] [145 <D:/Dissertation_proj/Template/UT thesis template/figure/Art
@@ -1953,29 +1953,30 @@ teOnMultipleNodes' and '--MultipleNodes[]profile'
 ) [147] [148
 
 ] [149]
-Overfull \hbox (9.08401pt too wide) in paragraph at lines 2871--2872
+Overfull \hbox (9.08401pt too wide) in paragraph at lines 2874--2875
 []\OT1/cmr/m/n/12 , [], [], []]. Al-
  []
 
-[150] ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.bbl"
-[151] [152] [153] [154] [155]
+[150] [151]
+("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.bbl"
+[152] [153] [154] [155] [156]
 Underfull \hbox (badness 10000) in paragraph at lines 250--254
 []\OT1/cmr/m/n/12 for Blood Pres-sure
  []
 
-[156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167]
-[168] [169] [170] [171] [172] [173])
+[157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168]
+[169] [170] [171] [172] [173])
 
 Package caption Warning: Unused \captionsetup[subtable] on input line 19.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2886.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2889.
 [174]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2886.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2889.
  ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux" ("D:
 \Dissertation_proj\Template\UT thesis template\LaSPU_manual.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2886.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2886.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2889.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2889.
 
 Package rerunfilecheck Info: File `Dissertation_Yang.out' has not changed.
 (rerunfilecheck)             Checksum: F2ADEF164E4866882048A1935EBE39AB;5289.
@@ -2015,7 +2016,7 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><d:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><d:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Dissertation_Yang.pdf (181 pages, 6333646 bytes).
+Output written on Dissertation_Yang.pdf (181 pages, 6333371 bytes).
 PDF statistics:
  2936 PDF objects out of 2984 (max. 8388607)
  495 named destinations out of 1000 (max. 500000)
