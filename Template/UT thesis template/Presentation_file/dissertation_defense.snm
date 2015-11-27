@@ -1,0 +1,23 @@
+\beamer@slide {eq:2}{7}
+\beamer@slide {eq:y_im_split}{22}
+\beamer@slide {eq:v-cov_split}{22}
+\beamer@slide {table:type_I_error_CV_varySampleSize}{27}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001}{27}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_heterogeneousSNPeffects}{27}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h0.001_withNSNPnull}{27}
+\beamer@slide {fig: PowerLongiIncreaseCurve_independenceWkCor_on_AR1data_h0.001}{27}
+\beamer@slide {table:Empirical type I error using permutation-based method in RV analysis}{32}
+\beamer@slide {fig: PowerLongiIncreaseCurve_independenceWkCor_on_AR1data_h0.001}{32}
+\beamer@slide {fig: compare_longi_LaSPU_exome_ARIC}{35}
+\beamer@slide {tab:table_gene_base}{35}
+\beamer@slide {fig: compare_LaSPU_LSSU_exome_ARIC}{35}
+\beamer@slide {fig: known_signals_with_HDL_C}{35}
+\beamer@slide {fig: unreported_signals_with_HDL_C}{35}
+\beamer@slide {fig: Article2_SNPs_aggregation_flowchart}{46}
+\beamer@slide {table:CV_typeIerror_pathway}{53}
+\beamer@slide {fig: PowerCurve_independenceWkCor_on_AR1data_h:vary_RVsimulatedU_pathway}{53}
+\beamer@slide {tab:table_pathway_based}{56}
+\beamer@slide {fig: LaSPU_workflow}{64}
+\beamer@slide {sec:data}{65}
+\beamer@slide {fig: Manhattan_plot_aspu_weighted_sco_P_geneBased_whole-genome}{67}
+\beamer@slide {sec:acknow}{68}

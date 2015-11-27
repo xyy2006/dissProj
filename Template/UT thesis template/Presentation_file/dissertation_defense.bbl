@@ -1,0 +1,51 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{PAB{\etalchar{+}}14}
+
+\bibitem[LT11]{Lin2011}
+Dan-Yu Lin and Zheng-Zheng Tang, \emph{A general framework for detecting
+  disease associations with rare variants in sequencing studies}, The American
+  Journal of Human Genetics \textbf{89} (2011), no.~3, 354--367.
+
+\bibitem[LZ86]{liang1986longitudinal}
+Kung-Yee Liang and Scott~L Zeger, \emph{Longitudinal data analysis using
+  generalized linear models}, Biometrika \textbf{73} (1986), no.~1, 13--22.
+
+\bibitem[OGS{\etalchar{+}}99]{Ogata1999}
+Hiroyuki Ogata, Susumu Goto, Kazushige Sato, Wataru Fujibuchi, Hidemasa Bono,
+  and Minoru Kanehisa, \emph{Kegg: Kyoto encyclopedia of genes and genomes},
+  Nucleic acids research \textbf{27} (1999), no.~1, 29--34.
+
+\bibitem[PAB{\etalchar{+}}14]{Peloso2014}
+Gina~M Peloso, Paul~L Auer, Joshua~C Bis, Arend Voorman, Alanna~C Morrison,
+  Nathan~O Stitziel, Jennifer~A Brody, Sumeet~A Khetarpal, Jacy~R Crosby,
+  Myriam Fornage, et~al., \emph{Association of low-frequency and rare
+  coding-sequence variants with blood lipids and coronary heart disease in
+  56,000 whites and blacks}, The American Journal of Human Genetics \textbf{94}
+  (2014), no.~2, 223--232.
+
+\bibitem[Pan01]{pan2001robust}
+Wei Pan, \emph{On the robust variance estimator in generalised estimating
+  equations}, Biometrika \textbf{88} (2001), no.~3, 901--906.
+
+\bibitem[Pan09]{Pan2009}
+\bysame, \emph{Asymptotic tests of association with multiple snps in linkage
+  disequilibrium}, Genetic epidemiology \textbf{33} (2009), no.~6, 497--507.
+
+\bibitem[PKZ{\etalchar{+}}14]{pan2014powerful}
+Wei Pan, Junghi Kim, Yiwei Zhang, Xiaotong Shen, and Peng Wei, \emph{A powerful
+  and adaptive association test for rare variants}, Genetics (2014),
+  genetics--114.
+
+\bibitem[WE07]{Wang2007}
+Tao Wang and Robert~C Elston, \emph{Improved power by use of a weighted score
+  test for linkage disequilibrium mapping}, The american journal of human
+  genetics \textbf{80} (2007), no.~2, 353--360.
+
+\end{thebibliography}

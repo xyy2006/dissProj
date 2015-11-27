@@ -1,0 +1,22 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction to Genome-wide association study (GWAS)}{3}{0}{1}
+\beamer@sectionintoc {2}{Proposed Journal Articles}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Journal Article 1: Data-adaptive SNP-set based association tests ...}{4}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{1}{Methods}{6}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{2}{Data Simulation Methods}{21}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{3}{Simulation Results}{26}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{4}{Application to the ARIC Study}{34}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{5}{Discussion}{41}{0}{2}
+\beamer@subsectionintoc {2}{2}{Journal Article 2: Pathway-based data-adaptive association tests ...}{43}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Methods}{45}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{ Data Simulation Methods}{49}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{3}{Simulation Results}{52}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{4}{Application to the ARIC Study}{55}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{5}{Discussion}{58}{0}{2}
+\beamer@subsectionintoc {2}{3}{Journal Article 3: LaSPU: a suite of powerful data-adaptive SNP-set and ...}{60}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{1}{Features and Workflow}{62}{0}{2}
+\beamer@sectionintoc {3}{Real Data Application}{65}{0}{3}
+\beamer@sectionintoc {4}{Acknowledgement}{68}{0}{4}
+\beamer@sectionintoc {5}{References}{71}{0}{5}

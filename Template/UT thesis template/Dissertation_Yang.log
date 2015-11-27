@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  24 NOV 2015 23:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.16)  27 NOV 2015 06:31
 entering extended mode
 **Dissertation_Yang.tex
 ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.tex"
@@ -1773,27 +1773,27 @@ File: figure/compare_LaSPU_LSSU_exome_ARIC.pdf Graphic file (type pdf)
 
 <use figure/compare_LaSPU_LSSU_exome_ARIC.pdf>
 Package pdftex.def Info: figure/compare_LaSPU_LSSU_exome_ARIC.pdf used on input
- line 2124.
+ line 2125.
 (pdftex.def)             Requested size: 460.72011pt x 596.22604pt.
  [101] [102] [103 <D:/Dissertation_proj/Template/UT thesis template/figure/comp
 are_LaSPU_LSSU_exome_ARIC.pdf>]
 [104] [105] [106] [107]
-Underfull \hbox (badness 10000) in paragraph at lines 2204--2206
+Underfull \hbox (badness 10000) in paragraph at lines 2205--2207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2204--2206
+Underfull \hbox (badness 10000) in paragraph at lines 2205--2207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2207--2209
+Underfull \hbox (badness 10000) in paragraph at lines 2208--2210
 
  []
 
 [108] [109]
-Overfull \hbox (204.19496pt too wide) in paragraph at lines 2215--2216
+Overfull \hbox (204.19496pt too wide) in paragraph at lines 2216--2217
 \OT1/cmr/m/n/12 cient power in the single-SNP-based or single-gene-based analys
 is.[[],
  []
@@ -1803,60 +1803,60 @@ is.[[],
 File: figure/Article2_SNPs_aggregation_flowchart.pdf Graphic file (type pdf)
 <use figure/Article2_SNPs_aggregation_flowchart.pdf>
 Package pdftex.def Info: figure/Article2_SNPs_aggregation_flowchart.pdf used on
- input line 2227.
+ input line 2228.
 (pdftex.def)             Requested size: 469.75502pt x 293.5989pt.
  [114] [115 <D:/Dissertation_proj/Template/UT thesis template/figure/Article2_S
 NPs_aggregation_flowchart.pdf>]
-Overfull \hbox (39.33234pt too wide) in paragraph at lines 2279--2279
+Overfull \hbox (39.33234pt too wide) in paragraph at lines 2280--2280
 [] 
  []
 
 [116]
-Overfull \hbox (24.90463pt too wide) in paragraph at lines 2298--2298
+Overfull \hbox (24.90463pt too wide) in paragraph at lines 2299--2299
 [] 
  []
 
 [117]
-Underfull \hbox (badness 10000) in paragraph at lines 2330--2332
+Underfull \hbox (badness 10000) in paragraph at lines 2331--2333
 
  []
 
 [118]
-Overfull \hbox (41.81744pt too wide) in paragraph at lines 2354--2357
+Overfull \hbox (41.81744pt too wide) in paragraph at lines 2355--2358
 []\OT1/cmr/m/n/12 The Sum test is closely re-lated to other bur-den tests such 
 like those in [[],
  []
 
 
-Overfull \hbox (10.57611pt too wide) in paragraph at lines 2354--2357
+Overfull \hbox (10.57611pt too wide) in paragraph at lines 2355--2358
 []\OT1/cmr/m/n/12 , [], []] and C-alpha test [[]],
  []
 
 
-Overfull \hbox (6.02849pt too wide) in paragraph at lines 2354--2357
+Overfull \hbox (6.02849pt too wide) in paragraph at lines 2355--2358
 \OT1/cmr/m/n/12 will be more pow-er-ful. Nev-er-the-less, as shown in Pan et al
 .,[[], []]
  []
 
 [119] [120] [121] [122]
-Overfull \hbox (101.17018pt too wide) in paragraph at lines 2432--2433
+Overfull \hbox (101.17018pt too wide) in paragraph at lines 2433--2434
 []\OT1/cmr/m/n/12 For any given $(\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$, we 
 re-course to the simulation-based strategy[[], []],
  []
 
 
-Overfull \hbox (2.55594pt too wide) in paragraph at lines 2432--2433
+Overfull \hbox (2.55594pt too wide) in paragraph at lines 2433--2434
 \OT1/cmr/m/n/12 as used in aSPU test, to cal-cu-late the p-value $\OML/cmm/m/it
 /12 P[]$ \OT1/cmr/m/n/12 from $\OML/cmm/m/it/12 T[]$\OT1/cmr/m/n/12 .
  []
 
 [123] [124] [125] [126]
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2544
+Underfull \hbox (badness 10000) in paragraph at lines 2541--2545
 
  []
 
 [127]
-Underfull \hbox (badness 10000) in paragraph at lines 2551--2555
+Underfull \hbox (badness 10000) in paragraph at lines 2552--2556
 
  []
 
@@ -1869,48 +1869,48 @@ is.pdf Graphic file (type pdf)
 <use figure/PowerCurve_independenceWkCor_on_AR1data_RVsimulatedU_pathwayAnalysi
 s.pdf>
 Package pdftex.def Info: figure/PowerCurve_independenceWkCor_on_AR1data_RVsimul
-atedU_pathwayAnalysis.pdf used on input line 2723.
+atedU_pathwayAnalysis.pdf used on input line 2724.
 (pdftex.def)             Requested size: 455.3045pt x 455.29901pt.
  [131] [132 <D:/Dissertation_proj/Template/UT thesis template/figure/PowerCurve
 _independenceWkCor_on_AR1data_RVsimulatedU_pathwayAnalysis.pdf>] [133]
 [134]
-Overfull \hbox (19.64503pt too wide) in paragraph at lines 2769--2769
+Overfull \hbox (19.64503pt too wide) in paragraph at lines 2770--2770
  []$[]$ 
  []
 
 
-Overfull \hbox (54.37437pt too wide) in paragraph at lines 2792--2794
+Overfull \hbox (54.37437pt too wide) in paragraph at lines 2793--2795
 \OT1/cmr/m/n/12 GWAS [[], [], [], [],
  []
 
 [135]
-Overfull \hbox (72.02411pt too wide) in paragraph at lines 2795--2796
+Overfull \hbox (72.02411pt too wide) in paragraph at lines 2796--2797
 []\OT1/cmr/m/n/12 , [], [], [], []].
  []
 
 [136] [137]
-Overfull \hbox (91.60675pt too wide) in paragraph at lines 2797--2798
+Overfull \hbox (91.60675pt too wide) in paragraph at lines 2798--2799
 \OT1/cmr/m/n/12 struc-tural al-ter-na-tions. The Hu-man Epigenome At-las (http:
 //www.genboree.org/epigenomeatlas/index.rhtml)
  []
 
 [138]
-Underfull \hbox (badness 10000) in paragraph at lines 2807--2809
+Underfull \hbox (badness 10000) in paragraph at lines 2808--2810
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2807--2809
+Underfull \hbox (badness 10000) in paragraph at lines 2808--2810
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2810--2812
+Underfull \hbox (badness 10000) in paragraph at lines 2811--2813
 
  []
 
 [139]
-Overfull \hbox (42.87737pt too wide) in paragraph at lines 2816--2820
+Overfull \hbox (42.87737pt too wide) in paragraph at lines 2817--2821
 \OT1/cmr/m/n/12 cenced un-der the CC BY-NC 4.0 li-cence and freely avail-able a
 t https://github.com/xyy2006/LaSPU/.
  []
@@ -1919,7 +1919,7 @@ t https://github.com/xyy2006/LaSPU/.
 File: figure/Article3_workflow.pdf Graphic file (type pdf)
 
 <use figure/Article3_workflow.pdf>
-Package pdftex.def Info: figure/Article3_workflow.pdf used on input line 2845.
+Package pdftex.def Info: figure/Article3_workflow.pdf used on input line 2846.
 (pdftex.def)             Requested size: 469.75502pt x 352.32034pt.
 
 <figure/Article3_LaSPU_example_result.pdf, id=2584, 845.1575pt x 597.45204pt>
@@ -1927,7 +1927,7 @@ File: figure/Article3_LaSPU_example_result.pdf Graphic file (type pdf)
 
 <use figure/Article3_LaSPU_example_result.pdf>
 Package pdftex.def Info: figure/Article3_LaSPU_example_result.pdf used on input
- line 2852.
+ line 2853.
 (pdftex.def)             Requested size: 469.75502pt x 332.08209pt.
  [143] [144 <D:/Dissertation_proj/Template/UT thesis template/figure/Article3_w
 orkflow.pdf>] [145 <D:/Dissertation_proj/Template/UT thesis template/figure/Art
@@ -1953,7 +1953,7 @@ teOnMultipleNodes' and '--MultipleNodes[]profile'
 ) [147] [148
 
 ] [149]
-Overfull \hbox (9.08401pt too wide) in paragraph at lines 2874--2875
+Overfull \hbox (9.08401pt too wide) in paragraph at lines 2875--2876
 []\OT1/cmr/m/n/12 , [], [], []]. Al-
  []
 
@@ -1970,13 +1970,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--254
 Package caption Warning: Unused \captionsetup[subtable] on input line 19.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2889.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2890.
 [174]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2889.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2890.
  ("D:\Dissertation_proj\Template\UT thesis template\Dissertation_Yang.aux" ("D:
 \Dissertation_proj\Template\UT thesis template\LaSPU_manual.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2889.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2889.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2890.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2890.
 
 Package rerunfilecheck Info: File `Dissertation_Yang.out' has not changed.
 (rerunfilecheck)             Checksum: F2ADEF164E4866882048A1935EBE39AB;5289.
@@ -2016,7 +2016,7 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><d:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><d:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Dissertation_Yang.pdf (181 pages, 6333371 bytes).
+Output written on Dissertation_Yang.pdf (181 pages, 6334609 bytes).
 PDF statistics:
  2936 PDF objects out of 2984 (max. 8388607)
  495 named destinations out of 1000 (max. 500000)
